@@ -1,0 +1,69 @@
+
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{natbib}
+
+\begin{document}
+
+\title{Development and Deployment of Precision Mechanical Rotation Sensor for Terrestrial Gravitational Wave Observatories}
+
+\author{M.P. Ross}
+
+\maketitle
+
+\section{Introduction}
+\subsection{Gravitational Wave Theory}
+\subsection{Seismic Isolation}
+
+\section{1-m Scale Ground Rotation Sensors}
+\subsection{Tilt Contamination}
+\quad At their core seismometers are low frequency spring mass system which measures the difference in motion between the casing and the device's proof mass. Above the resonant frequency of the spring mass system, this allows for accurate measurements of the motion in reference to an inertial frame of any object that the casing is rigidly connected to, be it the ground or a suspended table. Over the past \textbf{some time} this technology has produced devices that are sensitive to \textbf{number and range}. However, these systems are fundamentally susceptible to any stray forces acting on the proof mass.
+
+Of interest here is the contamination due to the rotation of the device within a external gravitational field, namely the field caused by the earth. The rotation in respect to a fixed gravitational force will be referred to as tilt.\textbf{possible footnote} (Although a subtle difference, the distinction would be of great consequences if the local gravitational field was varying rapidly. In that case the sensors described here would be of little use as they are rotational sensors not tilt sensors.) From the proof mass's frame, a tilt is equivalent to a rotation of the gravitational force. This yields a horizontal acceleration of the proof mass of:
+\[ a=g \text{ sin}(\theta)\]
+where $g$ is the gravitational acceleration on the surface of the earth and $\theta$ is the angle that the device is rotated. This acceleration adds a second term to the seismometer's output shown below for small angles and in the Fourier domain: \textbf{need tildas}
+\[x_{seis}=x_{trans}+\frac{g}{\omega^2}\theta\]
+where $x_{seis}$ is the seismometer's output, $x_{trans}$ is the translational motion of the device, and $\omega$ is the frequency at which the tilt is being driven. 
+
+With this additional contribution, it becomes immediately clear that, for a given amplitude of tilt, the contamination term contributes more at lower frequencies and readily dominates the translational signal. In the context of the ground seismometers at the observatory, the tilt signal swamps the translational component below \textbf{60 mHz}. Above which the seismometer signal is dominate by the ever present oceanic microseism which is driven by low frequency pressure waves with the ocean and their interaction with the shorline. \textbf{CITE} This can be seen in Figure \textbf{number} which shows an amplitude spectral density of a ground seismometer at LLO during both low and high wind conditions.
+
+\textbf{seismic spectra}
+
+The dominate driver of ground tilts at the observatories is wind acting on the walls of the building. Although one would naiively assume that the wind would rigidly rotate the building in the direction that the wind is blowing, it was found that the true mechanism is differential pressure acting on the walls deforms the building's concrete slab. \textbf{cite?} 
+
+
+\subsection{Mechanical System}
+\subsection{Autocollimator Readout}
+\subsection{Controls}
+\subsection{Noise Performance}
+\subsection{Hanford Installation}
+\subsection{Livingston Installation}
+
+\section{30-cm Scale On-Board Rotation Sensors}
+\subsection{Angular Controls}
+\subsection{Mechanical System}
+\subsection{Interferometric Readout}
+\subsection{Controls}
+\subsection{Noise Performance}
+
+\section{Applications}
+\subsection{Geophysics}
+\subsubsection{Rayleigh Wave Theory}
+\subsubsection{Wave Field Parameter Extraction}
+\subsubsection{Single Station Dispersion Measurements}
+\subsection{Newtonian Noise}
+\subsubsection{Theory}
+\subsubsection{Observations}
+
+\bibliographystyle{apalike}
+\bibliography{Disertation}
+
+\end{document}
+
+
