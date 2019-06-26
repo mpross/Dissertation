@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Dissertation.aux
+The style file: apalike.bst
+Illegal, another \bibstyle command---line 39 of file Dissertation.aux
+ : \bibstyle
+ :          {plain}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 40 of file Dissertation.aux
+ : \bibdata
+ :         {Dissertation}
+I'm skipping whatever remains of this command
+Database file #1: Dissertation.bib
+You've used 16 entries,
+            1935 wiz_defined-function locations,
+            578 strings with 6946 characters,
+and the built_in function-call counts, 7114 in all, are:
+= -- 667
+> -- 381
+< -- 5
++ -- 138
+- -- 134
+* -- 678
+:= -- 1269
+add.period$ -- 49
+call.type$ -- 16
+change.case$ -- 145
+chr.to.int$ -- 16
+cite$ -- 16
+duplicate$ -- 222
+empty$ -- 450
+format.name$ -- 154
+if$ -- 1345
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 16
+newline$ -- 84
+num.names$ -- 48
+pop$ -- 109
+preamble$ -- 1
+purify$ -- 145
+quote$ -- 0
+skip$ -- 169
+stack$ -- 0
+substring$ -- 481
+swap$ -- 16
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 96
+warning$ -- 0
+while$ -- 52
+width$ -- 0
+write$ -- 211
+(There were 2 error messages)

@@ -1,0 +1,105 @@
+\begin{thebibliography}{}
+
+\bibitem[Aasi et~al., 2015]{ligo2}
+Aasi, J. et~al. (2015).
+\newblock Advanced ligo.
+\newblock {\em Classical and Quantum Gravity}, 32(7):074001.
+
+\bibitem[Belfi et~al., 2012]{Belfi2012}
+Belfi, J., Beverini, N., Carelli, G., Di~Virgilio, A., Maccioni, E.,
+  Saccorotti, G., Stefani, F., and Velikoseltsev, A. (2012).
+\newblock Horizontal rotation signals detected by ``g-pisa'' ring laser for the
+  mw = 9.0, march 2011, japan earthquake.
+\newblock {\em Journal of Seismology}, 16(4):767--776.
+
+\bibitem[et. al., 2016]{ring}
+et. al., S. (2016).
+\newblock First deep underground observation of rotational signals from an
+  earthquake at teleseismic distance using a large ring laser gyroscope.
+\newblock {\em arXiv}.
+
+\bibitem[Haskell, 1953]{haskell}
+Haskell, N.~A. (1953).
+\newblock The dispersion of surface waves on multilayered media.
+\newblock {\em Bulletin of the Seismological Society of America}, 43(1):17--34.
+
+\bibitem[Lantz et~al., 2009]{lantz}
+Lantz, B., Schofield, R., O`Reilly, B., Clark, D.~E., and DeBra, D. (2009).
+\newblock Review: Requirements for a ground rotation sensor to improve advanced
+  ligo.
+\newblock {\em Bulletin of the Seismological Society of America},
+  99(2B):980--989.
+
+\bibitem[Lee et~al., 2009]{Lee01052009}
+Lee, W. H.~K., Celebi, M., Todorovska, M.~I., and Igel, H. (2009).
+\newblock Introduction to the special issue on rotational seismology and
+  engineering applications.
+\newblock {\em Bulletin of the Seismological Society of America},
+  99(2B):945--957.
+
+\bibitem[Legendre et~al., 2015]{Legendre2015}
+Legendre, C.~P., Zhao, L., Huang, W.-G., and Huang, B.-S. (2015).
+\newblock Anisotropic rayleigh-wave phase velocities beneath northern vietnam.
+\newblock {\em Earth, Planets and Space}, 67(1):28.
+
+\bibitem[Lin et~al., 2011]{GRL:GRL28234}
+Lin, C.-J., Huang, H.-P., Pham, N.~D., Liu, C.-C., Chi, W.-C., and Lee, W.
+  H.~K. (2011).
+\newblock Rotational motions for teleseismic surface waves.
+\newblock {\em Geophysical Research Letters}, 38(15):n/a--n/a.
+\newblock L15301.
+
+\bibitem[Lin et~al., 2008]{lin}
+Lin, F.-C., Moschetti, M.~P., and Ritzwoller, M.~H. (2008).
+\newblock Surface wave tomography of the western united states from ambient
+  seismic noise: Rayleigh and love wave phase velocity maps.
+\newblock {\em Geophysical Journal International}, 173(1):281.
+
+\bibitem[Maran\'o and F{\"a}h, 2014]{seismic}
+Maran\'o, S. and F{\"a}h, D. (2014).
+\newblock Processing of translational and rotational motions of surface waves:
+  Performance analysis and applications to single sensor and to array
+  measurements.
+\newblock {\em Geophysical Journal International}, 196:317--339.
+
+\bibitem[Matichard et~al., 2015]{ligo1}
+Matichard, F. et~al. (2015).
+\newblock Seismic isolation of advanced ligo: Review of strategy,
+  instrumentation and performance.
+\newblock {\em Classical and Quantum Gravity}, 32(18):185003.
+
+\bibitem[Meier et~al., 2004]{meier}
+Meier, T., Dietrich, K., St{\"o}ckhert, B., and Harjes, H. (2004).
+\newblock One-dimensional models of shear wave velocity for the eastern
+  mediterranean obtained from the inversion of rayleigh wave phase velocities
+  and tectonic implications.
+\newblock {\em Geophysical Journal International}, 156(1):45--58.
+
+\bibitem[Pancha et~al., 2000]{GRL:GRL13842}
+Pancha, A., Webb, T.~H., Stedman, G.~E., McLeod, D.~P., and Schreiber, K.~U.
+  (2000).
+\newblock Ring laser detection of rotations from teleseismic waves.
+\newblock {\em Geophysical Research Letters}, 27(21):3553--3556.
+
+\bibitem[Reinwald et~al., 2016]{se-7-1467-2016}
+Reinwald, M., Bernauer, M., Igel, H., and Donner, S. (2016).
+\newblock Improved finite-source inversion through joint measurements of
+  rotational and translational ground motions: a numerical study.
+\newblock {\em Solid Earth}, 7(5):1467--1477.
+
+\bibitem[Venkateswara et~al., 2017]{venk2016}
+Venkateswara, K., Hagedorn, C.~A., Gundlach, J.~H., Kissel, J., Warner, J.,
+  Radkins, H., Shaffer, T., Lantz, B., Mittleman, R., Matichard, F., and
+  Schofield, R. (2017).
+\newblock Subtracting tilt from a horizontal seismometer using a ground
+  rotation sensor.
+\newblock {\em Bulletin of the Seismological Society of America},
+  107(2):709--717.
+
+\bibitem[Venkateswara et~al., 2014]{venk2014}
+Venkateswara, K., Hagedorn, C.~A., Turner, M.~D., Arp, T., and Gundlach, J.~H.
+  (2014).
+\newblock A high-precision mechanical absolute-rotation sensor.
+\newblock {\em Review of Scientific Instruments}, 85(1).
+
+\end{thebibliography}

@@ -1,28 +1,46 @@
 
-\documentclass[12pt]{article}
+\documentclass [12pt, proquest]{uwthesis}[2019]
 
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{amsmath}
-\usepackage[margin=1in]{geometry}
 \usepackage{setspace}
 \usepackage{lineno}
 \usepackage{natbib}
 
 \begin{document}
 
-\title{Development and Deployment of Precision Mechanical Rotation Sensor for Terrestrial Gravitational Wave Observatories}
+\title{}
+\prelimpages
+ 
+\Title{Development and Deployment of Precision Mechanical Rotation Sensor for Terrestrial Gravitational Wave Observatories}
+\Author{M. P. Ross}
+\Year{2019}
+\Program{Physics}
 
-\author{M.P. Ross}
+\Chair{Name of Chairperson}{Title of Chair}{Department of Chair}
+\Signature{First committee member}
+\Signature{Next committee member}
+\Signature{etc}
 
-\maketitle
+\copyrightpage
 
-\section{Introduction}
-\subsection{Gravitational Wave Theory}
-\subsection{Seismic Isolation}
+\titlepage  
 
-\section{1-m Scale Ground Rotation Sensors}
-\subsection{Tilt Contamination}
+\setcounter{page}{-1}
+\abstract{}
+
+\tableofcontents
+\listoffigures
+
+\dedication{\begin{center}To Grace\end{center}}
+\textpages
+\chapter{Introduction}
+\section{Gravitational Wave Theory}
+\section{Seismic Isolation}
+
+\chapter{1-m Scale Ground Rotation Sensors}
+\section{Tilt Contamination}
 \quad At their core seismometers are low frequency spring mass system which measures the difference in motion between the casing and the device's proof mass. Above the resonant frequency of the spring mass system, this allows for accurate measurements of the motion in reference to an inertial frame of any object that the casing is rigidly connected to, be it the ground or a suspended table. Over the past \textbf{some time} this technology has produced devices that are sensitive to \textbf{number and range}. However, these systems are fundamentally susceptible to any stray forces acting on the proof mass.
 
 Of interest here is the contamination due to the rotation of the device within a external gravitational field, namely the field caused by the earth. The rotation in respect to a fixed gravitational force will be referred to as tilt.\textbf{possible footnote} (Although a subtle difference, the distinction would be of great consequences if the local gravitational field was varying rapidly. In that case the sensors described here would be of little use as they are rotational sensors not tilt sensors.) From the proof mass's frame, a tilt is equivalent to a rotation of the gravitational force. This yields a horizontal acceleration of the proof mass of:
@@ -38,32 +56,35 @@ With this additional contribution, it becomes immediately clear that, for a give
 The dominate driver of ground tilts at the observatories is wind acting on the walls of the building. Although one would naiively assume that the wind would rigidly rotate the building in the direction that the wind is blowing, it was found that the true mechanism is differential pressure acting on the walls deforms the building's concrete slab. \textbf{cite?} 
 
 
-\subsection{Mechanical System}
-\subsection{Autocollimator Readout}
-\subsection{Controls}
-\subsection{Noise Performance}
-\subsection{Hanford Installation}
-\subsection{Livingston Installation}
+\section{Mechanical System}
+\section{Autocollimator Readout}
+\section{Controls}
+\section{Noise Performance}
+\section{Hanford Installation}
+\section{Livingston Installation}
 
-\section{30-cm Scale On-Board Rotation Sensors}
-\subsection{Angular Controls}
-\subsection{Mechanical System}
-\subsection{Interferometric Readout}
-\subsection{Controls}
-\subsection{Noise Performance}
+\chapter{30-cm Scale On-Board Rotation Sensors}
+\section{Angular Controls}
+\section{Mechanical System}
+\section{Interferometric Readout}
+\section{Controls}
+\section{Noise Performance}
 
-\section{Applications}
-\subsection{Geophysics}
-\subsubsection{Rayleigh Wave Theory}
+\chapter{Applications}
+\section{Geophysics}
+\subsection{Rayleigh Wave Theory}
 \subsubsection{Wave Field Parameter Extraction}
-\subsubsection{Single Station Dispersion Measurements}
-\subsection{Newtonian Noise}
-\subsubsection{Theory}
-\subsubsection{Observations}
+\subsection{Single Station Dispersion Measurements}
+\section{Newtonian Noise}
+\subsection{Theory}
+\subsection{Observations}
 
 \bibliographystyle{apalike}
-\bibliography{Disertation}
-
+\bibliography{Dissertation}
+\printendnotes
+\nocite{*}   
+\bibliographystyle{plain}
+\bibliography{Dissertation}
 \end{document}
 
 
