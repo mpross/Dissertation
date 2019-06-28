@@ -4,23 +4,24 @@
 \contentsline {section}{\numberline {1.2}Seismic Isolation}{1}% 
 \contentsline {chapter}{\numberline {\@textofChapter \ 2:}1-m Scale Ground Rotation Sensors}{2}% 
 \contentsline {section}{\numberline {2.1}Tilt Contamination}{2}% 
-\contentsline {section}{\numberline {2.2}Mechanical System}{3}% 
-\contentsline {section}{\numberline {2.3}Autocollimator Readout}{3}% 
-\contentsline {section}{\numberline {2.4}Controls}{3}% 
-\contentsline {section}{\numberline {2.5}Noise Performance}{3}% 
-\contentsline {section}{\numberline {2.6}Hanford Installation}{3}% 
-\contentsline {section}{\numberline {2.7}Livingston Installation}{3}% 
-\contentsline {chapter}{\numberline {\@textofChapter \ 3:}30-cm Scale On-Board Rotation Sensors}{4}% 
-\contentsline {section}{\numberline {3.1}Angular Controls}{4}% 
-\contentsline {section}{\numberline {3.2}Mechanical System}{4}% 
-\contentsline {section}{\numberline {3.3}Interferometric Readout}{4}% 
-\contentsline {section}{\numberline {3.4}Controls}{4}% 
-\contentsline {section}{\numberline {3.5}Noise Performance}{4}% 
-\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{5}% 
-\contentsline {section}{\numberline {4.1}Geophysics}{5}% 
-\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{5}% 
-\contentsline {subsubsection}{Wave Field Parameter Extraction}{5}% 
-\contentsline {subsection}{\numberline {4.1.2}Single Station Dispersion Measurements}{5}% 
-\contentsline {section}{\numberline {4.2}Newtonian Noise}{5}% 
-\contentsline {subsection}{\numberline {4.2.1}Theory}{5}% 
-\contentsline {subsection}{\numberline {4.2.2}Observations}{5}% 
+\contentsline {section}{\numberline {2.2}Sensor Correction with Tilt Subtraction}{4}% 
+\contentsline {section}{\numberline {2.3}Mechanical System}{4}% 
+\contentsline {section}{\numberline {2.4}Multi-Slit Autocollimator Readout}{5}% 
+\contentsline {section}{\numberline {2.5}Controls}{7}% 
+\contentsline {section}{\numberline {2.6}Noise Performance}{7}% 
+\contentsline {section}{\numberline {2.7}Hanford Installation}{7}% 
+\contentsline {section}{\numberline {2.8}Livingston Installation}{7}% 
+\contentsline {chapter}{\numberline {\@textofChapter \ 3:}30-cm Scale On-Board Rotation Sensors}{8}% 
+\contentsline {section}{\numberline {3.1}Angular Controls}{8}% 
+\contentsline {section}{\numberline {3.2}Mechanical System}{8}% 
+\contentsline {section}{\numberline {3.3}Interferometric Readout}{8}% 
+\contentsline {section}{\numberline {3.4}Controls}{8}% 
+\contentsline {section}{\numberline {3.5}Noise Performance}{8}% 
+\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{9}% 
+\contentsline {section}{\numberline {4.1}Geophysics}{9}% 
+\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{9}% 
+\contentsline {subsubsection}{Wave Field Parameter Extraction}{9}% 
+\contentsline {subsection}{\numberline {4.1.2}Single Station Dispersion Measurements}{9}% 
+\contentsline {section}{\numberline {4.2}Newtonian Noise}{9}% 
+\contentsline {subsection}{\numberline {4.2.1}Theory}{9}% 
+\contentsline {subsection}{\numberline {4.2.2}Observations}{9}% 
