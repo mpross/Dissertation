@@ -54,7 +54,7 @@ With this additional contribution, it becomes immediately clear that, for a give
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.5\textwidth]{windComp.pdf}
+\includegraphics[width=0.75\textwidth]{windComp.pdf}
 \caption{}
 \label{wind}
 \end{center}
@@ -80,9 +80,15 @@ This is then a low tilt channel which can be used within the LIGO seismic isolat
 
 \section{Mechanical System}
 
-\quad The Beam Rotation Sensor (BRS) is a beam balance comprised of a 1-m long beam hung from two 10-15 $\mu$m thick beryllium-copper flexures. Figure \textbf{number} shows a CAD model of the beam balance. 
+\quad The Beam Rotation Sensor (BRS) is a beam balance comprised of a 1-m long beam hung from two 10-15 $\mu$m thick beryllium-copper flexures. Figure \ref{BRS} shows a CAD model of the beam balance. 
 
-\textbf{BRS image}
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{BRS_Drawing.PDF}
+\caption{}
+\label{BRS}
+\end{center}
+\end{figure}
 
 This design makes the beam stiff in all degrees of freedom other than rotations around the horizontal axis which intersects the two flexure pivot points. This forms a system consisting of two elementary subsystems: a rotational spring mass system formed by the stiffness of the flexures, and a simple pendulum due to the offset of the pivot point and the center of mass. This is then described by the following equation of motion: \cite{venk2014}
 
@@ -111,7 +117,7 @@ where $f$ is the focal length of the lens and $x_{reference}$ is the beam spot f
 
 \textbf{make table of BRS autocollimator parameters: focus, number of slits, slit width, CCD type, light source, frequency}
 
-An increase in sensitivity can be made by employing a multi-slit autocollimator \textbf{cite MSA paper}. This consists of an autocollimator with the light source replaced by a illuminated photomask of a number of thin slits. The pattern is then reflected off a set of reference and main mirror and imaged by a line CCD camera. These images are then analyzed to measure the distance between them thus yielding a measurement of angle. For the BRSs, this image analysis is achieved using bespoke software written in C\# which can be found at www.github.com/mpross/BRSReadout
+An increase in sensitivity can be made by employing a multi-slit autocollimator \cite{MSA}. This consists of an autocollimator with the light source replaced by a illuminated photomask of a number of thin slits. The pattern is then reflected off a set of reference and main mirror and imaged by a line CCD camera. These images are then analyzed to measure the distance between them thus yielding a measurement of angle. For the BRSs, this image analysis is achieved using bespoke software written in C\# which can be found at www.github.com/mpross/BRSReadout
 
 To extract the distance between the patterns, the image goes through a series of steps to go from a vector of pixel intensities to a single angular output. When the software begins, the first frame that is captured is saved. All future frames are split into two, with one part representing the reference mirror and the other the main mirror. The cross correlation is then taken between each part and it's matching part from the first frame. This gives a curve who's maximum is located at the pixel number corresponding to separation between the pattern in the current frame and the first frame, which can be seen in Figure \textbf{number}. The points of this curve that are near the maximum are then fit to a Gaussian which allows for the extraction of the location of the peak with sub-pixel resolution. This is done for each pattern separately after which the difference between the reference pattern location and the main pattern location is taken. The difference is then proportional to the change in angle between the casing and the beam.
 
@@ -121,15 +127,50 @@ Compared to previous image analysis algorithms \cite{MSAPaper}, this algorithm i
 
 \quad As the BRSs are installed in active lab spaces, anthropogenic actively and environmental disturbances regularly apply torques on the beam balance, either through mechanical coupling through the flexures or gravitational coupling with the end masses. These can then cause the motion at the resonant frequency to rise to undesirable amplitudes. As the beam motion increases so does the noise. Additionally, some disturbances can be large enough to cause the amplitude to exceed the dynamic range of the autocollimator readout system.
 
-The alleviate this issue, capacitor plates are installed underneath each end of the beam balance to act as actuators. The force between the two capacitor plates follows the following: \textbf{Need to actually derive}
-\[F=\frac{V^2}{d}\]
-where $V$ is the voltage applied to the plates, and $d$ is the distance between the plates. The plate under the beam is connected to a DAC while the beam is grounded which allows for a controlled actuation torque to be applied to the beam. 
+The alleviate this issue, capacitor plates are installed underneath each end of the beam balance to act as actuators. The force between the two capacitor plates follows the following: 
+\[F=\frac{\epsilon A V^2}{2d^2}\]
+where $\epsilon$ is the permittivity of the material between the plates, $A$ is the area of the plate, $V$ is the voltage applied to the plates, and $d$ is the distance between the plates. The plate under the beam is connected to a DAC while the beam is grounded which allows for a controlled actuation torque to be applied to the beam. 
 
-The control scheme that was adopted was one in which the feedback signal that is sent to the capacitors is the angle \textbf{check to see if this is velocity} of the beam band passed between \textbf{numbers} to include only motion at frequencies near the resonance. The feedback is additionally applied with low gain so that the feedback is only adding loss to the system as compared to locking the system in a strong feedback loop where all of the motion is absorbed into the control system. This is then implemented with two gain stages, a ``low amplitude'' stage which is always on and yields a Q of \textbf{number} and a ``high amplitude'' stage which is triggered if the amplitude rises above \textbf{number} and gives a Q of \textbf{number}.
+The control scheme that was adopted was one in which the feedback signal that is sent to the capacitors is the angular velocity of the beam band passed between 2 mHz and 20 mHz to include only motion at frequencies near the resonance. The feedback is additionally applied with low gain so that the feedback is only adding loss to the system as compared to locking the system in a strong feedback loop where all of the motion is absorbed into the control system. This is then implemented with two gain stages, a ``low amplitude'' stage which is always on and yields a Q of 10-15 and a ``high amplitude'' stage which is triggered if the amplitude rises above a threshold that is set based on the behavior of the given device and gives a Q of \textbf{number}.
 
 \section{Noise Performance}
 \section{Hanford Installation}
+
+\quad Between the first (O1) and second (O2) observing runs of LIGO, two BRSs were installed at the LIGO Hanford Observatory, one at each end station correcting the translations along their respective arm. Although one would expect that the corner station sensors would also need to be corrected, a location was found within the corner station building which exhibited low tilt. \textbf{cite} This is thought to be due to the shape of the building the distance between this location and the walls. As such no BRS was necessary to achieve low tilt injection seismic isolation.
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=0.75\textwidth]{HSubtractionETMX.pdf}
+\caption{}
+\label{sub}
+\end{center}
+\end{figure}
+
+The tilt subtraction performance achieved with these devices can be seen in Figure \ref{sub} where it is evident that the system achieves tilt subtraction from around 6 mHz to 50 mHz. Above 50 mHz the seismometer signal is dominated by the oceanic microseism and the tilt contribution is negligible. Below 6 mHz, the BRS signal becomes overwhelmed by instrumental noise. This performance can also be seen in Figure \ref{subTime} which shows a example time series of the tilt subtraction. 
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{TiltCorrTime.pdf}
+\caption{}
+\label{subTime}
+\end{center}
+\end{figure}
+
+This tilt subtracted channel was then used as the ground signal for the isolation's sensor correction instead of the raw seismometer. Along with the use of the low tilt seismometer for the corner station, the addition of the BRSs in the seismic control scheme yielded significant improvements in the ability to lock the interferometer at increased wind speeds which can be seen in Figure \ref{O2}
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=0.75\textwidth]{Wind_LockedFraction_total.pdf}
+\caption{}
+\label{O2}
+\end{center}
+\end{figure}
+
 \section{Livingston Installation}
+
+\quad After the success of the Hanford BRS installation, four devices were installed at the LIGO Livingston Observatory (LLO) between the second and third (O3) observing runs. Due to differences in the size and shape of the corner station building at LLO a low tilt location was not found. Thus two BRSs were installed located near the two input test masses (ITM) correcting the seismometer signal oriented along their respective arms. 
+
+All four were implemented in a similar fashion as the Hanford devices.
 
 \chapter{30-cm Scale On-Board Rotation Sensors}
 \section{Angular Controls}
@@ -139,9 +180,12 @@ The control scheme that was adopted was one in which the feedback signal that is
 \section{Noise Performance}
 
 \chapter{Applications}
+\quad The development of these highly sensitive rotation sensors have opened up a few novel scientific avenues that have been explored and many that have not.
+
 \section{Geophysics}
+Seismic waves have six components, three translations and three rotations, however seismology has long neglected the rotational components due the lack of sensitive rotation sensors. Recent developments have begun to alleviated this issue with the advent of seismically relevant ring laser gyros. \textbf{cite Gryo} The BRSs described above join a small class of ground rotation sensors with high enough sensitivity at low frequency to allow for the use in seismology.
 \subsection{Rayleigh Wave Theory}
-\subsubsection{Wave Field Parameter Extraction}
+\subsection{Wave Field Parameter Extraction}
 \subsection{Single Station Dispersion Measurements}
 \section{Newtonian Noise}
 \subsection{Theory}
