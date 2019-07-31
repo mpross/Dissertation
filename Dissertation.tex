@@ -185,8 +185,51 @@ All four were implemented in a similar fashion as the Hanford devices.
 \section{Geophysics}
 Seismic waves have six components, three translations and three rotations, however seismology has long neglected the rotational components due the lack of sensitive rotation sensors. Recent developments have begun to alleviated this issue with the advent of seismically relevant ring laser gyros. \textbf{cite Gryo} The BRSs described above join a small class of ground rotation sensors with high enough sensitivity at low frequency to allow for the use in seismology.
 \subsection{Rayleigh Wave Theory}
+
+Seismic waves can be broken into two classes: body waves and surface waves. In regard to surface waves there are two polarization, of the motion caused by a Love wave is constrained to the plane parallel with the surface of the medium while Rayleigh waves are constrained to a plane perpendicular the surface. 
+
+The plane wave solution of a Rayleigh wave has six components ($u_x, u_y, u_z, \theta_x, \theta_y, \theta_z$) where $u_i$ designated the translational motion in the $i$th direction while $\theta_i$ is the rotation about the $i$th axis.
+These can be described as with the following \textbf{cite seismic paper}
+\begin{align}
+u_x({\bf r} ,t)&=\alpha sin(\zeta) cos(\psi) cos(\omega t-{\bf k}\cdot{\bf r})\\
+u_y({\bf r} ,t)&=\alpha sin(\zeta) sin(\psi) cos(\omega t-{\bf k}\cdot{\bf r})\\
+u_z({\bf r} ,t)&=\alpha cos(\zeta) cos(\omega t-{\bf k}\cdot{\bf r}+\pi/2)\label{ZEq}\\
+\notag \\
+\theta_x({\bf r} ,t)&=\frac{\partial u_z}{\partial y}=\alpha \kappa cos(\zeta) sin(\psi) cos(\omega t-{\bf k}\cdot{\bf r})\label{TiltXEq}\\
+\theta_y({\bf r} ,t)&=-\frac{\partial u_z}{\partial x}=-\alpha \kappa cos(\zeta) cos(\psi) cos(\omega t-{\bf k}\cdot{\bf r})\\
+\theta_z({\bf r} ,t)&=\frac{1}{2}\Big(\frac{\partial u_y}{\partial x}-\frac{\partial u_x}{\partial y}\Big)=0
+\end{align}
+
+where $\alpha$ is the amplitude, $\zeta$ is the ellipticity angle, $\psi$ is the angle of incidence in the horizontal plane, $\omega$ is the frequency, and $\bf{k}=\kappa (\text{cos}(\psi),\text{sin}(\psi),\text{0})$ is the wavevector.
+
+From these equations it can be seen that with a single seismic station with a traditional 3-axis seismometer, one can not measure all five parameters that define this wave field. Additionally, the horizontal components, $u_x\text{ and }u_y$ can contain contributions from co-propagating Love waves which further muddles ones ability to extract parameters. 
+
 \subsection{Wave Field Parameter Extraction}
+
+With the combined measurements of the translational and rotational components at a single station, one can readily extract wavefield parameters that would otherwise be difficult to obtain, namely the phase velocity and the angle of incidence. 
+
+Seismic wave phase velocities are common observable which not only allows for understanding of Rayleigh wave propogation but can be inverted to yield tomographical structure profiles of the interior of the earth. \textbf{cite} The traditional method of extracting these is the exploit the time of arrival of a wave as it passes through an array of many seismometers. The analysis can be constrained to only the vertical channel which is insensitive to Love waves which could contaminate the measurements. However, this method requires many devices and effectively averages over the size of the array.
+
+Alternatively, with measurements of the rotational components a point like measurement of the phase velocity can be made with three devices, a 3-component seismometer and two horizontal rotation sensors. This can be shown in the following equations:
+\begin{align} 
+v&=\frac{\omega}{\kappa} = \frac{\dot{u_z}}{\theta_x}\text{sin}(\psi) \label{vx} \\
+v&=\frac{\dot{u_z}}{\theta_y}\text{cos}(\psi)\label{vy} \\
+v&=\frac{\dot{u_z}}{\sqrt{\theta_x^2+\theta_y^2}} \label{v}
+\end{align}
+
+where the dot represents the temporal derivative. Equations \ref{vx} and \ref{vy} can be utilized if a station has only one horizontal rotation sensor but requires independent determination of $\psi$. In contrast, Equation \ref{v} contains only information from a single station.
+
+In addition to the phase velocity, the angle of incidence can be determined with the following:
+\begin{align}
+\psi=\text{arctan}\bigg(\frac{\theta_x}{\theta_y}\bigg)
+\end{align}
+
+Although in theory, this can be measured using a single seismometer, Love wave contamination of the horizontal translational channels would distort any such measurement. As the horizontal rotational channels are insensitive to Love waves, they allow the extraction of $\psi$ without such contamination.  
+
 \subsection{Single Station Dispersion Measurements}
+\subsubsection{Hanford Measurements}
+As described in Section \ref{}, the two BRSs installed at LHO are located in buildings s
+\subsubsection{Livingston Measurements}
 \section{Newtonian Noise}
 \subsection{Theory}
 \subsection{Observations}
