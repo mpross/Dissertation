@@ -129,12 +129,35 @@ Compared to previous image analysis algorithms \cite{MSAPaper}, this algorithm i
 \quad As the BRSs are installed in active lab spaces, anthropogenic actively and environmental disturbances regularly apply torques on the beam balance, either through mechanical coupling through the flexures or gravitational coupling with the end masses. These can then cause the motion at the resonant frequency to rise to undesirable amplitudes. As the beam motion increases so does the noise. Additionally, some disturbances can be large enough to cause the amplitude to exceed the dynamic range of the autocollimator readout system.
 
 The alleviate this issue, capacitor plates are installed underneath each end of the beam balance to act as actuators. The force between the two capacitor plates follows the following: 
-\[F=\frac{\epsilon A V^2}{2d^2}\]
+\begin{equation}
+F=\frac{\epsilon A V^2}{2d^2} \label{cap}
+\end{equation}
 where $\epsilon$ is the permittivity of the material between the plates, $A$ is the area of the plate, $V$ is the voltage applied to the plates, and $d$ is the distance between the plates. The plate under the beam is connected to a DAC while the beam is grounded which allows for a controlled actuation torque to be applied to the beam. 
 
 The control scheme that was adopted was one in which the feedback signal that is sent to the capacitors is the angular velocity of the beam band passed between 2 mHz and 20 mHz to include only motion at frequencies near the resonance. The feedback is additionally applied with low gain so that the feedback is only adding loss to the system as compared to locking the system in a strong feedback loop where all of the motion is absorbed into the control system. This is then implemented with two gain stages, a ``low amplitude'' stage which is always on and yields a Q of 10-15 and a ``high amplitude'' stage which is triggered if the amplitude rises above a threshold that is set based on the behavior of the given device and gives a Q of \textbf{number}.
 
 \section{Noise Performance}
+
+In addition to the 0.1 nrad/$\sqrt{\text{Hz}}$ white noise of the autocollimator readout, these devices suffer from a various mechanical noise sources, namely noise due to temperature variations and due to the thermal motion of the flexures.
+
+Although the exact physical mechanism is unknown at this juncture, it has been observed that variations in the exterior temperature cause shifts in the balance's equilibrium position. Furthermore, temperature gradients across the instrument emanating from unbalanced heat sources and air currents have been seen to cause time varying noise. To alleviate this issue the instrument's vacuum chamber and optics are wrapped in multiple alternating layers of packing foam and aluminum foil. The entire apparatus is then placed inside a large double walled insulation box to further decrease any temperature variations. This eliminates this as a dominate noise source unless the room in which the instrument is housed undergoes large temperature variations.
+
+More limiting is the noise due to the thermal vibrations of the flexure. At any non-zero temperature, a portion of the thermal energy of the flexures is stored in the vibrational modes of the flexure. This causes a fundamental stochastic noise floor that goes as such:
+\textbf{add thermal noise equation}
+ Since this noise source enters as a torque on the beam balance, it is filtered by the harmonic response making it fall as $1/f^2$ above the resonant frequency. To limit the influence on the performance of the device, the resonant frequency of the spring mass system is pushed to the lowest frequency that is mechanically feasible. 
+ 
+ One further noise source that acts on the beam balance comes from voltage noise on the capacitive actuators. The force caused by the follows Equation \ref{cap} and can be shown to be sub dominate.
+ 
+ \begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{BRSNoiseBudget.pdf}
+\caption{Noise budge for the Beam Rotation Sensors where the blue curve shows the performance at a quiet time, in red is the motion of the reference mirror which can be regarded as an estimate of the readout noise, yellow shows an estimate of the thermal noise, purple shows the noise from the capacitive actuators, and green shows the some of all known noise sources.}
+\label{noise}
+\end{center}
+\end{figure}
+
+ The noise budget for a BRS is shown in Figure \ref{noise} which shows that the device is readout dominated above $\sim$20 mHz and below is dominated by thermal noise. An excess in the measured noise can be seen below 3 mHz which is believed to be due to residual temperature noise. Respectively at 150 mHz, 3 Hz, and 6 Hz the rotational microseism, torsion mode of the beam balance, and motion due to nearby instrumentation can be seen above the predicted noise sources.
+
 \section{Hanford Installation} \label{BRS_Hanford}
 
 \quad Between the first (O1) and second (O2) observing runs of LIGO, two BRSs were installed at the LIGO Hanford Observatory, one at each end station correcting the translations along their respective arm. Although one would expect that the corner station sensors would also need to be corrected, a location was found within the corner station building which exhibited low tilt. \textbf{cite} This is thought to be due to the shape of the building the distance between this location and the walls. As such no BRS was necessary to achieve low tilt injection seismic isolation.
@@ -184,7 +207,13 @@ With the current system, at \textbf{number} Hz the seismic isolation is limited 
 
 The compact Beam Rotation Sensor (cBRS), described in the following, was designed to be an alternative angular sensor for the seismic isolation system with \textbf{number} times lower noise than the current sensors. With this decreased noise, the seismic isolation control loops can be tuned to significantly increase the performance of both the translational isolation, through decreased tilt contamination described in Section \ref{}, and directly the rotational isolation. Details of this follow in Section \ref{IsoScheme}. This decreased residual rotation would then allow the angular control loops to be retuned, specifically decreasing the gain, to push the sensor noise leakage below the design sensitivity. \textbf{Need to check this.}
 
-\textbf{show noise plot}
+\begin{figure}%
+\begin{center}
+\includegraphics[width=0.75\textwidth]{SensorNoise.pdf}
+\caption{}
+\label{sensNoise}
+\end{center}
+\end{figure}
 
 \section{Isolation Scheme} \label{IsoScheme}
 
@@ -210,7 +239,7 @@ The rotational control loop for stage 2 then consists of using the CPS between s
 
 \section{Mechanical System}
 
-Similar to the BRS described in Chapter \ref{BRS_chap}, the compact Beam Rotation Sensor (cBRS), shown in Figure \ref{}, consists of a 30-cm long cross hung from 10-15 $\mu$m thick beryllium-copper flexures and has an identical operating principle as the BRS. The cross shape of the balance decreases the sensitivity of the device to gradients in the local gravitational field while allowing for increased moment of inertia compared to a similarly sized beam. 
+Similar to the BRS described in Chapter \ref{BRS_chap}, the compact Beam Rotation Sensor (cBRS), shown in Figure \ref{cBRS}, consists of a 30-cm long cross hung from 10-15 $\mu$m thick beryllium-copper flexures and has an identical operating principle as the BRS. The cross shape of the balance decreases the sensitivity of the device to gradients in the local gravitational field while allowing for increased moment of inertia compared to a similarly sized beam. 
 
 This design yields a resonant frequency of $\sim$20 mHz limited the use of such a device to frequencies above this. 
 
@@ -219,19 +248,19 @@ This design yields a resonant frequency of $\sim$20 mHz limited the use of such 
 \subfloat[]{ \includegraphics[width=\textwidth]{cBRSIso.png}}\\
 \subfloat[]{ \includegraphics[width=\textwidth]{cBRSFront.png}}
 \caption{}
-\label{BRS}
+\label{cBRS}
 \end{center}
 \end{figure}
 
 \section{Interferometric Readout}
 In order to maintain the small size of the entire device, an interferometric readout was developed that consists of a Fabry-Perot cavity that is formed by a beamsplitter coated optical fiber and the full reflectance mirror placed on the bottom of the balance's end masses. The reflectance of this cavity is then monitored by employing a circulator to seperate the incoming and outgoing rays. As the cavity length changes the reflectence undergoes an interference pattern described by:
 \begin{align}
-some equation
+R=\frac{1}{1+F \text{sin}(\delta/2 \lambda)}
 \end{align}
 
 \textbf{include layout of cBRS optics}
 
-To linearize this readout, the optical fiber tip and collimating lens are placed on a translation stage that is driven by a piezo stack. The intensity of the reflected light is then fed back to the piezos using a PID loop to hold the cavity length fixed. This allows the system to be seperated into two linear readouts, the interferometer output for small ranges above the unity gain frequency (UGF) of the loop and the control loop output for larger motions below the UGF. The output of the device is then the sum of these two channels.
+To linearize this readout, the optical fiber tip and collimating lens are placed on a translation stage that is driven by a piezo stack. The intensity of the reflected light is then fed back to the piezos using a PID loop to hold the cavity length fixed. This allows the system to be seperated into two linear readouts, the interferometer output for small ranges above the unity gain frequency (UGF) of the loop and the control loop output for large motions below the UGF. The output of the device is then the sum of these two channels.
 
 \textbf{include table of PID parameters}
 
@@ -245,9 +274,12 @@ Through a variety of mechanisms, the devices described here can undergo long ter
 \end{align}
 where $\Delta \theta$ is the change in equilibrium angle, $g$ is the gravitational acceleration, $\kappa$ is the spring constant of the flexure, $m$ is the mass added, and $r$ is the distance from the mass and the pivot point.
 
-While for the BRS the horizontal center of mass (COM) was designed to be tuned by hand, for the cBRS to operate in vacuum this must be done remotely. 
+While for the BRS the horizontal center of mass (COM) was designed to be tuned by hand, for the cBRS to operate in vacuum this must be done remotely and in an automated fashion. To achieve this a mass adjuster shown in Figure \ref{} consisting of a small aluminum mass on a fine pitched threaded rod is placed on the beam balance.
 
 \section{Controls}
+
+Similar to the BRS controls, the cBRS can be rung up do to environmental transients which can cause resonant motion in excess of the readout's dynamic range. To decrease these amplitudes, two capacitive actuators are placed under the end masses of the beam. These are actuated with low gain with the angular readout band passed around the resonant frequency. 
+
 \section{Noise Performance}
 
 \chapter{Applications}

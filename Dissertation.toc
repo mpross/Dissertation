@@ -10,23 +10,23 @@
 \contentsline {section}{\numberline {2.4}Multi-Slit Autocollimator Readout}{5}% 
 \contentsline {section}{\numberline {2.5}Controls}{8}% 
 \contentsline {section}{\numberline {2.6}Noise Performance}{9}% 
-\contentsline {section}{\numberline {2.7}Hanford Installation}{9}% 
-\contentsline {section}{\numberline {2.8}Livingston Installation}{12}% 
-\contentsline {chapter}{\numberline {\@textofChapter \ 3:}30-cm Scale On-Board Rotation Sensors}{13}% 
-\contentsline {section}{\numberline {3.1}Angular Controls}{13}% 
-\contentsline {section}{\numberline {3.2}Isolation Scheme}{14}% 
-\contentsline {section}{\numberline {3.3}Mechanical System}{14}% 
-\contentsline {section}{\numberline {3.4}Interferometric Readout}{14}% 
-\contentsline {section}{\numberline {3.5}Mass Adjustment}{17}% 
-\contentsline {section}{\numberline {3.6}Controls}{18}% 
-\contentsline {section}{\numberline {3.7}Noise Performance}{18}% 
-\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{19}% 
-\contentsline {section}{\numberline {4.1}Geophysics}{19}% 
-\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{19}% 
-\contentsline {subsection}{\numberline {4.1.2}Wave Field Parameter Extraction}{20}% 
-\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{21}% 
-\contentsline {subsubsection}{Hanford Measurements}{21}% 
-\contentsline {subsubsection}{Livingston Measurements}{23}% 
-\contentsline {section}{\numberline {4.2}Newtonian Noise}{23}% 
-\contentsline {subsection}{\numberline {4.2.1}Theory}{23}% 
-\contentsline {subsection}{\numberline {4.2.2}Observations}{23}% 
+\contentsline {section}{\numberline {2.7}Hanford Installation}{10}% 
+\contentsline {section}{\numberline {2.8}Livingston Installation}{14}% 
+\contentsline {chapter}{\numberline {\@textofChapter \ 3:}30-cm Scale On-Board Rotation Sensors}{15}% 
+\contentsline {section}{\numberline {3.1}Angular Controls}{15}% 
+\contentsline {section}{\numberline {3.2}Isolation Scheme}{16}% 
+\contentsline {section}{\numberline {3.3}Mechanical System}{17}% 
+\contentsline {section}{\numberline {3.4}Interferometric Readout}{18}% 
+\contentsline {section}{\numberline {3.5}Mass Adjustment}{20}% 
+\contentsline {section}{\numberline {3.6}Controls}{20}% 
+\contentsline {section}{\numberline {3.7}Noise Performance}{21}% 
+\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{22}% 
+\contentsline {section}{\numberline {4.1}Geophysics}{22}% 
+\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{22}% 
+\contentsline {subsection}{\numberline {4.1.2}Wave Field Parameter Extraction}{23}% 
+\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{24}% 
+\contentsline {subsubsection}{Hanford Measurements}{24}% 
+\contentsline {subsubsection}{Livingston Measurements}{26}% 
+\contentsline {section}{\numberline {4.2}Newtonian Noise}{26}% 
+\contentsline {subsection}{\numberline {4.2.1}Theory}{26}% 
+\contentsline {subsection}{\numberline {4.2.2}Observations}{26}% 
