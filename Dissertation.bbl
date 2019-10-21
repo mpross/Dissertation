@@ -18,6 +18,11 @@ Belfi, J., Beverini, N., Carelli, G., Di~Virgilio, A., Maccioni, E.,
   mw = 9.0, march 2011, japan earthquake.
 \newblock {\em Journal of Seismology}, 16(4):767--776.
 
+\bibitem[Einstein and Rosen, 1937]{Einstein}
+Einstein, A. and Rosen, N. (1937).
+\newblock On gravitational wav es.
+\newblock {\em Journal of the Franklin Institute}, 223(1):43 -- 54.
+
 \bibitem[et. al., 2016]{ring}
 et. al., S. (2016).
 \newblock First deep underground observation of rotational signals from an
@@ -107,5 +112,11 @@ Venkateswara, K., Hagedorn, C.~A., Turner, M.~D., Arp, T., and Gundlach, J.~H.
   (2014).
 \newblock A high-precision mechanical absolute-rotation sensor.
 \newblock {\em Review of Scientific Instruments}, 85(1).
+
+\bibitem[Weiss, 1972]{Weiss}
+Weiss, R. (1972).
+\newblock Electromagnetically coupled broadband gravitational antenna.
+\newblock In {\em K.S. Thorne, “Gravitational radiation”, 300 Years of
+  Gravitation, S W Hawking and W Israel, pp 330–458}. University Press.
 
 \end{thebibliography}

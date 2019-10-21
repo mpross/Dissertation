@@ -6,6 +6,7 @@
 \usepackage{amsmath}
 \usepackage{setspace}
 \usepackage{lineno}
+\usepackage{epigraph}
 \usepackage{natbib}
 
 \begin{document}
@@ -37,7 +38,34 @@
 \textpages
 \chapter{Introduction}
 \section{Gravitational Wave Theory}
+
+In \textbf{year}, Einstein formulated the theory of General Relativity, which supplanted the static space-time in which all prior physics was formulated in, with a deformable space-time which gave a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
+\begin{equation}
+R_{\mu \nu}-\frac{1}{2}R\ g_{\mu \nu}+\Lambda g_{\mu \nu}= \frac{8\pi G}{c^4} T_{\mu \nu}
+\end{equation}
+where $R_{\mu \nu}$ is the Riemann tensor, $R$ is the Ricci scalar, $\Lambda$ is the cosmological constant, $G$ is the gravitational constant, $c$ is the speed of light, and $T_{\mu \nu}$ is the stress energy tensor.
+
+If one focuses on a locally flat region of space which is much smaller than the scale of the universe, then the cosmological constant term can be sent to zero and the metric can be approximated via \cite{GW}:
+\begin{equation}
+g_{\mu \nu}(\vec x,t)\approx\eta_{\mu \nu}(\vec x,t)+h_{\mu \nu}(\vec x,t)
+\end{equation}
+where $\eta_{\mu \nu}$ is the flat Minkowski metric and $h_{\mu \nu}$ is a small perturbation.
+
+With the measurement of gravitational waves, humankind technologically expand our senses to include the faint vibrations of space-time. This ability has expanded the types of astronomical systems we can study and may one day allow further insight into the beginning of the universe.
+
 \section{LIGO}
+
+The Laser Interferometric Gravitational wave Observatory (LIGO) is a pair of 4 km long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana. Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
+
+As a gravitational wave passes the observatory, the arms experience a strains that follow \cite{GWText}:
+\begin{align}
+h_{xx}&=h_+\ \big( \cos^2\theta\ \cos^2\phi-\sin^2\phi \big)+2\ h_\times\ \cos \theta\ \sin \phi \cos \phi \\
+h_{yy}&=h_+\ \big( \cos^2\theta\ \sin^2\phi-\cos^2\phi \big)-2\ h_\times\ \cos \theta\ \sin \phi \cos \phi \\
+\nonumber \\
+h&=\frac{1}{2} \big( h_{xx}-h_{yy} \big)=\frac{1}{2}h_+\ \big( 1+\cos^2\theta \big)+ h_\times\ \cos \theta\ \sin 2 \phi 
+\end{align}
+where $h_{xx}$ and $h_{yy}$ are the strain along the x and y arm respectively, $\theta$ and $\phi$ are the polar and azimuthal angles of the direction of propogation, and $h$ is the differential strain as measured by the observatory.
+
 \section{Seismic Isolation}
 
 \chapter{1-m Scale Ground Rotation Sensors} \label{BRS_chap}
