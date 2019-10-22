@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{setspace}
 \usepackage{lineno}
 \usepackage{epigraph}
@@ -14,7 +15,7 @@
 \title{}
 \prelimpages
  
-\Title{Development and Deployment of Precision Mechanical Rotation Sensor for Terrestrial Gravitational Wave Observatories}
+\Title{Precision Mechanical Rotation Sensors for Terrestrial Gravitational Wave Observatories}
 \Author{M. P. Ross}
 \Year{2019}
 \Program{Physics}
@@ -39,7 +40,7 @@
 \chapter{Introduction}
 \section{Gravitational Wave Theory}
 
-In \textbf{year}, Einstein formulated the theory of General Relativity, which supplanted the static space-time in which all prior physics was formulated in, with a deformable space-time which gave a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
+In early twentieth century, Einstein formulated the theory of General Relativity, which supplanted the static space-time in which all prior physics was formulated in, with a deformable space-time which gave a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
 \begin{equation}
 R_{\mu \nu}-\frac{1}{2}R\ g_{\mu \nu}+\Lambda g_{\mu \nu}= \frac{8\pi G}{c^4} T_{\mu \nu}
 \end{equation}
@@ -49,7 +50,24 @@ If one focuses on a locally flat region of space which is much smaller than the 
 \begin{equation}
 g_{\mu \nu}(\vec x,t)\approx\eta_{\mu \nu}(\vec x,t)+h_{\mu \nu}(\vec x,t)
 \end{equation}
-where $\eta_{\mu \nu}$ is the flat Minkowski metric and $h_{\mu \nu}$ is a small perturbation.
+where $\eta_{\mu \nu}$ is the flat Minkowski metric and $h_{\mu \nu}$ is a small perturbation\footnote{The largest amplitude of gravitational wave strain measured thus far is on the order of $|h_{\mu \nu}|\approx 10^{-21}$\cite{GW150914}}, $|h_{\mu \nu}|\ll 1$. Applying the Einstein equation and transferring to a transverse-traceless coordinate system yields the wave equation:
+\begin{equation}
+\Box h_{\mu \nu}=-\frac{16 \pi G}{c^4}T_{\mu \nu}
+\end{equation}
+
+For a complete derivation see Reference \cite{GWbook}. Vacuum solutions propagating along the z-axis can readily be found as:
+
+\begin{equation}
+h_{ij}(t,x)=\begin{pmatrix} h_+ & h_\times & 0 \\ h_\times & -h_+ & 0 \\ 0 & 0 & 0\end{pmatrix} \cos\big(\omega t - \kappa z)
+\end{equation}
+where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' polarizations\footnote{A massless graviton is assumed here. A massive graviton would yield five polarizations instead of two. Current graviton mass constraints are $m_g< 7.7\times 10^{-23} eV/c^2$ \cite{some}}, $\omega$ is the frequency of oscillation, and $\kappa$ is the wavenumber. Here $i$ and $j$ run from 1 to 3 and correspond to the the three spacial coordinates. The time components are suppressed as the $h_{0\nu}$ components are zero due the coordinate choice and $h_{00}$ is zero outside the source. 
+
+As of writing, the only systems to have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects are importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor} and GW170817\cite{GW170817}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC-1}.
+
+Such a system can be treated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. The gravitational waves emitted by such a system can be shown to be:
+\begin{align}
+h_+(t)=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3}
+\end{align}
 
 With the measurement of gravitational waves, humankind technologically expand our senses to include the faint vibrations of space-time. This ability has expanded the types of astronomical systems we can study and may one day allow further insight into the beginning of the universe.
 
