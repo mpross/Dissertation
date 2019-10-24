@@ -40,6 +40,8 @@
 \chapter{Introduction}
 \section{Gravitational Wave Theory}
 
+\subsection{Linearized General Relativity}
+
 In early twentieth century, Einstein formulated the theory of General Relativity, which supplanted the static space-time in which all prior physics was formulated in, with a deformable space-time which gave a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
 \begin{equation}
 R_{\mu \nu}-\frac{1}{2}R\ g_{\mu \nu}+\Lambda g_{\mu \nu}= \frac{8\pi G}{c^4} T_{\mu \nu}
@@ -60,20 +62,39 @@ For a complete derivation see Reference \cite{GWbook}. Vacuum solutions propagat
 \begin{equation}
 h_{ij}(t,x)=\begin{pmatrix} h_+ & h_\times & 0 \\ h_\times & -h_+ & 0 \\ 0 & 0 & 0\end{pmatrix} \cos\big(\omega t - \kappa z)
 \end{equation}
-where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' polarizations\footnote{A massless graviton is assumed here. A massive graviton would yield five polarizations instead of two. Current graviton mass constraints are $m_g< 7.7\times 10^{-23} eV/c^2$ \cite{some}}, $\omega$ is the frequency of oscillation, and $\kappa$ is the wavenumber. Here $i$ and $j$ run from 1 to 3 and correspond to the the three spacial coordinates. The time components are suppressed as the $h_{0\nu}$ components are zero due the coordinate choice and $h_{00}$ is zero outside the source. 
+
+where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' polarizations\footnote{A massless graviton is assumed here. A massive graviton would yield five polarizations instead of two. Current graviton mass constraints are $m_g< 7.7\times 10^{-23} eV/c^2$ \cite{some}}, $\omega$ is the angular frequency of oscillation, and $\kappa$ is the wavenumber. Here $i$ and $j$ run from 1 to 3 and correspond to the the three spacial coordinates. The time components are suppressed as the $h_{0\nu}$ components are zero due the coordinate choice and $h_{00}$ is zero outside the source. 
+
+\subsection{Compact Binary Coalescence}\label{CBC}
 
 As of writing, the only systems to have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects are importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor} and GW170817\cite{GW170817}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC-1}.
 
 Such a system can be treated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. The gravitational waves emitted by such a system can be shown to be:
 \begin{align}
-h_+(t)=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3}
+h_+(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \frac{1+\cos^2\theta}{2} \cos(\omega t + \phi)\\
+h_\times(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \cos\theta \sin(\omega t + \phi)
 \end{align}
 
-With the measurement of gravitational waves, humankind technologically expand our senses to include the faint vibrations of space-time. This ability has expanded the types of astronomical systems we can study and may one day allow further insight into the beginning of the universe.
+where $M=(m_1 m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the chirp mass, $r$ is the distance to the center of mass of the source, $\theta$ is the viewing angle, $f=\omega/2\pi$ is the frequency of oscillation, and $\phi$ is the initial phase of the system.
+
+The emission of these gravitational waves carry energy away from the system and thus the orbit decays. As the radius of the orbit decreases the frequency of oscillation must grow due to Kepler's law. This then causes the amplitude of the emitted gravitational waves to grow and the orbit to decay quicker. The frequency change during this run away process can be shown to be:
+\begin{equation}
+\dot{f}=\frac{96}{5}\pi^{8/3}\bigg(\frac{G M}{c^3}\bigg)^{5/3} f^{11/3}
+\end{equation}
+
+This process produces a characteristic ``chirp'' signal which begins as low frequency and amplitude then grows in amplitude while shifting to higher frequency. The signal culminates in a final sharp increase in both frequency and amplitude before the objects merger. This can be seen in Figure \ref{GW170817} which shows a spectrogram of the observed strain at the LIGO observatories for GW170817.
+ 
+ \textbf{include figure of GW170817}
+ 
+ Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars and supernova to cosmic strings and density perturbations in the early universe. With the measurement of gravitational waves, humankind technologically expand our senses to include the faint vibrations of space-time. This ability has expanded the types of astronomical systems we can study and may one day allow further insight into the beginning of the universe.
 
 \section{LIGO}
 
+\subsection{Sensitivity}
+
 The Laser Interferometric Gravitational wave Observatory (LIGO) is a pair of 4 km long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana. Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
+
+\textbf{include LIGO schematic}
 
 As a gravitational wave passes the observatory, the arms experience a strains that follow \cite{GWText}:
 \begin{align}
@@ -83,6 +104,20 @@ h_{yy}&=h_+\ \big( \cos^2\theta\ \sin^2\phi-\cos^2\phi \big)-2\ h_\times\ \cos \
 h&=\frac{1}{2} \big( h_{xx}-h_{yy} \big)=\frac{1}{2}h_+\ \big( 1+\cos^2\theta \big)+ h_\times\ \cos \theta\ \sin 2 \phi 
 \end{align}
 where $h_{xx}$ and $h_{yy}$ are the strain along the x and y arm respectively, $\theta$ and $\phi$ are the polar and azimuthal angles of the direction of propogation, and $h$ is the differential strain as measured by the observatory.
+
+The complex series of optics allows the observatory to measure differential strains down to \textbf{$10^{-23}$ at 40 Hz}.  A noise curve for \textbf{some} observatory is shown in Figure \ref{strainNoise} where one can see that the sensitive band of the observatory runs from \textbf{30 Hz up to 16 kHz}. At low frequencies the noise is dominated by residual control noise while at high it is dominated by noise caused by quantum fluctuations.  
+
+\textbf{include LIGO strain curve}
+
+\subsection{Events}
+
+With the current sensitivity the primary systems of interest are compact binaries, discussed in Section \ref{CBC}, which merger within the band of interest. A equal mass \textbf{$200\ M_\odot$} binary black hole system would merger at \textbf{11 Hz} while a \textbf{$1.4\ M_\odot$} binary neutron star system mergers at \textbf{1.5 kHz} yet emits appreciably while sweeping through the LIGO band.
+
+During the first and second observing runs of LIGO, ten binary black hole systems and one binary neutron star merger were detected with high significance. The black holes ranged from \textbf{$7\ M_\odot$ to $120\ M_\odot$} and merged at distances from \textbf{100 Mpc to 2 Gpc}. The neutron star binary was composed of a \textbf{$1.2\ M_\odot$ and a $1.4\ M_\odot$} at \textbf{1 Mpc}. These systems are tabulated in Table \ref{gwTable}.
+
+\textbf{Event Table}
+
+The ongoing third observing run has had \textbf{\#} significant candidates: \textbf{\#} binary black holes, \textbf{\#} binary neutron stars, and \textbf{\#} black hole neutron star systems. Although these candidates have not been verified to be true gravitational wave events i
 
 \section{Seismic Isolation}
 
