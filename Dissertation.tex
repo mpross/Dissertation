@@ -117,9 +117,29 @@ During the first and second observing runs of LIGO, ten binary black hole system
 
 \textbf{Event Table}
 
-The ongoing third observing run has had \textbf{\#} significant candidates: \textbf{\#} binary black holes, \textbf{\#} binary neutron stars, and \textbf{\#} black hole neutron star systems. Although these candidates have not been verified to be true gravitational wave events i
+The ongoing third observing run has had \textbf{\#} significant candidates: \textbf{\#} binary black holes, \textbf{\#} binary neutron stars, and \textbf{\#} black hole neutron star systems. Although these candidates have not been verified to be true gravitational wave events, they show a significant increase in rate of detection due to both the decreased noise and increased duty cycle achieved for the third observing run.
 
 \section{Seismic Isolation}
+
+\subsection{LIGO Scheme}
+
+To operate interferometric observatories that are sensitive to the strains of space time, one must isolate the instrument from all other sources of differential displacement. As the observatories are located on the surface of the earth, one of the dominate sources of such noise is due to ambient seismic motion. 
+
+The ambient seismic wave field is continuously excited across a wide frequency range. Between 50 mHz to 1 Hz the ambient spectrum is dominated by the ``microseism'' which is an always-present feature that is sources by the earth's oceans. Above 1 Hz, the dominate source of seismic motion at the observatories is due to local instrumentation. Yet even in locations without any anthropogenic sources, the ground moves at some level at these frequencies. Without isolation, this motion would dominate any measurements with the interferometer and, more practically, would disrupt any attempt at operating the interferometer at it's ideal alignment, so called having the interferometer ``locked''.
+
+The LIGO observatories solve this issue by employing a multi-stage seismic isolation system formed of both passive and active stages. First from the ground is the Hydraulic External Pre-Isolation (HEPI) system which is formed by four hydraulic actuators which give a small amount of passive isolation and low frequency active isolation. Suspended from this is the Internal Seismic Isolation (ISI) system. This is a dual stage six degree active isolation and is the primary broad band isolation. From the second stage of the ISI is hung the quadruple pendulum, at the bottom of which is a test mass. This provide high frequency passive isolation which decreases the motion of the test mass like $1/f^8$, where $f$ is the frequency of the motion.
+
+\subsection{Internal Seismic Isolation}
+
+The ISI is comprised of two similar stages each suspended from steel blade springs and wires, the first from HEPI and the second from the first. Each stage is controlled using a set of six magnetic actuators whose signal is comprised of a collection of sensors placed on the stage. The motion of the table is sensed with a series of three axis seismometers which allow for sensing of motion with respect to an inertial frame. Two separate models of seismometers are combined to utilized the instruments with the lowest noise is a given frequency band. Above \textbf{3 Hz}, Guralp GS13s are used while between \textbf{100 mHz to 3 Hz} Trillium T240s are implemented. These two sensors are ``blended'' together by sending the T240 through a low pass filter and the GS13 through a high pass. The filtered signals are then added together to form the control signal which is sent to the actuators. 
+
+This is done in all six degrees of freedom by having three independent seismometers of each type located 1 meter apart. The three translational signals are comprised of the average of the corresponding seismometer signals, while the three rotational degrees are sensed by the difference of the seismometer divided by the separation.
+
+\textbf{include seismometer noise figure}
+
+Due to the increase in T240 noise below \textbf{100 mHz}, a set of Capacitive Position Sensors (CPS) are deployed 
+
+\subsection{Sensor Correction}
 
 \chapter{1-m Scale Ground Rotation Sensors} \label{BRS_chap}
 \section{Tilt Contamination}
@@ -265,7 +285,7 @@ This tilt subtracted channel was then used as the ground signal for the isolatio
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.75\textwidth]{Wind_LockedFraction_total.pdf}
+\includegraphics[width=0.75\textwidth]{Wind_O1vsO2.pdf}
 \caption{}
 \label{O2}
 \end{center}
