@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.16)  6 NOV 2019 08:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.16)  13 NOV 2019 18:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -197,13 +197,16 @@ LaTeX Info: Redefining \cite on input line 694.
 Package natbib Warning: Citation `ligo2' multiply defined.
 
 
+Package natbib Warning: Citation `GWTC' multiply defined.
+
+
 Package natbib Warning: Citation `MSA' multiply defined.
 
 
 Package natbib Warning: Citation `Belfi2012' multiply defined.
 
 
-Package natbib Warning: Citation `Einstein' multiply defined.
+Package natbib Warning: Citation `einstein' multiply defined.
 
 
 Package natbib Warning: Citation `ring' multiply defined.
@@ -381,238 +384,268 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [4
 
+] [1
+
+
 ]
 <<1>>
 
-Package natbib Warning: Citation `einstein' on page 1 undefined on input line 4
-5.
+Package natbib Warning: Citation `GW' on page 2 undefined on input line 54.
 
 
-Package natbib Warning: Citation `GW' on page 1 undefined on input line 51.
+Package natbib Warning: Citation `GW150914' on page 2 undefined on input line 5
+8.
 
 
-Package natbib Warning: Citation `GW150914' on page 1 undefined on input line 5
-5.
+Package natbib Warning: Citation `GWbook' on page 2 undefined on input line 63.
 
 
-Package natbib Warning: Citation `GWbook' on page 1 undefined on input line 60.
-
-
-[1
-
-
+[2
 
 ]
 
-Package natbib Warning: Citation `some' on page 2 undefined on input line 66.
+Package natbib Warning: Citation `some' on page 3 undefined on input line 69.
 
 
-Package natbib Warning: Citation `hulseTaylor' on page 2 undefined on input lin
-e 70.
+Package natbib Warning: Citation `hulseTaylor' on page 3 undefined on input lin
+e 73.
 
 
-Package natbib Warning: Citation `GW170817' on page 2 undefined on input line 7
-0.
+Package natbib Warning: Citation `GW170817' on page 3 undefined on input line 7
+3.
 
 
-Package natbib Warning: Citation `GW150914' on page 2 undefined on input line 7
-0.
+Package natbib Warning: Citation `GW150914' on page 3 undefined on input line 7
+3.
 
 
-Package natbib Warning: Citation `GWTC-1' on page 2 undefined on input line 70.
+Package natbib Warning: Citation `GWTC-1' on page 3 undefined on input line 73.
 
-
-[2]
-
-LaTeX Warning: Reference `GW170817' on page 3 undefined on input line 85.
 
 [3]
 
-Package natbib Warning: Citation `GWText' on page 4 undefined on input line 99.
+LaTeX Warning: Reference `GW170817' on page 4 undefined on input line 88.
+
+[4]
+
+Package natbib Warning: Citation `GWText' on page 5 undefined on input line 102
+.
 
 
+LaTeX Warning: Reference `strainNoise' on page 5 undefined on input line 111.
 
-LaTeX Warning: Reference `strainNoise' on page 4 undefined on input line 108.
 
+LaTeX Warning: Reference `gwTable' on page 5 undefined on input line 119.
 
-LaTeX Warning: Reference `gwTable' on page 4 undefined on input line 116.
+[5] [6] [7]
 
-[4] [5] [6]
+LaTeX Warning: Reference `' on page 8 undefined on input line 182.
+
+[8] [9]
 <<2>>
-[7
+[10
 
 ]
-<windComp.pdf, id=65, 669.50125pt x 554.07pt>
+<windComp.pdf, id=75, 669.50125pt x 554.07pt>
 File: windComp.pdf Graphic file (type pdf)
 <use windComp.pdf>
-Package pdftex.def Info: windComp.pdf  used on input line 158.
+Package pdftex.def Info: windComp.pdf  used on input line 212.
 (pdftex.def)             Requested size: 352.72124pt x 291.9141pt.
- [8 <./windComp.pdf>]
-Underfull \vbox (badness 3088) has occurred while \output is active []
-
- [9]
-<BRSIso.png, id=140, 891.33pt x 669.2503pt>
-File: BRSIso.png Graphic file (type png)
-<use BRSIso.png>
-Package pdftex.def Info: BRSIso.png  used on input line 188.
-(pdftex.def)             Requested size: 470.295pt x 353.11812pt.
-
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 188--188
- [] 
- []
-
-<BRSFront.png, id=141, 891.33pt x 669.2503pt>
-File: BRSFront.png Graphic file (type png)
-<use BRSFront.png>
-Package pdftex.def Info: BRSFront.png  used on input line 189.
-(pdftex.def)             Requested size: 470.295pt x 353.11812pt.
-
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 189--190
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 194.76624pt on input line 193.
-
-[10] [11 <./BRSIso.png (PNG copy)> <./BRSFront.png (PNG copy)>] [12]
-
-Package natbib Warning: Citation `MSAPaper' on page 13 undefined on input line 
-226.
-
-
-Underfull \vbox (badness 1043) has occurred while \output is active []
-
- [13]
-[14]
-<BRSNoiseBudget.pdf, id=159, 1445.4pt x 698.61pt>
-File: BRSNoiseBudget.pdf Graphic file (type pdf)
-<use BRSNoiseBudget.pdf>
-Package pdftex.def Info: BRSNoiseBudget.pdf  used on input line 254.
-(pdftex.def)             Requested size: 470.295pt x 227.31206pt.
-<HSubtractionETMX.pdf, id=160, 738.76pt x 510.90875pt>
-File: HSubtractionETMX.pdf Graphic file (type pdf)
-<use HSubtractionETMX.pdf>
-Package pdftex.def Info: HSubtractionETMX.pdf  used on input line 268.
-(pdftex.def)             Requested size: 352.72124pt x 243.9315pt.
- [15] [16 <./BRSNoiseBudget.pdf>]
-<TiltCorrTime.pdf, id=258, 1122.1925pt x 255.95625pt>
-File: TiltCorrTime.pdf Graphic file (type pdf)
-<use TiltCorrTime.pdf>
-Package pdftex.def Info: TiltCorrTime.pdf  used on input line 278.
-(pdftex.def)             Requested size: 470.295pt x 107.26654pt.
-<Wind_O1vsO2.pdf, id=259, 748.7975pt x 580.1675pt>
-File: Wind_O1vsO2.pdf Graphic file (type pdf)
-<use Wind_O1vsO2.pdf>
-Package pdftex.def Info: Wind_O1vsO2.pdf  used on input line 288.
-(pdftex.def)             Requested size: 352.72124pt x 273.28958pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./HSubtractionETMX.pdf>] [18 <./TiltCorrTime.pdf> <./wind_O1vsO2.pdf>] [1
-9]
-<<3>>
+ [11]
+[12 <./windComp.pdf>]
+<BRSIso.png, id=152, 891.33pt x 669.2503pt>
+File: BRSIso.png Graphic file (type png)
+<use BRSIso.png>
+Package pdftex.def Info: BRSIso.png  used on input line 242.
+(pdftex.def)             Requested size: 470.295pt x 353.11812pt.
 
-LaTeX Warning: Reference `' on page 20 undefined on input line 309.
-
-<SensorNoise.pdf, id=369, 746.79pt x 602.25pt>
-File: SensorNoise.pdf Graphic file (type pdf)
-<use SensorNoise.pdf>
-Package pdftex.def Info: SensorNoise.pdf  used on input line 313.
-(pdftex.def)             Requested size: 352.72124pt x 284.45435pt.
-[20
-
-]
-
-LaTeX Warning: Reference `' on page 21 undefined on input line 321.
-
-[21 <./sensorNoise.pdf>]
-<cBRSRotation.pdf, id=490, 678.535pt x 462.72874pt>
-File: cBRSRotation.pdf Graphic file (type pdf)
-<use cBRSRotation.pdf>
-Package pdftex.def Info: cBRSRotation.pdf  used on input line 327.
-(pdftex.def)             Requested size: 352.72124pt x 240.5356pt.
-<cBRSTranslation.pdf, id=491, 830.10126pt x 571.13374pt>
-File: cBRSTranslation.pdf Graphic file (type pdf)
-<use cBRSTranslation.pdf>
-Package pdftex.def Info: cBRSTranslation.pdf  used on input line 335.
-(pdftex.def)             Requested size: 352.72124pt x 242.6807pt.
-<cBRSIso.png, id=492, 1008.76875pt x 669.2503pt>
-File: cBRSIso.png Graphic file (type png)
-<use cBRSIso.png>
-Package pdftex.def Info: cBRSIso.png  used on input line 349.
-(pdftex.def)             Requested size: 470.295pt x 312.00491pt.
-
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 349--349
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 242--242
  [] 
  []
 
-<cBRSFront.png, id=493, 1008.76875pt x 669.2503pt>
-File: cBRSFront.png Graphic file (type png)
-<use cBRSFront.png>
-Package pdftex.def Info: cBRSFront.png  used on input line 350.
-(pdftex.def)             Requested size: 470.295pt x 312.00491pt.
+<BRSFront.png, id=153, 891.33pt x 669.2503pt>
+File: BRSFront.png Graphic file (type png)
+<use BRSFront.png>
+Package pdftex.def Info: BRSFront.png  used on input line 243.
+(pdftex.def)             Requested size: 470.295pt x 353.11812pt.
 
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 350--351
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 243--244
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 112.53983pt on input line 354.
+LaTeX Warning: Float too large for page by 194.76624pt on input line 247.
+
+[13] [14 <./BRSIso.png (PNG copy)> <./BRSFront.png (PNG copy)>] [15]
+
+Package natbib Warning: Citation `MSAPaper' on page 16 undefined on input line 
+280.
+
+
+Underfull \vbox (badness 3098) has occurred while \output is active []
+
+ [16]
+[17]
+<BRSNoiseBudget.pdf, id=169, 1445.4pt x 698.61pt>
+File: BRSNoiseBudget.pdf Graphic file (type pdf)
+<use BRSNoiseBudget.pdf>
+Package pdftex.def Info: BRSNoiseBudget.pdf  used on input line 308.
+(pdftex.def)             Requested size: 470.295pt x 227.31206pt.
+ [18] [19 <./BRSNoiseBudget.pdf>]
+<HSubtractionETMX.pdf, id=268, 738.76pt x 510.90875pt>
+File: HSubtractionETMX.pdf Graphic file (type pdf)
+<use HSubtractionETMX.pdf>
+Package pdftex.def Info: HSubtractionETMX.pdf  used on input line 322.
+(pdftex.def)             Requested size: 352.72124pt x 243.9315pt.
+ [20 <./HSubtractionETMX.pdf>]
+<TiltCorrTime.pdf, id=331, 1122.1925pt x 255.95625pt>
+File: TiltCorrTime.pdf Graphic file (type pdf)
+<use TiltCorrTime.pdf>
+Package pdftex.def Info: TiltCorrTime.pdf  used on input line 332.
+(pdftex.def)             Requested size: 470.295pt x 107.26654pt.
+<Wind_O1vsO2.pdf, id=332, 748.7975pt x 580.1675pt>
+File: Wind_O1vsO2.pdf Graphic file (type pdf)
+<use Wind_O1vsO2.pdf>
+Package pdftex.def Info: Wind_O1vsO2.pdf  used on input line 342.
+(pdftex.def)             Requested size: 352.72124pt x 273.28958pt.
+ [21 <./TiltCorrTime.pdf>] [22 <./wind_O1vsO2.pdf>]
+<<3>>
+
+LaTeX Warning: Reference `' on page 23 undefined on input line 363.
+
+<SensorNoise.pdf, id=379, 746.79pt x 602.25pt>
+File: SensorNoise.pdf Graphic file (type pdf)
+<use SensorNoise.pdf>
+Package pdftex.def Info: SensorNoise.pdf  used on input line 367.
+(pdftex.def)             Requested size: 352.72124pt x 284.45435pt.
+[23
+
+]
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 375.
+
+[24 <./sensorNoise.pdf>]
+<cBRSRotation.pdf, id=501, 678.535pt x 462.72874pt>
+File: cBRSRotation.pdf Graphic file (type pdf)
+<use cBRSRotation.pdf>
+Package pdftex.def Info: cBRSRotation.pdf  used on input line 381.
+(pdftex.def)             Requested size: 352.72124pt x 240.5356pt.
+<cBRSTranslation.pdf, id=502, 830.10126pt x 571.13374pt>
+File: cBRSTranslation.pdf Graphic file (type pdf)
+<use cBRSTranslation.pdf>
+Package pdftex.def Info: cBRSTranslation.pdf  used on input line 389.
+(pdftex.def)             Requested size: 352.72124pt x 242.6807pt.
+<cBRSIso.png, id=503, 1008.76875pt x 669.2503pt>
+File: cBRSIso.png Graphic file (type png)
+<use cBRSIso.png>
+Package pdftex.def Info: cBRSIso.png  used on input line 403.
+(pdftex.def)             Requested size: 470.295pt x 312.00491pt.
+
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 403--403
+ [] 
+ []
+
+<cBRSFront.png, id=504, 1008.76875pt x 669.2503pt>
+File: cBRSFront.png Graphic file (type png)
+<use cBRSFront.png>
+Package pdftex.def Info: cBRSFront.png  used on input line 404.
+(pdftex.def)             Requested size: 470.295pt x 312.00491pt.
+
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 404--405
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 112.53983pt on input line 408.
 
 
 Underfull \vbox (badness 2486) has occurred while \output is active []
 
- [22 <./cBRSRotation.pdf>] [23 <./cBRSTranslation.pdf>] [24 <./cBRSiso.PNG (PNG
+ [25 <./cBRSRotation.pdf>] [26 <./cBRSTranslation.pdf>] [27 <./cBRSiso.PNG (PNG
  copy)> <./cBRSFront.PNG (PNG copy)>]
 
-LaTeX Warning: Reference `' on page 25 undefined on input line 378.
+LaTeX Warning: Reference `' on page 28 undefined on input line 432.
 
-[25] [26]
+[28] [29]
 <<4>>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27
+ [30
 
 ]
-[28]
-<Vel.pdf, id=707, 578.16pt x 505.89pt>
+[31]
+<Vel.pdf, id=718, 578.16pt x 505.89pt>
 File: Vel.pdf Graphic file (type pdf)
 <use Vel.pdf>
-Package pdftex.def Info: Vel.pdf  used on input line 439.
+Package pdftex.def Info: Vel.pdf  used on input line 493.
 (pdftex.def)             Requested size: 352.72124pt x 308.63103pt.
-<RayleighDispersion.pdf, id=708, 602.25pt x 481.8pt>
+<RayleighDispersion.pdf, id=719, 602.25pt x 481.8pt>
 File: RayleighDispersion.pdf Graphic file (type pdf)
 <use RayleighDispersion.pdf>
-Package pdftex.def Info: RayleighDispersion.pdf  used on input line 449.
+Package pdftex.def Info: RayleighDispersion.pdf  used on input line 503.
 (pdftex.def)             Requested size: 352.72124pt x 282.18636pt.
 
 Underfull \vbox (badness 1158) has occurred while \output is active []
 
- [29]
-[30 <./Vel.pdf>] (./Dissertation.bbl [31 <./RayleighDispersion.pdf>] [32
+ [32]
+[33 <./Vel.pdf>] (./Dissertation.bbl [34 <./RayleighDispersion.pdf>] [35
 
 ]
-[33]) (./Dissertation.bbl [34] [35
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [36])
+ [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+[41] [42]) (./Dissertation.bbl [43] [44
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+[50] [51])
 
 Package natbib Warning: There were undefined citations.
 
 
 Package natbib Warning: There were multiply defined citations.
 
-[37] (./Dissertation.aux)
+[52] (./Dissertation.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4563 strings out of 494485
- 66144 string characters out of 6175792
- 130962 words of memory out of 5000000
- 8144 multiletter control sequences out of 15000+600000
- 13182 words of font info for 50 fonts, out of 8000000 for 9000
+ 4584 strings out of 494485
+ 66387 string characters out of 6175792
+ 161008 words of memory out of 5000000
+ 8164 multiletter control sequences out of 15000+600000
+ 15076 words of font info for 57 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  44i,12n,49p,1078b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -630,12 +663,13 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Dissertation.pdf (44 pages, 1060766 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Dissertation.pdf (59 pages, 1114627 bytes).
 PDF statistics:
- 854 PDF objects out of 1000 (max. 8388607)
- 768 compressed objects within 8 object streams
+ 906 PDF objects out of 1000 (max. 8388607)
+ 803 compressed objects within 9 object streams
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
