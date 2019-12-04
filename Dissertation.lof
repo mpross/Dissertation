@@ -1,20 +1,20 @@
 \addvspace {5\p@ }
 \addvspace {5\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ground motion spectra recorded at the X end station of the Hanford Observatory during low and high winds. Below 100 mHz, wind driven tilts become dominate during high winds. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity.}}{12}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces }}{14}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces CAD rendering of the Beam Rotation Sensor with the vacuum and optical readout systems omitted. The bem with its two brass end masses can be seen through the thermal shielding, shown here as transparent. }}{14}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{14}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{14}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{14}% 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Noise budge for the Beam Rotation Sensors where the blue curve shows the performance at a quiet time, in red is the motion of the reference mirror which can be regarded as an estimate of the readout noise, yellow shows an estimate of the thermal noise, purple shows the noise from the capacitive actuators, and green shows the some of all known noise sources.}}{19}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces }}{20}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces }}{21}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces }}{22}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Representative amplitude spectral density showing the tilt subtraction during windy conditions achieved at End-X of LHO where blue is the BRS signal multiplied by $g/\omega $, read is the raw seismometer signal, and yellow is the tilt corrected signal. Similar perform has been achieved by all of the installed BRSs.}}{21}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Time series showing the tilt subtraction at End-X of LHO where blue is the BRS signal multiplied by $g/\omega $, read is the raw seismometer signal, and yellow is the tilt corrected signal. As can be seen, the tilt subtraction removes a collection of transients, likely due to the gusts of wind.}}{21}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces LHO duty cycle vs windspeed during the first observing run (O1), without BRSs installed, and the second observing run (O2), with BRSs installed. Additionally shown is a histogram of the confirmed GW events seen during O2.}}{22}% 
 \addvspace {5\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces }}{24}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces }}{25}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces }}{26}% 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces }}{27}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{27}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{27}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Theoretical noise curves for the cBRS, blue, and seismometer pair located 1-m apart.}}{25}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Projected rotational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}}{26}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Projected translational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim $ 100 mHz, the microseism frequencies, by increasing motion at $\sim $ 10 mHz and vice versa.}}{27}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.}}{29}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{29}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{29}% 
 \addvspace {5\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \textbf {cite tilt seismology}}}{33}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces }}{34}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO, blue, and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis. \textbf {cite tilt seismology}}}{34}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces True single station Rayleigh wave phase velocity measurements achieved at LLO. The measurements from each earthquake are shown in blue while red shows the average and standard deviation of these measurements. The yellow dots represent measurements made independently by the USArray seismometer array deployment.}}{35}% 

@@ -237,12 +237,13 @@ This is then a low tilt channel which can be used within the LIGO seismic isolat
 
 \quad The Beam Rotation Sensor (BRS) is a beam balance comprised of a 1-m long beam hung from two 10-15 $\mu$m thick beryllium-copper flexures. Figure \ref{BRS} shows a CAD model of the beam balance. 
 
-\begin{figure}%
+\begin{figure}
 \begin{center}
 \subfloat[]{ \includegraphics[width=\textwidth]{BRSIso.png}}\\
-\subfloat[]{ \includegraphics[width=\textwidth]{BRSFront.png}}
-\caption{}
+\caption{CAD rendering of the Beam Rotation Sensor with the vacuum and optical readout systems omitted. The bem with its two brass end masses can be seen through the thermal shielding, shown here as transparent. }
+\subfloat[]{ \includegraphics[width=\textwidth]{BRSFront.png}}\\
 \label{BRS}
+
 \end{center}
 \end{figure}
 
@@ -320,7 +321,7 @@ More limiting is the noise due to the thermal vibrations of the flexure. At any 
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{HSubtractionETMX.pdf}
-\caption{}
+\caption{Representative amplitude spectral density showing the tilt subtraction during windy conditions achieved at End-X of LHO where blue is the BRS signal multiplied by $g/\omega$, read is the raw seismometer signal, and yellow is the tilt corrected signal. Similar perform has been achieved by all of the installed BRSs.}
 \label{sub}
 \end{center}
 \end{figure}
@@ -330,7 +331,7 @@ The tilt subtraction performance achieved with these devices can be seen in Figu
 \begin{figure}%
 \begin{center}
 \includegraphics[width=\textwidth]{TiltCorrTime.pdf}
-\caption{}
+\caption{Time series showing the tilt subtraction at End-X of LHO where blue is the BRS signal multiplied by $g/\omega$, read is the raw seismometer signal, and yellow is the tilt corrected signal. As can be seen, the tilt subtraction removes a collection of transients, likely due to the gusts of wind.}
 \label{subTime}
 \end{center}
 \end{figure}
@@ -340,7 +341,7 @@ This tilt subtracted channel was then used as the ground signal for the isolatio
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{Wind_O1vsO2.pdf}
-\caption{}
+\caption{LHO duty cycle vs windspeed during the first observing run (O1), without BRSs installed, and the second observing run (O2), with BRSs installed. Additionally shown is a histogram of the confirmed GW events seen during O2.}
 \label{O2}
 \end{center}
 \end{figure}
@@ -365,7 +366,7 @@ The compact Beam Rotation Sensor (cBRS), described in the following, was designe
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{SensorNoise.pdf}
-\caption{}
+\caption{Theoretical noise curves for the cBRS, blue, and seismometer pair located 1-m apart.}
 \label{sensNoise}
 \end{center}
 \end{figure}
@@ -379,7 +380,7 @@ The rotational control loop for stage 2 then consists of using the CPS between s
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{cBRSRotation.pdf}
-\caption{}
+\caption{Projected rotational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
 \label{cBRSR}
 \end{center}
 \end{figure}
@@ -387,7 +388,7 @@ The rotational control loop for stage 2 then consists of using the CPS between s
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{cBRSTranslation.pdf}
-\caption{}
+\caption{Projected translational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
 \label{cBRST}
 \end{center}
 \end{figure}
@@ -401,8 +402,8 @@ This design yields a resonant frequency of $\sim$20 mHz limited the use of such 
 \begin{figure}%
 \begin{center}
 \subfloat[]{ \includegraphics[width=\textwidth]{cBRSIso.png}}\\
+\caption{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.}
 \subfloat[]{ \includegraphics[width=\textwidth]{cBRSFront.png}}
-\caption{}
 \label{cBRS}
 \end{center}
 \end{figure}
@@ -491,7 +492,7 @@ As described in Section \ref{BRS_Hanford}, two BRSs were installed at LHO, one a
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{Vel.pdf}
-\caption{\textbf{cite tilt seismology}}
+\caption{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO, blue, and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis. \textbf{cite tilt seismology}}
 \label{Phase_Hanford}
 \end{center}
 \end{figure}
@@ -501,7 +502,7 @@ As described in Section \ref{BRS_Hanford}, two BRSs were installed at LHO, one a
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{RayleighDispersion.pdf}
-\caption{}
+\caption{True single station Rayleigh wave phase velocity measurements achieved at LLO. The measurements from each earthquake are shown in blue while red shows the average and standard deviation of these measurements. The yellow dots represent measurements made independently by the USArray seismometer array deployment.}
 \label{Phase_Livingston}
 \end{center}
 \end{figure}
