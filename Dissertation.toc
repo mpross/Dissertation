@@ -21,19 +21,20 @@
 \contentsline {section}{\numberline {2.8}Livingston Installation}{20}% 
 \contentsline {chapter}{\numberline {\@textofChapter \ 3:}30-cm Scale On-Board Rotation Sensors}{24}% 
 \contentsline {section}{\numberline {3.1}Angular Controls}{24}% 
-\contentsline {section}{\numberline {3.2}Isolation Scheme}{25}% 
-\contentsline {section}{\numberline {3.3}Mechanical System}{26}% 
-\contentsline {section}{\numberline {3.4}Interferometric Readout}{28}% 
-\contentsline {section}{\numberline {3.5}Mass Adjustment}{28}% 
-\contentsline {section}{\numberline {3.6}Controls}{30}% 
-\contentsline {section}{\numberline {3.7}Noise Performance}{30}% 
-\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{31}% 
-\contentsline {section}{\numberline {4.1}Geophysics}{31}% 
-\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{31}% 
-\contentsline {subsection}{\numberline {4.1.2}Wave Field Parameter Extraction}{32}% 
-\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{33}% 
-\contentsline {subsubsection}{Hanford Measurements}{33}% 
-\contentsline {subsubsection}{Livingston Measurements}{35}% 
-\contentsline {section}{\numberline {4.2}Newtonian Noise}{35}% 
-\contentsline {subsection}{\numberline {4.2.1}Theory}{35}% 
-\contentsline {subsection}{\numberline {4.2.2}Observations}{35}% 
+\contentsline {section}{\numberline {3.2}Isolation Scheme}{27}% 
+\contentsline {section}{\numberline {3.3}Projected Angular Control Improvements}{27}% 
+\contentsline {section}{\numberline {3.4}Mechanical System}{27}% 
+\contentsline {section}{\numberline {3.5}Interferometric Readout}{27}% 
+\contentsline {section}{\numberline {3.6}Mass Adjustment}{35}% 
+\contentsline {section}{\numberline {3.7}Controls}{36}% 
+\contentsline {section}{\numberline {3.8}Noise Performance}{36}% 
+\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{38}% 
+\contentsline {section}{\numberline {4.1}Geophysics}{38}% 
+\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{38}% 
+\contentsline {subsection}{\numberline {4.1.2}Wave Field Parameter Extraction}{39}% 
+\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{40}% 
+\contentsline {subsubsection}{Hanford Measurements}{40}% 
+\contentsline {subsubsection}{Livingston Measurements}{42}% 
+\contentsline {section}{\numberline {4.2}Newtonian Noise}{42}% 
+\contentsline {subsection}{\numberline {4.2.1}Theory}{42}% 
+\contentsline {subsection}{\numberline {4.2.2}Observations}{42}% 

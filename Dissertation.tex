@@ -70,7 +70,7 @@ where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' pola
 
 \subsection{Compact Binary Coalescence}\label{CBC}
 
-As of writing, the only systems to have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects are importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor} and GW170817\cite{GW170817}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC-1}.
+As of writing, the only systems to have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects are importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor} and GW170817\cite{GW170817}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC}.
 
 Such a system can be treated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. The gravitational waves emitted by such a system can be shown to be:
 \begin{align}
@@ -209,7 +209,7 @@ With this additional contribution, it becomes immediately clear that, for a give
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.75\textwidth]{windComp.pdf}
+\includegraphics[width=\textwidth]{windComp.pdf}
 \caption{Ground motion spectra recorded at the X end station of the Hanford Observatory during low and high winds. Below 100 mHz, wind driven tilts become dominate during high winds. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity.}
 \label{wind}
 \end{center}
@@ -320,7 +320,7 @@ More limiting is the noise due to the thermal vibrations of the flexure. At any 
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.75\textwidth]{HSubtractionETMX.pdf}
+\includegraphics[width=\textwidth]{HSubtractionETMX.pdf}
 \caption{Representative amplitude spectral density showing the tilt subtraction during windy conditions achieved at End-X of LHO where blue is the BRS signal multiplied by $g/\omega$, read is the raw seismometer signal, and yellow is the tilt corrected signal. Similar perform has been achieved by all of the installed BRSs.}
 \label{sub}
 \end{center}
@@ -340,7 +340,7 @@ This tilt subtracted channel was then used as the ground signal for the isolatio
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.75\textwidth]{Wind_O1vsO2.pdf}
+\includegraphics[width=\textwidth]{Wind_O1vsO2.pdf}
 \caption{LHO duty cycle vs windspeed during the first observing run (O1), without BRSs installed, and the second observing run (O2), with BRSs installed. Additionally shown is a histogram of the confirmed GW events seen during O2.}
 \label{O2}
 \end{center}
@@ -354,18 +354,24 @@ All four were implemented in a similar fashion as the Hanford devices.
 
 \chapter{30-cm Scale On-Board Rotation Sensors}
 \section{Angular Controls}
-
 To operate the LIGO interferometers in their optimal configuration, the angular motion of the test masses in the pitch degree of freedom must be under \textbf{number} nrad/$\sqrt{\text{Hz}}$ at \textbf{number} Hz where as the ground rotates at $\sim$\textbf{number} nrad/$\sqrt{\text{Hz}}$ at \textbf{number} Hz. To achieve this desired performance, the seismic isolation operated in the rotational degrees of freedom as well as the translation. Additionally, the upper three masses of the quadruple pendulum are actively actuated at frequencies between \textbf{number} and \textbf{number} Hz to decrease any residual motion.
 
 With the current system, at \textbf{number} Hz the seismic isolation is limited by the sensor noise in the seismometer pair which forms the pitch sensor. This then requires high gain feedback loops on the angular control loop downstream, which themselves are limited by their respective sensor noise at \textbf{number} Hz. This left over noise then leaks into the gravitational wave band between \textbf{number} and \textbf{number} Hz due to the inability to sharply roll off the control without interfering with control at lower frequencies.
 
-\textbf{add angular controls plot}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_ASC_Without.pdf}
+\caption{Performance of the current angular sensing and control system.}
+\label{ascWithout}
+\end{center}
+\end{figure}
+
 
 The compact Beam Rotation Sensor (cBRS), described in the following, was designed to be an alternative angular sensor for the seismic isolation system with \textbf{number} times lower noise than the current sensors. With this decreased noise, the seismic isolation control loops can be tuned to significantly increase the performance of both the translational isolation, through decreased tilt contamination described in Section \ref{}, and directly the rotational isolation. Details of this follow in Section \ref{IsoScheme}. This decreased residual rotation would then allow the angular control loops to be retuned, specifically decreasing the gain, to push the sensor noise leakage below the design sensitivity. \textbf{Need to check this.}
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.75\textwidth]{SensorNoise.pdf}
+\includegraphics[width=\textwidth]{SensorNoise.pdf}
 \caption{Theoretical noise curves for the cBRS, blue, and seismometer pair located 1-m apart.}
 \label{sensNoise}
 \end{center}
@@ -379,7 +385,7 @@ The rotational control loop for stage 2 then consists of using the CPS between s
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.75\textwidth]{cBRSRotation.pdf}
+\includegraphics[width=\textwidth]{cBRSRotation.pdf}
 \caption{Projected rotational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
 \label{cBRSR}
 \end{center}
@@ -387,12 +393,36 @@ The rotational control loop for stage 2 then consists of using the CPS between s
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.75\textwidth]{cBRSTranslation.pdf}
+\includegraphics[width=\textwidth]{cBRSTranslation.pdf}
 \caption{Projected translational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
 \label{cBRST}
 \end{center}
 \end{figure}
+\section{Projected Angular Control Improvements}
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_ASC_With.pdf}
+\caption{Projected performance of the angular sensing and control system with the seismic performance described in Section \ref{IsoScheme}.}
+\label{ascWith}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_ASC_LowF.pdf}
+\caption{Projected performance of the angular sensing and control system with the seismic performance described in Section \ref{IsoScheme}.}
+\label{ascComp}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_ASC.pdf}
+\caption{Projected low frequency strain noise with and without the cBRS. The blue line is the current sensitivity of LLO, the orange is the aLIGO design sensitivity, green is the modeled noise contribution of the current ASC system, and red is the improved ASC noise contribution with the seismic isolation described in Section \ref{IsoScheme}. }
+\label{ascStrain}
+\end{center}
+\end{figure}
 \section{Mechanical System}
 
 Similar to the BRS described in Chapter \ref{BRS_chap}, the compact Beam Rotation Sensor (cBRS), shown in Figure \ref{cBRS}, consists of a 30-cm long cross hung from 10-15 $\mu$m thick beryllium-copper flexures and has an identical operating principle as the BRS. The cross shape of the balance decreases the sensitivity of the device to gradients in the local gravitational field while allowing for increased moment of inertia compared to a similarly sized beam. 
@@ -414,13 +444,27 @@ In order to maintain the small size of the entire device, an interferometric rea
 R=\frac{1}{1+F \text{sin}(\delta/2 \lambda)}
 \end{align}
 
+\begin{figure}%
+\begin{center}
+ \includegraphics[width=\textwidth]{cBRS_Fringes.pdf}
+\caption{}
+\label{cBRS_fringes}
+\end{center}
+\end{figure}
+
 \textbf{include layout of cBRS optics}
 
 To linearize this readout, the optical fiber tip and collimating lens are placed on a translation stage that is driven by a piezo stack. The intensity of the reflected light is then fed back to the piezos using a PID loop to hold the cavity length fixed. This allows the system to be seperated into two linear readouts, the interferometer output for small ranges above the unity gain frequency (UGF) of the loop and the control loop output for large motions below the UGF. The output of the device is then the sum of these two channels.
 
 \textbf{include table of PID parameters}
 
-\textbf{include image of readout noise}
+\begin{figure}%
+\begin{center}
+ \includegraphics[width=\textwidth]{cBRS_ReadoutNoise_11_19_19.pdf}
+\caption{}
+\label{cBRS_readout}
+\end{center}
+\end{figure}
 
 \section{Mass Adjustment}
 
@@ -437,6 +481,14 @@ While for the BRS the horizontal center of mass (COM) was designed to be tuned b
 Similar to the BRS controls, the cBRS can be rung up do to environmental transients which can cause resonant motion in excess of the readout's dynamic range. To decrease these amplitudes, two capacitive actuators are placed under the end masses of the beam. These are actuated with low gain with the angular readout band passed around the resonant frequency. 
 
 \section{Noise Performance}
+
+\begin{figure}%
+\begin{center}
+ \includegraphics[width=\textwidth]{cBRS_Noise_11_19_19.pdf}
+\caption{}
+\label{cBRS_noise}
+\end{center}
+\end{figure}
 
 \chapter{Applications}
 \quad The development of these highly sensitive rotation sensors have opened up a few novel scientific avenues that have been explored and many that have not.
@@ -491,7 +543,7 @@ As described in Section \ref{BRS_Hanford}, two BRSs were installed at LHO, one a
  
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.75\textwidth]{Vel.pdf}
+\includegraphics[width=\textwidth]{Vel.pdf}
 \caption{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO, blue, and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis. \textbf{cite tilt seismology}}
 \label{Phase_Hanford}
 \end{center}
@@ -501,7 +553,7 @@ As described in Section \ref{BRS_Hanford}, two BRSs were installed at LHO, one a
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.75\textwidth]{RayleighDispersion.pdf}
+\includegraphics[width=\textwidth]{RayleighDispersion.pdf}
 \caption{True single station Rayleigh wave phase velocity measurements achieved at LLO. The measurements from each earthquake are shown in blue while red shows the average and standard deviation of these measurements. The yellow dots represent measurements made independently by the USArray seismometer array deployment.}
 \label{Phase_Livingston}
 \end{center}
@@ -511,8 +563,6 @@ As described in Section \ref{BRS_Hanford}, two BRSs were installed at LHO, one a
 \subsection{Theory}
 \subsection{Observations}
 
-\bibliographystyle{apalike}
-\bibliography{Dissertation}
 \printendnotes
 \nocite{*}   
 \bibliographystyle{plain}
