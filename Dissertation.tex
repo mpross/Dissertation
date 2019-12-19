@@ -338,19 +338,47 @@ The tilt subtraction performance achieved with these devices can be seen in Figu
 
 This tilt subtracted channel was then used as the ground signal for the isolation's sensor correction instead of the raw seismometer. Along with the use of the low tilt seismometer for the corner station, the addition of the BRSs in the seismic control scheme yielded significant improvements in the ability to lock the interferometer at increased wind speeds which can be seen in Figure \ref{O2}
 
-\begin{figure}%
-\begin{center}
-\includegraphics[width=\textwidth]{Wind_O1vsO2.pdf}
-\caption{LHO duty cycle vs windspeed during the first observing run (O1), without BRSs installed, and the second observing run (O2), with BRSs installed. Additionally shown is a histogram of the confirmed GW events seen during O2.}
-\label{O2}
-\end{center}
-\end{figure}
+%\begin{figure}%
+%\begin{center}
+%\includegraphics[width=\textwidth]{Wind_O1vsO2.pdf}
+%\caption{LHO duty cycle vs windspeed during the first observing run (O1), without BRSs installed, and the second observing run (O2), with BRSs installed. Additionally shown is a histogram of the confirmed GW events seen during O2.}
+%\label{O2}
+%\end{center}
+%\end{figure}
 
 \section{Livingston Installation}
 
 \quad After the success of the Hanford BRS installation, four devices were installed at the LIGO Livingston Observatory (LLO) between the second and third (O3) observing runs. Due to differences in the size and shape of the corner station building at LLO a low tilt location was not found. Thus two BRSs were installed located near the two input test masses (ITM) correcting the seismometer signal oriented along their respective arms. 
 
 All four were implemented in a similar fashion as the Hanford devices.
+
+\section{Duty Cycle Improvements}
+
+The figure of merit which most readily displays the improvements in duty cycle due to inclusion of the BRSs is the empirical probability of being locked at a given wind speed over the three observing runs. This is shown in Figures \ref{LHO_events} and \ref{LLO_events} for LHO and LLO, respectively. It should be noted that BRSs were implemented in the isolation system at Hanford for bothe O2 and O3a while Livingston was only for O3a.
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{LHO_WindVsLockEvents.pdf}
+\caption{}
+\label{LHO_events}
+\end{center}
+\end{figure}
+
+For Hanford, the benefit of the tilt subtraction scheme can clearly be seen between O1 and O2 curves. During O1 the locked probability fell monotonically with wind speed, while for O2 the probability stayed relatively constant up to 15 m/s above which it fell steadily. For O3a, Hanford saw a clear decrease in performance at high wind speeds yet still out performed the O1 scheme. This loss of performance is likely due to the \textbf{Y-arm} beam being displaced away from the center of the test masses to avoid point absorbers on the \textbf{Input-Y} test mass. This is known to increase coupling between the angular motion of the test mass and the length measured by the interferometer and thus decreases the seismic isolation performance. 
+
+Also shown in Figure \ref{LHO_events} is the fraction of the GW events detected during O2 and the fraction of O3a GW candidates at a given wind speed. This shows that a collection of GW events have been observed whose detection probability is directly increased due to the increase duty cycle at higher wind speeds. Namely, GW170104 was measured at \textbf{11} m/s which had an increase in duty cycle of \textbf{20 \%} between O1 and O2. Additionally, a number of O3a candidates have been detected above \textbf{5 m/s} at which the probability of being locked is increased by \textbf{20 \%}.
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{LLO_WindVsLockEvents.pdf}
+\caption{}
+\label{LLO_events}
+\end{center}
+\end{figure}
+
+At Livingston, the improvements at increased wind speeds is less dramatic as can be seen in Figure \ref{LLO_events}. Although between O1 and O2 tilt subtraction was not implemented, a increase in duty cycle was achieved by using a single seismometer for the sensors correction on all of the corner station chambers. This decreased the differential mode motion at higher wind speeds and thus made the interferometer lock more robust. An addition increase in performance can be seen between O2 and O3a due to the deployment of tilt subtraction. However, the probability of being locked still dropped monotonically with wind speed, similar to the O1 performance of Hanford.
+
+Despite this, there is still a collection of O3a candidates detected between \textbf{3-6 m/s} which are more probable with the increased robustness against wind speed.
 
 \chapter{30-cm Scale On-Board Rotation Sensors}
 \section{Angular Controls}
