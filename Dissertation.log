@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.16)  18 DEC 2019 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.16)  19 DEC 2019 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -394,204 +394,181 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <BRSIso.png, id=155, 891.33pt x 669.2503pt>
 File: BRSIso.png Graphic file (type png)
 <use BRSIso.png>
-Package pdftex.def Info: BRSIso.png  used on input line 242.
+Package pdftex.def Info: BRSIso.png  used on input line 241.
 (pdftex.def)             Requested size: 470.295pt x 353.11812pt.
-
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 242--242
- [] 
- []
-
 <BRSFront.png, id=156, 891.33pt x 669.2503pt>
 File: BRSFront.png Graphic file (type png)
 <use BRSFront.png>
-Package pdftex.def Info: BRSFront.png  used on input line 244.
+Package pdftex.def Info: BRSFront.png  used on input line 247.
 (pdftex.def)             Requested size: 470.295pt x 353.11812pt.
+ [13] [14 <./BRSIso.png (PNG copy)>] [15 <./BRSFront.png (PNG copy)>] [16]
 
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 244--244
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 223.76624pt on input line 248.
-
-[13] [14 <./BRSIso.png (PNG copy)> <./BRSFront.png (PNG copy)>] [15]
-
-Package natbib Warning: Citation `MSAPaper' on page 16 undefined on input line 
-281.
+Package natbib Warning: Citation `MSAPaper' on page 17 undefined on input line 
+284.
 
 
 Underfull \vbox (badness 3098) has occurred while \output is active []
 
- [16]
-[17]
-<BRSNoiseBudget.pdf, id=173, 579.16376pt x 384.43625pt>
+ [17]
+[18]
+<BRSNoiseBudget.pdf, id=176, 579.16376pt x 384.43625pt>
 File: BRSNoiseBudget.pdf Graphic file (type pdf)
 <use BRSNoiseBudget.pdf>
-Package pdftex.def Info: BRSNoiseBudget.pdf  used on input line 309.
+Package pdftex.def Info: BRSNoiseBudget.pdf  used on input line 312.
 (pdftex.def)             Requested size: 470.295pt x 312.17183pt.
- [18] [19 <./BRSNoiseBudget.pdf>]
-<HSubtractionETMX.pdf, id=276, 738.76pt x 510.90875pt>
+ [19] [20 <./BRSNoiseBudget.pdf>]
+<HSubtractionETMX.pdf, id=279, 738.76pt x 510.90875pt>
 File: HSubtractionETMX.pdf Graphic file (type pdf)
 <use HSubtractionETMX.pdf>
-Package pdftex.def Info: HSubtractionETMX.pdf  used on input line 323.
+Package pdftex.def Info: HSubtractionETMX.pdf  used on input line 326.
 (pdftex.def)             Requested size: 470.295pt x 325.242pt.
-<TiltCorrTime.pdf, id=277, 1122.1925pt x 255.95625pt>
+<TiltCorrTime.pdf, id=280, 1122.1925pt x 255.95625pt>
 File: TiltCorrTime.pdf Graphic file (type pdf)
 <use TiltCorrTime.pdf>
-Package pdftex.def Info: TiltCorrTime.pdf  used on input line 333.
+Package pdftex.def Info: TiltCorrTime.pdf  used on input line 336.
 (pdftex.def)             Requested size: 470.295pt x 107.26654pt.
 
 
-LaTeX Warning: Reference `O2' on page 20 undefined on input line 339.
+LaTeX Warning: Reference `O2' on page 21 undefined on input line 342.
 
-[20] [21 <./HSubtractionETMX.pdf>]
-<LHO_WindVsLockEvents.pdf, id=343, 794.97pt x 614.295pt>
+[21] [22 <./HSubtractionETMX.pdf>]
+<LHO_WindVsLockEvents.pdf, id=346, 794.97pt x 614.295pt>
 File: LHO_WindVsLockEvents.pdf Graphic file (type pdf)
 <use LHO_WindVsLockEvents.pdf>
-Package pdftex.def Info: LHO_WindVsLockEvents.pdf  used on input line 361.
+Package pdftex.def Info: LHO_WindVsLockEvents.pdf  used on input line 364.
 (pdftex.def)             Requested size: 470.295pt x 363.4151pt.
- [22 <./TiltCorrTime.pdf>] [23 <./LHO_WindVsLockEvents.pdf>]
-<LLO_WindVsLockEvents.pdf, id=386, 794.97pt x 614.295pt>
+ [23 <./TiltCorrTime.pdf>] [24 <./LHO_WindVsLockEvents.pdf>]
+<LLO_WindVsLockEvents.pdf, id=389, 794.97pt x 614.295pt>
 File: LLO_WindVsLockEvents.pdf Graphic file (type pdf)
 <use LLO_WindVsLockEvents.pdf>
-Package pdftex.def Info: LLO_WindVsLockEvents.pdf  used on input line 373.
+Package pdftex.def Info: LLO_WindVsLockEvents.pdf  used on input line 376.
 (pdftex.def)             Requested size: 470.295pt x 363.4151pt.
- [24] [25 <./LLO_WindVsLockEvents.pdf>]
+ [25] [26 <./LLO_WindVsLockEvents.pdf>]
 <<3>>
-<cBRS_ASC_Without.pdf, id=411, 650.43pt x 505.89pt>
+<cBRS_ASC_Without.pdf, id=414, 650.43pt x 505.89pt>
 File: cBRS_ASC_Without.pdf Graphic file (type pdf)
 <use cBRS_ASC_Without.pdf>
-Package pdftex.def Info: cBRS_ASC_Without.pdf  used on input line 391.
+Package pdftex.def Info: cBRS_ASC_Without.pdf  used on input line 394.
 (pdftex.def)             Requested size: 470.295pt x 365.79208pt.
 
-LaTeX Warning: Reference `' on page 26 undefined on input line 398.
+LaTeX Warning: Reference `' on page 27 undefined on input line 401.
 
-<SensorNoise.pdf, id=412, 746.79pt x 602.25pt>
+<SensorNoise.pdf, id=415, 746.79pt x 602.25pt>
 File: SensorNoise.pdf Graphic file (type pdf)
 <use SensorNoise.pdf>
-Package pdftex.def Info: SensorNoise.pdf  used on input line 402.
+Package pdftex.def Info: SensorNoise.pdf  used on input line 405.
 (pdftex.def)             Requested size: 470.295pt x 379.27246pt.
 
-LaTeX Warning: Reference `' on page 26 undefined on input line 410.
+LaTeX Warning: Reference `' on page 27 undefined on input line 413.
 
-[26
+[27
 
-] [27 <./cBRS_ASC_Without.pdf>] [28 <./sensorNoise.pdf>]
-<cBRSRotation.pdf, id=586, 678.535pt x 462.72874pt>
+] [28 <./cBRS_ASC_Without.pdf>] [29 <./sensorNoise.pdf>]
+<cBRSRotation.pdf, id=590, 678.535pt x 462.72874pt>
 File: cBRSRotation.pdf Graphic file (type pdf)
 <use cBRSRotation.pdf>
-Package pdftex.def Info: cBRSRotation.pdf  used on input line 416.
+Package pdftex.def Info: cBRSRotation.pdf  used on input line 419.
 (pdftex.def)             Requested size: 470.295pt x 320.71649pt.
-<cBRSTranslation.pdf, id=587, 830.10126pt x 571.13374pt>
+<cBRSTranslation.pdf, id=591, 830.10126pt x 571.13374pt>
 File: cBRSTranslation.pdf Graphic file (type pdf)
 <use cBRSTranslation.pdf>
-Package pdftex.def Info: cBRSTranslation.pdf  used on input line 424.
+Package pdftex.def Info: cBRSTranslation.pdf  used on input line 427.
 (pdftex.def)             Requested size: 470.295pt x 323.57137pt.
-<cBRS_ASC_With.pdf, id=588, 650.43pt x 505.89pt>
+<cBRS_ASC_With.pdf, id=592, 650.43pt x 505.89pt>
 File: cBRS_ASC_With.pdf Graphic file (type pdf)
 <use cBRS_ASC_With.pdf>
-Package pdftex.def Info: cBRS_ASC_With.pdf  used on input line 433.
+Package pdftex.def Info: cBRS_ASC_With.pdf  used on input line 436.
 (pdftex.def)             Requested size: 470.295pt x 365.79208pt.
-<cBRS_ASC_LowF.pdf, id=589, 650.43pt x 505.89pt>
+<cBRS_ASC_LowF.pdf, id=593, 650.43pt x 505.89pt>
 File: cBRS_ASC_LowF.pdf Graphic file (type pdf)
 <use cBRS_ASC_LowF.pdf>
-Package pdftex.def Info: cBRS_ASC_LowF.pdf  used on input line 441.
+Package pdftex.def Info: cBRS_ASC_LowF.pdf  used on input line 444.
 (pdftex.def)             Requested size: 470.295pt x 365.79208pt.
-<cBRS_ASC.pdf, id=590, 650.43pt x 505.89pt>
+<cBRS_ASC.pdf, id=594, 650.43pt x 505.89pt>
 File: cBRS_ASC.pdf Graphic file (type pdf)
 <use cBRS_ASC.pdf>
-Package pdftex.def Info: cBRS_ASC.pdf  used on input line 449.
+Package pdftex.def Info: cBRS_ASC.pdf  used on input line 452.
 (pdftex.def)             Requested size: 470.295pt x 365.79208pt.
-<cBRSIso.png, id=591, 1008.76875pt x 669.2503pt>
+<cBRSIso.png, id=595, 1008.76875pt x 669.2503pt>
 File: cBRSIso.png Graphic file (type png)
 <use cBRSIso.png>
-Package pdftex.def Info: cBRSIso.png  used on input line 462.
+Package pdftex.def Info: cBRSIso.png  used on input line 465.
 (pdftex.def)             Requested size: 470.295pt x 312.00491pt.
-
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 462--462
- [] 
- []
-
-<cBRSFront.png, id=592, 1008.76875pt x 669.2503pt>
+<cBRSFront.png, id=596, 1008.76875pt x 669.2503pt>
 File: cBRSFront.png Graphic file (type png)
 <use cBRSFront.png>
-Package pdftex.def Info: cBRSFront.png  used on input line 464.
+Package pdftex.def Info: cBRSFront.png  used on input line 470.
 (pdftex.def)             Requested size: 470.295pt x 312.00491pt.
-
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 464--466
- [][][] 
- []
-
-
-LaTeX Warning: Float too large for page by 156.03983pt on input line 467.
-
-[29] [30 <./cBRSRotation.pdf>] [31 <./cBRSTranslation.pdf>] [32 <./cBRS_ASC_Wit
-h.pdf>] [33 <./cBRS_ASC_LowF.pdf>] [34 <./cBRS_ASC.pdf>] [35 <./cBRSiso.PNG (PN
-G copy)> <./cBRSFront.PNG (PNG copy)>]
-<cBRS_Fringes.pdf, id=944, 899.36pt x 614.295pt>
+ [30] [31 <./cBRSRotation.pdf>] [32 <./cBRSTranslation.pdf>] [33 <./cBRS_ASC_Wi
+th.pdf>] [34 <./cBRS_ASC_LowF.pdf>] [35 <./cBRS_ASC.pdf>] [36 <./cBRSiso.PNG (P
+NG copy)>] [37 <./cBRSFront.PNG (PNG copy)>]
+<cBRS_Fringes.pdf, id=950, 899.36pt x 614.295pt>
 File: cBRS_Fringes.pdf Graphic file (type pdf)
 <use cBRS_Fringes.pdf>
-Package pdftex.def Info: cBRS_Fringes.pdf  used on input line 477.
+Package pdftex.def Info: cBRS_Fringes.pdf  used on input line 485.
 (pdftex.def)             Requested size: 470.295pt x 321.22554pt.
- [36 <./cBRS_Fringes.pdf>]
-<cBRS_ReadoutNoise_11_19_19.pdf, id=971, 878.28125pt x 620.3175pt>
+ [38 <./cBRS_Fringes.pdf>]
+<cBRS_ReadoutNoise_11_19_19.pdf, id=977, 878.28125pt x 620.3175pt>
 File: cBRS_ReadoutNoise_11_19_19.pdf Graphic file (type pdf)
 <use cBRS_ReadoutNoise_11_19_19.pdf>
-Package pdftex.def Info: cBRS_ReadoutNoise_11_19_19.pdf  used on input line 491
+Package pdftex.def Info: cBRS_ReadoutNoise_11_19_19.pdf  used on input line 499
 .
 (pdftex.def)             Requested size: 470.295pt x 332.16475pt.
- [37 <./cBRS_ReadoutNoise_11_19_19.pdf>]
+ [39 <./cBRS_ReadoutNoise_11_19_19.pdf>]
 
-LaTeX Warning: Reference `' on page 38 undefined on input line 505.
+LaTeX Warning: Reference `' on page 40 undefined on input line 513.
 
-<cBRS_Noise_11_19_19.pdf, id=1054, 878.28125pt x 620.3175pt>
+<cBRS_Noise_11_19_19.pdf, id=1060, 878.28125pt x 620.3175pt>
 File: cBRS_Noise_11_19_19.pdf Graphic file (type pdf)
 <use cBRS_Noise_11_19_19.pdf>
-Package pdftex.def Info: cBRS_Noise_11_19_19.pdf  used on input line 515.
+Package pdftex.def Info: cBRS_Noise_11_19_19.pdf  used on input line 523.
 (pdftex.def)             Requested size: 470.295pt x 332.16475pt.
-[38] [39 <./cBRS_Noise_11_19_19.pdf>]
+[40] [41 <./cBRS_Noise_11_19_19.pdf>]
 <<4>>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40
+ [42
 
 ]
-[41]
-<Vel.pdf, id=1169, 578.16pt x 505.89pt>
+[43]
+<Vel.pdf, id=1176, 578.16pt x 505.89pt>
 File: Vel.pdf Graphic file (type pdf)
 <use Vel.pdf>
-Package pdftex.def Info: Vel.pdf  used on input line 574.
+Package pdftex.def Info: Vel.pdf  used on input line 582.
 (pdftex.def)             Requested size: 470.295pt x 411.50548pt.
-<RayleighDispersion.pdf, id=1170, 602.25pt x 481.8pt>
+<RayleighDispersion.pdf, id=1177, 602.25pt x 481.8pt>
 File: RayleighDispersion.pdf Graphic file (type pdf)
 <use RayleighDispersion.pdf>
-Package pdftex.def Info: RayleighDispersion.pdf  used on input line 584.
+Package pdftex.def Info: RayleighDispersion.pdf  used on input line 592.
 (pdftex.def)             Requested size: 470.295pt x 376.25093pt.
 
 Underfull \vbox (badness 1158) has occurred while \output is active []
 
- [42]
-[43 <./Vel.pdf>] (./Dissertation.bbl [44] [45 <./RayleighDispersion.pdf>]
-[46
+ [44]
+[45 <./Vel.pdf>] (./Dissertation.bbl [46] [47 <./RayleighDispersion.pdf>]
+[48
 
-] [47])
+] [49])
 
 Package natbib Warning: There were undefined citations.
 
-[48] (./Dissertation.aux)
+[50] (./Dissertation.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4637 strings out of 494485
- 67681 string characters out of 6175792
+ 4641 strings out of 494485
+ 67713 string characters out of 6175792
  134048 words of memory out of 5000000
- 8211 multiletter control sequences out of 15000+600000
+ 8215 multiletter control sequences out of 15000+600000
  15076 words of font info for 57 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 44i,12n,49p,1078b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,42p,1078b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/share/te
@@ -610,10 +587,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Dissertation.pdf (56 pages, 1728745 bytes).
+Output written on Dissertation.pdf (58 pages, 1728743 bytes).
 PDF statistics:
- 1313 PDF objects out of 1440 (max. 8388607)
- 1040 compressed objects within 11 object streams
+ 1319 PDF objects out of 1440 (max. 8388607)
+ 1044 compressed objects within 11 object streams
  0 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
