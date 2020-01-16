@@ -17,7 +17,7 @@
  
 \Title{Precision Mechanical Rotation Sensors for Terrestrial Gravitational Wave Observatories}
 \Author{M. P. Ross}
-\Year{2019}
+\Year{2020}
 \Program{Physics}
 
 \Chair{Name of Chairperson}{Title of Chair}{Department of Chair}
@@ -101,10 +101,10 @@ The Laser Interferometric Gravitational wave Observatory (LIGO) is a pair of 4 k
 
 As a gravitational wave passes the observatory, the arms experience a strains that follow \cite{GWText}:
 \begin{align}
-h_{xx}&=h_+\ \big( \\cos^2\theta\ \\cos^2\phi-\\sin^2\phi \big)+2\ h_\times\ \\cos \theta\ \\sin \phi \\cos \phi \\
-h_{yy}&=h_+\ \big( \\cos^2\theta\ \\sin^2\phi-\\cos^2\phi \big)-2\ h_\times\ \\cos \theta\ \\sin \phi \\cos \phi \\
+h_{xx}&=h_+\ \big( \cos^2\theta\ \cos^2\phi-\sin^2\phi \big)+2\ h_\times\ \cos \theta\ \sin \phi \cos \phi \\
+h_{yy}&=h_+\ \big( \cos^2\theta\ \sin^2\phi-\cos^2\phi \big)-2\ h_\times\ \cos \theta\ \sin \phi \cos \phi \\
 \nonumber \\
-h&=\frac{1}{2} \big( h_{xx}-h_{yy} \big)=\frac{1}{2}h_+\ \big( 1+\\cos^2\theta \big)+ h_\times\ \\cos \theta\ \\sin 2 \phi 
+h&=\frac{1}{2} \big( h_{xx}-h_{yy} \big)=\frac{1}{2}h_+\ \big( 1+\cos^2\theta \big)+ h_\times\ \cos \theta\ \sin 2 \phi 
 \end{align}
 where $h_{xx}$ and $h_{yy}$ are the strain along the x and y arm respectively, $\theta$ and $\phi$ are the polar and azimuthal angles of the direction of propogation, and $h$ is the differential strain as measured by the observatory.
 
@@ -530,28 +530,37 @@ Similar to the BRS controls, the cBRS can be rung up do to environmental transie
 \quad The development of these highly sensitive rotation sensors have opened up a few novel scientific avenues that have been explored and many that have not.
 
 \section{Geophysics}
-Seismic waves have six components, three translations and three rotations, however seismology has long neglected the rotational components due the lack of sensitive rotation sensors. Recent developments have begun to alleviated this issue with the advent of seismically relevant ring laser gyros. \textbf{cite Gryo} The BRSs described above join a small class of ground rotation sensors with high enough sensitivity at low frequency to allow for the use in seismology.
+Seismic waves have six components, three translations and three rotations, however seismology has long neglected the rotational components due the lack of sensitive rotation sensors. Recent developments have begun to alleviated this issue with the advent of seismically relevant ring laser gyros. \cite{ring} The BRSs described above join a small class of ground rotation sensors with high enough sensitivity at low frequency to allow for the use in seismology.
 \subsection{Rayleigh Wave Theory}
 
 Seismic waves can be broken into two classes: body waves and surface waves. In regard to surface waves there are two polarization, of the motion caused by a Love wave is constrained to the plane parallel with the surface of the medium while Rayleigh waves are constrained to a plane perpendicular the surface. 
 
 The plane wave solution of a Rayleigh wave has six components ($u_x, u_y, u_z, \theta_x, \theta_y, \theta_z$) where $u_i$ designated the translational motion in the $i$th direction while $\theta_i$ is the rotation about the $i$th axis.
-These can be described as with the following \textbf{cite seismic paper}
+These can be described as with the following \cite{seismic}
 \begin{align}
-u_x({\bf r} ,t)&=\alpha \sin(\zeta) \cos(\psi) \cos(\omega t-{\bf k}\cdot{\bf r})\\
-u_y({\bf r} ,t)&=\alpha \sin(\zeta) \sin(\psi) \cos(\omega t-{\bf k}\cdot{\bf r})\\
+u_x({\bf r} ,t)&=\alpha \sin(\zeta) \cos(\phi) \cos(\omega t-{\bf k}\cdot{\bf r})\label{XEq}\\
+u_y({\bf r} ,t)&=\alpha \sin(\zeta) \sin(\phi) \cos(\omega t-{\bf k}\cdot{\bf r})\\
 u_z({\bf r} ,t)&=\alpha \cos(\zeta) \cos(\omega t-{\bf k}\cdot{\bf r}+\pi/2)\label{ZEq}\\
 \notag \\
-\theta_x({\bf r} ,t)&=\frac{\partial u_z}{\partial y}=\alpha \kappa \cos(\zeta) \sin(\psi) \cos(\omega t-{\bf k}\cdot{\bf r})\label{TiltXEq}\\
-\theta_y({\bf r} ,t)&=-\frac{\partial u_z}{\partial x}=-\alpha \kappa \cos(\zeta) \cos(\psi) \cos(\omega t-{\bf k}\cdot{\bf r})\\
+\theta_x({\bf r} ,t)&=\frac{\partial u_z}{\partial y}=\alpha \kappa \cos(\zeta) \sin(\phi) \cos(\omega t-{\bf k}\cdot{\bf r})\label{TiltXEq}\\
+\theta_y({\bf r} ,t)&=-\frac{\partial u_z}{\partial x}=-\alpha \kappa \cos(\zeta) \cos(\phi) \cos(\omega t-{\bf k}\cdot{\bf r})\\
 \theta_z({\bf r} ,t)&=\frac{1}{2}\Big(\frac{\partial u_y}{\partial x}-\frac{\partial u_x}{\partial y}\Big)=0
 \end{align}
 
-where $\alpha$ is the amplitude, $\zeta$ is the ellipticity angle, $\psi$ is the angle of incidence in the horizontal plane, $\omega$ is the frequency, and $\bf{k}=\kappa (\cos(\psi),\sin(\psi),\text{0})$ is the wavevector.
+where $\alpha$ is the amplitude, $\zeta$ is the ellipticity angle, $\phi$ is the angle of incidence in the horizontal plane, $\omega$ is the frequency, and $\bf{k}=\kappa (\cos(\phi),\sin(\phi),\text{0})$ is the wavevector.
+
+These components can be seen in Figure \ref{Earthquake} which shows the seismic waves sourced by a M 7.9 earthquake in Papua New Guinea as seen by instruments installed at the Y-End station of the LHO. The translations were measured by a broadband three-component seismometer while the rotation was sensed by a Beam Rotation Sensor described in Chapter \ref{BRS_chap}. As one would expect from Eq. \ref{ZEq} and \ref{TiltXEq}, the vertical velocity and the rotation differ only by a constant factor related to the phase velocity and the angle of incidence. Additionally, a large amplitude Love wave is apparent starting at $\sim$ 1200 seconds which neither the vertical seismometer or the BRS experiences due to the waves' lack of vertical component.
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{PNGTimeSeries.pdf}
+\caption{Observations of the seismic waves emanated from a M7.9 earthquake in Papua New Guinea as seen by instruments installed at the Y-End Station of LHO. \cite{tiltSeismology} Both the Z velocity and Y displacement were measured by a broadband three-component seismometer while the rotation was measured by a BRS described in Chapter \ref{BRS_chap}. }
+\label{Earthquake}
+\end{center}
+\end{figure}
 
 From these equations it can be seen that with a single seismic station with a traditional 3-axis seismometer, one can not measure all five parameters that define this wave field. Additionally, the horizontal components, $u_x\text{ and }u_y$ can contain contributions from co-propagating Love waves which further muddles ones ability to extract parameters. 
 
-\textbf{Include Earthquake plot}
 
 \subsection{Wave Field Parameter Extraction}
 
@@ -561,31 +570,35 @@ Seismic wave phase velocities are common observable which not only allows for un
 
 Alternatively, with measurements of the rotational components a point like measurement of the phase velocity can be made with three devices, a 3-component seismometer and two horizontal rotation sensors. This can be shown in the following equations:
 \begin{align} 
-v&=\frac{\omega}{\kappa} = \frac{\dot{u_z}}{\theta_x}\sin(\psi) \label{vx} \\
-v&=\frac{\dot{u_z}}{\theta_y}\cos(\psi)\label{vy} \\
+v&=\frac{\omega}{\kappa} = \frac{\dot{u_z}}{\theta_x}\sin(\phi) \label{vx} \\
+v&=\frac{\dot{u_z}}{\theta_y}\cos(\phi)\label{vy} \\
 v&=\frac{\dot{u_z}}{\sqrt{\theta_x^2+\theta_y^2}} \label{v}
 \end{align}
 
-where the dot represents the temporal derivative. Equations \ref{vx} and \ref{vy} can be utilized if a station has only one horizontal rotation sensor but requires independent determination of $\psi$. In contrast, Equation \ref{v} contains only information from a single station.
+where the dot represents the temporal derivative. Equations \ref{vx} and \ref{vy} can be utilized if a station has only one horizontal rotation sensor but requires independent determination of $\phi$. In contrast, Equation \ref{v} contains only information from a single station.
 
 In addition to the phase velocity, the angle of incidence can be determined with the following:
 \begin{align}
-\psi=\text{arctan}\bigg(\frac{\theta_x}{\theta_y}\bigg)
+\phi=\text{arctan}\bigg(\frac{\theta_x}{\theta_y}\bigg)
 \end{align}
 
-Although in theory, this can be measured using a single seismometer, Love wave contamination of the horizontal translational channels would distort any such measurement. As the horizontal rotational channels are insensitive to Love waves, they allow the extraction of $\psi$ without such contamination.  
+Although in theory, this can be measured using a single seismometer, Love wave contamination of the horizontal translational channels would distort any such measurement. As the horizontal rotational channels are insensitive to Love waves, they allow the extraction of $\phi$ without such contamination.  
 
-\subsection{single Station Dispersion Measurements}
+\subsection{Single Station Dispersion Measurements}
 %\subsubsection{Hanford Measurements}
-As described in Section \ref{BRS_Hanford}, two BRSs were installed at LHO, one at each end station located 5.66 meters apart. 
+As described in Section \ref{BRS_Hanford}, two BRSs were installed at LHO, one at each end station located 5.66 meters apart. The End-X BRS was found to have a $\delta=30\ \mu \text{m}$ leading to a translational coupling of $2 \times 10^{-4}$ rad/m while the End-Y BRS was found to have a coupling of $1 \times 10^{-6}$ rad/m with a $\delta<0.5\ \mu \text{m}$. This limited any seismic studies using these devices to use only the End-Y BRS as the End-X BRS was contaminated with translational motion. 
+
+Between April, 2016 and January, 2017, six earthquakes were measured during environmentally quite times at the observatory. \cite{tiltSeismology} With application of Eq. \ref{vx} the phase dispersion curve at the Y-End Station was measured with instruments installed at a single station. Corrections of the angle of incidence were determined via an array of seismometers installed at LHO which were verified via great circle calculations. Additionally, the phase velocity was estimated in a more traditional manor using the signal delay between the array of seismometer at LHO. The measure phase dispersion curve is shown in Figure \ref{Phase_Hanford} which shows good agreement between the two methods.
  
 \begin{figure}%
 \begin{center}
-\includegraphics[width=\textwidth]{Vel.pdf}
-\caption{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO, blue, and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis. \textbf{cite tilt seismology}}
+\includegraphics[width=0.75\textwidth]{Vel.pdf}
+\caption{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO, blue, and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis. \cite{tiltSeismology}}
 \label{Phase_Hanford}
 \end{center}
 \end{figure}
+
+These measurements display the utility of including rotation sensors in seismic instruments. If a seismic station was constructed with two orthogonally oriented horizontal rotation sensors and a vertical seismometer, the phase velocity could be measured independent of angle of incidence by utilizing Eq. \ref{v}. Neglecting the logistical difficulty, one could imagine constructing arrays of station with both translational and rotational sensors. This would allow mapping of the phase dispersion curves, and thus tomography, with spatial resolution limited only by the size of the instruments. Such stations could also be installed within traditional arrays to yield independent points within the array to further constrain tomographic measurements.
 
 %\subsubsection{Livingston Measurements}
 %
@@ -605,15 +618,30 @@ The gravitational coupling between the environment and an interferometer's test 
 For the current surface-level interferometric observatories, the seismic motion due to Rayleigh waves is thought to be the dominant contributor to the Newtonian noise and will be the limiting noise source between \textbf{5-30 Hz} \cite{}. The motion due to a plane Rayleigh wave follows:
 
 \begin{equation}
-u_z({\bf r} ,t)=\alpha \cos(\zeta) \cos(\omega t-{\bf k}\cdot{\bf r}+\pi/2)
+u_z({\bf r} ,t)=u_z \cos(\omega t-{\bf k}\cdot{\bf r}+\pi/2) \label{uz}
 \end{equation}
 
-where $\alpha$ is the amplitude, $\zeta$ is the ellipticity angle, $\psi$ is the angle of incidence in the horizontal plane, $\omega$ is the frequency, and $\bf{k}=\kappa (\cos(\psi),\sin(\psi),\text{0})$ is the wavevector. The corresponding test mass acceleration in the x-direction follows \cite{}:
+where $u_z=\alpha \cos(\zeta)$, $\alpha$ is the amplitude, $\zeta$ is the ellipticity angle, $\phi$ is the angle of incidence in the horizontal plane, $\omega$ is the frequency, and $\bf{k}=\kappa (\cos(\phi),\sin(\phi),\text{0})$ is the wavevector. The corresponding test mass acceleration in the x-direction follows \cite{Harms_2016}:
 \begin{equation}
-a_x({\bf r} ,t)=2 \pi \alpha \gamma G \rho_0 e^{-h \kappa} \cos(\zeta) \cos(\phi) \cos(\omega t-{\bf k}\cdot{\bf r})
+a_x({\bf r} ,t)=2 \pi u_z \gamma G \rho_0 e^{-h \kappa}  \cos(\phi) \cos(\omega t-{\bf k}\cdot{\bf r}) \label{a}
 \end{equation}
-where $\gamma \approx 0.8$ is a factor which accounts for the counter-action of the change of density due to the seismic wave and the vertical motion of the ground.
+where $G$ is the gravitational constant, $\rho_0$ is the density of the ground, $h$ is the height of the test mass from the ground, and $\gamma \approx 0.8$ is a factor which accounts for the counter-action of the change of density due to the seismic wave and the vertical motion of the ground.
+
+At first glance, these equations appear to suggest that one could predict the test mass acceleration for a given vertical seismometer signal. Such a prediction would allow for high quality subtraction of the Newtonian Noise from an observatories data stream. However, true seismic wave-fields are not composed of stationary Rayleigh waves but instead are comprised of the sum of many desperate sources which may change their amplitude and phase in time. With this consideration, the phase difference between Eq. \ref{uz} and \ref{a} and the lack of angle of incidence dependence in Eq. \ref{uz} destroy the ability to use a vertical seismometer as a reliable sensor for Newtonian noise subtraction.
+
+On the other hand, a horizontal seismometer described by Eq. \ref{XEq} is both in phase with the Newtonian noise signal and has the same angular dependence. However, seismic wave-fields also include Love waves which have horizontal components but no vertical. This contaminates these channels and would decrease the correlation between the horizontal seismometer and the Newtonian noise. 
+
+Finally, the tilt, being the rotation about the x-axis, due to a Rayleigh wave is described by the following:
+
+\begin{equation}
+\theta_y({\bf r} ,t)=\frac{\partial u_z}{\partial x}=u_z \kappa \cos(\phi) \cos(\omega t-{\bf k}\cdot{\bf r})\label{tX}\\
+\end{equation}
+
+The tilt is thus both in phase, has the same angular dependence, and does not include Love waves. The lack of Love waves can be seen in Figure \ref{Earthquake} when the horizontal seismometer experiences a large Love wave at around \textbf{1000 s} while the rotation sensor sees no such signal. The tilt signal and the Newtonian noise is thus related by a handful of parameters which can be measured independently or determined empirically and are not expected to vary in time.
+
 \subsection{Observations}
+
+
 
 \printendnotes
 \nocite{*}   

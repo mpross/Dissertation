@@ -1,129 +1,142 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 
-\bibitem[Aasi et~al., 2015]{ligo2}
-Aasi, J. et~al. (2015).
+\bibitem{ligo2}
+J~Aasi et~al.
 \newblock Advanced ligo.
-\newblock {\em Classical and Quantum Gravity}, 32(7):074001.
+\newblock {\em Classical and Quantum Gravity}, 32(7):074001, 2015.
 
-\bibitem[Abbott et~al., 2019]{GWTC}
-Abbott, B.~P. et~al. (2019).
+\bibitem{GWTC}
+B.~P. Abbott et~al.
 \newblock Gwtc-1: A gravitational-wave transient catalog of compact binary
   mergers observed by ligo and virgo during the first and second observing
   runs.
-\newblock {\em Phys. Rev. X}, 9:031040.
+\newblock {\em Phys. Rev. X}, 9:031040, Sep 2019.
 
-\bibitem[B~Arp et~al., 2013]{MSA}
-B~Arp, T., A~Hagedorn, C., Schlamminger, S., and H~Gundlach, J. (2013).
+\bibitem{MSA}
+T~B~Arp, C~A~Hagedorn, Stephan Schlamminger, and J~H~Gundlach.
 \newblock A reference-beam autocollimator with nanoradian sensitivity from mhz
   to khz and dynamic range of 10(7.).
-\newblock {\em The Review of scientific instruments}, 84:095007.
+\newblock {\em The Review of scientific instruments}, 84:095007, 09 2013.
 
-\bibitem[Belfi et~al., 2012]{Belfi2012}
-Belfi, J., Beverini, N., Carelli, G., Di~Virgilio, A., Maccioni, E.,
-  Saccorotti, G., Stefani, F., and Velikoseltsev, A. (2012).
+\bibitem{Belfi2012}
+Jacopo Belfi, Nicol{\`o} Beverini, Giorgio Carelli, Angela Di~Virgilio, Enrico
+  Maccioni, Gilberto Saccorotti, Fabio Stefani, and Alexander Velikoseltsev.
 \newblock Horizontal rotation signals detected by ``g-pisa'' ring laser for the
   mw = 9.0, march 2011, japan earthquake.
-\newblock {\em Journal of Seismology}, 16(4):767--776.
+\newblock {\em Journal of Seismology}, 16(4):767--776, 2012.
 
-\bibitem[Einstein and Rosen, 1937]{einstein}
-Einstein, A. and Rosen, N. (1937).
+\bibitem{einstein}
+A.~Einstein and N.~Rosen.
 \newblock On gravitational wav es.
-\newblock {\em Journal of the Franklin Institute}, 223(1):43 -- 54.
+\newblock {\em Journal of the Franklin Institute}, 223(1):43 -- 54, 1937.
 
-\bibitem[et. al., 2016]{ring}
-et. al., S. (2016).
+\bibitem{ring}
+Simonelli et. al.
 \newblock First deep underground observation of rotational signals from an
   earthquake at teleseismic distance using a large ring laser gyroscope.
-\newblock {\em arXiv}.
+\newblock {\em arXiv}, 2016.
 
-\bibitem[Haskell, 1953]{haskell}
-Haskell, N.~A. (1953).
+\bibitem{Harms_2016}
+Jan Harms and Krishna Venkateswara.
+\newblock Newtonian-noise cancellation in large-scale interferometric {GW}
+  detectors using seismic tiltmeters.
+\newblock {\em Classical and Quantum Gravity}, 33(23):234001, oct 2016.
+
+\bibitem{haskell}
+Norman~A Haskell.
 \newblock The dispersion of surface waves on multilayered media.
-\newblock {\em Bulletin of the Seismological Society of America}, 43(1):17--34.
+\newblock {\em Bulletin of the Seismological Society of America}, 43(1):17--34,
+  1953.
 
-\bibitem[Lantz et~al., 2009]{lantz}
-Lantz, B., Schofield, R., O`Reilly, B., Clark, D.~E., and DeBra, D. (2009).
+\bibitem{lantz}
+Brian Lantz, R~Schofield, B.~O`Reilly, D.~E. Clark, and D~DeBra.
 \newblock Review: Requirements for a ground rotation sensor to improve advanced
   ligo.
 \newblock {\em Bulletin of the Seismological Society of America},
-  99(2B):980--989.
+  99(2B):980--989, 2009.
 
-\bibitem[Lee et~al., 2009]{Lee01052009}
-Lee, W. H.~K., Celebi, M., Todorovska, M.~I., and Igel, H. (2009).
+\bibitem{Lee01052009}
+W.~H.~K Lee, M.~Celebi, M.~I. Todorovska, and H.~Igel.
 \newblock Introduction to the special issue on rotational seismology and
   engineering applications.
 \newblock {\em Bulletin of the Seismological Society of America},
-  99(2B):945--957.
+  99(2B):945--957, 2009.
 
-\bibitem[Legendre et~al., 2015]{Legendre2015}
-Legendre, C.~P., Zhao, L., Huang, W.-G., and Huang, B.-S. (2015).
+\bibitem{Legendre2015}
+C{\'e}dric~P. Legendre, Li~Zhao, Win-Gee Huang, and Bor-Shouh Huang.
 \newblock Anisotropic rayleigh-wave phase velocities beneath northern vietnam.
-\newblock {\em Earth, Planets and Space}, 67(1):28.
+\newblock {\em Earth, Planets and Space}, 67(1):28, 2015.
 
-\bibitem[Lin et~al., 2011]{GRL:GRL28234}
-Lin, C.-J., Huang, H.-P., Pham, N.~D., Liu, C.-C., Chi, W.-C., and Lee, W.
-  H.~K. (2011).
+\bibitem{GRL:GRL28234}
+Chin-Jen Lin, Han-Pang Huang, Nguyen~Dinh Pham, Chun-Chi Liu, Wu-Cheng Chi, and
+  William H.~K. Lee.
 \newblock Rotational motions for teleseismic surface waves.
-\newblock {\em Geophysical Research Letters}, 38(15):n/a--n/a.
+\newblock {\em Geophysical Research Letters}, 38(15):n/a--n/a, 2011.
 \newblock L15301.
 
-\bibitem[Lin et~al., 2008]{lin}
-Lin, F.-C., Moschetti, M.~P., and Ritzwoller, M.~H. (2008).
+\bibitem{lin}
+Fan-Chi Lin, Morgan~P. Moschetti, and Michael~H. Ritzwoller.
 \newblock Surface wave tomography of the western united states from ambient
   seismic noise: Rayleigh and love wave phase velocity maps.
-\newblock {\em Geophysical Journal International}, 173(1):281.
+\newblock {\em Geophysical Journal International}, 173(1):281, 2008.
 
-\bibitem[Maran\'o and F{\"a}h, 2014]{seismic}
-Maran\'o, S. and F{\"a}h, D. (2014).
+\bibitem{seismic}
+Stefano Maran\'o and Donat F{\"a}h.
 \newblock Processing of translational and rotational motions of surface waves:
   Performance analysis and applications to single sensor and to array
   measurements.
-\newblock {\em Geophysical Journal International}, 196:317--339.
+\newblock {\em Geophysical Journal International}, 196:317--339, 2014.
 
-\bibitem[Matichard et~al., 2015]{ligo1}
-Matichard, F. et~al. (2015).
+\bibitem{ligo1}
+F.~Matichard et~al.
 \newblock Seismic isolation of advanced ligo: Review of strategy,
   instrumentation and performance.
-\newblock {\em Classical and Quantum Gravity}, 32(18):185003.
+\newblock {\em Classical and Quantum Gravity}, 32(18):185003, 2015.
 
-\bibitem[Meier et~al., 2004]{meier}
-Meier, T., Dietrich, K., St{\"o}ckhert, B., and Harjes, H. (2004).
+\bibitem{meier}
+T.~Meier, K.~Dietrich, B.~St{\"o}ckhert, and H.P. Harjes.
 \newblock One-dimensional models of shear wave velocity for the eastern
   mediterranean obtained from the inversion of rayleigh wave phase velocities
   and tectonic implications.
-\newblock {\em Geophysical Journal International}, 156(1):45--58.
+\newblock {\em Geophysical Journal International}, 156(1):45--58, 1 2004.
 
-\bibitem[Pancha et~al., 2000]{GRL:GRL13842}
-Pancha, A., Webb, T.~H., Stedman, G.~E., McLeod, D.~P., and Schreiber, K.~U.
-  (2000).
+\bibitem{GRL:GRL13842}
+A.~Pancha, T.~H. Webb, G.~E. Stedman, D.~P. McLeod, and K.~U. Schreiber.
 \newblock Ring laser detection of rotations from teleseismic waves.
-\newblock {\em Geophysical Research Letters}, 27(21):3553--3556.
+\newblock {\em Geophysical Research Letters}, 27(21):3553--3556, 2000.
 
-\bibitem[Reinwald et~al., 2016]{se-7-1467-2016}
-Reinwald, M., Bernauer, M., Igel, H., and Donner, S. (2016).
+\bibitem{se-7-1467-2016}
+M.~Reinwald, M.~Bernauer, H.~Igel, and S.~Donner.
 \newblock Improved finite-source inversion through joint measurements of
   rotational and translational ground motions: a numerical study.
-\newblock {\em Solid Earth}, 7(5):1467--1477.
+\newblock {\em Solid Earth}, 7(5):1467--1477, 2016.
 
-\bibitem[Venkateswara et~al., 2017]{venk2016}
-Venkateswara, K., Hagedorn, C.~A., Gundlach, J.~H., Kissel, J., Warner, J.,
-  Radkins, H., Shaffer, T., Lantz, B., Mittleman, R., Matichard, F., and
-  Schofield, R. (2017).
+\bibitem{tiltSeismology}
+M.~P. Ross, K.~Venkateswara, C.~A. Hagedorn, J.~H. Gundlach, J.~S. Kissel,
+  J.~Warner, H.~Radkins, T.~J. Shaffer, M.~W. Coughlin, and P.~Bodin.
+\newblock {Low‐Frequency Tilt Seismology with a Precision Ground‐Rotation
+  Sensor}.
+\newblock {\em Seismological Research Letters}, 89(1):67--76, 11 2017.
+
+\bibitem{venk2016}
+Krishna Venkateswara, Charles~A. Hagedorn, Jens~H. Gundlach, Jeffery Kissel,
+  Jim Warner, Hugh Radkins, Thomas Shaffer, Brian Lantz, Richard Mittleman,
+  Fabrice Matichard, and Robert Schofield.
 \newblock Subtracting tilt from a horizontal seismometer using a ground
   rotation sensor.
 \newblock {\em Bulletin of the Seismological Society of America},
-  107(2):709--717.
+  107(2):709--717, 2017.
 
-\bibitem[Venkateswara et~al., 2014]{venk2014}
-Venkateswara, K., Hagedorn, C.~A., Turner, M.~D., Arp, T., and Gundlach, J.~H.
-  (2014).
+\bibitem{venk2014}
+Krishna Venkateswara, Charles~A. Hagedorn, Matthew~D. Turner, Trevor Arp, and
+  Jens~H. Gundlach.
 \newblock A high-precision mechanical absolute-rotation sensor.
-\newblock {\em Review of Scientific Instruments}, 85(1).
+\newblock {\em Review of Scientific Instruments}, 85(1), 2014.
 
-\bibitem[Weiss, 1972]{Weiss}
-Weiss, R. (1972).
+\bibitem{Weiss}
+Rainer Weiss.
 \newblock Electromagnetically coupled broadband gravitational antenna.
 \newblock In {\em K.S. Thorne, “Gravitational radiation”, 300 Years of
-  Gravitation, S W Hawking and W Israel, pp 330–458}. University Press.
+  Gravitation, S W Hawking and W Israel, pp 330–458}. University Press, 1972.
 
 \end{thebibliography}
