@@ -20,10 +20,9 @@
 \Year{2020}
 \Program{Physics}
 
-\Chair{Name of Chairperson}{Title of Chair}{Department of Chair}
-\Signature{First committee member}
-\Signature{Next committee member}
-\Signature{etc}
+\Chair{Jens Gundlach}{Title of Chair}{Physics}
+\Signature{Eric Adelberger}
+\Signature{Sanjay Reddy}
 
 \copyrightpage
 
@@ -35,7 +34,9 @@
 \tableofcontents
 \listoffigures
 
-\dedication{\begin{center}To Grace\end{center}}
+\dedication{\begin{center}To Grace\end{center}}\
+
+\acknowledgments{The author wishes .}
 \textpages
 \epigraph{The first observation showed ... that owing to the extreme sensitiveness of the instrument to vibrations, the work could not be carried on during the day. The experiment was next tried at night. ... so extraordinarily sensitive was the instrument that the stamping of the pavement, about 100 meters from the observatory, made the fringes disappear entirely!
 
@@ -45,13 +46,13 @@ If this was the case with the instrument constructed with a view to avoid sensit
 
 \subsection{Linearized General Relativity}
 
-In early twentieth century, Einstein formulated the theory of General Relativity, which supplanted the static space-time in which all prior physics was formulated in, with a deformable space-time which gave a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
+In early twentieth century, Einstein and others formulated the theory of General Relativity, which supplanted the static space-time in which all prior physics was formulated in, with a deformable space-time which gave a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
 \begin{equation}
 R_{\mu \nu}-\frac{1}{2}R\ g_{\mu \nu}+\Lambda g_{\mu \nu}= \frac{8\pi G}{c^4} T_{\mu \nu}
 \end{equation}
 where $R_{\mu \nu}$ is the Riemann tensor, $R$ is the Ricci scalar, $\Lambda$ is the cosmological constant, $G$ is the gravitational constant, $c$ is the speed of light, and $T_{\mu \nu}$ is the stress energy tensor.
 
-If one focuses on a locally flat region of space which is much smaller than the scale of the universe, then the cosmological constant term can be sent to zero and the metric can be approximated via \cite{GW}:
+If one focuses on a locally flat region of space which is much smaller than the scale of the universe, then the cosmological constant term can be sent to zero and the metric can be approximated via \cite{GWBook}:
 \begin{equation}
 g_{\mu \nu}(\vec x,t)\approx\eta_{\mu \nu}(\vec x,t)+h_{\mu \nu}(\vec x,t)
 \end{equation}
@@ -60,7 +61,7 @@ where $\eta_{\mu \nu}$ is the flat Minkowski metric and $h_{\mu \nu}$ is a small
 \Box h_{\mu \nu}=-\frac{16 \pi G}{c^4}T_{\mu \nu}
 \end{equation}
 
-For a complete derivation see Reference \cite{GWbook}. Vacuum solutions propagating along the z-axis can readily be found as:
+For a complete derivation see Reference \cite{GWBook}. Vacuum solutions propagating along the z-axis can readily be found as:
 
 \begin{equation}
 h_{ij}(t,x)=\begin{pmatrix} h_+ & h_\times & 0 \\ h_\times & -h_+ & 0 \\ 0 & 0 & 0\end{pmatrix} \\cos\big(\omega t - \kappa z)
@@ -70,17 +71,17 @@ where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' pola
 
 \subsection{Compact Binary Coalescence}\label{CBC}
 
-As of writing, the only systems to have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects are importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor} and GW170817\cite{GW170817}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC}.
+As of writing, the only systems that have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects is of importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} astrophysical objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor} and GW170817\cite{GW170817}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC}.
 
-Such a system can be treated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. The gravitational waves emitted by such a system can be shown to be:
+Such a system can be approximated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. The gravitational waves emitted by such a system can be shown to be:
 \begin{align}
-h_+(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \frac{1+\cos^2\theta}{2} \cos(\omega t + \phi)\\
-h_\times(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \cos\theta \\sin(\omega t + \phi)
+h_+(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \frac{1+\cos^2\theta}{2} \ \cos(\omega t + \phi)\\
+h_\times(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \cos\theta\ \sin(\omega t + \phi)
 \end{align}
 
 where $M=(m_1 m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the chirp mass, $r$ is the distance to the center of mass of the source, $\theta$ is the viewing angle, $f=\omega/2\pi$ is the frequency of oscillation, and $\phi$ is the initial phase of the system.
 
-The emission of these gravitational waves carry energy away from the system and thus the orbit decays. As the radius of the orbit decreases the frequency of oscillation must grow due to Kepler's law. This then causes the amplitude of the emitted gravitational waves to grow and the orbit to decay quicker. The frequency change during this run away process can be shown to be:
+The emission of gravitational waves carry energy away from the system and thus the orbit decays. As the radius of the orbit decreases the frequency of oscillation must grow due to Kepler's law. This then causes the amplitude of the emitted gravitational waves to grow and the orbit to decay quicker. The frequency change during this run away process can be shown to be:
 \begin{equation}
 \dot{f}=\frac{96}{5}\pi^{8/3}\bigg(\frac{G M}{c^3}\bigg)^{5/3} f^{11/3}
 \end{equation}
@@ -89,7 +90,7 @@ This process produces a characteristic ``chirp'' signal which begins as low freq
  
  \textbf{include figure of GW170817}
  
- Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars and supernova to cosmic strings and density perturbations in the early universe. With the measurement of gravitational waves, humankind technologically expand our senses to include the faint vibrations of space-time. This ability has expanded the types of astronomical systems we can study and may one day allow further insight into the beginning of the universe.
+ Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars and supernova to cosmic strings and density perturbations in the early universe. With the measurement of gravitational waves, humankind technologically expand our senses to include the faint vibrations of space-time. This ability has expanded the types of astronomical systems we can study and may one day allow further insight into the beginning of the universe and the nature of gravity.
 
 \section{LIGO}
 
@@ -99,14 +100,14 @@ The Laser Interferometric Gravitational wave Observatory (LIGO) is a pair of 4 k
 
 \textbf{include LIGO schematic}
 
-As a gravitational wave passes the observatory, the arms experience a strains that follow \cite{GWText}:
+As a gravitational wave passes the observatory, the arms experience a strains that follow \cite{GWBook}:
 \begin{align}
 h_{xx}&=h_+\ \big( \cos^2\theta\ \cos^2\phi-\sin^2\phi \big)+2\ h_\times\ \cos \theta\ \sin \phi \cos \phi \\
 h_{yy}&=h_+\ \big( \cos^2\theta\ \sin^2\phi-\cos^2\phi \big)-2\ h_\times\ \cos \theta\ \sin \phi \cos \phi \\
 \nonumber \\
 h&=\frac{1}{2} \big( h_{xx}-h_{yy} \big)=\frac{1}{2}h_+\ \big( 1+\cos^2\theta \big)+ h_\times\ \cos \theta\ \sin 2 \phi 
 \end{align}
-where $h_{xx}$ and $h_{yy}$ are the strain along the x and y arm respectively, $\theta$ and $\phi$ are the polar and azimuthal angles of the direction of propogation, and $h$ is the differential strain as measured by the observatory.
+where $h_{xx}$ and $h_{yy}$ are the strain along the x and y arm respectively, $\theta$ and $\phi$ are the polar and azimuthal angles of the direction of propogation, and $h$ is the differential strain as measured by the observatory. Here the polarizations are defined in the source frame.
 
 The complex series of optics allows the observatory to measure differential strains down to \textbf{$10^{-23}$ at 40 Hz}.  A noise curve for \textbf{some} observatory is shown in Figure \ref{strainNoise} where one can see that the sensitive band of the observatory runs from \textbf{30 Hz up to 16 kHz}. At low frequencies the noise is dominated by residual control noise while at high it is dominated by noise caused by quantum fluctuations.  
 
@@ -114,7 +115,7 @@ The complex series of optics allows the observatory to measure differential stra
 
 \subsection{Events}
 
-With the current sensitivity the primary systems of interest are compact binaries, discussed in Section \ref{CBC}, which merger within the band of interest. A equal mass \textbf{$200\ M_\odot$} binary black hole system would merger at \textbf{11 Hz} while a \textbf{$1.4\ M_\odot$} binary neutron star system mergers at \textbf{1.5 kHz} yet emits appreciably while sweeping through the LIGO band.
+With the current sensitivity the primary systems of interest are compact binaries, discussed in Section \ref{CBC}, which merge within the band of interest. A equal mass \textbf{$200\ M_\odot$} binary black hole system would merger at \textbf{11 Hz} while a \textbf{$1.4\ M_\odot$} binary neutron star system mergers at \textbf{1.5 kHz} yet emits appreciably while sweeping through the LIGO band.
 
 During the first and second observing runs of LIGO, ten binary black hole systems and one binary neutron star merger were detected with high significance. \cite{GWTC} The black holes ranged from \textbf{$7\ M_\odot$ to $120\ M_\odot$} and merged at distances from \textbf{100 Mpc to 2 Gpc}. The neutron star binary was composed of a \textbf{$1.2\ M_\odot$ and a $1.4\ M_\odot$} at \textbf{1 Mpc}. These systems are tabulated in Table \ref{gwTable}.
 
@@ -146,6 +147,7 @@ GW170818 & $35.4^{+7.5}_{-4.7}$ & $26.7^{+4.3}_{-5.2}$ & $59.4^{+4.9}_{-4.8}$ & 
 GW170823 & $39.5^{+11.2}_{-6.7}$ & $29.0^{+6.7}_{-7.8}$ & $65.4^{+10.1}_{-7.4}$ & $1940^{+970}_{-900}$ & $0.35^{+0.15}_{-0.15}$\\
 \hline
 \end{tabular}
+\label{gwTable}
 \end{center}
 
 The ongoing third observing run has had \textbf{\#} significant candidates: \textbf{\#} binary black holes, \textbf{\#} binary neutron stars, and \textbf{\#} black hole neutron star systems. Although these candidates have not been verified to be true gravitational wave events, they show a significant increase in rate of detection due to both the decreased noise and increased duty cycle achieved for the third observing run.
@@ -154,15 +156,15 @@ The ongoing third observing run has had \textbf{\#} significant candidates: \tex
 
 \subsection{LIGO Scheme}
 
-To operate interferometric observatories that are sensitive to the strains of space time, one must isolate the instrument from all other sources of differential displacement. As the observatories are located on the surface of the earth, one of the dominate sources of such noise is due to ambient seismic motion. 
+To operate interferometric observatories that are sensitive to the strains of space time, one must isolate the instrument from all other sources of differential displacement. As the observatories are located on the surface of the earth, the dominate sources of such noise is due to ambient seismic motion. 
 
-The ambient seismic wave field is continuously excited across a wide frequency range. Between 50 mHz to 1 Hz the ambient spectrum is dominated by the ``microseism'' which is an always-present feature that is sources by the earth's oceans. Above 1 Hz, the dominate source of seismic motion at the observatories is due to local instrumentation. Yet even in locations without any anthropogenic sources, the ground moves at some level at these frequencies. Without isolation, this motion would dominate any measurements with the interferometer and, more practically, would disrupt any attempt at operating the interferometer at it's ideal alignment, so called having the interferometer ``locked''.
+The ambient seismic wave-field is continuously excited across a wide frequency range. Between 50 mHz to 1 Hz the ambient spectrum is dominated by the ``microseism'' which is an always-present feature that is sourced by the earth's oceans. Above 1 Hz, the dominate source of seismic motion at the observatories is due to local instrumentation. Yet even in locations without any anthropogenic sources, the ground moves at some level at these frequencies. Without isolation, this motion would dominate any measurements with the interferometer and, more practically, would disrupt any attempt at operating the interferometer at it's ideal alignment. This ideal alignment is referred to as having the interferometer ``locked''.
 
-The LIGO observatories solve this issue by employing a multi-stage seismic isolation system formed of both passive and active stages. First from the ground is the Hydraulic External Pre-Isolation (HEPI) system which is formed by four hydraulic actuators which give a small amount of passive isolation and low frequency active isolation. Suspended from this is the Internal Seismic Isolation (ISI) system. This is a dual stage six degree active isolation and is the primary broad band isolation. From the second stage of the ISI is hung the quadruple pendulum, at the bottom of which is a test mass. This provide high frequency passive isolation which decreases the motion of the test mass like $1/f^8$, where $f$ is the frequency of the motion.
+The LIGO observatories solve this issue by employing a multi-stage seismic isolation system formed of both passive and active stages. First from the ground is the Hydraulic External Pre-Isolation (HEPI) system which is formed by four hydraulic actuators which give a small amount of passive isolation and low frequency active isolation. Suspended from this is the Internal Seismic Isolation (ISI) system. This is a dual-stage six-degree active isolation and is the primary broad-band isolation. From the second stage of the ISI is hung the quadruple pendulum, at the bottom of which is a test mass. This provide high frequency passive isolation which decreases the motion of the test mass by $1/f^8$, where $f$ is the frequency of the motion.
 
 \subsection{Internal Seismic Isolation}
 
-The ISI is comprised of two similar stages each suspended from steel blade springs and wires, the first from HEPI and the second from the first. Each stage is controlled using a set of six magnetic actuators whose signal is comprised of a collection of sensors placed on the stage. The motion of the table is sensed with a series of three axis seismometers which allow for sensing of motion with respect to an inertial frame. Two separate models of seismometers are combined to utilized the instruments with the lowest noise is a given frequency band. Above \textbf{3 Hz}, Guralp GS13s are used while between \textbf{100 mHz to 3 Hz} Trillium T240s are implemented. These two sensors are ``blended'' together by sending the T240 through a low pass filter and the GS13 through a high pass. The filtered signals are then added together to form the control signal which is sent to the actuators. 
+The ISI is comprised of two similar stages each suspended from steel blade springs and wires, the first from HEPI and the second from the first. Each stage is controlled using a set of six magnetic actuators whose signal is comprised of a collection of sensors placed on the stage. The motion of the table is sensed with a series of three-axis seismometers which sense motion with respect to an inertial frame. Two separate models of seismometers are combined to utilized the instrument with the lowest noise in a given frequency band. Above \textbf{3 Hz}, Guralp GS13s are used while between \textbf{100 mHz to 3 Hz} Trillium T240s are implemented. These two sensors are ``blended'' together by sending the T240 through a low pass filter and the GS13 through a high pass. The filtered signals are then added together to form the control signal which is sent to the actuators. 
 
 This is done in all six degrees of freedom by having three independent seismometers of each type located 1 meter apart. The three translational signals are comprised of the average of the corresponding seismometer signals, while the three rotational degrees are sensed by the difference of the seismometer divided by the separation.
 
@@ -174,16 +176,16 @@ Due to the increase in T240 noise below \textbf{100 mHz}, a set of Capacitive Po
 x_\text{cont}=F_{LP}\ (x_\text{p}-x_\text{g})_\text{,CPS}+F_{BP}\ x_\text{p, T240}+F_{HP}\ x_\text{p, GS13}
 \end{equation}
 
-where $x_\text{cont}$ is the control signal, $x_\text{p,i}$ is the platform motion sensed by the respective sensor, $x_\text{g}$ is the ground motion, and $F_\text{LP},\  F_\text{BP},\ F_\text{HP}$ are respectively a low-pass, band-pass, and high-pass filter. When this filter is utilized in feedback, the residual motion of the platform can be approximated by:
+where $x_\text{cont}$ is the control signal, $x_\text{p,i}$ is the platform motion sensed by the respective sensor, $x_\text{g}$ is the ground motion, and $F_\text{LP},\  F_\text{BP},\ F_\text{HP}$ are respectively a low-pass, band-pass, and high-pass filter. When this signal is utilized in feedback, the residual motion of the platform can be approximated by:
 \begin{equation}
 x_p(f)\approx F_{LP}\ \big(x_g(f)+n_\text{CPS}(f)\big)+F_{BP}\ n_\text{T240}(f)+F_{HP}\ n_\text{GS13}(f)
 \end{equation}
 
-where $n_{i}(f)$ is the sensor noise spectrum for the relevant sensor. This approximation ignores tilt to horizontal coupling which is address in Sections \ref{}.
+where $n_{i}(f)$ is the sensor noise spectrum for the relevant sensor. This approximation ignores tilt to horizontal coupling which is address in Sections \ref{tilt}.
 
 \subsection{Sensor Correction}
 
-The isolation can be improved further with the addition of a three axis seismometer, in this case a Struckheisen STS-2, placed on the floor of the observatory. This senses the ground motion and can be used to do so called ``sensor correction''. This is procedure of subtracting the ground contribution of the CPS signal to recover the low frequency platform motion. The CPS signal in this case becomes:
+The isolation can be improved further with the addition of a three-axis seismometer, in this case a Struckheisen STS-2, placed on the floor of the observatory. This senses the ground motion and can be used to do so called ``sensor correction''. This is procedure of subtracting the ground contribution of the CPS signal to recover the low frequency platform motion. The CPS signal in this case becomes:
 \begin{equation}
 x_{CPS}=F_{LP}\ (x_p-x_g)+F_{SC}\ x_g
 \end{equation}
@@ -193,10 +195,11 @@ where $F_{SC}$ is the ``sensor correction'' filter which has a pass band which o
 x_{CPS}=\tilde F_{LP}\ (x_p-x_g)+\tilde F_{HP}\ x_p
 \end{equation}
 
-where the tildes denote the relevant combination of $F_{LP}$ and $F_{SC}$. This scheme allows for isolation down to \textbf{10 mHz} and decreases the bleed through of ground motion due to the CPS low-pass filter's finite roll off. Below 10 mHz, both the ground and platform seismometers become dominated by tilt contamination which is addressed in the following Section \ref{tiltCon}.
+where the tildes denote the relevant combination of $F_{LP}$ and $F_{SC}$. This scheme allows for isolation down to \textbf{10 mHz} and decreases the bleed through of ground motion due to the CPS low-pass filter's finite roll off. Below 10 mHz, both the ground and platform seismometers become dominated by tilt contamination which is addressed in the following Section \ref{tilt}.
 
 \chapter{1-m Scale Ground Rotation Sensors} \label{BRS_chap}
-\section{Tilt Contamination}\label{tiltCon}
+\section{Ground Tilt}\label{tilt}
+\subsection{Tilt Contamination}\label{tiltCon}
 \quad At their core seismometers are low frequency spring mass system which measures the difference in motion between the casing and the device's proof mass. Above the resonant frequency of the spring mass system, this allows for accurate measurements of the motion in reference to an inertial frame of any object that the casing is rigidly connected to, be it the ground or a suspended table. Over the past \textbf{some time} this technology has produced devices that are sensitive to \textbf{number and range}. However, these systems are fundamentally susceptible to any stray forces acting on the proof mass.
 
 Of interest here is the contamination due to the rotation of the device within a external gravitational field, namely the field caused by the earth. The rotation in respect to a fixed gravitational force will be referred to as tilt.\footnote{Although a subtle difference, the distinction would be of great consequences if the local gravitational field was varying rapidly. In that case the sensors described here would be of little use as they are rotational sensors not tilt sensors.} From the proof mass's frame, a tilt is equivalent to a rotation of the gravitational force. This yields a horizontal acceleration of the proof mass of:
@@ -217,7 +220,7 @@ With this additional contribution, it becomes immediately clear that, for a give
 
 The dominate driver of ground tilts at the observatories is wind acting on the walls of the building. Although one would naiively assume that the wind would rigidly rotate the building, it was found that the true mechanism is differential pressure acting on the walls deforms the building's concrete slab. \textbf{cite?} 
 
-\section{Sensor Correction with Tilt Subtraction}
+\subsection{Sensor Correction with Tilt Subtraction}
 
 \quad There are a few different ways to combat such a contamination. The most straight forward is to decrease the wind pressure by designing builds that don't interact with the wind as much or installing wind blocks such as wind fences or earth burms. Both of these option require significant construction and for the case of LIGO, tilt contamination was not known to be a problem when design the observatories. Another option is to build seismometers that are suspended in such a way that they do not experience tilts. This is an active area of research and may yield tilt-free seismometers. \textbf{cite}
 
@@ -232,8 +235,8 @@ where $\theta_{meas}$ is the tilt seen by the rotation sensor. Given a coherence
 \[x_{seis}(\omega)=x_{trans}(\omega)+\frac{g}{\omega^2}(1-\gamma)\theta_{wind}(\omega)\]
 
 This is then a low tilt channel which can be used within the LIGO seismic isolation system.
-
-\section{Mechanical System}
+\section{Beam Rotation Sensors}
+\subsection{Mechanical System}
 
 \quad The Beam Rotation Sensor (BRS) is a beam balance comprised of a 1-m long beam hung from two 10-15 $\mu$m thick beryllium-copper flexures. Figure \ref{BRS} shows a CAD model of the beam balance. 
 
@@ -260,7 +263,7 @@ where $\theta$ and $\theta_p$ are, respectively, the angle of beam and the platf
 
 In ideal operation, one would tune the center of mass to be at the pivot point and thus would produce a pure rotational spring-mass system with no translational coupling. In this limit, the rotation sensor is a rotational analog to a seismometer; above the resonant frequency as the casing rotates the beam stays inertial and thus allows one to measure the casing's rotation.
 
-\section{Multi-Slit Autocollimator Readout}
+\subsection{Multi-Slit Autocollimator Readout}
 
 \quad Optical levers are a simple optical angular readout which exploits the law of reflection to measure angular deflections of a mirror by observing the displacement of a reflected beam. The angle of the mirror is then described as:
 \[\theta_{mirror}=\frac{x_{reflected}}{2d}\]
@@ -283,7 +286,7 @@ To extract the distance between the patterns, the image goes through a series of
 
 Compared to previous image analysis algorithms \cite{MSAPaper}, this algorithm is more computationally efficient while also being less susceptible to variations in the pattern image due to dust particulate, incorrect focusing, or beam clipping. A sensitivity of \textbf{$\sim$ 0.1 nrad$/\sqrt{\text{Hz}}$} was achieved with this autocollimator design and image analysis algorithm.
 
-\section{Controls}
+\subsection{Controls}
 
 \quad As the BRSs are installed in active lab spaces, anthropogenic actively and environmental disturbances regularly apply torques on the beam balance, either through mechanical coupling through the flexures or gravitational coupling with the end masses. These can then cause the motion at the resonant frequency to rise to undesirable amplitudes. As the beam motion increases so does the noise. Additionally, some disturbances can be large enough to cause the amplitude to exceed the dynamic range of the autocollimator readout system.
 
@@ -295,7 +298,7 @@ where $\epsilon$ is the permittivity of the material between the plates, $A$ is 
 
 The control scheme that was adopted was one in which the feedback signal that is sent to the capacitors is the angular velocity of the beam band passed between 2 mHz and 20 mHz to include only motion at frequencies near the resonance. The feedback is additionally applied with low gain so that the feedback is only adding loss to the system as compared to locking the system in a strong feedback loop where all of the motion is absorbed into the control system. This is then implemented with two gain stages, a ``low amplitude'' stage which is always on and yields a Q of 10-15 and a ``high amplitude'' stage which is triggered if the amplitude rises above a threshold that is set based on the behavior of the given device and gives a Q of \textbf{number}.
 
-\section{Noise Performance}
+\subsection{Noise Performance}
 
 In addition to the 0.1 nrad/$\sqrt{\text{Hz}}$ white noise of the autocollimator readout, these devices suffer from a various mechanical noise sources, namely noise due to temperature variations and due to the thermal motion of the flexures.
 
@@ -317,7 +320,8 @@ More limiting is the noise due to the thermal vibrations of the flexure. At any 
 
  The noise budget for a BRS is shown in Figure \ref{noise} which shows that the device is readout dominated above $\sim$20 mHz and below is dominated by thermal noise. An excess in the measured noise can be seen below 3 mHz which is believed to be due to residual temperature noise. Respectively at 150 mHz, 3 Hz, and 6 Hz the rotational microseism, torsion mode of the beam balance, and motion due to nearby instrumentation can be seen above the predicted noise sources.
 
-\section{Hanford Installation} \label{BRS_Hanford}
+\section{Results}
+\subsection{Hanford Installation} \label{BRS_Hanford}
 
 \quad Between the first (O1) and second (O2) observing runs of LIGO, two BRSs were installed at the LIGO Hanford Observatory, one at each end station correcting the translations along their respective arm. Although one would expect that the corner station sensors would also need to be corrected, a location was found within the corner station building which exhibited low tilt. \textbf{cite} This is thought to be due to the shape of the building the distance between this location and the walls. As such no BRS was necessary to achieve low tilt injection seismic isolation.
 
@@ -349,13 +353,13 @@ This tilt subtracted channel was then used as the ground signal for the isolatio
 %\end{center}
 %\end{figure}
 
-\section{Livingston Installation}
+\subsection{Livingston Installation}
 
 \quad After the success of the Hanford BRS installation, four devices were installed at the LIGO Livingston Observatory (LLO) between the second and third (O3) observing runs. Due to differences in the size and shape of the corner station building at LLO a low tilt location was not found. Thus two BRSs were installed located near the two input test masses (ITM) correcting the seismometer signal oriented along their respective arms. 
 
 All four were implemented in a similar fashion as the Hanford devices.
 
-\section{Duty Cycle Improvements}
+\subsection{Duty Cycle Improvements}
 
 The figure of merit which most readily displays the improvements in duty cycle due to inclusion of the BRSs is the empirical probability of being locked at a given wind speed over the three observing runs. This is shown in Figures \ref{LHO_events} and \ref{LLO_events} for LHO and LLO, respectively. It should be noted that BRSs were implemented in the isolation system at Hanford for bothe O2 and O3a while Livingston was only for O3a.
 
@@ -408,53 +412,9 @@ The compact Beam Rotation Sensor (cBRS), described in the following, was designe
 \end{center}
 \end{figure}
 
-\section{Isolation Scheme} \label{IsoScheme}
 
-Assuming that the isolation is limited by the noise of the in-band sensor, placing the lowest noise sensors on the second stage of the ISI would be expected to yield the lowest angular motion seen by the down stream control loops. With this in mind and the fact that the access to place new sensors is easier for the second stage, a control scheme was modeled which consists of the addition of an idealized cBRS (described in Section \ref{}) on stage 2. This model consisted of only two mechanical degrees of freedom, one horizontal translation and the rotational about the orthogonal horizontal axis.
-
-The rotational control loop for stage 2 then consists of using the CPS between stage 1 and stage 2 at low frequencies, the cBRS at frequencies between 3 mHz and 0.9 Hz, and the GS-13 pairs at frequencies above that. The blend frequencies were tuned to minimized the rms motion at low frequencies while maximizing the isolation at 0.1 Hz. 
-
-\begin{figure}%
-\begin{center}
-\includegraphics[width=\textwidth]{cBRSRotation.pdf}
-\caption{Projected rotational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
-\label{cBRSR}
-\end{center}
-\end{figure}
-
-\begin{figure}%
-\begin{center}
-\includegraphics[width=\textwidth]{cBRSTranslation.pdf}
-\caption{Projected translational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
-\label{cBRST}
-\end{center}
-\end{figure}
-\section{Projected Angular Control Improvements}
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=\textwidth]{cBRS_ASC_With.pdf}
-\caption{Projected performance of the angular sensing and control system with the seismic performance described in Section \ref{IsoScheme}.}
-\label{ascWith}
-\end{center}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=\textwidth]{cBRS_ASC_LowF.pdf}
-\caption{Projected performance of the angular sensing and control system with the seismic performance described in Section \ref{IsoScheme}.}
-\label{ascComp}
-\end{center}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=\textwidth]{cBRS_ASC.pdf}
-\caption{Projected low frequency strain noise with and without the cBRS. The blue line is the current sensitivity of LLO, the orange is the aLIGO design sensitivity, green is the modeled noise contribution of the current ASC system, and red is the improved ASC noise contribution with the seismic isolation described in Section \ref{IsoScheme}. }
-\label{ascStrain}
-\end{center}
-\end{figure}
-\section{Mechanical System}
+\section{Compact Beam Rotation Sensor}
+\subsection{Mechanical System}
 
 Similar to the BRS described in Chapter \ref{BRS_chap}, the compact Beam Rotation Sensor (cBRS), shown in Figure \ref{cBRS}, consists of a 30-cm long cross hung from 10-15 $\mu$m thick beryllium-copper flexures and has an identical operating principle as the BRS. The cross shape of the balance decreases the sensitivity of the device to gradients in the local gravitational field while allowing for increased moment of inertia compared to a similarly sized beam. 
 
@@ -474,7 +434,7 @@ This design yields a resonant frequency of $\sim$20 mHz limited the use of such 
 \end{center}
 \end{figure}
 
-\section{Interferometric Readout}
+\subsection{Interferometric Readout}
 In order to maintain the small size of the entire device, an interferometric readout was developed that consists of a Fabry-Perot cavity that is formed by a beamsplitter coated optical fiber and the full reflectance mirror placed on the bottom of the balance's end masses. The reflectance of this cavity is then monitored by employing a circulator to seperate the incoming and outgoing rays. As the cavity length changes the reflectence undergoes an interference pattern described by:
 \begin{align}
 R=\frac{1}{1+F \sin(\delta/2 \lambda)}
@@ -502,7 +462,7 @@ To linearize this readout, the optical fiber tip and collimating lens are placed
 \end{center}
 \end{figure}
 
-\section{Mass Adjustment}
+\subsection{Mass Adjustment}
 
 Through a variety of mechanisms, the devices described here can undergo long term drifts of the equilibrium position that can drive the beam balance past the dynamic range of the readout. To counteract this, a mass on the balance can be moved or added to shift the center of mass as such:
 \begin{align}
@@ -512,17 +472,64 @@ where $\Delta \theta$ is the change in equilibrium angle, $g$ is the gravitation
 
 While for the BRS the horizontal center of mass (COM) was designed to be tuned by hand, for the cBRS to operate in vacuum this must be done remotely and in an automated fashion. To achieve this a mass adjuster shown in Figure \ref{} consisting of a small aluminum mass on a fine pitched threaded rod is placed on the beam balance.
 
-\section{Controls}
+\subsection{Controls}
 
 Similar to the BRS controls, the cBRS can be rung up do to environmental transients which can cause resonant motion in excess of the readout's dynamic range. To decrease these amplitudes, two capacitive actuators are placed under the end masses of the beam. These are actuated with low gain with the angular readout band passed around the resonant frequency. 
 
-\section{Noise Performance}
+\subsection{Noise Performance}
 
 \begin{figure}%
 \begin{center}
  \includegraphics[width=\textwidth]{cBRS_Noise_11_19_19.pdf}
 \caption{}
 \label{cBRS_noise}
+\end{center}
+\end{figure}
+\section{Projected Improvements}
+\subsection{Isolation Scheme} \label{IsoScheme}
+
+Assuming that the isolation is limited by the noise of the in-band sensor, placing the lowest noise sensors on the second stage of the ISI would be expected to yield the lowest angular motion seen by the down stream control loops. With this in mind and the fact that the access to place new sensors is easier for the second stage, a control scheme was modeled which consists of the addition of an idealized cBRS (described in Section \ref{}) on stage 2. This model consisted of only two mechanical degrees of freedom, one horizontal translation and the rotational about the orthogonal horizontal axis.
+
+The rotational control loop for stage 2 then consists of using the CPS between stage 1 and stage 2 at low frequencies, the cBRS at frequencies between 3 mHz and 0.9 Hz, and the GS-13 pairs at frequencies above that. The blend frequencies were tuned to minimized the rms motion at low frequencies while maximizing the isolation at 0.1 Hz. 
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{cBRSRotation.pdf}
+\caption{Projected rotational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
+\label{cBRSR}
+\end{center}
+\end{figure}
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{cBRSTranslation.pdf}
+\caption{Projected translational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
+\label{cBRST}
+\end{center}
+\end{figure}
+\subsection{Angular Control Performance}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_ASC_With.pdf}
+\caption{Projected performance of the angular sensing and control system with the seismic performance described in Section \ref{IsoScheme}.}
+\label{ascWith}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_ASC_LowF.pdf}
+\caption{Projected performance of the angular sensing and control system with the seismic performance described in Section \ref{IsoScheme}.}
+\label{ascComp}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_ASC.pdf}
+\caption{Projected low frequency strain noise with and without the cBRS. The blue line is the current sensitivity of LLO, the orange is the aLIGO design sensitivity, green is the modeled noise contribution of the current ASC system, and red is the improved ASC noise contribution with the seismic isolation described in Section \ref{IsoScheme}. }
+\label{ascStrain}
 \end{center}
 \end{figure}
 
@@ -559,10 +566,10 @@ These components can be seen in Figure \ref{Earthquake} which shows the seismic 
 \end{center}
 \end{figure}
 
-From these equations it can be seen that with a single seismic station with a traditional 3-axis seismometer, one can not measure all five parameters that define this wave field. Additionally, the horizontal components, $u_x\text{ and }u_y$ can contain contributions from co-propagating Love waves which further muddles ones ability to extract parameters. 
+From these equations it can be seen that with a single seismic station with a traditional 3-axis seismometer, one can not measure all five parameters that define this wave-field. Additionally, the horizontal components, $u_x\text{ and }u_y$ can contain contributions from co-propagating Love waves which further muddles ones ability to extract parameters. 
 
 
-\subsection{Wave Field Parameter Extraction}
+\subsection{wave-field Parameter Extraction}
 
 With the combined measurements of the translational and rotational components at a single station, one can readily extract wavefield parameters that would otherwise be difficult to obtain, namely the phase velocity and the angle of incidence. 
 

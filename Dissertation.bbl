@@ -5,6 +5,17 @@ J~Aasi et~al.
 \newblock Advanced ligo.
 \newblock {\em Classical and Quantum Gravity}, 32(7):074001, 2015.
 
+\bibitem{GW150914}
+B.~P. Abbott et~al.
+\newblock Observation of gravitational waves from a binary black hole merger.
+\newblock {\em Phys. Rev. Lett.}, 116:061102, Feb 2016.
+
+\bibitem{GW170817}
+B.~P. Abbott et~al.
+\newblock Gw170817: Observation of gravitational waves from a binary neutron
+  star inspiral.
+\newblock {\em Phys. Rev. Lett.}, 119:161101, Oct 2017.
+
 \bibitem{GWTC}
 B.~P. Abbott et~al.
 \newblock Gwtc-1: A gravitational-wave transient catalog of compact binary
@@ -80,6 +91,12 @@ Fan-Chi Lin, Morgan~P. Moschetti, and Michael~H. Ritzwoller.
   seismic noise: Rayleigh and love wave phase velocity maps.
 \newblock {\em Geophysical Journal International}, 173(1):281, 2008.
 
+\bibitem{GWBook}
+Michele Maggiore.
+\newblock {\em Gravitational waves: Volume 1: Theory and experiments},
+  volume~1.
+\newblock Oxford university press, 2008.
+
 \bibitem{seismic}
 Stefano Maran\'o and Donat F{\"a}h.
 \newblock Processing of translational and rotational motions of surface waves:
@@ -132,6 +149,12 @@ Krishna Venkateswara, Charles~A. Hagedorn, Matthew~D. Turner, Trevor Arp, and
   Jens~H. Gundlach.
 \newblock A high-precision mechanical absolute-rotation sensor.
 \newblock {\em Review of Scientific Instruments}, 85(1), 2014.
+
+\bibitem{hulseTaylor}
+J.~M. Weisberg and Y.~Huang.
+\newblock {RELATIVISTIC} {MEASUREMENTS} {FROM} {TIMING} {THE} {BINARY} {PULSAR}
+  {PSR} b1913+16.
+\newblock {\em The Astrophysical Journal}, 829(1):55, sep 2016.
 
 \bibitem{Weiss}
 Rainer Weiss.
