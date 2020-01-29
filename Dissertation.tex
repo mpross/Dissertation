@@ -255,13 +255,34 @@ This is then a low tilt channel which can be used within the LIGO seismic isolat
 
 This design makes the beam stiff in all degrees of freedom other than rotations around the horizontal axis which intersects the two flexure pivot points. This forms a system consisting of two elementary subsystems: a rotational spring mass system formed by the stiffness of the flexures, and a simple pendulum due to the offset of the pivot point and the center of mass. This is then described by the following equation of motion: \cite{venk2014}
 
-\[I \ddot{\theta}(t)+\kappa (1+ \frac{i}{Q})(\theta(t)-\theta_p(t))+M g \delta \theta(t) +M \delta \ddot{x_p}(t)=\tau_{ex}(t)\]
+\begin{equation}
+I \ddot{\theta}+ \gamma \dot{\theta}+\kappa (1+ \frac{i}{Q})(\theta-\theta_p)+M g \delta \theta +M \delta \ddot{x_p}=\tau_{ex} \label{eom}
+\end{equation}
 
-where $\theta$ and $\theta_p$ are, respectively, the angle of beam and the platform with respect to gravitational vertical, $\tau_{ext}$ is the sum of all exterior torques, $I$ is the moment of inertia, $Q$ is the quality factor of the system, $\kappa$ is the spring constant of the flexures, $M$ is the mass of the balance, $g$ is the gravitational acceleration, $\delta$ is the vertical distance from the center of mass and the pivot point, and $x_p$ is the translation of the platform.
+where $\theta$ and $\theta_p$ are, respectively, the angle of beam and the platform with respect to gravitational vertical, $\tau_{ex}$ is the sum of all exterior torques, $I$ is the moment of inertia, $Q$ is the intrinsic quality factor, $\gamma$ is the velocity damping factor, $\kappa$ is the spring constant of the flexures, $M$ is the mass of the balance, $g$ is the gravitational acceleration, $\delta$ is the vertical distance from the center of mass and the pivot point, and $x_p$ is the translation of the platform. Equation \ref{eom} can be rearranged to yield:
 
-\textbf{derive translational coupling and readout equation}
+\begin{equation}
+\theta = -\frac{\tau_{ex}+\omega^2 M \delta x_p+\kappa (1+i/Q) \theta_p}{I\omega^2-i \gamma \omega -i \kappa /Q-\kappa -Mg\delta}
+\end{equation}
 
-In ideal operation, one would tune the center of mass to be at the pivot point and thus would produce a pure rotational spring-mass system with no translational coupling. In this limit, the rotation sensor is a rotational analog to a seismometer; above the resonant frequency as the casing rotates the beam stays inertial and thus allows one to measure the casing's rotation.
+where $\omega$ is the frequency of motion. For the BRSs, the quantity of interest is not the angle of the beam but the difference in angle between the beam and the platform. Thus the angle that readout records follows:
+
+\begin{align}
+\theta_a &=\theta-\theta_p\\
+&= -\frac{\tau_{ex}+\omega^2 M \delta x_p+\kappa (I\omega^2-i\gamma \omega -Mg\delta) \theta_p}{I\omega^2-i \gamma \omega -i \kappa /Q-\kappa -Mg\delta}
+\end{align}
+where $\theta_a$ is the recorded angle. This equation can be broken up into three distinct terms: the angular motion due to external torques, $\theta_\tau$, due to translational coupling, $\theta_x$, and due to rotation of the platform, $\theta_s$.
+\begin{align}
+&\theta_a =\theta_\tau+\theta_x+\theta_{s}\\
+&\theta_\tau= -\frac{\tau_{ex}}{I}\frac{1}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\\
+&\theta_x= -x_p\frac{M\delta}{I} \frac{\omega^2}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\\
+&\theta_{s}= -\theta_p\frac{\omega^2-i\omega_0 \omega/q-\omega_g^2}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\label{theta_s}
+\end{align}
+
+Where $\omega_0=\sqrt{k/I}$ is the resonant frequency, $\omega_g=\sqrt{M g \delta/I}$, and $q$ is the quality factor due to velocity damping. These equations illuminate the fact that the beam has a resonance at $\omega=\sqrt{\omega_0^2+\omega_g^2}$ and $\theta_s$ has a zero at $\omega=\omega_g$. 
+
+To allow for high fidelity rotation sensing, the translational coupling must be negliable at the frequencies of interest. To achieve this, $\delta$ must be tuned close to zero. This is achieved firstly through the design of the beam's suspension which places the center of mass close to the pivot point. Fine adjustments are them made by adding mass to the beam above or below the pivot. These adjustments are guided by measurements of the zero in the $\theta_s$ transfer function, Equation \ref{theta_s}, at $\omega=\omega_g$. Differing amounts of tuning were achieved for each device described Section \ref{results} due to scheduling constraints. The lowest translation coupling was achieved at the LHO End-Y BRS which had a $\delta<0.5\ \mu$m yielding a translational coupling of $<10^{-6}$ rad/m.
+
 
 \subsection{Multi-Slit Autocollimator Readout}
 
@@ -304,8 +325,12 @@ In addition to the 0.1 nrad/$\sqrt{\text{Hz}}$ white noise of the autocollimator
 
 Although the exact physical mechanism is unknown at this juncture, it has been observed that variations in the exterior temperature cause shifts in the balance's equilibrium position. Furthermore, temperature gradients across the instrument emanating from unbalanced heat sources and air currents have been seen to cause time varying noise. To alleviate this issue the instrument's vacuum chamber and optics are wrapped in multiple alternating layers of packing foam and aluminum foil. The entire apparatus is then placed inside a large double walled insulation box to further decrease any temperature variations. This eliminates this as a dominate noise source unless the room in which the instrument is housed undergoes large temperature variations.
 
-More limiting is the noise due to the thermal vibrations of the flexure. At any non-zero temperature, a portion of the thermal energy of the flexures is stored in the vibrational modes of the flexure. This causes a fundamental stochastic noise floor that goes as such:
-\textbf{add thermal noise equation}
+More limiting is the noise due to the thermal vibrations of the flexure. At non-zero temperature, a portion of the thermal energy of the flexures is stored in the vibrational modes of the flexure. This causes a fundamental stochastic noise floor that goes as such:
+
+\begin{equation}
+\tilde\theta_T(\omega)=\sqrt{\frac{4 k_B T \omega_0^2}{I \omega Q\big((\omega^2-\omega_0^2)+\omega_0^4/Q^2\big)}}
+\end{equation}
+
  since this noise source enters as a torque on the beam balance, it is filtered by the harmonic response making it fall as $1/f^2$ above the resonant frequency. To limit the influence on the performance of the device, the resonant frequency of the spring mass system is pushed to the lowest frequency that is mechanically feasible. 
  
  One further noise source that acts on the beam balance comes from voltage noise on the capacitive actuators. The force caused by the follows Equation \ref{cap} and can be shown to be sub dominate.
@@ -320,7 +345,7 @@ More limiting is the noise due to the thermal vibrations of the flexure. At any 
 
  The noise budget for a BRS is shown in Figure \ref{noise} which shows that the device is readout dominated above $\sim$20 mHz and below is dominated by thermal noise. An excess in the measured noise can be seen below 3 mHz which is believed to be due to residual temperature noise. Respectively at 150 mHz, 3 Hz, and 6 Hz the rotational microseism, torsion mode of the beam balance, and motion due to nearby instrumentation can be seen above the predicted noise sources.
 
-\section{Results}
+\section{Results}\label{results}
 \subsection{Hanford Installation} \label{BRS_Hanford}
 
 \quad Between the first (O1) and second (O2) observing runs of LIGO, two BRSs were installed at the LIGO Hanford Observatory, one at each end station correcting the translations along their respective arm. Although one would expect that the corner station sensors would also need to be corrected, a location was found within the corner station building which exhibited low tilt. \textbf{cite} This is thought to be due to the shape of the building the distance between this location and the walls. As such no BRS was necessary to achieve low tilt injection seismic isolation.
