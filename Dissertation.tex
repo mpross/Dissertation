@@ -460,11 +460,11 @@ Despite this, there is a collection of O3a candidates detected between \textbf{3
 \textbf{talk about mean?}
 \textbf{maybe plot of mean or expectation vs observing run}
 
-\chapter{30-cm Scale On-Board Rotation Sensors}
+\chapter{30-cm Scale On-Board Rotation Sensors}\label{cBRS_chap}
 \section{Angular Controls}
-To operate the LIGO interferometers in their optimal configuration, the angular motion of the test masses in the pitch degree of freedom must be under \textbf{number} nrad/$\sqrt{\text{Hz}}$ at \textbf{number} Hz where as the ground rotates at $\sim$\textbf{number} nrad/$\sqrt{\text{Hz}}$ at \textbf{number} Hz. To achieve this desired performance, the seismic isolation operated in the rotational degrees of freedom as well as the translation. Additionally, the upper three masses of the quadruple pendulum are actively actuated at frequencies between \textbf{number} and \textbf{number} Hz to decrease any residual motion.
+To operate the LIGO interferometers in their optimal configuration, the angular motion of the test masses in the pitch degree of freedom must be under \textbf{number} nrad/$\sqrt{\text{Hz}}$ at \textbf{number} Hz. The ground rotates at $\sim$\textbf{number} nrad/$\sqrt{\text{Hz}}$ at \textbf{number} Hz. To achieve this desired performance, the seismic isolation operated in the rotational degrees of freedom as well as the translation. Additionally, the upper three masses of the quadruple pendulum are actively actuated at frequencies between \textbf{number} and \textbf{number} Hz to decrease any residual motion.
 
-With the current system, at \textbf{number} Hz the seismic isolation is limited by the sensor noise in the seismometer pair which forms the pitch sensor. This then requires high gain feedback loops on the angular control loop downstream, which themselves are limited by their respective sensor noise at \textbf{number} Hz. This left over noise then leaks into the gravitational wave band between \textbf{number} and \textbf{number} Hz due to the inability to sharply roll off the control without interfering with control at lower frequencies.
+With the current system, at \textbf{number} Hz the seismic isolation is limited by the sensor noise in the seismometer pair which forms the pitch sensor. This then increases the residual motion due to tilt contamination, described in Section \ref{tiltCon}. To eliminate this residual, high gain feedback loops are required on the angular control loop downstream, which themselves are limited by their respective sensor noise at \textbf{number} Hz. This left over noise then leaks into the gravitational wave band between \textbf{number} and \textbf{number} Hz due to the inability to sharply roll off the control without interfering with sensor noise at lower frequencies.
 
 \begin{figure}
 \begin{center}
@@ -475,11 +475,11 @@ With the current system, at \textbf{number} Hz the seismic isolation is limited 
 \end{figure}
 
 
-The compact Beam Rotation Sensor (cBRS), described in the following, was designed to be an alternative angular sensor for the seismic isolation system with \textbf{number} times lower noise than the current sensors. With this decreased noise, the seismic isolation control loops can be tuned to significantly increase the performance of both the translational isolation, through decreased tilt contamination described in Section \ref{}, and directly the rotational isolation. Details of this follow in Section \ref{IsoScheme}. This decreased residual rotation would then allow the angular control loops to be retuned, specifically decreasing the gain, to push the sensor noise leakage below the design sensitivity. \textbf{Need to check this.}
+The compact Beam Rotation Sensor (cBRS), described in the following, was designed to be an alternative angular sensor for the seismic isolation system with \textbf{number} times lower noise than the current sensors. With this decreased noise, the seismic isolation control loops can be tuned to significantly increase the performance of both the translational isolation, through decreased tilt contamination described in Section \ref{}, and directly the rotational isolation. Details of this follow in Section \ref{IsoScheme}. This decreased residual rotation would then allow the angular control loops to be retuned, specifically decreasing the unity gain frequency, to push the sensor noise leakage closer to the LIGO design sensitivity.
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=\textwidth]{SensorNoise.pdf}
+\includegraphics[width=\textwidth]{cBRS_Model_Noise.pdf}
 \caption{Theoretical noise curves for the cBRS, blue, and seismometer pair located 1-m apart.}
 \label{sensNoise}
 \end{center}
@@ -491,7 +491,7 @@ The compact Beam Rotation Sensor (cBRS), described in the following, was designe
 
 Similar to the BRS described in Chapter \ref{BRS_chap}, the compact Beam Rotation Sensor (cBRS), shown in Figure \ref{cBRS}, consists of a 30-cm long cross hung from 10-15 $\mu$m thick beryllium-copper flexures and has an identical operating principle as the BRS. The cross shape of the balance decreases the sensitivity of the device to gradients in the local gravitational field while allowing for increased moment of inertia compared to a similarly sized beam. 
 
-This design yields a resonant frequency of $\sim$20 mHz limited the use of such a device to frequencies above this. 
+This design yields a resonant frequency of $\sim$20 mHz which limits the use of such a device with high fidelity to frequencies above this. This removes the possibility of using such a device for ground tilt subtraction since the relevant ground tilts happen below 40 mHz. 
 
 \begin{figure}[!h]
 \begin{center}
@@ -520,10 +520,12 @@ This design yields a resonant frequency of $\sim$20 mHz limited the use of such 
 \end{figure}
 
 \subsection{Interferometric Readout}
-In order to maintain the small size of the entire device, an interferometric readout was developed that consists of a Fabry-Perot cavity that is formed by a beamsplitter coated optical fiber and the full reflectance mirror placed on the bottom of the balance's end masses. The reflectance of this cavity is then monitored by employing a circulator to seperate the incoming and outgoing rays. As the cavity length changes the reflectence undergoes an interference pattern described by:
+In order to maintain the small size of the entire device and to decrease readout noise, an interferometric readout was developed that consists of a Fabry-Perot cavity that is formed by a beamsplitter coated optical fiber and a full reflecting mirror placed on the bottom of the balance's end masses. The reflectance of this cavity is then monitored by employing a circulator to seperate the incoming and outgoing rays. As the cavity length changes the reflectence undergoes an interference pattern described by:
 \begin{align}
 R=\frac{1}{1+F \sin(\delta/2 \lambda)}
 \end{align}
+
+where $R$ is the reflectance, $F$ is the finesse, $\delta$ is the path length difference, and $\lambda$ is the wavelength.
 
 \begin{figure}%
 \begin{center}
@@ -546,23 +548,33 @@ To linearize this readout, the optical fiber tip and collimating lens are placed
 
 \textbf{include table of PID parameters}
 
+\textbf{talk about mccs2}
+
+\textbf{talk about differencing}
+
+\textbf{include plot of loop shape}
+
+\textbf{mention PID tuning}
+
+\subsection{Calibration}
+
 \begin{figure}%
 \begin{center}
  \includegraphics[width=\textwidth]{cBRS_ReadoutNoise_11_19_19.pdf}
-\caption{}
+\caption{Readout noise for the cBRS. \textbf{Remove goal}}
 \label{cBRS_readout}
 \end{center}
 \end{figure}
 
 \subsection{Mass Adjustment}
 
-Through a variety of mechanisms, the devices described here can undergo long term drifts of the equilibrium position that can drive the beam-balance past the dynamic range of the readout. To counteract this, a mass on the balance can be moved or added to shift the center of mass as such:
+Through a variety of mechanisms, both the BRSs and the cBRS can undergo long term drifts of the equilibrium position that can drive the beam-balance past the dynamic range of the readout. To counteract this, a mass on the balance can be moved or added to shift the center of mass as such:
 \begin{align}
 \Delta \theta=\frac{g}{\kappa} m r
 \end{align}
 where $\Delta \theta$ is the change in equilibrium angle, $g$ is the gravitational acceleration, $\kappa$ is the spring constant of the flexure, $m$ is the mass added, and $r$ is the distance from the mass and the pivot point.
 
-While for the BRS the horizontal center of mass (COM) was designed to be tuned by hand, for the cBRS to operate in vacuum this must be done remotely and in an automated fashion. To achieve this a mass adjuster shown in Figure \ref{} consisting of a small aluminum mass on a fine pitched threaded rod is placed on the beam-balance.
+While for the BRS the horizontal center of mass (COM) was designed to be tuned by hand, for the cBRS to operate within the LIGO vacuum chambers this must be done remotely and in an automated fashion. To achieve this a mass adjuster shown in Figure \ref{} consisting of a small aluminum mass on a fine pitched threaded rod is placed on the beam-balance. \textbf{more description}
 
 \begin{figure}[!h]
 \begin{center}
@@ -571,9 +583,16 @@ While for the BRS the horizontal center of mass (COM) was designed to be tuned b
 \caption{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.}
 \end{figure}
 
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{cBRS_massAdjust.pdf}
+\end{center}
+\caption{}
+\end{figure}
+
 \subsection{Controls}
 
-Similar to the BRS controls, the cBRS can be rung up do to environmental transients which can cause resonant motion in excess of the readout's dynamic range. To decrease these amplitudes, two capacitive actuators are placed under the end masses of the beam. These are actuated with low gain with the angular readout band passed around the resonant frequency. 
+Similar to the BRS controls, the cBRS can be rung up do to environmental transients which can cause resonant motion in excess of the readout's dynamic range. To decrease these amplitudes, two capacitive actuators are placed under the end masses of the beam. These are actuated with low gain with the angular-readout band-passed around the resonant frequency. This allow for low Q motion during high amplitudes and high Q during low amplitudes.
 
 \subsection{Noise Performance}
 
@@ -586,6 +605,8 @@ Similar to the BRS controls, the cBRS can be rung up do to environmental transie
 \end{figure}
 \section{Projected Improvements}
 \subsection{Isolation Scheme} \label{IsoScheme}
+
+\textbf{Compare with BRS}
 
 Assuming that the isolation is limited by the noise of the in-band sensor, placing the lowest noise sensors on the second stage of the ISI would be expected to yield the lowest angular motion seen by the down stream control loops. With this in mind and the fact that the access to place new sensors is easier for the second stage, a control scheme was modeled which consists of the addition of an idealized cBRS (described in Section \ref{}) on stage 2. This model consisted of only two mechanical degrees of freedom, one horizontal translation and the rotational about the orthogonal horizontal axis.
 
@@ -666,13 +687,13 @@ The rotational control loop for stage 2 then consists of using the CPS between s
 \end{figure}
 
 \chapter{Applications}
-\quad The development of these highly sensitive rotation sensors have opened up a few novel scientific avenues that have been explored and many that have not.
+\quad The development of these highly sensitive rotation sensors have opened up a few novel scientific avenues, tangential to seismic isolation, that have been explored and many that have not.
 
 \section{Geophysics}
-Seismic waves have six components, three translations and three rotations, however seismology has long neglected the rotational components due the lack of sensitive rotation sensors. Recent developments have begun to alleviated this issue with the advent of seismically relevant ring laser gyros. \cite{ring} The BRSs described above join a small class of ground rotation sensors with high enough sensitivity at low frequency to allow for the use in seismology.
+Seismic waves have six components, three translations and three rotations, however seismology has long neglected the rotational components due the lack of sensitive rotation sensors. Recent developments have begun to alleviated this issue with the advent of seismically relevant ring laser gyros. \cite{ring} The rotation sensors described in Chapter \ref{BRS_chap} and \ref{cBRS_chap} join a small class of ground rotation sensors with that are sensitive enough at low frequencies and have low translational coupling to allow for the use in seismology.
 \subsection{Rayleigh Wave Theory}
 
-Seismic waves can be broken into two classes: body waves and surface waves. In regard to surface waves there are two polarization, of the motion caused by a Love wave is constrained to the plane parallel with the surface of the medium while Rayleigh waves are constrained to a plane perpendicular the surface. 
+Seismic waves can be broken into two classes: body waves and surface waves. In regard to surface waves there are two polarization: Love waves and Rayleigh waves. The motion caused by a Love wave is constrained to the plane parallel with the surface of the medium while Rayleigh waves are constrained to a plane perpendicular the surface. 
 
 The plane wave solution of a Rayleigh wave has six components ($u_x, u_y, u_z, \theta_x, \theta_y, \theta_z$) where $u_i$ designated the translational motion in the $i$th direction while $\theta_i$ is the rotation about the $i$th axis.
 These can be described as with the following \cite{seismic}
@@ -688,7 +709,7 @@ u_z({\bf r} ,t)&=\alpha \cos(\zeta) \cos(\omega t-{\bf k}\cdot{\bf r}+\pi/2)\lab
 
 where $\alpha$ is the amplitude, $\zeta$ is the ellipticity angle, $\phi$ is the angle of incidence in the horizontal plane, $\omega$ is the frequency, and $\bf{k}=\kappa (\cos(\phi),\sin(\phi),\text{0})$ is the wavevector.
 
-These components can be seen in Figure \ref{Earthquake} which shows the seismic waves sourced by a M 7.9 earthquake in Papua New Guinea as seen by instruments installed at the Y-End station of the LHO. The translations were measured by a broadband three-component seismometer while the rotation was sensed by a Beam Rotation Sensor described in Chapter \ref{BRS_chap}. As one would expect from Eq. \ref{ZEq} and \ref{TiltXEq}, the vertical velocity and the rotation differ only by a constant factor related to the phase velocity and the angle of incidence. Additionally, a large amplitude Love wave is apparent starting at $\sim$ 1200 seconds which neither the vertical seismometer or the BRS experiences due to the waves' lack of vertical component.
+These components can be seen in Figure \ref{Earthquake} which shows the seismic waves sourced by a M 7.9 earthquake in Papua New Guinea as seen by instruments installed at the Y-End station of the LHO. The translations were measured by a broadband three-component seismometer while the rotation was sensed by a Beam Rotation Sensor (BRS) described in Chapter \ref{BRS_chap}. As one would expect from Eq. \ref{ZEq} and \ref{TiltXEq}, the vertical velocity and the rotation differ only by a constant factor related to the phase velocity and the angle of incidence. Additionally, a large amplitude Love wave is apparent starting at $\sim$ 1200 seconds which neither the vertical seismometer or the BRS experiences due to the waves' lack of vertical component.
 
 \begin{figure}%
 \begin{center}
@@ -698,23 +719,23 @@ These components can be seen in Figure \ref{Earthquake} which shows the seismic 
 \end{center}
 \end{figure}
 
-From these equations it can be seen that with a single seismic station with a traditional 3-axis seismometer, one can not measure all five parameters that define this wave-field. Additionally, the horizontal components, $u_x\text{ and }u_y$ can contain contributions from co-propagating Love waves which further muddles ones ability to extract parameters. 
+From these equations it can be seen that with a traditional 3-axis seismometer, one can not measure all five parameters that define this wave-field. Additionally, the horizontal components, $u_x\text{ and }u_y$ can contain contributions from co-propagating Love waves which further muddles ones ability to extract parameters. 
 
 
 \subsection{wave-field Parameter Extraction}
 
-With the combined measurements of the translational and rotational components at a single station, one can readily extract wavefield parameters that would otherwise be difficult to obtain, namely the phase velocity and the angle of incidence. 
+With the combined measurements of the translational and rotational components at a single station, one can readily extract wavefield parameters that would otherwise be difficult to obtain, namely the phase velocity and angle of incidence. 
 
-Seismic wave phase velocities are common observable which not only allows for understanding of Rayleigh wave propogation but can be inverted to yield tomographical structure profiles of the interior of the earth. \textbf{cite} The traditional method of extracting these is the exploit the time of arrival of a wave as it passes through an array of many seismometers. The analysis can be constrained to only the vertical channel which is insensitive to Love waves which could contaminate the measurements. However, this method requires many devices and effectively averages over the size of the array.
+Seismic wave phase velocities are a common observable which not only allows for understanding of Rayleigh wave propogation but can be inverted to yield tomographical structure profiles of the interior of the earth. \textbf{cite} The traditional method of extracting these is by exploiting the time of arrival of a wave as it passes through an array of many seismometers. The analysis can be constrained to only the vertical channel which is insensitive to Love waves which could contaminate the measurements. However, this method requires many devices and effectively averages over the size of the array.
 
 Alternatively, with measurements of the rotational components a point like measurement of the phase velocity can be made with three devices, a 3-component seismometer and two horizontal rotation sensors. This can be shown in the following equations:
 \begin{align} 
-v&=\frac{\omega}{\kappa} = \frac{\dot{u_z}}{\theta_x}\sin(\phi) \label{vx} \\
+v&\equiv\frac{\omega}{\kappa} = \frac{\dot{u_z}}{\theta_x}\sin(\phi) \label{vx} \\
 v&=\frac{\dot{u_z}}{\theta_y}\cos(\phi)\label{vy} \\
 v&=\frac{\dot{u_z}}{\sqrt{\theta_x^2+\theta_y^2}} \label{v}
 \end{align}
 
-where the dot represents the temporal derivative. Equations \ref{vx} and \ref{vy} can be utilized if a station has only one horizontal rotation sensor but requires independent determination of $\phi$. In contrast, Equation \ref{v} contains only information from a single station.
+where the dot represents the temporal derivative. Equations \ref{vx} and \ref{vy} can be utilized if a station has only one horizontal rotation sensor but requires independent determination of $\phi$, the angle of incidence. In contrast, Equation \ref{v} contains only information from a single station.
 
 In addition to the phase velocity, the angle of incidence can be determined with the following:
 \begin{align}
@@ -727,7 +748,7 @@ Although in theory, this can be measured using a single seismometer, Love wave c
 %\subsubsection{Hanford Measurements}
 As described in Section \ref{BRS_Hanford}, two BRSs were installed at LHO, one at each end station located 5.66 meters apart. The End-X BRS was found to have a $\delta=30\ \mu \text{m}$ leading to a translational coupling of $2 \times 10^{-4}$ rad/m while the End-Y BRS was found to have a coupling of $1 \times 10^{-6}$ rad/m with a $\delta<0.5\ \mu \text{m}$. This limited any seismic studies using these devices to use only the End-Y BRS as the End-X BRS was contaminated with translational motion. 
 
-Between April, 2016 and January, 2017, six earthquakes were measured during environmentally quite times at the observatory. \cite{tiltSeismology} With application of Eq. \ref{vx} the phase dispersion curve at the Y-End Station was measured with instruments installed at a single station. Corrections of the angle of incidence were determined via an array of seismometers installed at LHO which were verified via great circle calculations. Additionally, the phase velocity was estimated in a more traditional manor using the signal delay between the array of seismometer at LHO. The measure phase dispersion curve is shown in Figure \ref{Phase_Hanford} which shows good agreement between the two methods.
+Between April, 2016 and January, 2017, six earthquakes were measured during environmentally quite times at the observatory. \cite{tiltSeismology} With application of Eq. \ref{vx} the phase dispersion curve at the Y-End Station was measured with instruments installed at a single station. Corrections of the angle of incidence were determined via an array of seismometers installed at LHO which were verified via great circle calculations. Additionally, the phase velocity was estimated in a more traditional manor using the signal delay between the array of seismometer at LHO. The measure phase dispersion curve is shown in Figure \ref{Phase_Hanford} which shows good agreement between the two methods. For more detail see Reference \cite{TiltSeimology}
  
 \begin{figure}%
 \begin{center}
@@ -737,7 +758,7 @@ Between April, 2016 and January, 2017, six earthquakes were measured during envi
 \end{center}
 \end{figure}
 
-These measurements display the utility of including rotation sensors in seismic instruments. If a seismic station was constructed with two orthogonally oriented horizontal rotation sensors and a vertical seismometer, the phase velocity could be measured independent of angle of incidence by utilizing Eq. \ref{v}. Neglecting the logistical difficulty, one could imagine constructing arrays of station with both translational and rotational sensors. This would allow mapping of the phase dispersion curves, and thus tomography, with spatial resolution limited only by the size of the instruments. Such stations could also be installed within traditional arrays to yield independent points within the array to further constrain tomographic measurements.
+These measurements display the utility of including rotation sensors in seismic instruments. If a seismic station was constructed with two orthogonally oriented horizontal rotation sensors and a vertical seismometer, the phase velocity could be measured independent of angle of incidence by utilizing Eq. \ref{v}. Neglecting the logistical difficulty, one could imagine constructing arrays of station with both translational and rotational sensors. This would allow mapping of the phase dispersion curves, and thus tomography, with spatial resolution limited only by the size of the instruments. Such stations could also be installed within traditional arrays to yield independent point like measurements to further constrain tomographic studies.
 
 %\subsubsection{Livingston Measurements}
 %
@@ -752,7 +773,7 @@ These measurements display the utility of including rotation sensors in seismic 
 \section{Newtonian Noise}
 \subsection{Theory}
 
-The gravitational coupling between the environment and an interferometer's test masses, so called Newtonian noise, is expected limit the performance of terrestrial gravitational wave detectors in the near future \textbf{CITE}. Sources of the gravitaitonal field variations can range from atmospheric density changes to vibrations of the laboratory structures \textbf{CITE}. This coupling is unique in the fact that it can not be shielded or trivially engineered away. One can move an observatory underground to decrease the strength of the atmospherically driven fluctuations and those caused by seismic surface waves, discussed in detail in the following section. However, this process is both expensive and does not remove the sources which come from operating an instrument such as the vibrations of the vacuum structure or seismic motion sourced by laboratory equipment. 
+The gravitational coupling between the environment and an interferometer's test masses, so called Newtonian noise, is expected to limit the performance of terrestrial gravitational wave detectors in the near future \textbf{CITE}. Sources of the gravitaitonal field variations can range from atmospheric density changes to vibrations of the laboratory structures \textbf{CITE}. This coupling is unique in the fact that it can not be shielded or trivially engineered away. One can move an observatory underground to decrease the strength of the atmospherically driven fluctuations and those caused by seismic surface waves, discussed in detail in the following section. However, this process is both expensive and does not remove the sources which come from operating an instrument such as the vibrations of the vacuum structure or seismic motion sourced by laboratory equipment. 
 
 For the current surface-level interferometric observatories, the seismic motion due to Rayleigh waves is thought to be the dominant contributor to the Newtonian noise and will be the limiting noise source between \textbf{5-30 Hz} \cite{}. The motion due to a plane Rayleigh wave follows:
 
@@ -766,21 +787,27 @@ a_x({\bf r} ,t)=2 \pi u_z \gamma G \rho_0 e^{-h \kappa}  \cos(\phi) \cos(\omega 
 \end{equation}
 where $G$ is the gravitational constant, $\rho_0$ is the density of the ground, $h$ is the height of the test mass from the ground, and $\gamma \approx 0.8$ is a factor which accounts for the counter-action of the change of density due to the seismic wave and the vertical motion of the ground.
 
-At first glance, these equations appear to suggest that one could predict the test mass acceleration for a given vertical seismometer signal. Such a prediction would allow for high quality subtraction of the Newtonian Noise from an observatories data stream. However, true seismic wave-fields are not composed of stationary Rayleigh waves but instead are comprised of the sum of many desperate sources which may change their amplitude and phase in time. With this consideration, the phase difference between Eq. \ref{uz} and \ref{a} and the lack of angle of incidence dependence in Eq. \ref{uz} destroy the ability to use a vertical seismometer as a reliable sensor for Newtonian noise subtraction.
+At first glance, these equations appear to suggest that one could predict the test mass acceleration for a given vertical seismometer signal. Such a prediction would allow for high quality subtraction of the Newtonian Noise from an observatories data stream. However, true seismic wave-fields are not composed of stationary Rayleigh waves but instead are comprised of the sum of many desperate sources which may change their amplitude and phase in time. With this consideration, the phase difference between Eq. \ref{uz} and \ref{a} and the lack of angle of incidence dependence in Eq. \ref{uz} destroy the ability to use a single vertical seismometer as a reliable sensor for Newtonian noise subtraction.
 
 On the other hand, a horizontal seismometer described by Eq. \ref{XEq} is both in phase with the Newtonian noise signal and has the same angular dependence. However, seismic wave-fields also include Love waves which have horizontal components but no vertical. This contaminates these channels and would decrease the correlation between the horizontal seismometer and the Newtonian noise. 
 
-Finally, the tilt, being the rotation about the x-axis, due to a Rayleigh wave is described by the following:
+Finally, the tilt, being the rotation about the y-axis, due to a Rayleigh wave is described by the following:
 
 \begin{equation}
 \theta_y({\bf r} ,t)=\frac{\partial u_z}{\partial x}=u_z \kappa \cos(\phi) \cos(\omega t-{\bf k}\cdot{\bf r})\label{tX}\\
 \end{equation}
 
-The tilt is thus both in phase, has the same angular dependence, and does not include Love waves. The lack of Love waves can be seen in Figure \ref{Earthquake} when the horizontal seismometer experiences a large Love wave at around \textbf{1000 s} while the rotation sensor sees no such signal. The tilt signal and the Newtonian noise is thus related by a handful of parameters which can be measured independently or determined empirically and are not expected to vary in time.
+The tilt is thus both in phase, has the same angular dependence, and does not include Love waves. The lack of Love waves can be seen in Figure \ref{Earthquake} when the horizontal seismometer experiences a large Love wave at around \textbf{1000 s} while the rotation sensor sees no such signal. The tilt signal and the Newtonian noise are thus related by a handful of parameters which can be measured independently or determined empirically and are not expected to vary in time. This points to the conclusion that a tiltmeter is the ideal sensor for Newtonian noise subtraction
 
 \subsection{Observations}
 
+\textbf{cBRS installed at Hanford}
 
+\textbf{array subtraction}
+
+\textbf{location due to size}
+
+\textbf{tilt to h(t) coupling}
 
 \printendnotes
 \nocite{*}   
