@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.2.2}Events}{6}% 
 \contentsline {section}{\numberline {1.3}Seismic Isolation}{7}% 
 \contentsline {subsection}{\numberline {1.3.1}LIGO Scheme}{7}% 
-\contentsline {subsection}{\numberline {1.3.2}Internal Seismic Isolation}{7}% 
+\contentsline {subsection}{\numberline {1.3.2}Internal Seismic Isolation}{8}% 
 \contentsline {subsection}{\numberline {1.3.3}Sensor Correction}{9}% 
 \contentsline {chapter}{\numberline {\@textofChapter \ 2:}1-m Scale Ground Rotation Sensors}{10}% 
 \contentsline {section}{\numberline {2.1}Ground Tilt}{10}% 
@@ -35,11 +35,11 @@
 \contentsline {section}{\numberline {3.3}Projected Improvements}{37}% 
 \contentsline {subsection}{\numberline {3.3.1}Isolation Scheme}{37}% 
 \contentsline {subsection}{\numberline {3.3.2}Angular Control Performance}{39}% 
-\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{46}% 
-\contentsline {section}{\numberline {4.1}Geophysics}{46}% 
-\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{46}% 
-\contentsline {subsection}{\numberline {4.1.2}wave-field Parameter Extraction}{49}% 
-\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{50}% 
-\contentsline {section}{\numberline {4.2}Newtonian Noise}{52}% 
-\contentsline {subsection}{\numberline {4.2.1}Theory}{52}% 
-\contentsline {subsection}{\numberline {4.2.2}Observations}{53}% 
+\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{50}% 
+\contentsline {section}{\numberline {4.1}Geophysics}{50}% 
+\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{50}% 
+\contentsline {subsection}{\numberline {4.1.2}wave-field Parameter Extraction}{53}% 
+\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{54}% 
+\contentsline {section}{\numberline {4.2}Newtonian Noise}{56}% 
+\contentsline {subsection}{\numberline {4.2.1}Theory}{56}% 
+\contentsline {subsection}{\numberline {4.2.2}Observations}{57}% 

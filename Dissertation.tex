@@ -34,7 +34,7 @@
 \tableofcontents
 \listoffigures
 
-\dedication{\begin{center}To Grace\end{center}}\
+\dedication{\begin{center}To Grace\end{center} }\
 
 \acknowledgments{The author wishes .}
 \textpages
@@ -69,11 +69,13 @@ h_{ij}(t,x)=\begin{pmatrix} h_+ & h_\times & 0 \\ h_\times & -h_+ & 0 \\ 0 & 0 &
 
 where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' polarizations\footnote{A massless graviton is assumed here. A massive graviton would yield five polarizations instead of two. Current graviton mass constraints are $m_g< 7.7\times 10^{-23} eV/c^2$ \cite{some}}, $\omega$ is the angular frequency of oscillation, and $\kappa$ is the wavenumber. Here $i$ and $j$ run from 1 to 3 and correspond to the the three spacial coordinates. The time components are suppressed as the $h_{0\nu}$ components are zero due the coordinate choice and $h_{00}$ is zero outside the source. 
 
+\textbf{expand}
+
 \subsection{Compact Binary Coalescence}\label{CBC}
 
 As of writing, the only systems that have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects is of importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} astrophysical objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor} and GW170817\cite{GW170817}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC}.
 
-Such a system can be approximated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. The gravitational waves emitted by such a system can be shown to be:
+Such a system can be approximated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. \textbf{Discuss approximation} The gravitational waves emitted by such a system can be shown to be:
 \begin{align}
 h_+(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \frac{1+\cos^2\theta}{2} \ \cos(\omega t + \phi)\\
 h_\times(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \cos\theta\ \sin(\omega t + \phi)
@@ -87,16 +89,16 @@ The emission of gravitational waves carry energy away from the system and thus t
 \end{equation}
 
 This process produces a characteristic ``chirp'' signal which begins as low frequency and amplitude then grows in amplitude while shifting to higher frequency. The signal culminates in a final sharp increase in both frequency and amplitude before the objects merger. This can be seen in Figure \ref{GW170817} which shows a spectrogram of the observed strain at the LIGO observatories for GW170817.
- 
+ \textbf{mention Numerical GR}
  \textbf{include figure of GW170817}
  
- Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars and supernova to cosmic strings and density perturbations in the early universe. With the measurement of gravitational waves, humankind technologically expand our senses to include the faint vibrations of space-time. This ability has expanded the types of astronomical systems we can study and may one day allow further insight into the beginning of the universe and the nature of gravity.
+ Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars and supernova to cosmic strings and density perturbations in the early universe \textbf{cite}. With the measurement of gravitational waves, humankind technologically expand our senses to include the faint vibrations of space-time. This ability has expanded the types of astronomical systems we can study and may one day allow further insight into the beginning of the universe and the nature of gravity.
 
 \section{LIGO}
 
 \subsection{Sensitivity}
 
-The Laser Interferometric Gravitational wave Observatory (LIGO) is a pair of 4 km long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana. Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
+The Laser Interferometric Gravitational wave Observatory (LIGO) \textbf{cite} is a pair of 4 km long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana. Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
 
 \textbf{include LIGO schematic}
 
@@ -109,7 +111,7 @@ h&=\frac{1}{2} \big( h_{xx}-h_{yy} \big)=\frac{1}{2}h_+\ \big( 1+\cos^2\theta \b
 \end{align}
 where $h_{xx}$ and $h_{yy}$ are the strain along the x and y arm respectively, $\theta$ and $\phi$ are the polar and azimuthal angles of the direction of propogation, and $h$ is the differential strain as measured by the observatory. Here the polarizations are defined in the source frame.
 
-The complex series of optics allows the observatory to measure differential strains down to \textbf{$10^{-23}$ at 40 Hz}.  A noise curve for \textbf{some} observatory is shown in Figure \ref{strainNoise} where one can see that the sensitive band of the observatory runs from \textbf{30 Hz up to 16 kHz}. At low frequencies the noise is dominated by residual control noise while at high it is dominated by noise caused by quantum fluctuations.  
+The complex series of optics allows the observatory to measure differential strains down to \textbf{$10^{-23}$ at 40 Hz}.  A noise curve for \textbf{some} observatory is shown in Figure \ref{strainNoise} where one can see that the sensitive band of the observatory runs from \textbf{30 Hz up to 16 kHz}. At low frequencies the noise is dominated by residual control noise while at high it is dominated by noise caused by quantum fluctuations.  \textbf{cite}
 
 \textbf{include LIGO strain curve}
 
@@ -117,7 +119,7 @@ The complex series of optics allows the observatory to measure differential stra
 
 With the current sensitivity the primary systems of interest are compact binaries, discussed in Section \ref{CBC}, which merge within the band of interest. A equal mass \textbf{$200\ M_\odot$} binary black hole system would merger at \textbf{11 Hz} while a \textbf{$1.4\ M_\odot$} binary neutron star system mergers at \textbf{1.5 kHz} yet emits appreciably while sweeping through the LIGO band.
 
-During the first and second observing runs of LIGO, ten binary black hole systems and one binary neutron star merger were detected with high significance. \cite{GWTC} The black holes ranged from \textbf{$7\ M_\odot$ to $120\ M_\odot$} and merged at distances from \textbf{100 Mpc to 2 Gpc}. The neutron star binary was composed of a \textbf{$1.2\ M_\odot$ and a $1.4\ M_\odot$} at \textbf{1 Mpc}. These systems are tabulated in Table \ref{gwTable}.
+During the first and second observing runs of LIGO, ten binary black hole systems and one binary neutron star merger were detected with high significance. \cite{GWTC} The black holes ranged from \textbf{$7\ M_\odot$ to $120\ M_\odot$} and merged at distances from \textbf{100 Mpc to 2 Gpc}. The neutron star binary was composed of a \textbf{$1.2\ M_\odot$ and a $1.4\ M_\odot$} at \textbf{1 Mpc}. These systems are tabulated in Table \ref{gwTable}. \textbf{mention new BNS}
 
 \begin{center}
 \begin{tabular}{| c | c | c | c | c | c |}
@@ -152,6 +154,8 @@ GW170823 & $39.5^{+11.2}_{-6.7}$ & $29.0^{+6.7}_{-7.8}$ & $65.4^{+10.1}_{-7.4}$ 
 
 The ongoing third observing run has had \textbf{\#} significant candidates: \textbf{\#} binary black holes, \textbf{\#} binary neutron stars, and \textbf{\#} black hole neutron star systems. Although these candidates have not been verified to be true gravitational wave events, they show a significant increase in rate of detection due to both the decreased noise and increased duty cycle achieved for the third observing run.
 
+\textbf{what have we learned from these events?}
+
 \section{Seismic Isolation}
 
 \subsection{LIGO Scheme}
@@ -161,6 +165,8 @@ To operate interferometric observatories that are sensitive to the strains of sp
 The ambient seismic wave-field is continuously excited across a wide frequency range. Between 50 mHz to 1 Hz the ambient spectrum is dominated by the ``microseism'' which is an always-present feature that is sourced by the earth's oceans. Above 1 Hz, the dominate source of seismic motion at the observatories is due to local instrumentation. Yet even in locations without any anthropogenic sources, the ground moves at some level at these frequencies. Without isolation, this motion would dominate any measurements with the interferometer and, more practically, would disrupt any attempt at operating the interferometer at it's ideal alignment. This ideal alignment is referred to as having the interferometer ``locked''.
 
 The LIGO observatories solve this issue by employing a multi-stage seismic isolation system formed of both passive and active stages. First from the ground is the Hydraulic External Pre-Isolation (HEPI) system which is formed by four hydraulic actuators which give a small amount of passive isolation and low frequency active isolation. Suspended from this is the Internal Seismic Isolation (ISI) system. This is a dual-stage six-degree active isolation and is the primary broad-band isolation. From the second stage of the ISI is hung the quadruple pendulum, at the bottom of which is a test mass. This provide high frequency passive isolation which decreases the motion of the test mass by $1/f^8$, where $f$ is the frequency of the motion.
+
+\textbf{Diagram}
 
 \subsection{Internal Seismic Isolation}
 
@@ -196,6 +202,8 @@ x_{CPS}=\tilde F_{LP}\ (x_p-x_g)+\tilde F_{HP}\ x_p
 \end{equation}
 
 where the tildes denote the relevant combination of $F_{LP}$ and $F_{SC}$. This scheme allows for isolation down to \textbf{10 mHz} and decreases the bleed through of ground motion due to the CPS low-pass filter's finite roll off. Below 10 mHz, both the ground and platform seismometers become dominated by tilt contamination which is addressed in the following Section \ref{tilt}.
+
+\textbf{include ISI performance pre-BRS}
 
 \chapter{1-m Scale Ground Rotation Sensors} \label{BRS_chap}
 \section{Ground Tilt}\label{tilt}
@@ -295,18 +303,23 @@ To allow for high fidelity rotation sensing, the translational coupling must be 
 
 \subsection{Multi-Slit Autocollimator Readout}
 
-\quad Optical levers are a simple optical angular readout which exploits the law of reflection to measure angular deflections of a mirror by observing the displacement of a reflected beam. The angle of the mirror is then described as:
-\[\theta_{mirror}=\frac{x_{reflected}}{2d}\]
-where $\theta_{mirror}$ is the angle of the mirror, $x_{reflected}$ is the displacement of the reflected beam, and $d$ is the distance between the optical system and the mirror. This allows one to increase the precious of the angular measurements arbitrarily by increasing $d$. However, with this comes a few disadvantages. One the effective gain of the sensor depends of the $d$ which may not be well known. Additionally, the system is sensitive to changes in $d$. 
+\quad Optical levers are simple optical angular readouts which exploit the law of reflection to measure angular deflections of a mirror by observing the displacement of a reflected beam. The angle of the mirror is then described as:
+\begin{equation}
+\theta_{\text{mirror}}=\frac{x_{\text{reflected}}}{2d}
+\end{equation}
+where $\theta_\text{mirror}$ is the angle of the mirror, $x_\text{reflected}$ is the displacement of the reflected beam, and $d$ is the distance between the optical system and the mirror. This allows one to increase the precious of the angular measurements arbitrarily by increasing $d$. However, with this comes a few disadvantages. One the effective gain of the sensor depends of the $d$ which may not be well known. Additionally, the system is sensitive to changes in $d$. 
 
 An autocollimator adds a lens located one focal length from light source and the screen, shown in Figure \textbf{number}. This effectively replace the distance dependence with the focal length of the lens which allows the system to be only sensitive, to first order, to the angular motion of the mirror.
 
 \textbf{autocollimator schematic}
 
 To improve upon this further, a partially reflective mirror can be placed in between the optical system and the main mirror to act as a reference and allows for the subtraction of any motion of the optical system with respect to the main mirror. This yield a angular readout described by:
-\[\theta_{mirror}=\frac{x_{main}-x_{reference}}{2f}\]
+\begin{equation}
+\theta_{\text{mirror}}=\frac{x_{\text{main}}-x_{\text{reference}}}{2f}
+\label{ACEq}
+\end{equation}
 
-where $f$ is the focal length of the lens and $x_{reference}$ is the beam spot from the reference mirror.
+where $f$ is the focal length of the lens and $x_\text{reference}$ is the beam spot from the reference mirror.
 
 \begin{center}
 \begin{tabular}{| c | c |}
@@ -328,9 +341,9 @@ Slit size & $\sim$0.127 mm\\
 \label{ACTable}
 \end{center}
 
-An increase in sensitivity can be made by employing a multi-slit autocollimator \cite{MSA}. This consists of an autocollimator with the light source replaced by a illuminated photomask of a number of thin slits. The pattern is then reflected off a set of reference and main mirror and imaged by a line CCD camera. These images are then analyzed to measure the distance between them thus yielding a measurement of angle. For the BRSs, this image analysis is achieved using bespoke software written in C\# which can be found at www.github.com/mpross/BRSReadout
+An increase in sensitivity can be made by employing a multi-slit autocollimator \cite{MSA}. Such a systems are deployed as the angular readouts for the BRSs. This consists of an autocollimator with the light source replaced by a illuminated photomask of a number of thin slits. The pattern is then reflected off a set of reference and main mirror and imaged by a line CCD camera. These images are then analyzed to measure the distance between them thus yielding a measurement of angle. For the BRSs, this image analysis is achieved using bespoke software written in C\# which can be found at www.github.com/mpross/BRSReadout
 
-To extract the distance between the patterns, the image goes through a series of steps to go from a vector of pixel intensities to a single angular output. When the software begins, the first frame that is captured is saved. All future frames are split into two, with one part representing the reference mirror and the other the main mirror. The cross correlation is then taken between each part and it's matching part from the first frame. This gives a curve who's maximum is located at the pixel number corresponding to separation between the pattern in the current frame and the first frame, which can be seen in Figure \textbf{number}. The points of this curve that are near the maximum are then fit to a Gaussian which allows for the extraction of the location of the peak with sub-pixel resolution. This is done for each pattern separately after which the difference between the reference pattern location and the main pattern location is taken. The difference is then proportional to the change in angle between the casing and the beam.
+To extract the distance between the patterns, the image goes through a series of steps which take it from a vector of pixel intensities to a single angular output. When the software begins, the first frame that is captured is saved. All future frames are split into two, with one part representing the reference mirror and the other the main mirror. The cross correlation is then taken between each part and it's matching section of the first frame. This gives a curve who's maximum is located at the pixel number corresponding to separation between the pattern in the current frame and the first frame, which can be seen in Figure \textbf{number}. The points of this curve that are near the maximum are then fit to a Gaussian which allows for the extraction of the location of the peak with sub-pixel resolution. This is done for each pattern separately after which the difference between the reference pattern location and the main pattern location is taken. The difference is then proportional to the change in angle between the casing and the beam following Equation \ref{ACEq}.
 
 Compared to previous image analysis algorithms \cite{MSAPaper}, this algorithm is more computationally efficient while also being less susceptible to variations in the pattern image due to dust particulate, incorrect focusing, or beam clipping. A sensitivity of \textbf{$\sim$ 0.1 nrad$/\sqrt{\text{Hz}}$} was achieved with this autocollimator design and image analysis algorithm.
 
@@ -344,28 +357,31 @@ F=\frac{\epsilon A V^2}{2d^2} \label{cap}
 \end{equation}
 where $\epsilon$ is the permittivity of the material between the plates, $A$ is the area of the plate, $V$ is the voltage applied to the plates, and $d$ is the distance between the plates. The plate under the beam is connected to a DAC while the beam is grounded which allows for a controlled actuation torque to be applied to the beam. 
 
-The control scheme that was adopted was one in which the feedback signal that is sent to the capacitors is the angular velocity of the beam band passed between 2 mHz and 20 mHz to include only motion at frequencies near the resonance. The feedback is additionally applied with low gain so that the feedback is only adding loss to the system as compared to locking the system in a strong feedback loop where all of the motion is absorbed into the control system. This is then implemented with two gain stages, a ``low amplitude'' stage which is always on and yields a Q of 10-15 and a ``high amplitude'' stage which is triggered if the amplitude rises above a threshold that is set based on the behavior of the given device and gives a Q of \textbf{number}.
+The control scheme that was adopted was one in which the feedback signal that is sent to the capacitors is the angular velocity of the beam band passed between 2 mHz and 20 mHz to include only motion at frequencies near the resonance. The feedback is additionally applied with low gain so that the feedback only adds loss to the system as compared to locking the system in a strong feedback loop where all of the motion is absorbed into the control system. This is then implemented with two gain stages, a ``low amplitude'' stage, which is always on and yields a Q of 10-15, and a ``high amplitude'' stage, which is triggered if the amplitude rises above a threshold that is set based on the behavior of the given device and gives a Q of \textbf{number}.
 
 \subsection{Noise Performance}
 
-In addition to the 0.1 nrad/$\sqrt{\text{Hz}}$ white noise of the autocollimator readout, these devices suffer from a various mechanical noise sources, namely noise due to temperature variations and due to the thermal motion of the flexures.
+In addition to the 0.1 nrad/$\sqrt{\text{Hz}}$ white noise of the autocollimator readout, these devices suffer from various mechanical noise sources, namely noise due to temperature variations and due to the thermal motion of the flexures.
 
 Although the exact physical mechanism is unknown at this juncture, it has been observed that variations in the exterior temperature cause shifts in the balance's equilibrium position. Furthermore, temperature gradients across the instrument emanating from unbalanced heat sources and air currents have been seen to cause time varying noise. To alleviate this issue the instrument's vacuum chamber and optics are wrapped in multiple alternating layers of packing foam and aluminum foil. The entire apparatus is then placed inside a large double walled insulation box to further decrease any temperature variations. This eliminates this as a dominate noise source unless the room in which the instrument is housed undergoes large temperature variations.
 
-More limiting is the noise due to the thermal vibrations of the flexure. At non-zero temperature, a portion of the thermal energy of the flexures is stored in the vibrational modes of the flexure. This causes a fundamental stochastic noise floor that goes as such:
+More fundamental is the noise due to the thermal vibrations of the flexure. At non-zero temperature, a portion of the thermal energy of the flexures is stored in the vibrational modes. This causes a fundamental stochastic noise floor that follows\cite{thermal}:
 
 \begin{equation}
 \tilde\theta_T(\omega)=\sqrt{\frac{4 k_B T \omega_0^2}{I \omega Q\big((\omega^2-\omega_0^2)+\omega_0^4/Q^2\big)}}
 \end{equation}
 
- since this noise source enters as a torque on the beam-balance, it is filtered by the harmonic response making it fall as $1/f^2$ above the resonant frequency. To limit the influence on the performance of the device, the resonant frequency of the spring-mass system is pushed to the lowest frequency that is mechanically feasible. 
+Since this noise source enters as a torque on the beam-balance, it is filtered by the harmonic response making it fall as $1/f^2$ above the resonant frequency. To limit the influence on the performance of the device, the resonant frequency of the spring-mass system is pushed to the lowest frequency that is mechanically feasible. This is the fundamental noise of the instrument and thus is independent of readout and environmental effects.
+
+
+ \textbf{post inversion thermal noise}
  
- One further noise source that acts on the beam-balance comes from voltage noise on the capacitive actuators. The force caused by the follows Equation \ref{cap} and can be shown to be sub dominate.
+ One further noise source comes from voltage noise on the capacitive actuators. The force follows Equation \ref{cap} and can be shown to be sub dominate\textbf{show this}.
  
  \begin{figure}%
 \begin{center}
 \includegraphics[width=\textwidth]{BRSNoiseBudget.pdf}
-\caption{Noise budge for the Beam Rotation Sensors where the blue curve shows the performance at a quiet time, in red is the motion of the reference mirror which can be regarded as an estimate of the readout noise, yellow shows an estimate of the thermal noise, purple shows the noise from the capacitive actuators, and green shows the some of all known noise sources.}
+\caption{Noise budge for the Beam Rotation Sensors where the blue curve shows the performance at a quiet time, in red is the motion of the reference mirror which can be regarded as an estimate of the readout noise, yellow shows an estimate of the thermal noise, purple shows the noise from the capacitive actuators, and green shows the sum of all known noise sources.}
 \label{noise}
 \end{center}
 \end{figure}
@@ -375,12 +391,12 @@ More limiting is the noise due to the thermal vibrations of the flexure. At non-
 \section{Results}\label{results}
 \subsection{Hanford Installation} \label{BRS_Hanford}
 
-\quad Between the first (O1) and second (O2) observing runs of LIGO, two BRSs were installed at the LIGO Hanford Observatory, one at each end station correcting the translations along their respective arm. Although one would expect that the corner station sensors would also need to be corrected, a location was found within the corner station building which exhibited low tilt. \textbf{cite} This is thought to be due to the shape of the building the distance between this location and the walls. As such no BRS was necessary to achieve low tilt injection seismic isolation.
+\quad Between LIGO's first (O1) and second (O2) observing runs, two BRSs were installed at the LIGO Hanford Observatory (LHO), one at each end station correcting the translations along their respective arm. Although one would expect that the corner station seismometers would also need to be corrected, a location was found within the corner station building which exhibited low tilt. \textbf{cite} This is thought to be due to the distance between this location and the walls of the building. As such no BRS was necessary to achieve low tilt contamination.
 
 \begin{figure}%
 \begin{center}
 \includegraphics[width=\textwidth]{HSubtractionETMX.pdf}
-\caption{Representative amplitude spectral density showing the tilt subtraction during windy conditions achieved at End-X of LHO where blue is the BRS signal multiplied by $g/\omega$, read is the raw seismometer signal, and yellow is the tilt corrected signal. Similar perform has been achieved by all of the installed BRSs.}
+\caption{Representative amplitude spectral density showing the tilt subtraction during windy conditions achieved at End-X of LHO where blue is the BRS signal multiplied by $g/\omega$, read is the raw seismometer signal, and yellow is the tilt corrected signal. Similar perform has been achieved by all of the deployed BRSs.}
 \label{sub}
 \end{center}
 \end{figure}
@@ -397,6 +413,8 @@ The tilt subtraction performance achieved with these devices can be seen in Figu
 
 This tilt subtracted channel was then used as the ground signal for the isolation's sensor correction instead of the raw seismometer. Along with the use of the low tilt seismometer for the corner station, the addition of the BRSs in the seismic control scheme yielded significant improvements in the ability to lock the interferometer at increased wind speeds which can be seen in Figure \ref{O2}
 
+\textbf{List BRS parameters}
+
 %\begin{figure}%
 %\begin{center}
 %\includegraphics[width=\textwidth]{Wind_O1vsO2.pdf}
@@ -407,37 +425,40 @@ This tilt subtracted channel was then used as the ground signal for the isolatio
 
 \subsection{Livingston Installation}
 
-\quad After the success of the Hanford BRS installation, four devices were installed at the LIGO Livingston Observatory (LLO) between the second and third (O3) observing runs. Due to differences in the size and shape of the corner station building at LLO a low tilt location was not found. Thus two BRSs were installed located near the two input test masses (ITM) correcting the seismometer signal oriented along their respective arms. 
+\quad After the success of the Hanford BRS installation, four devices were installed at the LIGO Livingston Observatory (LLO) between the second and third (O3) observing runs. Due to differences in the size and shape of the corner station building at LLO, a low tilt location was not found. Thus two BRSs were installed located near the two input test masses (ITM) along with one at each end station correcting the seismometer signal oriented along their respective arms. 
 
-All four were implemented in a similar fashion as the Hanford devices.
+All four were implemented in a similar fashion as the Hanford devices. \textbf{More}
 
 \subsection{Duty Cycle Improvements}
 
-The figure of merit which most readily displays the improvements in duty cycle due to inclusion of the BRSs is the empirical probability of being locked at a given wind speed over the three observing runs. This is shown in Figures \ref{LHO_events} and \ref{LLO_events} for LHO and LLO, respectively. It should be noted that BRSs were implemented in the isolation system at Hanford for bothe O2 and O3a while Livingston was only for O3a.
+The figure of merit which most readily displays the improvements in duty cycle due to inclusion of the BRSs is the empirical probability of having the interferometer locked at a given wind speed over the three observing runs. This is shown in Figures \ref{LHO_events} and \ref{LLO_events} for LHO and LLO, respectively. It should be noted that BRSs were implemented at Hanford for both O2 and O3a while Livingston was only for O3a.
 
 \begin{figure}%
 \begin{center}
 \includegraphics[width=\textwidth]{LHO_WindVsLockEvents.pdf}
-\caption{}
+\caption{Duty cycle improvements for the LIGO Hanford Observatory. \textbf{Add label on right axis}}
 \label{LHO_events}
 \end{center}
 \end{figure}
 
-For Hanford, the benefit of the tilt subtraction scheme can clearly be seen between O1 and O2 curves. During O1 the locked probability fell monotonically with wind speed, while for O2 the probability stayed relatively constant up to 15 m/s above which it fell steadily. For O3a, Hanford saw a clear decrease in performance at high wind speeds yet still out performed the O1 scheme. This loss of performance is likely due to the \textbf{Y-arm} beam being displaced away from the center of the test masses to avoid point absorbers on the \textbf{Input-Y} test mass. This is known to increase coupling between the angular motion of the test mass and the length measured by the interferometer and thus decreases the seismic isolation performance. 
+For Hanford, the benefit of the tilt subtraction scheme can clearly be seen between O1 and O2 curves. During O1 the locked probability fell monotonically with wind speed, while for O2 the probability stayed relatively constant up to 15 m/s above which it fell steadily. For O3a, Hanford saw a clear decrease in performance at high wind speeds yet still out performed the O1 scheme. This loss of performance is likely due to the \textbf{Y-arm} beam being displaced away from the center of the test masses to avoid point absorbers on the \textbf{Input-Y} test mass. This is known to increase coupling between the angular motion of the test mass and the length measured by the interferometer. This increases the drive needed to keep the interferometer locked and thus increases the susceptibility of the system to increased seismic motion. 
 
-Also shown in Figure \ref{LHO_events} is the fraction of the GW events detected during O2 and the fraction of O3a GW candidates at a given wind speed. This shows that a collection of GW events have been observed whose detection probability is directly increased due to the increase duty cycle at higher wind speeds. Namely, GW170104 was measured at \textbf{11} m/s which had an increase in duty cycle of \textbf{20 \%} between O1 and O2. Additionally, a number of O3a candidates have been detected above \textbf{5 m/s} at which the probability of being locked is increased by \textbf{20 \%}.
+Also shown in Figure \ref{LHO_events} is the fraction of the GW events or candidates detected during O1, O2, and O3a at a given wind speed. This shows that a collection of GW events have been observed whose detection probability is directly increased due to the increase duty cycle at higher wind speeds. Namely, GW170104 was measured at $\sim$\textbf{11} m/s which had an increase in duty cycle of $\sim$\textbf{20 \%} between O1 and O2. Additionally, a number of O3a candidates have been detected above $\sim$\textbf{5 m/s} at which the probability of being locked is increased by $\sim$\textbf{20 \%}.
 
 \begin{figure}%
 \begin{center}
 \includegraphics[width=\textwidth]{LLO_WindVsLockEvents.pdf}
-\caption{}
+\caption{Duty cycle improvements for the LIGO Livingston Observatory. \textbf{Add label on right axis}}
 \label{LLO_events}
 \end{center}
 \end{figure}
 
-At Livingston, the improvements at increased wind speeds is less dramatic as can be seen in Figure \ref{LLO_events}. Although between O1 and O2 tilt subtraction was not implemented, a increase in duty cycle was achieved by using a single seismometer for the sensors correction on all of the corner station chambers. This decreased the differential mode motion at higher wind speeds and thus made the interferometer lock more robust. An addition increase in performance can be seen between O2 and O3a due to the deployment of tilt subtraction. However, the probability of being locked still dropped monotonically with wind speed, similar to the O1 performance of Hanford.
+At Livingston, the improvements at increased wind speeds is less dramatic as can be seen in Figure \ref{LLO_events}. Although between O1 and O2 tilt subtraction was not implemented, a increase in duty cycle was achieved by implementing a single seismometer for sensor correction on all of the corner station platforms. This decreased the differential mode motion at higher wind speeds and thus made the interferometer lock more robust. An addition increase in performance can be seen between O2 and O3a due to the deployment of tilt subtraction. However, the probability of being locked still dropped monotonically with wind speed, similar to the O1 performance of Hanford.
 
-Despite this, there is still a collection of O3a candidates detected between \textbf{3-6 m/s} which are more probable with the increased robustness against wind speed.
+Despite this, there is a collection of O3a candidates detected between \textbf{3-6 m/s} which are more probable with the increased robustness against wind speed.
+
+\textbf{talk about mean?}
+\textbf{maybe plot of mean or expectation vs observing run}
 
 \chapter{30-cm Scale On-Board Rotation Sensors}
 \section{Angular Controls}
@@ -572,19 +593,52 @@ The rotational control loop for stage 2 then consists of using the CPS between s
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=\textwidth]{cBRSRotation.pdf}
-\caption{Projected rotational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
-\label{cBRSR}
+\includegraphics[width=\textwidth]{cBRS_Model_ST1RX.pdf}
+\caption{Projected rotational performance of Stage 1 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
+\label{cBRS2R}
 \end{center}
 \end{figure}
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=\textwidth]{cBRSTranslation.pdf}
-\caption{Projected translational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
-\label{cBRST}
+\includegraphics[width=\textwidth]{cBRS_Model_ST1X.pdf}
+\caption{Projected translational performance of Stage 1 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
+\label{cBRS2X}
 \end{center}
 \end{figure}
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_Model_ST2RX.pdf}
+\caption{Projected rotational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
+\label{cBRS2R}
+\end{center}
+\end{figure}
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_Model_ST2X.pdf}
+\caption{Projected translational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
+\label{cBRS2X}
+\end{center}
+\end{figure}
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_Model_CompX.pdf}
+\caption{}
+\label{cBRSCompR}
+\end{center}
+\end{figure}
+
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_Model_CompRX.pdf}
+\caption{}
+\label{cBRSCompX}
+\end{center}
+\end{figure}
+
 \subsection{Angular Control Performance}
 
 \begin{figure}
