@@ -15,7 +15,7 @@
 \title{}
 \prelimpages
  
-\Title{Precision Mechanical Rotation Sensors for Terrestrial Gravitational Wave Observatories}
+\Title{Precision Mechanical Rotation Sensors for Terrestrial~Gravitational~Wave~Observatories}
 \Author{M. P. Ross}
 \Year{2020}
 \Program{Physics}
@@ -596,39 +596,36 @@ Similar to the BRS controls, the cBRS can be rung up do to environmental transie
 
 \subsection{Noise Performance}
 
-\begin{figure}%
+\begin{figure}
 \begin{center}
  \includegraphics[width=\textwidth]{cBRS_Noise_11_19_19.pdf}
 \caption{}
 \label{cBRS_noise}
 \end{center}
 \end{figure}
-\section{Projected Improvements}
-\subsection{Isolation Scheme} \label{IsoScheme}
 
 \textbf{Compare with BRS}
 
-Assuming that the isolation is limited by the noise of the in-band sensor, placing the lowest noise sensors on the second stage of the ISI would be expected to yield the lowest angular motion seen by the down stream control loops. With this in mind and the fact that the access to place new sensors is easier for the second stage, a control scheme was modeled which consists of the addition of an idealized cBRS (described in Section \ref{}) on stage 2. This model consisted of only two mechanical degrees of freedom, one horizontal translation and the rotational about the orthogonal horizontal axis.
+\section{Projected Improvements}
+\subsection{Isolation Scheme} \label{IsoScheme}
 
-The rotational control loop for stage 2 then consists of using the CPS between stage 1 and stage 2 at low frequencies, the cBRS at frequencies between 3 mHz and 0.9 Hz, and the GS-13 pairs at frequencies above that. The blend frequencies were tuned to minimized the rms motion at low frequencies while maximizing the isolation at 0.1 Hz. 
+%Assuming that the isolation is limited by the noise of the in-band sensor, placing the lowest noise sensors on the second stage of the ISI would be expected to yield the lowest angular motion seen by the down stream control loops. With this in mind and the fact that the access to place new sensors is easier for the second stage, a control scheme was modeled which consists of the addition of an idealized cBRS (described in Section \ref{}) on stage 2. This model consisted of only two mechanical degrees of freedom, one horizontal translation and the rotational about the orthogonal horizontal axis.
+%
+%The rotational control loop for stage 2 then consists of using the CPS between stage 1 and stage 2 at low frequencies, the cBRS at frequencies between 3 mHz and 0.9 Hz, and the GS-13 pairs at frequencies above that. The blend frequencies were tuned to minimized the rms motion at low frequencies while maximizing the isolation at 0.1 Hz. 
 
-\begin{figure}%
-\begin{center}
-\includegraphics[width=\textwidth]{cBRS_Model_ST1RX.pdf}
-\caption{Projected rotational performance of Stage 1 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
-\label{cBRS2R}
-\end{center}
-\end{figure}
+As described in Section \ref{seisIso}, each stage and degree of freedom of the seismic isolation system utilizes a blend of multiple sensors as it's feedback signal. These consist of two types of sensors: position sensors which sense motion difference between two stages and inertial sensors which sense the motion relative to an inertial frame. To assess the performance improvements that could be achieved with the addition of a cBRS into the system, a simple two stage, two degree of freedom model was constructed. 
 
-\begin{figure}%
-\begin{center}
-\includegraphics[width=\textwidth]{cBRS_Model_ST1X.pdf}
-\caption{Projected translational performance of Stage 1 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
-\label{cBRS2X}
-\end{center}
-\end{figure}
+This model assumes both infinite control authority and no dynamics of the isolation platforms. Additionally, purely theoretical models are used for the input motion and the sensor noises. Although a model which accounts for all six degrees of freedom is required to accurately predict the isolation performance, this simplified model is instructive for comparisons of the performance with and without the cBRS.
 
-\begin{figure}%
+Throughout this model \textbf{second order binomial filters} are used as the blend filters. In addition, for each stage the inertial sensor noise is taken to be the minimum of the collection of inertial sensors. Realistically these sensors also require detailed blending but the details of this blending is less important below $\sim$ 0.5 Hz. 
+
+\subsubsection{Stage 2 Rotational}
+
+In order to achieve the lowest suspension point motion, we choose to model a cBRS on the second stage of the isolation. This is also the location which currently has enough space to install a device. Due to the rising low frequency noise in the cBRS, tuning where to place the blend frequency becomes a balance of increasing motion at low frequencies and decreasing motion at high and visa versa. The blend frequency was chosen to give a low frequency RMS motion of $\sim$ 10 nrad$/\sqrt{\text{Hz}}$ which matches the performance without the cBRS, see Figure~\ref{cBRSCompR}. This criteria called for a blend frequency of 12 mHz.
+
+The performance with this loop can be seen in Figure \ref{cBRS2R}. Above $\sim$ 500 mHz, the performance is dominated by the GS13 noise and from 80 mHz to 500 mHz it is dominated by cBRS noise. Below 80 mHz, the position sensor contributions become dominate which makes the Stage 2 motion almost equivalent to the Stage 1 motion. The only deviation from Stage 1 motion is near the blend frequency, 12 mHz, where gain peaking added a factor of $\sim$ 3. 
+
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_ST2RX.pdf}
 \caption{Projected rotational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
@@ -636,7 +633,39 @@ The rotational control loop for stage 2 then consists of using the CPS between s
 \end{center}
 \end{figure}
 
-\begin{figure}%
+\subsubsection{Stage 1 Rotational}
+
+With Stage 2 inertially isolated in the rotation degree of freedom above $\sim$ 80 mHz, Stage 1 can achieve superior performance if its control is a combination of the position sensor between the Stage 1 and Stage 2, fine CPS, at high frequencies, and the position sensor between Stage 1 and Stage 0, course CPS, as low. This is effectively using the Stage 2 platform as an inertial proof mass with the fine CPS as a readout. The previous scheme was to use a seismometer pair as an inertial rotation sensor for high frequencies and the course CPS at low. 
+
+Applying the same criteria as Stage 2 of requiring low frequency RMS motion of $\sim$ 10 nrad$/\sqrt{\text{Hz}}$ yields a blend frequency of 3 mHz around which the motion is amplified by a factor of $\sim$ 3 because of gain peaking. The performance of this design can be seen in Figure~\ref{cBRS1R} Below 1 mHz, it is expected the platform motion follows the ground but both the ground rotation and sensor noise are not well constrained at low frequency. Above $\sim$30 mHz, the residual is dominated by the combination of the sensor noises from the fine CPS, from 30 mHz to 350 mHz, and the T240 pair, above 350 mHz.
+
+A subtly that arises from using both the fine and course CPS as the control for Stage 1 is that if the Stage 2 blend frequency is placed below the Stage 1 frequency then in between these two frequencies both stages are using the fine CPS as their control. Since the fine CPS measures the motion between the two stages, this effectively makes both stages uncontrolled as they are not referenced to any independent frame. In our model this is avoided by placing the Stage 1 blend frequency a decade lower than the Stage 2 blend.
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_Model_ST1RX.pdf}
+\caption{Projected rotational performance of Stage 1 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
+\label{cBRS1R}
+\end{center}
+\end{figure}
+
+\subsubsection{Stage 1 Translational}
+
+Once the rotational degrees of freedom are controlled, the translational loops can begin to be tuned. The primary dependence of the traslational performance on the rotational performance comes from tilt contamination of seismometers, described in Section \ref{tiltCon}. As with the rotational control loop design, the choice of blend frequency is a trade off between increasing low frequency motion and decreasing high. We choose to require low frequency RMS performance of $\sim$ 100 nm/s$/\sqrt{\text{Hz}}$. This requirement is more stringent than the current performance of the seismic isolation \textbf{CHECK}. A blend frequency of 10 mHz was found to meet this requirement.
+
+The performance of with this choice can be seen in Figure \ref{cBRS1X}. Above 500 mHz, the performance is limited by the T240 noise. Between 25-500 mHz, residual ground motion dominates and between 1-25 mHz tilt
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_Model_ST1X.pdf}
+\caption{Projected translational performance of Stage 1 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
+\label{cBRS1X}
+\end{center}
+\end{figure}
+
+\subsubsection{Stage 2 Translational}
+
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_ST2X.pdf}
 \caption{Projected translational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
@@ -644,7 +673,7 @@ The rotational control loop for stage 2 then consists of using the CPS between s
 \end{center}
 \end{figure}
 
-\begin{figure}%
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_CompX.pdf}
 \caption{}
