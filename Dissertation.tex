@@ -415,19 +415,31 @@ This tilt subtracted channel was then used as the ground signal for the isolatio
 
 \textbf{List BRS parameters}
 
-%\begin{figure}%
-%\begin{center}
-%\includegraphics[width=\textwidth]{Wind_O1vsO2.pdf}
-%\caption{LHO duty cycle vs windspeed during the first observing run (O1), without BRSs installed, and the second observing run (O2), with BRSs installed. Additionally shown is a histogram of the confirmed GW events seen during O2.}
-%\label{O2}
-%\end{center}
-%\end{figure}
 
 \subsection{Livingston Installation}
 
 \quad After the success of the Hanford BRS installation, four devices were installed at the LIGO Livingston Observatory (LLO) between the second and third (O3) observing runs. Due to differences in the size and shape of the corner station building at LLO, a low tilt location was not found. Thus two BRSs were installed located near the two input test masses (ITM) along with one at each end station correcting the seismometer signal oriented along their respective arms. 
 
 All four were implemented in a similar fashion as the Hanford devices. \textbf{More}
+
+\subsection{Ground Tilt Model}
+
+\begin{align}
+\theta&=\frac{x_1}{f^{2/3}(1+f/f_1)} +\frac{x_2}{1+(f/f_2)^3}\label{TiltModelEq}\\
+\nonumber \\ 
+f_1&=0.2\ \text{Hz}\nonumber \\
+f_2&=(0.1\ s -0.25)\ \text{Hz}\ \text{if }s>0\text{ else }f_2=0\nonumber \\
+x_1&=(1.4\times10^{-11}\ s^2+5.7\times10^{-11}\ s+6.4\times10^{-11})\ \text{rad}\nonumber \\
+x_2&=(1.8\times10^{-10}\ s^2-7.6\times10^{-10}\ s+1.2\times10^{-9})\ \text{rad}\nonumber
+\end{align}
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=\textwidth]{TiltModel.pdf}
+\caption{Observed and modeled tilt vs wind speed for LHO End-X. The solid lines are the measured ground tilt while the dashed are the model. At low wind speeds, the BRS noise and the microseism become dominate at high frequencies.}
+\label{tiltModel}
+\end{center}
+\end{figure}
 
 \subsection{Duty Cycle Improvements}
 
@@ -653,7 +665,7 @@ A subtly that arises from using both the fine and course CPS as the control for 
 
 Once the rotational degrees of freedom are controlled, the translational loops can begin to be tuned. The primary dependence of the traslational performance on the rotational performance comes from tilt contamination of seismometers, described in Section \ref{tiltCon}. As with the rotational control loop design, the choice of blend frequency is a trade off between increasing low frequency motion and decreasing high. We choose to require low frequency RMS performance of $\sim$ 100 nm/s$/\sqrt{\text{Hz}}$. This requirement is more stringent than the current performance of the seismic isolation \textbf{CHECK}. A blend frequency of 10 mHz was found to meet this requirement.
 
-The performance of with this choice can be seen in Figure \ref{cBRS1X}. Above 500 mHz, the performance is limited by the T240 noise. Between 25-500 mHz, residual ground motion dominates and between 1-25 mHz tilt
+The performance of with this choice can be seen in Figure \ref{cBRS1X}. Above 500 mHz, the performance is limited by the T240 noise. Between 25-500 mHz, residual ground motion dominates and between 1-25 mHz residual tilt coupled through tilt contamination of the seismometers is the primary contribution. 
 
 \begin{figure}[!h]
 \begin{center}
