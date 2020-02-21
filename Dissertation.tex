@@ -311,7 +311,13 @@ where $\theta_\text{mirror}$ is the angle of the mirror, $x_\text{reflected}$ is
 
 An autocollimator adds a lens located one focal length from light source and the screen, shown in Figure \textbf{number}. This effectively replace the distance dependence with the focal length of the lens which allows the system to be only sensitive, to first order, to the angular motion of the mirror.
 
-\textbf{autocollimator schematic}
+\begin{figure}%
+\begin{center}
+ \includegraphics[width=\textwidth]{Autocollimator.pdf}
+\caption{Schematic of autocollimator.}
+\label{ACFig}
+\end{center}
+\end{figure}
 
 To improve upon this further, a partially reflective mirror can be placed in between the optical system and the main mirror to act as a reference and allows for the subtraction of any motion of the optical system with respect to the main mirror. This yield a angular readout described by:
 \begin{equation}
@@ -539,14 +545,6 @@ R=\frac{1}{1+F \sin(\delta/2 \lambda)}
 
 where $R$ is the reflectance, $F$ is the finesse, $\delta$ is the path length difference, and $\lambda$ is the wavelength.
 
-\begin{figure}%
-\begin{center}
- \includegraphics[width=\textwidth]{cBRS_Fringes.pdf}
-\caption{}
-\label{cBRS_fringes}
-\end{center}
-\end{figure}
-
 \textbf{include layout of cBRS optics}
 
 \begin{figure}[!h]
@@ -556,13 +554,47 @@ where $R$ is the reflectance, $F$ is the finesse, $\delta$ is the path length di
 \caption{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.}
 \end{figure}
 
+\begin{figure}%
+\begin{center}
+ \includegraphics[width=\textwidth]{cBRS_Fringes.pdf}
+\caption{}
+\label{cBRS_fringes}
+\end{center}
+\end{figure}
+
 To linearize this readout, the optical fiber tip and collimating lens are placed on a translation stage that is driven by a piezo stack. The intensity of the reflected light is then fed back to the piezos using a PID loop to hold the cavity length fixed. This allows the system to be seperated into two linear readouts, the interferometer output for small ranges above the unity gain frequency (UGF) of the loop and the control loop output for large motions below the UGF. The output of the device is then the sum of these two channels.
 
-\textbf{include table of PID parameters}
+\begin{center}
+\begin{tabular}{| c | c |}
+\hline
+Gain & 0.0005\\
+\hline
+I & 1000\\
+\hline
+D & 0\\
+\hline
+\end{tabular}
+\label{pidTable}
+\end{center}
 
 \textbf{talk about mccs2}
 
-\textbf{talk about differencing}
+Although in theory the angle of the beam can be measured with a single interferometer, two readouts are deployed, one at the end of each arm, in order to allow for suppression of common mode noise. The signal seen in each readout is described in Equations \ref{th1} and \ref{th2}. 
+
+\begin{align}
+\theta_1&=\theta_s+x_1/L+x_1 \delta_\lambda/\lambda^2+n_c+n_1 \label{th1} \\
+\theta_2&=-\theta_s+x_2/L+x_2 \delta_\lambda/\lambda^2 + n_c+n_2 \label{th2}
+\end{align}
+
+Where $\theta_{1,2}$ are the angle equivalent signal seen in readout 1 and 2, $\theta_{s}$ is the sensed angle, $x_{1,2}$ are the length of the respective cavities, $L$ is the arm length of the beam, $\delta_\lambda$ is the change in wavelength of the laser, $\lambda$ is the wavelength of the laser, $n_c$ is the sum of all unmodeled common noises, and $n_{1,2}$ are the unmodeled noises that appear in one readout and not the other.
+
+As the angle of the beam appears with opposite phase in the two readout, the difference between the two, Equation \ref{diffEq}, contains the angle while suppressing common noise. Most notable of these common noise sources is frequency noise of the laser. This couples to the angle only through the mismatch in the average cavity lengths which are matched to within \textbf{1 mm}. On the other hand, the sum of the two channels, Equation \ref{sumEq}, contains no contribution from the angle but is instead comprised of only noise sources and thus allows for the in situ measurement of the sum of noises.
+
+
+\begin{align}
+\Delta \theta&=2\theta_s+ (x_1-x_2)\delta_\lambda/\lambda^2+n_1-n_2 \label{diffEq} \\
+\Sigma \theta&=(x_1+x_2)/L+ (x_1+x_2)\delta_\lambda/\lambda^2+2n_c+n_1+n_2 \label{sumEq}
+\end{align}
 
 \textbf{include plot of loop shape}
 
@@ -570,9 +602,15 @@ To linearize this readout, the optical fiber tip and collimating lens are placed
 
 \subsection{Calibration}
 
+The two readouts are calibrated independently to take into account differing piezo calibration and amplifier gains. The calibration is done by driving the piezo linearly through its entire range while the beam is locked. During this drive the interference pattern wraps through multiple fringes as the cavity length is decreased. The minima of these fringes is known to be separated by $\lambda/2$ which allows for the calibration from voltage across the piezo to displacement. The region around the 50\% reflectance point is then fit to a linear function of displacement to yield a calibration from reflectance to displacement.  
+
+This calibration scheme requires independent determination of the wavelength of the laser which is specified by the manufacturer to be 1310 nm \textbf{$\pm$ 10\%}. Additionally, this assumes that the pattern seen at the photodiode is the interference due to the Fabry-Perot cavity formed by the beam splitter coating and the mirror on the beam. This was verified by comparing the refelctance measurements to the theory as can be seen in Figure \ref{cBRS_fringes}.
+
+\textbf{include calibration numbers}
+
 \begin{figure}%
 \begin{center}
- \includegraphics[width=\textwidth]{cBRS_ReadoutNoise_11_19_19.pdf}
+ \includegraphics[width=\textwidth]{cBRS_ReadoutNoise.pdf}
 \caption{Readout noise for the cBRS. \textbf{Remove goal}}
 \label{cBRS_readout}
 \end{center}
@@ -610,7 +648,7 @@ Similar to the BRS controls, the cBRS can be rung up do to environmental transie
 
 \begin{figure}
 \begin{center}
- \includegraphics[width=\textwidth]{cBRS_Noise_11_19_19.pdf}
+ \includegraphics[width=\textwidth]{cBRS_Noise.pdf}
 \caption{}
 \label{cBRS_noise}
 \end{center}
