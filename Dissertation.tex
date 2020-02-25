@@ -90,7 +90,14 @@ The emission of gravitational waves carry energy away from the system and thus t
 
 This process produces a characteristic ``chirp'' signal which begins as low frequency and amplitude then grows in amplitude while shifting to higher frequency. The signal culminates in a final sharp increase in both frequency and amplitude before the objects merger. This can be seen in Figure \ref{GW170817} which shows a spectrogram of the observed strain at the LIGO observatories for GW170817.
  \textbf{mention Numerical GR}
- \textbf{include figure of GW170817}
+ 
+\begin{figure}%
+\begin{center}
+\includegraphics[width=0.85\textwidth]{GW170817.pdf}
+\caption{Spectrogram of the strain caused by a binary neutron star merger as seen at the LIGO Hanford Observatory, LIGO Livingston Observatory, and the Virgo Observatory. \cite{GW170817} A clear chirp signal can be seen starting at $\sim$ 40 Hz which rising in both frequency and amplitude.}
+\label{GW170817}
+\end{center}
+\end{figure}
  
  Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars and supernova to cosmic strings and density perturbations in the early universe \textbf{cite}. With the measurement of gravitational waves, humankind technologically expand our senses to include the faint vibrations of space-time. This ability has expanded the types of astronomical systems we can study and may one day allow further insight into the beginning of the universe and the nature of gravity.
 
@@ -100,7 +107,13 @@ This process produces a characteristic ``chirp'' signal which begins as low freq
 
 The Laser Interferometric Gravitational wave Observatory (LIGO) \textbf{cite} is a pair of 4 km long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana. Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
 
-\textbf{include LIGO schematic}
+\begin{figure}%
+\begin{center}
+\includegraphics[width=0.85\textwidth]{LIGO_Schematic.pdf}
+\caption{\textbf{CHECK COPYRIGHT}}
+\label{LIGO_Schematic}
+\end{center}
+\end{figure}
 
 As a gravitational wave passes the observatory, the arms experience a strains that follow \cite{GWBook}:
 \begin{align}
@@ -174,7 +187,13 @@ The ISI is comprised of two similar stages each suspended from steel blade sprin
 
 This is done in all six degrees of freedom by having three independent seismometers of each type located 1 meter apart. The three translational signals are comprised of the average of the corresponding seismometer signals, while the three rotational degrees are sensed by the difference of the seismometer divided by the separation.
 
-\textbf{include seismometer noise figure}
+\begin{figure}%
+\begin{center}
+\includegraphics[width=0.85\textwidth]{seismicSensNoise.pdf}
+\caption{}
+\label{seisNoise}
+\end{center}
+\end{figure}
 
 Due to the increase in T240 noise below \textbf{100 mHz}, a set of Capacitive Position Sensors (CPS) are deployed which sense the relative motion between either the ground and the first ISI stage or the two stages of the ISI. This is then used as the control signal at low frequencies yielding a control that follows:
 
@@ -386,7 +405,7 @@ Since this noise source enters as a torque on the beam-balance, it is filtered b
  
  \begin{figure}%
 \begin{center}
-\includegraphics[width=\textwidth]{BRSNoiseBudget.pdf}
+\includegraphics[width=\textwidth]{BRSNoiseBudget2.pdf}
 \caption{Noise budge for the Beam Rotation Sensors where the blue curve shows the performance at a quiet time, in red is the motion of the reference mirror which can be regarded as an estimate of the readout noise, yellow shows an estimate of the thermal noise, purple shows the noise from the capacitive actuators, and green shows the sum of all known noise sources.}
 \label{noise}
 \end{center}
@@ -545,7 +564,12 @@ R=\frac{1}{1+F \sin(\delta/2 \lambda)}
 
 where $R$ is the reflectance, $F$ is the finesse, $\delta$ is the path length difference, and $\lambda$ is the wavelength.
 
-\textbf{include layout of cBRS optics}
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=0.5\textwidth]{FiberInt.pdf}
+\end{center}
+\caption{}
+\end{figure}
 
 \begin{figure}[!h]
 \begin{center}
