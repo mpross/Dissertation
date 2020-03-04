@@ -405,7 +405,7 @@ Since this noise source enters as a torque on the beam-balance, it is filtered b
  
  \begin{figure}%
 \begin{center}
-\includegraphics[width=\textwidth]{BRSNoiseBudget2.pdf}
+\includegraphics[width=\textwidth]{BRSNoiseModel.pdf}
 \caption{Noise budge for the Beam Rotation Sensors where the blue curve shows the performance at a quiet time, in red is the motion of the reference mirror which can be regarded as an estimate of the readout noise, yellow shows an estimate of the thermal noise, purple shows the noise from the capacitive actuators, and green shows the sum of all known noise sources.}
 \label{noise}
 \end{center}
@@ -523,7 +523,7 @@ The compact Beam Rotation Sensor (cBRS), described in the following, was designe
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=\textwidth]{cBRS_Model_Noise.pdf}
+\includegraphics[width=\textwidth]{sensorNoise.pdf}
 \caption{Theoretical noise curves for the cBRS, blue, and seismometer pair located 1-m apart.}
 \label{sensNoise}
 \end{center}
@@ -565,11 +565,12 @@ This design yields a resonant frequency of $\sim$20 mHz which limits the use of 
 
 \subsection{Interferometric Readout}
 In order to maintain the small size of the entire device and to decrease readout noise, an interferometric readout was developed that consists of a Fabry-Perot cavity that is formed by a beamsplitter coated optical fiber and a full reflecting mirror placed on the bottom of the balance's end masses. The reflectance of this cavity is then monitored by employing a circulator to seperate the incoming and outgoing rays. As the cavity length changes the reflectence undergoes an interference pattern described by:
+
 \begin{align}
-R=\frac{1}{1+F \sin(\delta/2 \lambda)}
+R=\frac{F \sin^2(2\pi n x/\lambda)}{1+F \sin^2(2\pi n x/\lambda)}
 \end{align}
 
-where $R$ is the reflectance, $F$ is the finesse, $\delta$ is the path length difference, and $\lambda$ is the wavelength.
+where $R$ is the reflectance, $F$ is the finesse, $x$ is the length of the cavity, $n$ is the index of refraction of the cavity, and $\lambda$ is the wavelength.
 
 \begin{figure}[!h]
 \begin{center}
@@ -705,6 +706,14 @@ This model assumes both infinite control authority and no dynamics of the isolat
 
 Throughout this model \textbf{second order binomial filters} are used as the blend filters. In addition, for each stage the inertial sensor noise is taken to be the minimum of the collection of inertial sensors. Realistically these sensors also require detailed blending but the details of this blending is less important below $\sim$ 0.5 Hz. 
 
+\begin{figure}%
+\begin{center}
+\includegraphics[width=\textwidth]{cBRS_Model_Noise.pdf}
+\caption{Theoretical noise curves for the cBRS, blue, and seismometer pair located 1-m apart.}
+\label{sensNoise}
+\end{center}
+\end{figure}
+
 \subsubsection{Stage 2 Rotational}
 
 In order to achieve the lowest suspension point motion, we choose to model a cBRS on the second stage of the isolation. This is also the location which currently has enough space to install a device. Due to the rising low frequency noise in the cBRS, tuning where to place the blend frequency becomes a balance of increasing motion at low frequencies and decreasing motion at high and visa versa. The blend frequency was chosen to give a low frequency RMS motion of $\sim$ 10 nrad$/\sqrt{\text{Hz}}$ which matches the performance without the cBRS, see Figure~\ref{cBRSCompR}. This criteria called for a blend frequency of 12 mHz.
@@ -767,8 +776,6 @@ Of particular interest for future upgrades to the seismic isolation, the limitin
 
 To show the improvements relative to the past isolation system, the performance of the past isolation system was modeled using the same techniques as described in Section \ref{IsoScheme}. The filters used here were those that were in deployment for O2. These are expertly tuned to account for the true performance of the instruments and thus have more complex shapes than the binomial filters used in the proposed isolation scheme.
 
-A comparison of the rotational degree of Stage 2 is shown in Figure \ref{cBRSCompR}
-
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_CompRX.pdf}
@@ -777,7 +784,8 @@ A comparison of the rotational degree of Stage 2 is shown in Figure \ref{cBRSCom
 \end{center}
 \end{figure}
 
-The performance comparison of the translational degree isolation system is shown in Figure \ref{cBRSCompX}. Above 1 Hz, the performance of the two schemes are similar as lowest noise sensors at those frequencies have not changed. At the secondary microseism, 100-500 mHz, the inclusion of the cBRS yields a factor of $\sim$ 20 improvement of the residual motion while at the primary microseism, 50-100 mHz, it yields a factor of $\sim$ 3. With the cBRS, the residual motion between 3-30 mHz is increased by a factor of ten. However, the RMS motion at those frequencies is still below the previous performance. It is expected that the control loops on the intermediate masses will be able to compensate for this increase in motion without any decrease in performance. Below 2 mHz, both schemes follow the ground since the dominate sensors at those frequencies are the position sensors.
+A comparison of the rotational degree is shown in Figure \ref{cBRSCompR}. During O2, Stage 2 was locked to Stage 1 in the rotational degree of freedom using the position sensors across the entire band of interest. Thus the performance of the two stages is identical. With the addition of the cBRS the residual tilt is decreased by a factor of $\sim$ 50 and $\sim$ 100 respectively for Stage 1 and Stage 2 between 50-250 mHz. Between 1-10 mHz the residual tilt is increased by a factor of $\sim$ 3. Below 1 mHz it is expected that the two schemes have identical performance. However, the ground tilt is not well modeled due to the lack of sub-mHz rotation sensors so this is omitted from this model.
+
 
 \begin{figure}[!h]
 \begin{center}
@@ -787,6 +795,7 @@ The performance comparison of the translational degree isolation system is shown
 \end{center}
 \end{figure}
 
+The performance comparison of the translational degree isolation system is shown in Figure \ref{cBRSCompX}. Above 1 Hz, the performance of the two schemes are similar as lowest noise sensors at those frequencies have not changed. At the secondary microseism, 100-500 mHz, the inclusion of the cBRS yields a factor of $\sim$ 20 improvement of the residual motion while at the primary microseism, 50-100 mHz, it yields a factor of $\sim$ 3. With the cBRS, the residual motion between 3-30 mHz is increased by a factor of ten. However, the RMS motion at those frequencies is still below the previous performance. It is expected that the control loops on the intermediate masses will be able to compensate for this increase in motion without any decrease in performance. Below 2 mHz, both schemes follow the ground since the dominate sensors at those frequencies are the position sensors.
 
 Although in reality the control loop for each isolation platform will have to be tuned individually, these models show that one can expect a significant decrease in residual motion with the deployment of the cBRS.
 
@@ -930,6 +939,8 @@ Finally, the tilt, being the rotation about the y-axis, due to a Rayleigh wave i
 The tilt is thus both in phase, has the same angular dependence, and does not include Love waves. The lack of Love waves can be seen in Figure \ref{Earthquake} when the horizontal seismometer experiences a large Love wave at around \textbf{1000 s} while the rotation sensor sees no such signal. The tilt signal and the Newtonian noise are thus related by a handful of parameters which can be measured independently or determined empirically and are not expected to vary in time. This points to the conclusion that a tiltmeter is the ideal sensor for Newtonian noise subtraction
 
 \subsection{Observations}
+
+During LIGO's second observing run (O2), a prototype cBRS, described in Section \ref{cBRSChap}, was installed at the corner station of the LIGO Hanford Observatory along side an array of vertical seismometers. The aim of this deployment was to investigate the Newtonian noise coupling and to test subtraction schemes. Ideally, one would place a rotation sensor directly below one of the test mass as the Newtonian noise acting on the mirror is dominated by the ground just beneath it. However, the cBRS was too large to be placed underneath the vacuum chamber which holds the test mass. Thus it was placed 
 
 \textbf{cBRS installed at Hanford}
 

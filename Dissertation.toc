@@ -37,16 +37,16 @@
 \contentsline {section}{\numberline {3.3}Projected Improvements}{48}% 
 \contentsline {subsection}{\numberline {3.3.1}Isolation Scheme}{48}% 
 \contentsline {subsubsection}{Stage 2 Rotational}{48}% 
-\contentsline {subsubsection}{Stage 1 Rotational}{50}% 
-\contentsline {subsubsection}{Stage 1 Translational}{51}% 
-\contentsline {subsubsection}{Stage 2 Translational}{52}% 
-\contentsline {subsubsection}{Comparison with past performance}{54}% 
-\contentsline {subsection}{\numberline {3.3.2}Angular Control Performance}{56}% 
-\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{60}% 
-\contentsline {section}{\numberline {4.1}Geophysics}{60}% 
-\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{60}% 
-\contentsline {subsection}{\numberline {4.1.2}wave-field Parameter Extraction}{63}% 
-\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{64}% 
-\contentsline {section}{\numberline {4.2}Newtonian Noise}{66}% 
-\contentsline {subsection}{\numberline {4.2.1}Theory}{66}% 
-\contentsline {subsection}{\numberline {4.2.2}Observations}{68}% 
+\contentsline {subsubsection}{Stage 1 Rotational}{51}% 
+\contentsline {subsubsection}{Stage 1 Translational}{52}% 
+\contentsline {subsubsection}{Stage 2 Translational}{53}% 
+\contentsline {subsubsection}{Comparison with past performance}{55}% 
+\contentsline {subsection}{\numberline {3.3.2}Angular Control Performance}{57}% 
+\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{61}% 
+\contentsline {section}{\numberline {4.1}Geophysics}{61}% 
+\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{61}% 
+\contentsline {subsection}{\numberline {4.1.2}wave-field Parameter Extraction}{64}% 
+\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{65}% 
+\contentsline {section}{\numberline {4.2}Newtonian Noise}{67}% 
+\contentsline {subsection}{\numberline {4.2.1}Theory}{67}% 
+\contentsline {subsection}{\numberline {4.2.2}Observations}{69}% 
