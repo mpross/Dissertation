@@ -10,7 +10,7 @@ Warning--I didn't find a database entry for "thermal"
 Warning--I didn't find a database entry for "TiltSeimology"
 You've used 28 entries,
             2118 wiz_defined-function locations,
-            700 strings with 17157 characters,
+            701 strings with 17168 characters,
 and the built_in function-call counts, 24199 in all, are:
 = -- 1853
 > -- 2880
