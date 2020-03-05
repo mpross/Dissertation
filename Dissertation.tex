@@ -20,7 +20,7 @@
 \Year{2020}
 \Program{Physics}
 
-\Chair{Jens Gundlach}{Title of Chair}{Physics}
+\Chair{Jens Gundlach}{Professor}{Physics}
 \Signature{Eric Adelberger}
 \Signature{Sanjay Reddy}
 
@@ -46,13 +46,13 @@ If this was the case with the instrument constructed with a view to avoid sensit
 
 \subsection{Linearized General Relativity}
 
-In early twentieth century, Einstein and others formulated the theory of General Relativity, which supplanted the static space-time in which all prior physics was formulated in, with a deformable space-time which gave a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
+In early twentieth century, Einstein and others formulated the theory of General Relativity, which supplanted the static space-time in which all prior physics was formulated, with a deformable space-time which yielded a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
 \begin{equation}
 R_{\mu \nu}-\frac{1}{2}R\ g_{\mu \nu}+\Lambda g_{\mu \nu}= \frac{8\pi G}{c^4} T_{\mu \nu}
 \end{equation}
 where $R_{\mu \nu}$ is the Riemann tensor, $R$ is the Ricci scalar, $\Lambda$ is the cosmological constant, $G$ is the gravitational constant, $c$ is the speed of light, and $T_{\mu \nu}$ is the stress energy tensor.
 
-If one focuses on a locally flat region of space which is much smaller than the scale of the universe, then the cosmological constant term can be sent to zero and the metric can be approximated via \cite{GWBook}:
+If one focuses on a locally flat region of space which is much smaller than the scale of the universe, then the cosmological constant term is negligible and the metric can be approximated via \cite{GWBook}:
 \begin{equation}
 g_{\mu \nu}(\vec x,t)\approx\eta_{\mu \nu}(\vec x,t)+h_{\mu \nu}(\vec x,t)
 \end{equation}
@@ -75,47 +75,48 @@ where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' pola
 
 As of writing, the only systems that have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects is of importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} astrophysical objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor} and GW170817\cite{GW170817}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC}.
 
-Such a system can be approximated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. \textbf{Discuss approximation} The gravitational waves emitted by such a system can be shown to be:
+Such a system can be approximated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. This approximation is only valid during the inspiral phase of the merger when the distance between the two objects is much larger than the size of the objects. For a complete simulation of the gravitational wave emission during a merger, one must numerically evaluate the evolution of the metric around the objects. \cite{}
+
+The gravitational waves emitted by such a system can be shown to be:
 \begin{align}
 h_+(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \frac{1+\cos^2\theta}{2} \ \cos(\omega t + \phi)\\
 h_\times(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \cos\theta\ \sin(\omega t + \phi)
 \end{align}
 
-where $M=(m_1 m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the chirp mass, $r$ is the distance to the center of mass of the source, $\theta$ is the viewing angle, $f=\omega/2\pi$ is the frequency of oscillation, and $\phi$ is the initial phase of the system.
+where $M=(m_1 m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the chirp mass, $r$ is the distance from the observer to the center of mass of the source, $\theta$ is the viewing angle with respect to the axis of the orbital plane, $f=\omega/2\pi$ is the frequency of oscillation, and $\phi$ is the initial phase of the system.
 
-The emission of gravitational waves carry energy away from the system and thus the orbit decays. As the radius of the orbit decreases the frequency of oscillation must grow due to Kepler's law. This then causes the amplitude of the emitted gravitational waves to grow and the orbit to decay quicker. The frequency change during this run away process can be shown to be:
+The emission of gravitational waves carry energy away from the system and thus the orbit must decay. As the radius of the orbit decreases the frequency of oscillation must grow due to Kepler's law. This then causes the amplitude of the emitted gravitational waves to grow and the orbit to decay quicker. The frequency change during this run away process can be shown to be:
 \begin{equation}
 \dot{f}=\frac{96}{5}\pi^{8/3}\bigg(\frac{G M}{c^3}\bigg)^{5/3} f^{11/3}
 \end{equation}
 
-This process produces a characteristic ``chirp'' signal which begins as low frequency and amplitude then grows in amplitude while shifting to higher frequency. The signal culminates in a final sharp increase in both frequency and amplitude before the objects merger. This can be seen in Figure \ref{GW170817} which shows a spectrogram of the observed strain at the LIGO observatories for GW170817.
- \textbf{mention Numerical GR}
+This process produces a characteristic ``chirp'' signal which begins as low frequency and low amplitude then grows in amplitude while shifting to higher frequency. The signal culminates in a final sharp increase in both frequency and amplitude before the objects merger. This can be seen in Figure \ref{GW170817} which shows a spectrogram of the observed strain at the LIGO observatories of the binary neutron star merger GW170817.
  
-\begin{figure}%
+\begin{figure}
 \begin{center}
-\includegraphics[width=0.85\textwidth]{GW170817.pdf}
-\caption{Spectrogram of the strain caused by a binary neutron star merger as seen at the LIGO Hanford Observatory, LIGO Livingston Observatory, and the Virgo Observatory. \cite{GW170817} A clear chirp signal can be seen starting at $\sim$ 40 Hz which rising in both frequency and amplitude.}
+\includegraphics[width=0.8\textwidth]{GW170817.pdf}
+\caption{Spectrogram of the strain caused by a binary neutron star merger as seen at the LIGO Hanford Observatory, LIGO Livingston Observatory, and the Virgo Observatory. \cite{GW170817} A clear chirp signal can be seen starting at $\sim$ 40 Hz which rising in both frequency and amplitude. The origin of the time axis is when the neutron stars merge. The differing amount of signal in the three detectors is due to the alignment of their respective antennae patterns with the source location.}
 \label{GW170817}
 \end{center}
 \end{figure}
  
- Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars and supernova to cosmic strings and density perturbations in the early universe \textbf{cite}. With the measurement of gravitational waves, humankind technologically expand our senses to include the faint vibrations of space-time. This ability has expanded the types of astronomical systems we can study and may one day allow further insight into the beginning of the universe and the nature of gravity.
+ Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars and supernova to cosmic strings and density perturbations in the early universe \textbf{cite}. With the measurement of gravitational waves, humankind has technologically expanded our senses to include the faint vibrations of space-time. This ability has allowed the study of new types of astronomical systems and may one day allow further insight into the beginning of the universe and the nature of gravity.
 
 \section{LIGO}
 
 \subsection{Sensitivity}
 
-The Laser Interferometric Gravitational wave Observatory (LIGO) \textbf{cite} is a pair of 4 km long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana. Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
+The Laser Interferometric Gravitational wave Observatory (LIGO) \textbf{cite} is a pair of 4 km long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana (LLO). Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
 
 \begin{figure}%
 \begin{center}
-\includegraphics[width=0.85\textwidth]{LIGO_Schematic.pdf}
-\caption{\textbf{CHECK COPYRIGHT}}
+\includegraphics[width=0.75\textwidth]{LIGO_Schematic.pdf}
+\caption{Optical layout of the LIGO interferometers \cite{LIGOSens}.\textbf{check copyrights}}
 \label{LIGO_Schematic}
 \end{center}
 \end{figure}
 
-As a gravitational wave passes the observatory, the arms experience a strains that follow \cite{GWBook}:
+As a gravitational wave passes the observatory, the arms experience strains that follow \cite{GWBook}:
 \begin{align}
 h_{xx}&=h_+\ \big( \cos^2\theta\ \cos^2\phi-\sin^2\phi \big)+2\ h_\times\ \cos \theta\ \sin \phi \cos \phi \\
 h_{yy}&=h_+\ \big( \cos^2\theta\ \sin^2\phi-\cos^2\phi \big)-2\ h_\times\ \cos \theta\ \sin \phi \cos \phi \\
@@ -124,9 +125,16 @@ h&=\frac{1}{2} \big( h_{xx}-h_{yy} \big)=\frac{1}{2}h_+\ \big( 1+\cos^2\theta \b
 \end{align}
 where $h_{xx}$ and $h_{yy}$ are the strain along the x and y arm respectively, $\theta$ and $\phi$ are the polar and azimuthal angles of the direction of propogation, and $h$ is the differential strain as measured by the observatory. Here the polarizations are defined in the source frame.
 
-The complex series of optics allows the observatory to measure differential strains down to \textbf{$10^{-23}$ at 40 Hz}.  A noise curve for \textbf{some} observatory is shown in Figure \ref{strainNoise} where one can see that the sensitive band of the observatory runs from \textbf{30 Hz up to 16 kHz}. At low frequencies the noise is dominated by residual control noise while at high it is dominated by noise caused by quantum fluctuations.  \textbf{cite}
+The complex series of optics allows the observatory to measure differential strains down to \textbf{$10^{-23}$ at 40 Hz}.  Noise curves for the observatories are shown in Figure \ref{LIGO_Strain} where one can see that the sensitive band of the observatory runs from \textbf{30 Hz up to 16 kHz}. At low frequencies the noise is dominated by residual control noise while at high it is dominated by noise caused by quantum fluctuations.  \cite{Squeeze}
 
-\textbf{include LIGO strain curve}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{StrainCurve.pdf}
+\caption{Strain sensitivity of the LIGO and Virgo Observatories. \textbf{replace with O3 sensitivity}}
+\label{LIGO_Strain}
+\end{center}
+\end{figure}
+
 
 \subsection{Events}
 
@@ -144,6 +152,7 @@ GW150914 & $35.6^{+4.7}_{-3.1}$ & $30.6^{+3.0}_{-4.4}$ & $63.1^{+3.4}_{-3.0}$ & 
 GW151012 & $23.2^{+14.9}_{-5.5}$ & $13.6^{+4.1}_{-4.8}$  & $35.6^{+10.8}_{-3.8}$ & $1080^{+550}_{-490}$& $0.21^{+0.09}_{-0.09}$\\
 \hline
 GW151226 & $13.7^{+8.8}_{-3.2}$ & $7.7^{+2.2}_{-2.5}$ & $20.5^{+6.4}_{-1.5}$ & $450^{+180}_{-190}$ & $0.09^{+0.04}_{-0.04}$\\
+\hline
 \hline
 GW170104 & $30.8^{+7.3}_{-5.6}$ & $20.0^{+4.9}_{-4.6}$ & $48.9^{+5.1}_{-4.0}$ & $990^{+440}_{-430}$ & $0.20^{+0.08}_{-0.08}$\\
 \hline
@@ -167,21 +176,29 @@ GW170823 & $39.5^{+11.2}_{-6.7}$ & $29.0^{+6.7}_{-7.8}$ & $65.4^{+10.1}_{-7.4}$ 
 
 The ongoing third observing run has had \textbf{\#} significant candidates: \textbf{\#} binary black holes, \textbf{\#} binary neutron stars, and \textbf{\#} black hole neutron star systems. Although these candidates have not been verified to be true gravitational wave events, they show a significant increase in rate of detection due to both the decreased noise and increased duty cycle achieved for the third observing run.
 
-\textbf{what have we learned from these events?}
+Observation of these events has led to further understanding of a variety of phenomena. Including the nature of the neutron star composition \cite{}, the source of heavy elements \cite{}, and black hole populations \cite{}. Additionally, they have allowed a model independent measurement of Hubble's constant \cite{} and have set restrictive limits on alternative theories of gravity \cite{}.
 
 \section{Seismic Isolation}
 
 \subsection{LIGO Scheme}
 
-To operate interferometric observatories that are sensitive to the strains of space time, one must isolate the instrument from all other sources of differential displacement. As the observatories are located on the surface of the earth, the dominate sources of such noise is due to ambient seismic motion. 
+To operate interferometric observatories that are sensitive to the strains of space time, one must isolate the instrument from all other sources of differential displacement. As the observatories are located on the surface of the earth, the dominate source of such noise is due to ambient seismic motion. 
 
-The ambient seismic wave-field is continuously excited across a wide frequency range. Between 50 mHz to 1 Hz the ambient spectrum is dominated by the ``microseism'' which is an always-present feature that is sourced by the earth's oceans. Above 1 Hz, the dominate source of seismic motion at the observatories is due to local instrumentation. Yet even in locations without any anthropogenic sources, the ground moves at some level at these frequencies. Without isolation, this motion would dominate any measurements with the interferometer and, more practically, would disrupt any attempt at operating the interferometer at it's ideal alignment. This ideal alignment is referred to as having the interferometer ``locked''.
+The ambient seismic wave-field is continuously excited across a wide frequency range. Between 50 mHz to 1 Hz the ambient spectrum is dominated by the ``microseism'' which is an always-present feature that is sourced by the earth's oceans. Above 1 Hz, the dominate source of seismic motion at the observatories is due to local instrumentation. Yet even in locations without anthropogenic sources, the ground moves at these frequencies. Without isolation, this motion would dominate any measurements with the interferometer and, more practically, would disrupt any attempt at operating the interferometer at it's ideal alignment. This ideal alignment is referred to as having the interferometer ``locked''.
 
-The LIGO observatories solve this issue by employing a multi-stage seismic isolation system formed of both passive and active stages. First from the ground is the Hydraulic External Pre-Isolation (HEPI) system which is formed by four hydraulic actuators which give a small amount of passive isolation and low frequency active isolation. Suspended from this is the Internal Seismic Isolation (ISI) system. This is a dual-stage six-degree active isolation and is the primary broad-band isolation. From the second stage of the ISI is hung the quadruple pendulum, at the bottom of which is a test mass. This provide high frequency passive isolation which decreases the motion of the test mass by $1/f^8$, where $f$ is the frequency of the motion.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.75\textwidth]{windComp.pdf}
+\caption{Ground motion spectra recorded at the X end station of the Hanford Observatory. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity. \textbf{remove high wind}}
+\label{wind}
+\end{center}
+\end{figure}
+
+The LIGO observatories solve this issue by employing a multi-stage seismic isolation system formed of both passive and active stages. First from the ground is the Hydraulic External Pre-Isolation (HEPI) system which is formed by four hydraulic actuators. This provides a small amount of passive isolation and low frequency active isolation. Suspended from this is the Internal Seismic Isolation (ISI) system, described in Section \ref{ISI}. This is a dual-stage six-degree active isolation and is the primary broad-band isolation. From the second stage of the ISI is hung a quadruple pendulum, at the bottom of which is a test mass. This provide high frequency passive isolation decreasing the motion of the test mass by $1/f^8$, where $f$ is the frequency of the motion.
 
 \textbf{Diagram}
 
-\subsection{Internal Seismic Isolation}
+\subsection{Internal Seismic Isolation}\label{ISI}
 
 The ISI is comprised of two similar stages each suspended from steel blade springs and wires, the first from HEPI and the second from the first. Each stage is controlled using a set of six magnetic actuators whose signal is comprised of a collection of sensors placed on the stage. The motion of the table is sensed with a series of three-axis seismometers which sense motion with respect to an inertial frame. Two separate models of seismometers are combined to utilized the instrument with the lowest noise in a given frequency band. Above \textbf{3 Hz}, Guralp GS13s are used while between \textbf{100 mHz to 3 Hz} Trillium T240s are implemented. These two sensors are ``blended'' together by sending the T240 through a low pass filter and the GS13 through a high pass. The filtered signals are then added together to form the control signal which is sent to the actuators. 
 
