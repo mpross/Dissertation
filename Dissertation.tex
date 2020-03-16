@@ -206,9 +206,9 @@ The LIGO observatories solve this issue by employing a multi-stage seismic isola
 
 \subsection{Internal Seismic Isolation}\label{ISI}
 
-The ISI is comprised of two similar stages each suspended from steel blade springs and wires, the first from HEPI and the second from the first. Each stage is controlled using a set of six magnetic actuators whose signal is comprised of a collection of sensors placed on the stage. The motion of the table is sensed with a series of three-axis seismometers which sense motion with respect to an inertial frame. Two separate models of seismometers are combined to utilized the instrument with the lowest noise in a given frequency band. Above \textbf{3 Hz}, Guralp GS13s are used while between \textbf{100 mHz to 3 Hz} Trillium T240s are implemented. These two sensors are ``blended'' together by sending the T240 through a low pass filter and the GS13 through a high pass. The filtered signals are then added together to form the control signal which is sent to the actuators. 
+The ISI is comprised of two similar stages each suspended from steel blade springs and wires, the first from HEPI and the second from the first. Each stage is controlled using a set of six magnetic actuators whose signal is comprised of a collection of sensors placed on the stage. The motion of the table is sensed with a series of three-axis seismometers which are sensitive to motion with respect to an inertial frame. Two separate models of seismometers are combined to utilized the instrument with the lowest noise in a given frequency band. Above \textbf{3 Hz}, Guralp GS13s are used while between \textbf{100 mHz to 3 Hz} Trillium T240s are implemented. These two sensors are ``blended'' together by sending the T240 through a low pass filter and the GS13 through a high pass. The filtered signals are then added together to form the control signal which is sent to the actuators. 
 
-This is done in all six degrees of freedom by having three independent seismometers of each type located 1 meter apart. The three translational signals are comprised of the average of the corresponding seismometer signals, while the three rotational degrees are sensed by the difference of the seismometer divided by the separation.
+This is done in all six degrees of freedom by having three independent seismometers of each type located 1 meter apart. The three translational signals are comprised of the average of the corresponding seismometer signals, while the three rotational degrees are sensed by the difference of the motion divided by the separation.
 
 \begin{figure}%
 \begin{center}
@@ -218,7 +218,7 @@ This is done in all six degrees of freedom by having three independent seismomet
 \end{center}
 \end{figure}
 
-Due to the increase in T240 noise below \textbf{100 mHz}, a set of Capacitive Position Sensors (CPS) are deployed which sense the relative motion between either the ground and the first ISI stage or the two stages of the ISI. This is then used as the control signal at low frequencies yielding a control that follows:
+Due to the increase in T240 noise below 500 mHz, a set of Capacitive Position Sensors (CPS) are deployed which sense the relative motion between either the ground and the first ISI stage or the two stages of the ISI. This is then used as the control signal at low frequencies yielding a control that follows:
 
 \begin{equation}
 x_\text{cont}=F_{LP}\ (x_\text{p}-x_\text{g})_\text{,CPS}+F_{BP}\ x_\text{p, T240}+F_{HP}\ x_\text{p, GS13}
@@ -243,48 +243,48 @@ where $F_{SC}$ is the ``sensor correction'' filter which has a pass band which o
 x_{CPS}=\tilde F_{LP}\ (x_p-x_g)+\tilde F_{HP}\ x_p
 \end{equation}
 
-where the tildes denote the relevant combination of $F_{LP}$ and $F_{SC}$. This scheme allows for isolation down to \textbf{10 mHz} and decreases the bleed through of ground motion due to the CPS low-pass filter's finite roll off. Below 10 mHz, both the ground and platform seismometers become dominated by tilt contamination which is addressed in the following Section \ref{tilt}.
+where the tildes denote the relevant combination of $F_{LP}$ and $F_{SC}$ which yield effective low and high pass filters. This scheme allows for isolation down to 100 mHz and decreases the bleed-through of the  ground motion due to the CPS low-pass filter's finite roll-off. Below 10 mHz, both the ground and platform seismometers become dominated by tilt contamination which is addressed in the following Section \ref{tilt}.
 
 \textbf{include ISI performance pre-BRS}
 
 \chapter{1-m Scale Ground Rotation Sensors} \label{BRS_chap}
 \section{Ground Tilt}\label{tilt}
 \subsection{Tilt Contamination}\label{tiltCon}
-\quad At their core, seismometers are low frequency spring-mass system which measure the difference in motion between the casing and the device's proof mass. Above the resonant frequency of the spring-mass system, this allows for accurate measurements of the motion, in reference to an inertial frame, of any object that the casing is rigidly connected to, be it the ground or a suspended table. Over the past \textbf{some time} this technology has produced devices that are sensitive to \textbf{number and range}. However, these systems are fundamentally susceptible to any stray forces acting on the proof mass.
+\quad At their core, seismometers are low frequency spring-mass system which measure the difference in motion between the casing and the device's proof mass. Above the resonant frequency of the spring-mass system, this allows for accurate measurements of the motion, in reference to an inertial frame, of any object that the casing is rigidly connected to, be it the ground or a suspended table. Over the past century this technology has produced devices that are sensitive to \textbf{number and range}. However, these systems are fundamentally susceptible to any stray forces acting on the proof mass.
 
-Of interest here is the contamination due to the rotation of the device within a external gravitational field, namely the field caused by the earth. The rotation in respect to a fixed gravitational force will be referred to as tilt.\footnote{Although a subtle difference, the distinction would be of great consequences if the local gravitational field was varying rapidly. In that case the sensors described in Sections \ref{BRSSec} and \ref{cBRSSec} would be of little use as they are rotational sensors not tilt sensors.} From the proof mass's frame, a tilt is equivalent to a rotation of the gravitational force. This yields a horizontal acceleration of the proof mass of:
+Of interest here is the contamination due to the rotation of the device within a external gravitational field, namely the field caused by the earth. The rotation with respect to a fixed gravitational force will be referred to as tilt.\footnote{Although a subtle difference, the distinction would be of great consequences if the local gravitational field was varying rapidly. In that case the sensors described in Sections \ref{BRSSec} and \ref{cBRSSec} would be of little use as they are rotational sensors not tilt sensors.} From the proof mass's frame, a tilt is equivalent to a rotation of the gravitational force. This yields a horizontal acceleration of the proof mass of:
 \[ a=g \sin(\theta)\]
 where $g$ is the gravitational acceleration on the surface of the earth and $\theta$ is the angle that the device is rotated. This acceleration adds a second term to the seismometer's output shown below for small angles and in the Fourier domain:
 \[\tilde{x}_{seis}(\omega)=\tilde{x}_{trans}(\omega)+\frac{g}{\omega^2}\tilde{\theta}(\omega)\]
-where $x_{seis}$ is the seismometer's output, $x_{trans}$ is the translational motion of the device, and $\omega$ is the frequency. 
+where $\tilde{x}_{seis}$ is the seismometer's output, $\tilde{x}_{trans}$ is the translational motion of the device, and $\omega$ is the frequency. 
 
 With this additional contribution, it becomes immediately clear that, for a given amplitude of tilt, the contamination term contributes more at lower frequencies and readily dominates the translational signal. In the context of the ground seismometers at the observatory, the tilt signal swamps the translational component below $\sim$ 100 mHz. Above which the seismometer signal is dominate by the ever-present oceanic microseism which is driven by low frequency pressure waves within the ocean and their interaction with the shoreline. \textbf{CITE} This can be seen in Figure \ref{wind} which shows an amplitude spectral density of a ground seismometer at LHO during both low and high wind conditions.
 
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{windComp.pdf}
-\caption{Ground motion spectra recorded at the X end station of the Hanford Observatory during low and high winds. Below 100 mHz, wind driven tilts become dominate during high winds. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity.}
+\caption{Ground motion spectra recorded at the X-End Station of the Hanford Observatory during low and high winds. Below 100 mHz, wind driven tilts become dominate during high winds. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity.}
 \label{wind}
 \end{center}
 \end{figure}
 
-The dominate driver of ground tilts at the observatories is wind acting on the walls of the building. Although one would naiively assume that the wind would rigidly rotate the building, it was found that the true mechanism is differential pressure acting on the walls to deform the building's concrete slab. \textbf{cite?} This increased the noise in the ground seimometer used in sensor correction which limited the performance of the seismic isolation during high winds. The primary consequence of this excess is that the observatory could not operate during high wind speeds.
+The dominate driver of ground tilts at the observatories is wind acting on the walls of the building. Although one would naiively assume that the wind would rigidly rotate the building, it was found that the true mechanism is differential pressure acting on the walls to deform the building's concrete slab. \textbf{cite?} This increases the noise in the ground seimometer used in sensor correction which limited the performance of the seismic isolation during high winds. The primary consequence of this excess is that the observatory could not operate during high wind speeds.
 
 \subsection{Sensor Correction with Tilt Subtraction}
 
-\quad There are a few different scheme to combat such a contamination. The most straight forward is to decrease the effect of wind by designing buildings which interact with the wind less or by installing wind blocks such as wind fences or earth burms. Both of these options require significant construction and, for the case of LIGO, tilt contamination was not known to be a problem when the observatories were designed. Another option is to build seismometers that are suspended in such a way that they do not experience tilts. This is an active area of research and may yield tilt-free seismometers. \textbf{cite}
+\quad There are a few different scheme to combat such a contamination. The most straight forward is to decrease the effect of wind by designing buildings which interact with the wind less or by installing wind blocks such as wind fences or earth burms. Both of these options require significant construction and, for the case of LIGO, tilt contamination was not known to be a problem when the observatories were designed. Another option is to build seismometers that are suspended in such a way that they do not experience tilts. This is an active area of research and may one day yield tilt-free seismometers. \textbf{cite}
 
-The scheme that will be described here is to measure the tilt with an independent rotation sensor and subtract the wind-driven contribution. This would then yield a channel of the following form:
+The scheme that will be explored here is to measure the tilt with an independent rotation sensor described in Section \ref{BRSSec} and subtract the wind-driven contribution. This would then yield a channel of the following form:
 \begin{align}
-x_{seis}(\omega)=x_{trans}(\omega)+&\frac{g}{\omega^2}\theta(\omega)\\
--&\frac{g}{\omega^2}\theta_{meas}(\omega)
+\tilde{x}_{seis}(\omega)=\tilde{x}_{trans}(\omega)+&\frac{g}{\omega^2}\tilde{\theta}(\omega)\\
+-&\frac{g}{\omega^2}\tilde{\theta}_{meas}(\omega)
 \end{align}
 
-where $\theta_{meas}$ is the tilt seen by the rotation sensor. Given a subtraction factor of $\alpha$ between the tilt component of the seismometer and rotation sensors this yields the following: \textbf{CHECK math}
+where $\tilde{\theta}_{meas}$ is the tilt seen by the rotation sensor. Given a subtraction factor of $\alpha$ between the tilt component of the seismometer and rotation sensors this yields the following:
 
-\[x_{seis}(\omega)=x_{trans}(\omega)+\frac{g}{\omega^2}(1-\alpha)\theta(\omega)\]
+\[\tilde{x}_{seis}(\omega)=\tilde{x}_{trans}(\omega)+\frac{g}{\omega^2}(1-\alpha)\tilde{\theta}(\omega)\]
 
-Current installations have yielded an $\alpha\sim 0.9$. This is then a low tilt channel which can be used within the LIGO seismic isolation system. As this decreases noise primarily at low frequencies, the feedback filters deployed within the isolation system can be tuned to cross over at lower frequency away from the mircoseism. At the cross over frequency, the filters have both large gain and phase changes which decrease performance. Moving this cross-over away from the microseism decreases the effect of these properties and allows for isolation to lower frequencies.
+Current installations have yielded an $\alpha\sim 0.9$. This is then a low-tilt ground motion measurement which can be used within the seismic isolation system. As this decreases noise primarily at low frequencies, the feedback filters deployed within the isolation system can be tuned to cross over at lower frequency away from the mircoseism. At the cross over frequency, the filters have both large gain and phase changes which decrease performance. Moving this cross-over away from the microseism decreases the effect of these properties and allows for isolation to lower frequencies.
 
 \section{Beam Rotation Sensors} \label{BRSSec}
 \subsection{Mechanical System}
@@ -293,14 +293,14 @@ Current installations have yielded an $\alpha\sim 0.9$. This is then a low tilt 
 
 \begin{figure}
 \begin{center} \includegraphics[width=0.75\textwidth]{BRSIso.png}
-\caption{CAD rendering of the Beam Rotation Sensor with the vacuum and optical readout systems omitted. The bem with its two brass end masses can be seen through the thermal shielding, shown here as transparent. }
+\caption{CAD rendering of the BRS with the vacuum and optical readout systems omitted. The beam with its two brass end masses can be seen along with its attached mirrors and support structure. }
 \end{center}
 \end{figure} 
 \begin{figure}
 \begin{center} 
 \includegraphics[width=\textwidth]{BRSFront.png}
 \end{center}
-\caption{CAD rendering of the Beam Rotation Sensor with the vacuum and optical readout systems omitted. The bem with its two brass end masses can be seen through the thermal shielding, shown here as transparent. }
+\caption{Side view of a CAD rendering of the BRS. At center, one of the copper colored flexures can be seen. The other is mounted on the opposite side.}
 \label{BRSImage}
 \end{figure}
 
@@ -308,40 +308,62 @@ Current installations have yielded an $\alpha\sim 0.9$. This is then a low tilt 
 \begin{center} 
 \includegraphics[width=\textwidth]{BRSFrontDetail.png}
 \end{center}
-\caption{CAD rendering of the Beam Rotation Sensor with the vacuum and optical readout systems omitted. The bem with its two brass end masses can be seen through the thermal shielding, shown here as transparent. }
+\caption{Close up view of the center of the CAD rendering of the BRS. One of the copper colored flexures can be seen at center along with its clamps. The two gray block at the top are mirrors for optical sensing, one fixed to the support the other attached to the beam.}
 \end{figure}
 
 
-This design makes the beam stiff in all degrees of freedom other than rotations around the horizontal axis which intersects the two flexure pivot points. This forms a system consisting of two elementary subsystems: a rotational spring-mass system formed by the stiffness of the flexures, and a simple pendulum due to the offset of the pivot point and the center of mass. This is then described by the following equation of motion: \cite{venk2014}
+This design makes the beam stiff in all degrees of freedom other than rotation around the horizontal axis which intersects the two pivot-points. This forms a system consisting of two elementary subsystems: a rotational spring-mass system formed by the stiffness of the flexures, and a simple pendulum due to the offset of the pivot point and the center of mass. This is then described by the following equation of motion: \cite{venk2014}
 
 \begin{equation}
 I \ddot{\theta}+ \gamma \dot{\theta}+\kappa (1+ \frac{i}{Q})(\theta-\theta_p)+M g \delta \theta +M \delta \ddot{x_p}=\tau_{ex} \label{eom}
 \end{equation}
 
-where $\theta$ and $\theta_p$ are, respectively, the angle of beam and the platform with respect to gravitational vertical, $\tau_{ex}$ is the sum of all exterior torques, $I$ is the moment of inertia, $Q$ is the intrinsic quality factor, $\gamma$ is the velocity damping factor, $\kappa$ is the spring constant of the flexures, $M$ is the mass of the balance, $g$ is the gravitational acceleration, $\delta$ is the vertical distance from the center of mass and the pivot point, and $x_p$ is the translation of the platform. Equation \ref{eom} can be rearranged to yield:
+where $\tilde{\theta}$ and $\tilde{\theta}_p$ are, respectively, the angle of beam and the platform with respect to gravitational vertical, $\tilde{\tau}_{ex}$ is the sum of all exterior torques, $I$ is the moment of inertia, $Q$ is the intrinsic quality factor, $\gamma$ is the velocity damping factor, $\kappa$ is the spring constant of the flexures, $M$ is the mass of the balance, $g$ is the gravitational acceleration, $\delta$ is the vertical distance from the center of mass and the pivot point, and $x_p$ is the translation of the platform. Equation \ref{eom} can be rearranged to yield:
 
 \begin{equation}
-\theta = -\frac{\tau_{ex}+\omega^2 M \delta x_p+\kappa (1+i/Q) \theta_p}{I\omega^2-i \gamma \omega -i \kappa /Q-\kappa -Mg\delta}
+\tilde{\theta} = -\frac{\tilde{\tau}_{ex}+\omega^2 M \delta \tilde{x}_p+\kappa (1+i/Q) \tilde{\theta}_p}{I\omega^2-i \gamma \omega -i \kappa /Q-\kappa -Mg\delta}
 \end{equation}
 
-where $\omega$ is the frequency of motion. For the BRSs, the quantity of interest is not the angle of the beam but the difference in angle between the beam and the platform. Thus the angle that readout records follows:
+where $\omega$ is the frequency of motion and tildes denote spectral amplitudes. For the BRSs, the quantity of interest is not the angle of the beam but the difference in angle between the beam and the platform. Thus the angle that is recorded by the readout follows:
 
 \begin{align}
-\theta_a &=\theta-\theta_p\\
-&= -\frac{\tau_{ex}+\omega^2 M \delta x_p+\kappa (I\omega^2-i\gamma \omega -Mg\delta) \theta_p}{I\omega^2-i \gamma \omega -i \kappa /Q-\kappa -Mg\delta}
+\tilde{\theta}_a &=\tilde{\theta}-\tilde{\theta}_p\\
+&= -\frac{\tilde{\tau}_{ex}+\omega^2 M \delta \tilde{x}_p+\kappa (I\omega^2-i\gamma \omega -Mg\delta) \tilde{\theta}_p}{I\omega^2-i \gamma \omega -i \kappa /Q-\kappa -Mg\delta}
 \end{align}
-where $\theta_a$ is the recorded angle. This equation can be broken up into three distinct terms: the angular motion due to external torques, $\theta_\tau$, due to translational coupling, $\theta_x$, and due to rotation of the platform, $\theta_s$.
+where $\tilde{\theta}_a$ is the recorded angle. This equation can be broken up into three distinct terms: the angular motion due to external torques, $\theta_\tau$, due to translational coupling, $\theta_x$, and due to rotation of the platform, $\theta_s$.
 \begin{align}
-&\theta_a =\theta_\tau+\theta_x+\theta_{s}\\
-&\theta_\tau= -\frac{\tau_{ex}}{I}\frac{1}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\\
-&\theta_x= -x_p\frac{M\delta}{I} \frac{\omega^2}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\\
-&\theta_{s}= -\theta_p\frac{\omega^2-i\omega_0 \omega/q-\omega_g^2}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\label{theta_s}
+&\tilde{\theta}_a =\tilde{\theta}_\tau+\tilde{\theta}_x+\tilde{\theta}_{s}\\
+&\tilde{\theta}_\tau= -\frac{\tilde{\tau}_{ex}}{I}\frac{1}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\\
+&\tilde{\theta}_x= -\tilde{x}_p\frac{M\delta}{I} \frac{\omega^2}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\\
+&\tilde{\theta}_{s}= -\tilde{\theta}_p\frac{\omega^2-i\omega_0 \omega/q-\omega_g^2}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\label{theta_s}
 \end{align}
 
-Where $\omega_0=\sqrt{k/I}$ is the resonant frequency, $\omega_g=\sqrt{M g \delta/I}$, and $q$ is the quality factor due to velocity damping. These equations illuminate the fact that the beam has a resonance at $\omega=\sqrt{\omega_0^2+\omega_g^2}$ and $\theta_s$ has a zero at $\omega=\omega_g$. 
+Where $\omega_0=\sqrt{k/I}$ is the resonant frequency, $\omega_g=\sqrt{M g \delta/I}$, and $q$ is the quality factor due to velocity damping. These equations illuminate the fact that the beam has a resonance at $\omega=\sqrt{\omega_0^2+\omega_g^2}$ and $\tilde{\theta}_s$ has a zero at $\omega=\omega_g$. 
 
-To allow for high fidelity rotation sensing, the translational coupling must be negliable at the frequencies of interest. To achieve this, $\delta$ must be tuned close to zero. This is achieved firstly through the design of the beam's suspension which places the center of mass close to the pivot point. Fine adjustments are them made by adding mass to the beam above or below the pivot. These adjustments are guided by measurements of the zero in the $\theta_s$ transfer function, Equation \ref{theta_s}, at $\omega=\omega_g$. Differing amounts of tuning were achieved for each device described Section \ref{results} due to scheduling constraints. The lowest translation coupling was achieved at the LHO End-Y BRS which had a $\delta<0.5\ \mu$m yielding a translational coupling of $<10^{-6}$ rad/m.
 
+\begin{figure}[!h]
+\begin{center}
+ \includegraphics[width=\textwidth]{cBRS_TransferFunction3.pdf}
+\caption{}
+\label{TransferFunction}
+\end{center}
+\end{figure}
+
+To allow for high fidelity rotation sensing, the translational coupling must be negliable at the frequencies of interest. To achieve this, $\delta$ must be tuned close to zero. This is achieved firstly through the design of the beam's suspension which places the center of mass close to the pivot point. Fine adjustments are them made by adding mass to the beam above or below the pivot. These adjustments are guided by measurements of the zero in the $\tilde{\theta}_s$ transfer function, Equation \ref{theta_s}, at $\omega=\omega_g$. This is shown for the cBRS, described in Chapter \ref{cBRS_chap}, in Figure \ref{TransferFunction}. Differing amounts of tuning were achieved for each deployed device described Section \ref{results} due to scheduling constraints. The lowest translation coupling was achieved at the LHO End-Y BRS which had a $\delta<0.5\ \mu$m yielding a translational coupling of $<10^{-6}$ rad/m.
+
+\subsection{Flexures}
+
+\subsection{Vacuum System}
+
+To decrease the effects of air currents and gas damping, each BRS is placed into its own vacuum chamber which emulates the outline of the device, as shown in Figure \ref{BRSPic}.
+
+\begin{figure}[!h]
+\begin{center}
+ \includegraphics[width=\textwidth]{BRSPic.jpg}
+\caption{Picture of the BRS installed at LLO End-Y before the installation of the thermal insulation.}
+\label{BRSPic}
+\end{center}
+\end{figure}
 
 \subsection{Multi-Slit Autocollimator Readout}
 
