@@ -1,46 +1,46 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.16)  16 MAR 2020 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.17)  19 MAR 2020 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Dissertation.tex
 (./Dissertation.tex
-LaTeX2e <2018-12-01>
-(./uwthesis.cls
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25> (./uwthesis.cls
 Document Class: uwthesis 2015/03/03
 \tf@not=\write3
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@chapter=\count81
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@subparagraph=\count86
-\c@figure=\count87
-\c@table=\count88
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
 )
 Formatting for ProQuest
-\botmargin=\dimen103
-\@@wholepage=\box27
-\@Chair=\count89
-\@Sign=\count90
-\abs@savebox=\box28
+\botmargin=\dimen135
+\@@wholepage=\box45
+\@Chair=\count176
+\@Sign=\count177
+\abs@savebox=\box46
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -48,51 +48,52 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen104
-\Gin@req@width=\dimen105
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen106
-\captionmargin@=\dimen107
-\captionwidth=\dimen108
-\caption@tempdima=\dimen109
-\caption@indent=\dimen110
-\caption@parindent=\dimen111
-\caption@hangindent=\dimen112
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen138
+\captionmargin@=\dimen139
+\captionwidth=\dimen140
+\caption@tempdima=\dimen141
+\caption@indent=\dimen142
+\caption@parindent=\dimen143
+\caption@hangindent=\dimen144
+Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count91
-\c@ContinuedFloat=\count92
+\c@caption@flags=\count178
+\c@continuedfloat=\count179
 )
-\c@KVtest=\count93
-\sf@farskip=\skip43
-\sf@captopadj=\dimen113
-\sf@capskip=\skip44
-\sf@nearskip=\skip45
-\c@subfigure=\count94
-\c@subfigure@save=\count95
-\c@lofdepth=\count96
-\c@subtable=\count97
-\c@subtable@save=\count98
-\c@lotdepth=\count99
-\sf@top=\skip46
-\sf@bottom=\skip47
+\c@KVtest=\count180
+\sf@farskip=\skip49
+\sf@captopadj=\dimen145
+\sf@capskip=\skip50
+\sf@nearskip=\skip51
+\c@subfigure=\count181
+\c@subfigure@save=\count182
+\c@lofdepth=\count183
+\c@subtable=\count184
+\c@subtable@save=\count185
+\c@lotdepth=\count186
+\sf@top=\skip52
+\sf@bottom=\skip53
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2018/12/01 v2.17b AMS math features
-\@mathmargin=\skip48
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -100,53 +101,53 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
-\ex@=\dimen114
+\@emptytoks=\toks16
+\ex@=\dimen146
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen115
+\pmbraise@=\dimen147
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count100
-LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count101
-\leftroot@=\count102
-LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count103
-\DOTSCASE@=\count104
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box29
-\strutbox@=\box30
-\big@size=\dimen116
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count105
-\c@MaxMatrixCols=\count106
-\dotsspace@=\muskip10
-\c@parentequation=\count107
-\dspbrk@lvl=\count108
-\tag@help=\toks16
-\row@=\count109
-\column@=\count110
-\maxfields@=\count111
-\andhelp@=\toks17
-\eqnshift@=\dimen117
-\alignsep@=\dimen118
-\tagshift@=\dimen119
-\tagwidth@=\dimen120
-\totwidth@=\dimen121
-\lineht@=\dimen122
-\@envbody=\toks18
-\multlinegap=\skip49
-\multlinetaggap=\skip50
-\mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+\inf@bad=\count187
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count188
+\leftroot@=\count189
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count190
+\DOTSCASE@=\count191
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen148
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count192
+\c@MaxMatrixCols=\count193
+\dotsspace@=\muskip16
+\c@parentequation=\count194
+\dspbrk@lvl=\count195
+\tag@help=\toks17
+\row@=\count196
+\column@=\count197
+\maxfields@=\count198
+\andhelp@=\toks18
+\eqnshift@=\dimen149
+\alignsep@=\dimen150
+\tagshift@=\dimen151
+\tagwidth@=\dimen152
+\totwidth@=\dimen153
+\lineht@=\dimen154
+\@envbody=\toks19
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -155,6 +156,7 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
@@ -163,36 +165,46 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count112
-\output=\toks20
-\linenoprevgraf=\count113
-\linenumbersep=\dimen123
-\linenumberwidth=\dimen124
-\c@linenumber=\count114
-\c@pagewiselinenumber=\count115
-\c@LN@truepage=\count116
-\c@internallinenumber=\count117
-\c@internallinenumbers=\count118
-\quotelinenumbersep=\dimen125
-\bframerule=\dimen126
-\bframesep=\dimen127
-\bframebox=\box31
+\linenopenalty=\count199
+\output=\toks21
+\linenoprevgraf=\count266
+\linenumbersep=\dimen155
+\linenumberwidth=\dimen156
+\c@linenumber=\count267
+\c@pagewiselinenumber=\count268
+\c@LN@truepage=\count269
+\c@internallinenumber=\count270
+\c@internallinenumbers=\count271
+\quotelinenumbersep=\dimen157
+\bframerule=\dimen158
+\bframesep=\dimen159
+\bframebox=\box49
 LaTeX Info: Redefining \\ on input line 3056.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/epigraph/epigraph.sty
-Package: epigraph 2009/09/02 v1.5c typesetting epigraphs
-\beforeepigraphskip=\skip51
-\afterepigraphskip=\skip52
-\epigraphwidth=\skip53
-\epigraphrule=\skip54
+Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
+
+(/usr/share/texlive/texmf-dist/tex/latex/nextpage/nextpage.sty
+Package: nextpage 2009/09/03 v1.1a additional page commands
+)
+\beforeepigraphskip=\skip57
+\afterepigraphskip=\skip58
+\epigraphwidth=\skip59
+\epigraphrule=\skip60
 )
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip55
-\bibsep=\skip56
+\bibhang=\skip61
+\bibsep=\skip62
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count119
-) (./Dissertation.aux
+\c@NAT@ctr=\count272
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count273
+\l__pdf_internal_box=\box50
+)
+(./Dissertation.aux
 
 LaTeX Warning: Label `wind' multiply defined.
 
@@ -207,11 +219,13 @@ LaTeX Warning: Label `sensNoise' multiply defined.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -219,63 +233,21 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen128
-\scratchbox=\box32
-\nofMPsegments=\count121
-\nofMParguments=\count122
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen129
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
-\everyMPtoPDFconversion=\toks22
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-))))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+\scratchcounter=\count274
+\scratchdimen=\dimen160
+\scratchbox=\box51
+\nofMPsegments=\count275
+\nofMParguments=\count276
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count277
+\MPscratchDim=\dimen161
+\MPnumerator=\count278
+\makeMPintoPDFobject=\count279
+\everyMPtoPDFconversion=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+85.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -283,36 +255,21 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: Incompatible package detected (regarding \caption).
-(caption)             \caption = macro:->\@ifnextchar ({\@specialcaption }{\@no
-rmalcaption }.
-
-
-Package caption Warning: \caption will not be redefined since it's already
-(caption)                redefined by a document class or package which is
-(caption)                unknown to the caption package.
-See the caption package documentation for explanation.
-
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
- [1
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [-1
 
 ] [0
 
-] (./Dissertation.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+]
+(./Dissertation.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -331,17 +288,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3
 
 ]
-[4]
+Underfull \vbox (badness 2245) has occurred while \output is active []
+
+ [4]
+[5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5])
+ [6])
 \tf@lof=\write5
 \openout5 = `Dissertation.lof'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
 [7] [8
 
 ] [9
@@ -358,7 +315,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package natbib Warning: Citation `some' on page 3 undefined on input line 70.
 
 [3]
-<GW170817.pdf, id=69, 379.4175pt x 542.025pt>
+<GW170817.pdf, id=70, 379.4175pt x 542.025pt>
 File: GW170817.pdf Graphic file (type pdf)
 <use GW170817.pdf>
 Package pdftex.def Info: GW170817.pdf  used on input line 97.
@@ -368,31 +325,31 @@ Package pdftex.def Info: GW170817.pdf  used on input line 97.
 LaTeX Warning: Float too large for page by 54.52136pt on input line 101.
 
 [4] [5 <./GW170817.pdf>]
-<LIGO_Schematic.pdf, id=131, 720.6925pt x 597.23125pt>
+<LIGO_Schematic.pdf, id=132, 720.6925pt x 597.23125pt>
 File: LIGO_Schematic.pdf Graphic file (type pdf)
 <use LIGO_Schematic.pdf>
 Package pdftex.def Info: LIGO_Schematic.pdf  used on input line 113.
 (pdftex.def)             Requested size: 352.72124pt x 292.29047pt.
  [6 <./LIGO_Schematic.pdf>]
-<StrainCurve.pdf, id=311, 542.025pt x 393.47pt>
+<StrainCurve.pdf, id=312, 542.025pt x 393.47pt>
 File: StrainCurve.pdf Graphic file (type pdf)
 <use StrainCurve.pdf>
 Package pdftex.def Info: StrainCurve.pdf  used on input line 132.
 (pdftex.def)             Requested size: 258.66368pt x 187.77675pt.
  [7 <./StrainCurve.pdf>]
 [8]
-<windComp.pdf, id=377, 669.50125pt x 554.07pt>
+<windComp.pdf, id=378, 669.50125pt x 554.07pt>
 File: windComp.pdf Graphic file (type pdf)
 <use windComp.pdf>
 Package pdftex.def Info: windComp.pdf  used on input line 191.
 (pdftex.def)             Requested size: 352.72124pt x 291.9141pt.
-<seismicIso.jpg, id=378, 305.943pt x 190.5519pt>
+<seismicIso.jpg, id=379, 305.943pt x 190.5519pt>
 File: seismicIso.jpg Graphic file (type jpg)
 <use seismicIso.jpg>
 Package pdftex.def Info: seismicIso.jpg  used on input line 201.
 (pdftex.def)             Requested size: 352.72124pt x 219.6883pt.
  [9] [10 <./windComp.pdf>] [11 <./seismicIso.jpg>]
-<seismicSensNoise.pdf, id=457, 515.9275pt x 387.4475pt>
+<seismicSensNoise.pdf, id=458, 515.9275pt x 387.4475pt>
 File: seismicSensNoise.pdf Graphic file (type pdf)
 <use seismicSensNoise.pdf>
 Package pdftex.def Info: seismicSensNoise.pdf  used on input line 215.
@@ -411,17 +368,17 @@ Package pdftex.def Info: windComp.pdf  used on input line 265.
 (pdftex.def)             Requested size: 352.72124pt x 291.9141pt.
 
 [15] [16]
-<BRSIso.png, id=607, 572.89032pt x 408.77719pt>
+<BRSIso.png, id=608, 572.89032pt x 408.77719pt>
 File: BRSIso.png Graphic file (type png)
 <use BRSIso.png>
 Package pdftex.def Info: BRSIso.png  used on input line 295.
 (pdftex.def)             Requested size: 352.72124pt x 251.68028pt.
-<BRSFront.png, id=608, 709.14937pt x 286.82156pt>
+<BRSFront.png, id=609, 709.14937pt x 286.82156pt>
 File: BRSFront.png Graphic file (type png)
 <use BRSFront.png>
 Package pdftex.def Info: BRSFront.png  used on input line 301.
 (pdftex.def)             Requested size: 470.295pt x 190.2175pt.
-<BRSFrontDetail.png, id=609, 891.33pt x 669.2503pt>
+<BRSFrontDetail.png, id=610, 891.33pt x 669.2503pt>
 File: BRSFrontDetail.png Graphic file (type png)
 <use BRSFrontDetail.png>
 Package pdftex.def Info: BRSFrontDetail.png  used on input line 309.
@@ -431,7 +388,7 @@ Package pdftex.def Info: BRSFrontDetail.png  used on input line 309.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
-<cBRS_TransferFunction3.pdf, id=623, 827.09pt x 626.34pt>
+<cBRS_TransferFunction3.pdf, id=624, 827.09pt x 626.34pt>
 File: cBRS_TransferFunction3.pdf Graphic file (type pdf)
 <use cBRS_TransferFunction3.pdf>
 Package pdftex.def Info: cBRS_TransferFunction3.pdf  used on input line 346.
@@ -440,7 +397,7 @@ Package pdftex.def Info: cBRS_TransferFunction3.pdf  used on input line 346.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<BRSPic.jpg, id=624, 1223.57124pt x 917.4275pt>
+<BRSPic.jpg, id=625, 1223.57124pt x 917.4275pt>
 File: BRSPic.jpg Graphic file (type jpg)
 <use BRSPic.jpg>
 Package pdftex.def Info: BRSPic.jpg  used on input line 362.
@@ -455,211 +412,215 @@ Underfull \vbox (badness 1701) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22 <./cBRS_TransferFunction3.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23 <./BRSPic.jpg>]
-<Autocollimator.pdf, id=716, 614.295pt x 794.97pt>
+<Autocollimator.pdf, id=714, 614.295pt x 794.97pt>
 File: Autocollimator.pdf Graphic file (type pdf)
 <use Autocollimator.pdf>
 Package pdftex.def Info: Autocollimator.pdf  used on input line 380.
-(pdftex.def)             Requested size: 470.295pt x 608.62315pt.
-
-
-LaTeX Warning: Float too large for page by 53.15315pt on input line 384.
-
-[24] [25 <./Autocollimator.pdf>]
-
-Package natbib Warning: Citation `MSAPaper' on page 26 undefined on input line 
-418.
-
-[26]
-
-Package natbib Warning: Citation `thermal' on page 27 undefined on input line 4
-38.
-
-[27]
-<BRSNoiseModel.pdf, id=739, 637.38126pt x 495.8525pt>
-File: BRSNoiseModel.pdf Graphic file (type pdf)
-<use BRSNoiseModel.pdf>
-Package pdftex.def Info: BRSNoiseModel.pdf  used on input line 453.
-(pdftex.def)             Requested size: 470.295pt x 365.86584pt.
-<HSubtractionETMX.pdf, id=740, 738.76pt x 510.90875pt>
-File: HSubtractionETMX.pdf Graphic file (type pdf)
-<use HSubtractionETMX.pdf>
-Package pdftex.def Info: HSubtractionETMX.pdf  used on input line 468.
-(pdftex.def)             Requested size: 470.295pt x 325.242pt.
- [28] [29 <./BRSNoiseModel.pdf>] [30 <./HSubtractionETMX.pdf>]
-<TiltCorrTime.pdf, id=905, 1122.1925pt x 255.95625pt>
-File: TiltCorrTime.pdf Graphic file (type pdf)
-<use TiltCorrTime.pdf>
-Package pdftex.def Info: TiltCorrTime.pdf  used on input line 478.
-(pdftex.def)             Requested size: 470.295pt x 107.26654pt.
-
-
-LaTeX Warning: Reference `O2' on page 31 undefined on input line 484.
-
-[31 <./TiltCorrTime.pdf>]
-
-LaTeX Warning: Reference `' on page 32 undefined on input line 497.
-
-
-LaTeX Warning: Reference `' on page 32 undefined on input line 511.
-
-[32]
-<TiltModel.pdf, id=930, 806.01125pt x 586.19pt>
-File: TiltModel.pdf Graphic file (type pdf)
-<use TiltModel.pdf>
-Package pdftex.def Info: TiltModel.pdf  used on input line 515.
-(pdftex.def)             Requested size: 470.295pt x 342.02979pt.
+(pdftex.def)             Requested size: 352.72124pt x 456.4613pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33 <./TiltModel.pdf>]
-<LHO_WindVsLockEvents.pdf, id=983, 794.97pt x 614.295pt>
+ [23 <./BRSPic.jpg>] [24] [25 <./Autocollimator.pdf>]
+<BRS_ImgAnalysis.pdf, id=734, 601.24625pt x 368.37625pt>
+File: BRS_ImgAnalysis.pdf Graphic file (type pdf)
+<use BRS_ImgAnalysis.pdf>
+Package pdftex.def Info: BRS_ImgAnalysis.pdf  used on input line 420.
+(pdftex.def)             Requested size: 470.295pt x 288.15297pt.
+ [26] [27 <./BRS_ImgAnalysis.pdf>]
+<BRSNoiseModel.pdf, id=743, 637.38126pt x 495.8525pt>
+File: BRSNoiseModel.pdf Graphic file (type pdf)
+<use BRSNoiseModel.pdf>
+Package pdftex.def Info: BRSNoiseModel.pdf  used on input line 448.
+(pdftex.def)             Requested size: 352.72124pt x 274.39938pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `thermal' on page 28 undefined on input line 4
+54.
+
+[28] [29 <./BRSNoiseModel.pdf>]
+<HSubtractionETMX.pdf, id=846, 738.76pt x 510.90875pt>
+File: HSubtractionETMX.pdf Graphic file (type pdf)
+<use HSubtractionETMX.pdf>
+Package pdftex.def Info: HSubtractionETMX.pdf  used on input line 473.
+(pdftex.def)             Requested size: 470.295pt x 325.242pt.
+<TiltCorrTime.pdf, id=847, 1122.1925pt x 255.95625pt>
+File: TiltCorrTime.pdf Graphic file (type pdf)
+<use TiltCorrTime.pdf>
+Package pdftex.def Info: TiltCorrTime.pdf  used on input line 483.
+(pdftex.def)             Requested size: 470.295pt x 107.26654pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+[31 <./HSubtractionETMX.pdf>] [32 <./TiltCorrTime.pdf>]
+<TiltModel.pdf, id=934, 806.01125pt x 586.19pt>
+File: TiltModel.pdf Graphic file (type pdf)
+<use TiltModel.pdf>
+Package pdftex.def Info: TiltModel.pdf  used on input line 520.
+(pdftex.def)             Requested size: 470.295pt x 342.02979pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<LHO_WindVsLockEvents.pdf, id=935, 794.97pt x 614.295pt>
 File: LHO_WindVsLockEvents.pdf Graphic file (type pdf)
 <use LHO_WindVsLockEvents.pdf>
-Package pdftex.def Info: LHO_WindVsLockEvents.pdf  used on input line 527.
+Package pdftex.def Info: LHO_WindVsLockEvents.pdf  used on input line 532.
 (pdftex.def)             Requested size: 470.295pt x 363.4151pt.
-<LLO_WindVsLockEvents.pdf, id=984, 794.97pt x 614.295pt>
+[33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34 <./TiltModel.pdf>] [35 <./LHO_WindVsLockEvents.pdf>]
+<LLO_WindVsLockEvents.pdf, id=1014, 794.97pt x 614.295pt>
 File: LLO_WindVsLockEvents.pdf Graphic file (type pdf)
 <use LLO_WindVsLockEvents.pdf>
-Package pdftex.def Info: LLO_WindVsLockEvents.pdf  used on input line 539.
+Package pdftex.def Info: LLO_WindVsLockEvents.pdf  used on input line 544.
 (pdftex.def)             Requested size: 470.295pt x 363.4151pt.
-
-Underfull \vbox (badness 4353) has occurred while \output is active []
-
- [34]
-[35 <./LHO_WindVsLockEvents.pdf>] [36 <./LLO_WindVsLockEvents.pdf>] [37]
+ [36] [37 <./LLO_WindVsLockEvents.pdf>]
 <<3>>
-<cBRS_ASC_Without.pdf, id=1039, 650.43pt x 505.89pt>
+
+Package natbib Warning: Citation `Windproofing' on page 38 undefined on input l
+ine 562.
+
+<cBRS_ASC_Without.pdf, id=1043, 650.43pt x 505.89pt>
 File: cBRS_ASC_Without.pdf Graphic file (type pdf)
 <use cBRS_ASC_Without.pdf>
-Package pdftex.def Info: cBRS_ASC_Without.pdf  used on input line 560.
-(pdftex.def)             Requested size: 470.295pt x 365.79208pt.
+Package pdftex.def Info: cBRS_ASC_Without.pdf  used on input line 566.
+(pdftex.def)             Requested size: 352.72124pt x 274.34213pt.
 
-LaTeX Warning: Reference `' on page 38 undefined on input line 567.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<sensorNoise.pdf, id=1040, 746.79pt x 602.25pt>
+<sensorNoise.pdf, id=1044, 746.79pt x 602.25pt>
 File: sensorNoise.pdf Graphic file (type pdf)
 <use sensorNoise.pdf>
-Package pdftex.def Info: sensorNoise.pdf  used on input line 571.
-(pdftex.def)             Requested size: 470.295pt x 379.27246pt.
+Package pdftex.def Info: sensorNoise.pdf  used on input line 577.
+(pdftex.def)             Requested size: 352.72124pt x 284.45435pt.
 [38
 
-] [39 <./cBRS_ASC_Without.pdf>] [40 <./sensorNoise.pdf>]
-<cBRSIso.png, id=1214, 560.0925pt x 560.0925pt>
+]
+<cBRSIso.png, id=1048, 560.0925pt x 560.0925pt>
 File: cBRSIso.png Graphic file (type png)
 <use cBRSIso.png>
-Package pdftex.def Info: cBRSIso.png  used on input line 587.
+Package pdftex.def Info: cBRSIso.png  used on input line 593.
 (pdftex.def)             Requested size: 352.72124pt x 352.73195pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<cBRSFront.png, id=1215, 993.7125pt x 669.2503pt>
+<cBRSFront.png, id=1049, 993.7125pt x 669.2503pt>
 File: cBRSFront.png Graphic file (type png)
 <use cBRSFront.png>
-Package pdftex.def Info: cBRSFront.png  used on input line 595.
+Package pdftex.def Info: cBRSFront.png  used on input line 601.
 (pdftex.def)             Requested size: 470.295pt x 316.74326pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<cBRSKMount.png, id=1216, 997.47656pt x 669.2503pt>
+<cBRSKMount.png, id=1050, 997.47656pt x 669.2503pt>
 File: cBRSKMount.png Graphic file (type png)
 <use cBRSKMount.png>
-Package pdftex.def Info: cBRSKMount.png  used on input line 606.
+Package pdftex.def Info: cBRSKMount.png  used on input line 612.
 (pdftex.def)             Requested size: 352.72124pt x 236.65112pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 3780) has occurred while \output is active []
 
-<FiberInt.pdf, id=1217, 614.295pt x 650.43pt>
-File: FiberInt.pdf Graphic file (type pdf)
-<use FiberInt.pdf>
-Package pdftex.def Info: FiberInt.pdf  used on input line 622.
-(pdftex.def)             Requested size: 235.14749pt x 248.9822pt.
+ [39 <./cBRS_ASC_Without.pdf>] [40 <./sensorNoise.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<cBRSOptics.png, id=1218, 993.7125pt x 669.2503pt>
-File: cBRSOptics.png Graphic file (type png)
-<use cBRSOptics.png>
-Package pdftex.def Info: cBRSOptics.png  used on input line 629.
-(pdftex.def)             Requested size: 352.72124pt x 237.54977pt.
+
+Underfull \vbox (badness 1430) has occurred while \output is active []
+
+ [41 <./cBRSiso.PNG>]
+<cBRS_OpticalLayout.pdf, id=1224, 796.67719pt x 597.50786pt>
+File: cBRS_OpticalLayout.pdf Graphic file (type pdf)
+<use cBRS_OpticalLayout.pdf>
+Package pdftex.def Info: cBRS_OpticalLayout.pdf  used on input line 628.
+(pdftex.def)             Requested size: 470.295pt x 352.72716pt.
+ [42 <./cBRSFront.PNG (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<cBRS_Fringes.pdf, id=1219, 495.8525pt x 359.3425pt>
+<cBRSOptics.pdf, id=1228, 796.67719pt x 597.50786pt>
+File: cBRSOptics.pdf Graphic file (type pdf)
+<use cBRSOptics.pdf>
+Package pdftex.def Info: cBRSOptics.pdf  used on input line 635.
+(pdftex.def)             Requested size: 470.295pt x 352.72716pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<cBRS_Fringes.pdf, id=1229, 495.8525pt x 359.3425pt>
 File: cBRS_Fringes.pdf Graphic file (type pdf)
 <use cBRS_Fringes.pdf>
-Package pdftex.def Info: cBRS_Fringes.pdf  used on input line 636.
+Package pdftex.def Info: cBRS_Fringes.pdf  used on input line 642.
 (pdftex.def)             Requested size: 352.72124pt x 255.61746pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41]
+[43 <./cBRSKMount.PNG (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42 <./cBRSiso.PNG>] [43 <./cBRSFront.PNG (PNG copy)>]
+ [44 <./cBRS_OpticalLayout.pdf>]
+Underfull \vbox (badness 2261) has occurred while \output is active []
+
+ [45 <./cBRSOptics.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44 <./cBRSKMount.PNG (PNG copy)>] [45 <./FiberInt.pdf>] [46 <./cBRSOptics.PNG
- (PNG copy)>]
-<cBRS_ReadoutNoise.pdf, id=1250, 818.05624pt x 584.1825pt>
-File: cBRS_ReadoutNoise.pdf Graphic file (type pdf)
-<use cBRS_ReadoutNoise.pdf>
-Package pdftex.def Info: cBRS_ReadoutNoise.pdf  used on input line 690.
-(pdftex.def)             Requested size: 470.295pt x 335.84883pt.
- [47 <./cBRS_Fringes.pdf>] [48 <./cBRS_ReadoutNoise.pdf>]
-<cBRSMassAdjuster.png, id=1377, 1006.51031pt x 669.2503pt>
+ [46 <./cBRS_Fringes.pdf>]
+Underfull \vbox (badness 1028) has occurred while \output is active []
+
+ [47]
+<cBRSMassAdjuster.png, id=1300, 1006.51031pt x 669.2503pt>
 File: cBRSMassAdjuster.png Graphic file (type png)
 <use cBRSMassAdjuster.png>
-Package pdftex.def Info: cBRSMassAdjuster.png  used on input line 708.
+Package pdftex.def Info: cBRSMassAdjuster.png  used on input line 719.
 (pdftex.def)             Requested size: 352.72124pt x 234.52705pt.
- [49 <./cBRSMassAdjuster.PNG (PNG copy)>]
-<cBRS_massAdjust.pdf, id=1382, 829.0975pt x 630.355pt>
+
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [48 <./cBRSMassAdjuster.PNG (PNG copy)>]
+<cBRS_massAdjust.pdf, id=1304, 829.0975pt x 630.355pt>
 File: cBRS_massAdjust.pdf Graphic file (type pdf)
 <use cBRS_massAdjust.pdf>
-Package pdftex.def Info: cBRS_massAdjust.pdf  used on input line 720.
+Package pdftex.def Info: cBRS_massAdjust.pdf  used on input line 731.
 (pdftex.def)             Requested size: 352.72124pt x 268.16183pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50 <./cBRS_massAdjust.pdf>]
-<cBRS_Noise.pdf, id=1408, 847.165pt x 592.2125pt>
+ [49 <./cBRS_massAdjust.pdf>]
+<cBRS_Noise.pdf, id=1332, 673.51625pt x 475.7775pt>
 File: cBRS_Noise.pdf Graphic file (type pdf)
 <use cBRS_Noise.pdf>
-Package pdftex.def Info: cBRS_Noise.pdf  used on input line 733.
-(pdftex.def)             Requested size: 470.295pt x 328.76315pt.
-
-
-LaTeX Warning: Reference `seisIso' on page 51 undefined on input line 748.
-
-[51 <./cBRS_Noise.pdf>]
-<cBRS_Model_Noise.pdf, id=1518, 752.8125pt x 526.96875pt>
-File: cBRS_Model_Noise.pdf Graphic file (type pdf)
-<use cBRS_Model_Noise.pdf>
-Package pdftex.def Info: cBRS_Model_Noise.pdf  used on input line 756.
-(pdftex.def)             Requested size: 470.295pt x 329.21796pt.
- [52] [53 <./cBRS_Model_Noise.pdf>]
-<cBRS_Model_ST2RX.pdf, id=1657, 752.8125pt x 526.96875pt>
-File: cBRS_Model_ST2RX.pdf Graphic file (type pdf)
-<use cBRS_Model_ST2RX.pdf>
-Package pdftex.def Info: cBRS_Model_ST2RX.pdf  used on input line 770.
-(pdftex.def)             Requested size: 470.295pt x 329.21796pt.
+Package pdftex.def Info: cBRS_Noise.pdf  used on input line 744.
+(pdftex.def)             Requested size: 470.295pt x 332.22162pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54 <./cBRS_Model_ST2RX.pdf>]
-<cBRS_Model_ST1RX.pdf, id=1775, 752.8125pt x 526.96875pt>
+ [50 <./cBRS_Noise.pdf>]
+
+LaTeX Warning: Reference `seisIso' on page 51 undefined on input line 759.
+
+<cBRS_Model_Noise.pdf, id=1461, 752.8125pt x 526.96875pt>
+File: cBRS_Model_Noise.pdf Graphic file (type pdf)
+<use cBRS_Model_Noise.pdf>
+Package pdftex.def Info: cBRS_Model_Noise.pdf  used on input line 767.
+(pdftex.def)             Requested size: 470.295pt x 329.21796pt.
+[51] [52 <./cBRS_Model_Noise.pdf>]
+<cBRS_Model_ST2RX.pdf, id=1600, 752.8125pt x 526.96875pt>
+File: cBRS_Model_ST2RX.pdf Graphic file (type pdf)
+<use cBRS_Model_ST2RX.pdf>
+Package pdftex.def Info: cBRS_Model_ST2RX.pdf  used on input line 781.
+(pdftex.def)             Requested size: 470.295pt x 329.21796pt.
+ [53 <./cBRS_Model_ST2RX.pdf>]
+<cBRS_Model_ST1RX.pdf, id=1718, 752.8125pt x 526.96875pt>
 File: cBRS_Model_ST1RX.pdf Graphic file (type pdf)
 <use cBRS_Model_ST1RX.pdf>
-Package pdftex.def Info: cBRS_Model_ST1RX.pdf  used on input line 782.
+Package pdftex.def Info: cBRS_Model_ST1RX.pdf  used on input line 793.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
- [55 <./cBRS_Model_ST1RX.pdf>]
-<cBRS_Model_ST1X.pdf, id=1894, 752.8125pt x 526.96875pt>
+ [54 <./cBRS_Model_ST1RX.pdf>]
+<cBRS_Model_ST1X.pdf, id=1836, 752.8125pt x 526.96875pt>
 File: cBRS_Model_ST1X.pdf Graphic file (type pdf)
 <use cBRS_Model_ST1X.pdf>
-Package pdftex.def Info: cBRS_Model_ST1X.pdf  used on input line 800.
+Package pdftex.def Info: cBRS_Model_ST1X.pdf  used on input line 811.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
 
 
@@ -668,100 +629,129 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 1097) has occurred while \output is active []
 
- [56]
-<cBRS_Model_ST2X.pdf, id=1898, 752.8125pt x 526.96875pt>
+ [55]
+<cBRS_Model_ST2X.pdf, id=1842, 752.8125pt x 526.96875pt>
 File: cBRS_Model_ST2X.pdf Graphic file (type pdf)
 <use cBRS_Model_ST2X.pdf>
-Package pdftex.def Info: cBRS_Model_ST2X.pdf  used on input line 812.
+Package pdftex.def Info: cBRS_Model_ST2X.pdf  used on input line 823.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57 <./cBRS_Model_ST1X.pdf>]
+[56 <./cBRS_Model_ST1X.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58 <./cBRS_Model_ST2X.pdf>]
-<cBRS_Model_CompRX.pdf, id=2113, 752.8125pt x 526.96875pt>
+ [57 <./cBRS_Model_ST2X.pdf>]
+<cBRS_Model_CompRX.pdf, id=2057, 752.8125pt x 526.96875pt>
 File: cBRS_Model_CompRX.pdf Graphic file (type pdf)
 <use cBRS_Model_CompRX.pdf>
-Package pdftex.def Info: cBRS_Model_CompRX.pdf  used on input line 826.
+Package pdftex.def Info: cBRS_Model_CompRX.pdf  used on input line 837.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
- [59 <./cBRS_Model_CompRX.pdf>]
-<cBRS_Model_CompX.pdf, id=2203, 752.8125pt x 526.96875pt>
+ [58 <./cBRS_Model_CompRX.pdf>]
+<cBRS_Model_CompX.pdf, id=2146, 752.8125pt x 526.96875pt>
 File: cBRS_Model_CompX.pdf Graphic file (type pdf)
 <use cBRS_Model_CompX.pdf>
-Package pdftex.def Info: cBRS_Model_CompX.pdf  used on input line 837.
+Package pdftex.def Info: cBRS_Model_CompX.pdf  used on input line 848.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
- [60 <./cBRS_Model_CompX.pdf>]
-<cBRS_ASC_With.pdf, id=2330, 650.43pt x 505.89pt>
+ [59 <./cBRS_Model_CompX.pdf>]
+<cBRS_ASC_With.pdf, id=2274, 650.43pt x 505.89pt>
 File: cBRS_ASC_With.pdf Graphic file (type pdf)
 <use cBRS_ASC_With.pdf>
-Package pdftex.def Info: cBRS_ASC_With.pdf  used on input line 851.
+Package pdftex.def Info: cBRS_ASC_With.pdf  used on input line 862.
 (pdftex.def)             Requested size: 470.295pt x 365.79208pt.
-<cBRS_ASC_LowF.pdf, id=2331, 650.43pt x 505.89pt>
+<cBRS_ASC_LowF.pdf, id=2275, 650.43pt x 505.89pt>
 File: cBRS_ASC_LowF.pdf Graphic file (type pdf)
 <use cBRS_ASC_LowF.pdf>
-Package pdftex.def Info: cBRS_ASC_LowF.pdf  used on input line 859.
+Package pdftex.def Info: cBRS_ASC_LowF.pdf  used on input line 870.
 (pdftex.def)             Requested size: 470.295pt x 365.79208pt.
-<cBRS_ASC.pdf, id=2332, 650.43pt x 505.89pt>
+<cBRS_ASC.pdf, id=2276, 650.43pt x 505.89pt>
 File: cBRS_ASC.pdf Graphic file (type pdf)
 <use cBRS_ASC.pdf>
-Package pdftex.def Info: cBRS_ASC.pdf  used on input line 867.
+Package pdftex.def Info: cBRS_ASC.pdf  used on input line 878.
 (pdftex.def)             Requested size: 470.295pt x 365.79208pt.
-[61] [62 <./cBRS_ASC_With.pdf>] [63 <./cBRS_ASC_LowF.pdf>] [64 <./cBRS_ASC.pdf>
+[60] [61 <./cBRS_ASC_With.pdf>] [62 <./cBRS_ASC_LowF.pdf>] [63 <./cBRS_ASC.pdf>
 ]
 <<4>>
 
 Underfull \vbox (badness 4954) has occurred while \output is active []
 
- [65
+ [64
 
 ]
-<PNGTimeSeries.pdf, id=2489, 872.25874pt x 533.995pt>
+<PNGTimeSeries.pdf, id=2432, 872.25874pt x 533.995pt>
 File: PNGTimeSeries.pdf Graphic file (type pdf)
 <use PNGTimeSeries.pdf>
-Package pdftex.def Info: PNGTimeSeries.pdf  used on input line 900.
+Package pdftex.def Info: PNGTimeSeries.pdf  used on input line 911.
 (pdftex.def)             Requested size: 470.295pt x 287.91301pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
-[67 <./PNGTimeSeries.pdf>]
+ [65]
+[66 <./PNGTimeSeries.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]
+ [67]
 
-Package natbib Warning: Citation `TiltSeimology' on page 69 undefined on input 
-line 935.
+Package natbib Warning: Citation `TiltSeimology' on page 68 undefined on input 
+line 946.
 
-<Vel.pdf, id=2565, 578.16pt x 505.89pt>
+<Vel.pdf, id=2509, 578.16pt x 505.89pt>
 File: Vel.pdf Graphic file (type pdf)
 <use Vel.pdf>
-Package pdftex.def Info: Vel.pdf  used on input line 939.
+Package pdftex.def Info: Vel.pdf  used on input line 950.
 (pdftex.def)             Requested size: 352.72124pt x 308.63103pt.
-[69] [70 <./Vel.pdf>]
+[68] [69 <./Vel.pdf>]
 Underfull \vbox (badness 5548) has occurred while \output is active []
 
- [71]
+ [70]
+[71]
+<NNArray.pdf, id=2553, 722.7pt x 722.7pt>
+File: NNArray.pdf Graphic file (type pdf)
+<use NNArray.pdf>
+Package pdftex.def Info: NNArray.pdf  used on input line 1003.
+(pdftex.def)             Requested size: 470.295pt x 470.3008pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [72]
 
-LaTeX Warning: Reference `cBRSChap' on page 73 undefined on input line 988.
+LaTeX Warning: Text page 73 contains only floats.
 
-(./Dissertation.bbl [73] [74
 
-] [75]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76]
-[77]
-Underfull \vbox (badness 2951) has occurred while \output is active []
+ [73 <./NNArray.pdf>]
+<NNSubtraction.pdf, id=2582, 722.7pt x 433.62pt>
+File: NNSubtraction.pdf Graphic file (type pdf)
+<use NNSubtraction.pdf>
+Package pdftex.def Info: NNSubtraction.pdf  used on input line 1017.
+(pdftex.def)             Requested size: 352.72124pt x 211.63536pt.
+<NNCoupling.pdf, id=2583, 578.16pt x 433.62pt>
+File: NNCoupling.pdf Graphic file (type pdf)
+<use NNCoupling.pdf>
+Package pdftex.def Info: NNCoupling.pdf  used on input line 1027.
+(pdftex.def)             Requested size: 352.72124pt x 264.5409pt.
 
- [78])
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[74 <./NNSubtraction.pdf>] (./Dissertation.bbl [75 <./NNCoupling.pdf>] [76
+
+]
+[77] [78]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [79]
+[80]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81])
 
 Package natbib Warning: There were undefined citations.
 
-[79] (./Dissertation.aux)
+[82] (./Dissertation.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -770,35 +760,36 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4843 strings out of 494485
- 71107 string characters out of 6175792
- 137296 words of memory out of 5000000
- 8396 multiletter control sequences out of 15000+600000
- 15076 words of font info for 57 fonts, out of 8000000 for 9000
+ 4898 strings out of 482862
+ 71663 string characters out of 5958884
+ 303654 words of memory out of 5000000
+ 20073 multiletter control sequences out of 15000+600000
+ 544111 words of font info for 68 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 44i,12n,44p,1117b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Dissertation.pdf (91 pages, 6989089 bytes).
+ 50i,12n,48p,1116b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/michael/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.6
+00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Dissertation.pdf (94 pages, 7533511 bytes).
 PDF statistics:
- 2697 PDF objects out of 2984 (max. 8388607)
- 2217 compressed objects within 23 object streams
+ 2796 PDF objects out of 2984 (max. 8388607)
+ 2297 compressed objects within 23 object streams
  0 named destinations out of 1000 (max. 500000)
- 211 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

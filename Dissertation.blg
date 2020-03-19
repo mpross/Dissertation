@@ -1,52 +1,51 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Dissertation.aux
 The style file: plain.bst
 Database file #1: Dissertation.bib
 Warning--I didn't find a database entry for "some"
 Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "MSAPaper"
 Warning--I didn't find a database entry for "thermal"
 Warning--I didn't find a database entry for "TiltSeimology"
-You've used 28 entries,
+You've used 34 entries,
             2118 wiz_defined-function locations,
-            701 strings with 17168 characters,
-and the built_in function-call counts, 24199 in all, are:
-= -- 1853
-> -- 2880
+            740 strings with 18420 characters,
+and the built_in function-call counts, 26583 in all, are:
+= -- 2071
+> -- 3046
 < -- 1
-+ -- 1151
-- -- 1120
-* -- 2665
-:= -- 4498
-add.period$ -- 86
-call.type$ -- 28
-change.case$ -- 638
++ -- 1217
+- -- 1180
+* -- 2874
+:= -- 4920
+add.period$ -- 104
+call.type$ -- 34
+change.case$ -- 686
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 310
-empty$ -- 702
-format.name$ -- 1120
-if$ -- 4283
+cite$ -- 34
+duplicate$ -- 375
+empty$ -- 849
+format.name$ -- 1180
+if$ -- 4745
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 29
-newline$ -- 144
-num.names$ -- 56
-pop$ -- 594
+int.to.str$ -- 34
+missing$ -- 35
+newline$ -- 174
+num.names$ -- 68
+pop$ -- 632
 preamble$ -- 1
-purify$ -- 611
+purify$ -- 653
 quote$ -- 0
-skip$ -- 209
+skip$ -- 252
 stack$ -- 0
-substring$ -- 596
-swap$ -- 30
+substring$ -- 730
+swap$ -- 36
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 110
+type$ -- 134
 warning$ -- 0
-while$ -- 86
-width$ -- 30
-write$ -- 311
-(There were 5 warnings)
+while$ -- 105
+width$ -- 36
+write$ -- 376
+(There were 4 warnings)
