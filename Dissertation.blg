@@ -6,46 +6,46 @@ Database file #1: Dissertation.bib
 Warning--I didn't find a database entry for "some"
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "thermal"
-Warning--I didn't find a database entry for "TiltSeimology"
-You've used 34 entries,
+Warning--I didn't find a database entry for "tiltSeimology"
+You've used 35 entries,
             2118 wiz_defined-function locations,
-            740 strings with 18420 characters,
-and the built_in function-call counts, 26583 in all, are:
-= -- 2071
-> -- 3046
+            744 strings with 18792 characters,
+and the built_in function-call counts, 27099 in all, are:
+= -- 2112
+> -- 3104
 < -- 1
-+ -- 1217
-- -- 1180
-* -- 2874
-:= -- 4920
-add.period$ -- 104
-call.type$ -- 34
-change.case$ -- 686
++ -- 1240
+- -- 1202
+* -- 2922
+:= -- 5019
+add.period$ -- 107
+call.type$ -- 35
+change.case$ -- 699
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 375
-empty$ -- 849
-format.name$ -- 1180
-if$ -- 4745
+cite$ -- 35
+duplicate$ -- 385
+empty$ -- 866
+format.name$ -- 1202
+if$ -- 4838
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 35
-newline$ -- 174
-num.names$ -- 68
-pop$ -- 632
+int.to.str$ -- 35
+missing$ -- 36
+newline$ -- 179
+num.names$ -- 70
+pop$ -- 645
 preamble$ -- 1
-purify$ -- 653
+purify$ -- 665
 quote$ -- 0
-skip$ -- 252
+skip$ -- 260
 stack$ -- 0
-substring$ -- 730
-swap$ -- 36
+substring$ -- 735
+swap$ -- 37
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 134
+type$ -- 138
 warning$ -- 0
-while$ -- 105
-width$ -- 36
-write$ -- 376
+while$ -- 107
+width$ -- 37
+write$ -- 386
 (There were 4 warnings)
