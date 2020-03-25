@@ -16,39 +16,39 @@
 \contentsline {subsection}{\numberline {2.1.2}Sensor Correction with Tilt Subtraction}{15}%
 \contentsline {section}{\numberline {2.2}Beam Rotation Sensors}{17}%
 \contentsline {subsection}{\numberline {2.2.1}Mechanical System}{17}%
-\contentsline {subsection}{\numberline {2.2.2}Flexures}{21}%
-\contentsline {subsection}{\numberline {2.2.3}Vacuum System}{21}%
-\contentsline {subsection}{\numberline {2.2.4}Multi-Slit Autocollimator Readout}{22}%
-\contentsline {subsection}{\numberline {2.2.5}Controls}{26}%
-\contentsline {subsection}{\numberline {2.2.6}Noise Performance}{28}%
-\contentsline {section}{\numberline {2.3}Results}{30}%
-\contentsline {subsection}{\numberline {2.3.1}Hanford Installation}{30}%
-\contentsline {subsection}{\numberline {2.3.2}Livingston Installation}{32}%
-\contentsline {subsection}{\numberline {2.3.3}Ground Tilt Model}{32}%
-\contentsline {subsection}{\numberline {2.3.4}Duty Cycle Improvements}{33}%
-\contentsline {chapter}{\numberline {\@textofChapter \ 3:}30-cm Scale On-Board Rotation Sensors}{38}%
-\contentsline {section}{\numberline {3.1}Angular Controls}{38}%
-\contentsline {section}{\numberline {3.2}Compact Beam Rotation Sensor}{40}%
-\contentsline {subsection}{\numberline {3.2.1}Mechanical System}{40}%
-\contentsline {subsection}{\numberline {3.2.2}Kinematic Mount}{40}%
-\contentsline {subsection}{\numberline {3.2.3}Interferometric Readout}{40}%
-\contentsline {subsection}{\numberline {3.2.4}Calibration}{46}%
-\contentsline {subsection}{\numberline {3.2.5}Mass Adjustment}{47}%
-\contentsline {subsection}{\numberline {3.2.6}Controls}{49}%
-\contentsline {subsection}{\numberline {3.2.7}Noise Performance}{50}%
-\contentsline {section}{\numberline {3.3}Projected Improvements}{50}%
-\contentsline {subsection}{\numberline {3.3.1}Isolation Scheme}{50}%
-\contentsline {subsubsection}{Stage 2 Rotational}{52}%
-\contentsline {subsubsection}{Stage 1 Rotational}{52}%
-\contentsline {subsubsection}{Stage 1 Translational}{55}%
-\contentsline {subsubsection}{Stage 2 Translational}{55}%
-\contentsline {subsubsection}{Comparison with past performance}{56}%
-\contentsline {subsection}{\numberline {3.3.2}Angular Control Performance}{60}%
-\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{63}%
-\contentsline {section}{\numberline {4.1}Geophysics}{63}%
-\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{63}%
-\contentsline {subsection}{\numberline {4.1.2}Wave-Field Parameter Extraction}{66}%
-\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{67}%
-\contentsline {section}{\numberline {4.2}Newtonian Noise}{69}%
-\contentsline {subsection}{\numberline {4.2.1}Theory}{69}%
-\contentsline {subsection}{\numberline {4.2.2}Observations}{71}%
+\contentsline {subsection}{\numberline {2.2.2}Flexures}{20}%
+\contentsline {subsection}{\numberline {2.2.3}Vacuum System}{22}%
+\contentsline {subsection}{\numberline {2.2.4}Multi-Slit Autocollimator Readout}{23}%
+\contentsline {subsection}{\numberline {2.2.5}Controls}{28}%
+\contentsline {subsection}{\numberline {2.2.6}Noise Performance}{29}%
+\contentsline {section}{\numberline {2.3}Results}{31}%
+\contentsline {subsection}{\numberline {2.3.1}Hanford Installation}{31}%
+\contentsline {subsection}{\numberline {2.3.2}Livingston Installation}{31}%
+\contentsline {subsection}{\numberline {2.3.3}Ground Tilt Model}{33}%
+\contentsline {subsection}{\numberline {2.3.4}Duty Cycle Improvements}{34}%
+\contentsline {chapter}{\numberline {\@textofChapter \ 3:}30-cm Scale On-Board Rotation Sensors}{39}%
+\contentsline {section}{\numberline {3.1}Angular Controls}{39}%
+\contentsline {section}{\numberline {3.2}Compact Beam Rotation Sensor}{41}%
+\contentsline {subsection}{\numberline {3.2.1}Mechanical System}{41}%
+\contentsline {subsection}{\numberline {3.2.2}Kinematic Mount}{41}%
+\contentsline {subsection}{\numberline {3.2.3}Interferometric Readout}{41}%
+\contentsline {subsection}{\numberline {3.2.4}Calibration}{47}%
+\contentsline {subsection}{\numberline {3.2.5}Mass Adjustment}{48}%
+\contentsline {subsection}{\numberline {3.2.6}Controls}{50}%
+\contentsline {subsection}{\numberline {3.2.7}Noise Performance}{51}%
+\contentsline {section}{\numberline {3.3}Projected Improvements}{51}%
+\contentsline {subsection}{\numberline {3.3.1}Isolation Scheme}{51}%
+\contentsline {subsubsection}{Stage 2 Rotational}{53}%
+\contentsline {subsubsection}{Stage 1 Rotational}{53}%
+\contentsline {subsubsection}{Stage 1 Translational}{56}%
+\contentsline {subsubsection}{Stage 2 Translational}{56}%
+\contentsline {subsubsection}{Comparison with past performance}{57}%
+\contentsline {subsection}{\numberline {3.3.2}Angular Control Performance}{61}%
+\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{64}%
+\contentsline {section}{\numberline {4.1}Geophysics}{64}%
+\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{64}%
+\contentsline {subsection}{\numberline {4.1.2}Wave-Field Parameter Extraction}{67}%
+\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{68}%
+\contentsline {section}{\numberline {4.2}Newtonian Noise}{70}%
+\contentsline {subsection}{\numberline {4.2.1}Theory}{70}%
+\contentsline {subsection}{\numberline {4.2.2}Observations}{72}%

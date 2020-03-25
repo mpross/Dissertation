@@ -289,7 +289,7 @@ Current installations have yielded an $\alpha\sim 0.9$. This is then a low-tilt 
 \section{Beam Rotation Sensors} \label{BRSSec}
 \subsection{Mechanical System}
 
-\quad The Beam Rotation Sensor (BRS) is a beam-balance comprised of a 1-m long beam hung from two 10-15 $\mu$m thick beryllium-copper flexures. Figure \ref{BRSImage} shows a CAD model of the beam-balance. 
+\quad The Beam Rotation Sensor (BRS) is a beam-balance comprised of a 1-m long beam hung from two 10-15 $\mu$m thick beryllium-copper flexures, described in Section \ref{flex}. Figure \ref{BRSImage} shows a CAD model of the beam-balance. 
 
 \begin{figure}
 \begin{center} \includegraphics[width=0.75\textwidth]{BRSIso.png}
@@ -302,13 +302,6 @@ Current installations have yielded an $\alpha\sim 0.9$. This is then a low-tilt 
 \end{center}
 \caption{Side view of a CAD rendering of the BRS. At center, one of the copper colored flexures can be seen. The other is mounted on the opposite side.}
 \label{BRSImage}
-\end{figure}
-
-\begin{figure}
-\begin{center} 
-\includegraphics[width=\textwidth]{BRSFrontDetail.png}
-\end{center}
-\caption{Close up view of the center of the CAD rendering of the BRS. One of the copper colored flexures can be seen at center along with its clamps. The two gray block at the top are mirrors for optical sensing, one fixed to the support the other attached to the beam.}
 \end{figure}
 
 
@@ -343,19 +336,40 @@ Where $\omega_0=\sqrt{k/I}$ is the resonant frequency, $\omega_g=\sqrt{M g \delt
 
 \begin{figure}[!h]
 \begin{center}
- \includegraphics[width=\textwidth]{cBRS_TransferFunction3.pdf}
-\caption{}
+ \includegraphics[width=0.85\textwidth]{cBRS_TransferFunction.pdf}
+\caption{Measurements of the transfer function from platform tilt to measured tilt for the cBRS along with fits to Equation \ref{theta_s}. After each measurement mass was added or removed from the top of the proof mass in order to shift the vertical position of its center of mass.}
 \label{TransferFunction}
 \end{center}
 \end{figure}
 
 To allow for high fidelity rotation sensing, the translational coupling must be negliable at the frequencies of interest. To achieve this, $\delta$ must be tuned close to zero. This is achieved firstly through the design of the beam's suspension which places the center of mass close to the pivot point. Fine adjustments are them made by adding mass to the beam above or below the pivot. These adjustments are guided by measurements of the zero in the $\tilde{\theta}_s$ transfer function, Equation \ref{theta_s}, at $\omega=\omega_g$. Figure \ref{TransferFunction} shows this for the cBRS, described in Chapter \ref{cBRS_chap}. Differing amounts of tuning were achieved for each deployed device described Section \ref{results} due to scheduling constraints. The lowest translation coupling was achieved at the LHO End-Y BRS which had a $\delta<0.5\ \mu$m yielding a translational coupling of $<10^{-6}$ rad/m.
 
-\subsection{Flexures}
+\subsection{Flexures}\label{flex}
+
+The flexures which suspend the proof mass are cut out of $1/4''\times1/4''\times7/8''$ blocks of beryllium-copper by wire electrical discharge machining to yield the shape shown in Figure \ref{flex}. Circular cuts were used to achieve a well defined pivot point. The opening gaps on either side were restricted to act as mechanical stops for ease of handling and transportation.
+
+Due to machining variability in the width of flexure, batches of flexures were assayed via a microscope to determine the width of each flexure and flexures that were damaged during machining and transportation were discarded. Pairs of flexures with similar widths were installed together, one one either side of the beam. Each flexure has one half clamped to the support and the other attached to the beam, as shown in Figure \ref{BRSFrontD}. This provides a suspension which is still in all degrees of freedom except for rotations about the axis intersecting the two pivot points. The stiffness of the flexure increases with thickness. Thus in order to decrease the resonant frequency of the beam balance, the flexure width is minimized. This is limited practically by the motion of the machining wire to yield flexures with widths of 10-15 $\mu$m.
+
+It was found that flexures thinner than 10 $\mu$m could be achieved. However, the pieces were found to contain irregular holes laterally through the flexure. These flexures would have lower breaking strength and would increase the loss in installed on a beam balance. 
+
+\begin{figure}[!h]
+\begin{center}
+ \includegraphics[width=0.75\textwidth]{Flexure.pdf}
+\caption{Image of a flexure used to suspend the beam balance with detail showing microscope image of the flexure point.}
+\label{flexure}
+\end{center}
+\end{figure}
+
+\begin{figure}[!h]
+\begin{center} 
+\includegraphics[width=\textwidth]{BRSFrontDetail.png}
+\end{center}
+\caption{Close up view of the center of the CAD rendering of the BRS. One of the copper colored flexures can be seen at center along with its clamps. The two gray block at the top are mirrors for optical sensing, one fixed to the support the other attached to the beam.} \label{BRSFrontD}
+\end{figure}
 
 \subsection{Vacuum System}
 
-To decrease the effects of air currents and gas damping, each BRS is placed into its own vacuum chamber which emulates the outline of the device, as shown in Figure \ref{BRSPic}.
+To decrease the effects of air currents and gas damping, each BRS is placed into its own vacuum chamber which emulates the outline of the device, as shown in Figure \ref{BRSPic}. This chamber is initially evacuated to $\sim \mu$Torr pressures using a roughing pump and turbo. After which the vacuum is maintain via a 10 l/s ion pump further decreasing the pressure to $\sim$0.1~$\mu$Torr.
 
 \begin{figure}[!h]
 \begin{center}
@@ -413,15 +427,16 @@ Slit size & $\sim$0.127 mm\\
 
 An increase in sensitivity can be made by employing a multi-slit autocollimator \cite{MSA}. Such systems, shown in Figure \ref{ACFig}, are deployed as the angular readouts for the BRSs. This consists of an autocollimator with the light source replaced by a illuminated photomask of a number of thin slits. The pattern is then reflected off a set of reference and main mirror and imaged by a line CCD camera. These images are then analyzed to measure the distance between them thus yielding a measurement of angle. For the BRSs, this image analysis is achieved using bespoke software written in C\# which can be found at www.github.com/mpross/BRSReadout
 
-To extract the distance between the patterns, the image goes through a series of steps which take it from a vector of pixel intensities to a single angular output. When the software begins, the first frame that is captured is saved. All future frames are split into two, with one part representing the reference mirror and the other the main mirror. The cross correlation is then taken between each part and its matching section of the first frame. This gives a curve who's maximum is located at the pixel number corresponding to separation between the pattern in the current frame and the first frame, which can be seen in Figure \ref{ImgAnalysis}. The points of this curve that are near the maximum are then fit to a Gaussian which allows for the extraction of the location of the peak with sub-pixel resolution. This is done for each pattern separately after which the difference between the reference pattern location and the main pattern location is taken. The difference is then proportional to the change in angle between the casing and the beam following Equation \ref{ACEq}.
 
-\begin{figure}%
+\begin{figure}[!h]
 \begin{center}
  \includegraphics[width=\textwidth]{BRS_ImgAnalysis.pdf}
 \caption{Simulation of the BRS image analysis algorithm. The top pane shows a simulated frame of the fringes as seen by the CCD, the middle panes show the cross correlation and fit from the two patterns, and the bottom shows the output of the algorithm for each pattern and the difference of the two. For this simulation the main pattern was modulated at 10 mHz while the reference was at 1 mHz.}
 \label{ImgAnalysis}
 \end{center}
 \end{figure}
+
+To extract the distance between the patterns, the image goes through a series of steps which take it from a vector of pixel intensities to a single angular output. When the software begins, the first frame that is captured is saved. All future frames are split into two, with one part representing the reference mirror and the other the main mirror. The cross correlation is then taken between each part and its matching section of the first frame. This gives a curve who's maximum is located at the pixel number corresponding to separation between the pattern in the current frame and the first frame, which can be seen in Figure \ref{ImgAnalysis}. The points of this curve that are near the maximum are then fit to a Gaussian which allows for the extraction of the location of the peak with sub-pixel resolution. This is done for each pattern separately after which the difference between the reference pattern location and the main pattern location is taken. The difference is then proportional to the change in angle between the casing and the beam following Equation \ref{ACEq}.
 
 Compared to previous image analysis algorithms \cite{MSA}, this algorithm is computationally efficient while also being less susceptible to variations in the pattern image due to dust particulate, incorrect focusing, or beam clipping. A sensitivity of $\sim$ 0.3 nrad$/\sqrt{\text{Hz}}$ was achieved with this autocollimator design and image analysis algorithm.
 
