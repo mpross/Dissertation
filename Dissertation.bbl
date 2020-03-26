@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{aLIGO}
+J.~Aasi et~al.
+\newblock Advanced {LIGO}.
+\newblock {\em Classical and Quantum Gravity}, 32(7):074001, mar 2015.
+
 \bibitem{ligo2}
 J~Aasi et~al.
 \newblock Advanced ligo.
@@ -10,11 +15,23 @@ B.~P. Abbott et~al.
 \newblock Observation of gravitational waves from a binary black hole merger.
 \newblock {\em Phys. Rev. Lett.}, 116:061102, Feb 2016.
 
+\bibitem{speedGW}
+B.~P. Abbott et~al.
+\newblock Gravitational waves and gamma-rays from a binary neutron star merger:
+  {GW}170817 and {GRB} 170817a.
+\newblock {\em The Astrophysical Journal}, 848(2):L13, oct 2017.
+
 \bibitem{GW170817}
 B.~P. Abbott et~al.
 \newblock Gw170817: Observation of gravitational waves from a binary neutron
   star inspiral.
 \newblock {\em Phys. Rev. Lett.}, 119:161101, Oct 2017.
+
+\bibitem{contGW}
+B.~P. Abbott et~al.
+\newblock All-sky search for continuous gravitational waves from isolated
+  neutron stars using advanced ligo o2 data.
+\newblock {\em Phys. Rev. D}, 100:024004, Jul 2019.
 
 \bibitem{GWTC}
 B.~P. Abbott et~al.
@@ -22,6 +39,41 @@ B.~P. Abbott et~al.
   mergers observed by ligo and virgo during the first and second observing
   runs.
 \newblock {\em Phys. Rev. X}, 9:031040, Sep 2019.
+
+\bibitem{hubble2}
+BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
+  RX~Adhikari, VB~Adya, C~Affeldt, et~al.
+\newblock A gravitational-wave measurement of the hubble constant following the
+  second observing run of advanced ligo and virgo.
+\newblock {\em arXiv preprint arXiv:1908.06060}, 2019.
+
+\bibitem{graviton}
+BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
+  RX~Adhikari, VB~Adya, C~Affeldt, et~al.
+\newblock Tests of general relativity with the binary black hole signals from
+  the ligo-virgo catalog gwtc-1.
+\newblock {\em arXiv preprint arXiv:1903.04467}, 2019.
+
+\bibitem{GW190425}
+BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
+  RX~Adhikari, VB~Adya, C~Affeldt, et~al.
+\newblock Gw190425: Observation of a compact binary coalescence with total mass
+  $\sim 3.4 m_ \odot$.
+\newblock {\em arXiv preprint arXiv:2001.01761}, 2020.
+
+\bibitem{SN}
+BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
+  VB~Adya, C~Affeldt, M~Agathos, et~al.
+\newblock An optically targeted search for gravitational waves emitted by
+  core-collapse supernovae during the first and second observing runs of
+  advanced ligo and advanced virgo.
+\newblock {\em arXiv preprint arXiv:1908.03584}, 2019.
+
+\bibitem{NSEoS}
+BP~Abbott, R~Abbott, TD~Abbott, F~Acernese, K~Ackley, C~Adams, T~Adams,
+  P~Addesso, RX~Adhikari, VB~Adya, et~al.
+\newblock Gw170817: Measurements of neutron star radii and equation of state.
+\newblock {\em Physical review letters}, 121(16):161101, 2018.
 
 \bibitem{MSA}
 T~B~Arp, C~A~Hagedorn, Stephan Schlamminger, and J~H~Gundlach.
@@ -41,12 +93,32 @@ Jacopo Belfi, Nicol{\`o} Beverini, Giorgio Carelli, Angela Di~Virgilio, Enrico
   mw = 9.0, march 2011, japan earthquake.
 \newblock {\em Journal of Seismology}, 16(4):767--776, 2012.
 
+\bibitem{NGR}
+Bernd Br{\"u}gmann.
+\newblock Fundamentals of numerical relativity for gravitational wave sources.
+\newblock {\em Science}, 361(6400):366--371, 2018.
+
+\bibitem{hubble1}
+LIGO~Scientific Collaboration, Virgo Collaboration, 1M2H Collaboration, Dark
+  Energy Camera GW-EM Collaboration, DES Collaboration, DLT40 Collaboration,
+  Las Cumbres~Observatory Collaboration, VINROUGE Collaboration, MASTER
+  Collaboration, et~al.
+\newblock A gravitational-wave standard siren measurement of the hubble
+  constant.
+\newblock {\em Nature}, 551(7678):85--88, 2017.
+
 \bibitem{NN}
 M.~W. Coughlin, J.~Harms, J.~Driggers, D.~J. McManus, N.~Mukund, M.~P. Ross,
   B.~J.~J. Slagmolen, and K.~Venkateswara.
 \newblock Implications of dedicated seismometer measurements on newtonian-noise
   cancellation for advanced ligo.
 \newblock {\em Phys. Rev. Lett.}, 121:221104, Nov 2018.
+
+\bibitem{strings}
+Thibault Damour and Alexander Vilenkin.
+\newblock Gravitational radiation from cosmic (super)strings: Bursts,
+  stochastic background, and observational windows.
+\newblock {\em Phys. Rev. D}, 71:063510, Mar 2005.
 
 \bibitem{ASC}
 Katherine~L Dooley, Lisa Barsotti, Rana~X Adhikari, Matthew Evans, Tobin~T
@@ -55,6 +127,12 @@ Katherine~L Dooley, Lisa Barsotti, Rana~X Adhikari, Matthew Evans, Tobin~T
 \newblock Angular control of optical cavities in a radiation-pressure-dominated
   regime: the enhanced ligo case.
 \newblock {\em JOSA A}, 30(12):2618--2626, 2013.
+
+\bibitem{inflation}
+Richard Easther and Eugene~A Lim.
+\newblock Stochastic gravitational wave production after inflation.
+\newblock {\em Journal of Cosmology and Astroparticle Physics},
+  2006(04):010--010, apr 2006.
 
 \bibitem{einstein}
 A.~Einstein and N.~Rosen.
@@ -286,6 +364,13 @@ Krishna Venkateswara, Michael~P Ross, Jim Warner, Conor Mow-Lowry, Brian Lantz,
 \newblock Towards windproofing ligo: Reducing the effect of wind-driven floor
   tilt by using rotation sensors in active seismic isolation.
 \newblock {\em arXiv preprint arXiv:2003.06447}, 2020.
+
+\bibitem{heavyElements}
+Darach Watson, Camilla~J Hansen, Jonatan Selsing, Andreas Koch, Daniele~B
+  Malesani, Anja~C Andersen, Johan~PU Fynbo, Almudena Arcones, Andreas
+  Bauswein, Stefano Covino, et~al.
+\newblock Identification of strontium in the merger of two neutron stars.
+\newblock {\em Nature}, 574(7779):497--500, 2019.
 
 \bibitem{hulseTaylor}
 J.~M. Weisberg and Y.~Huang.

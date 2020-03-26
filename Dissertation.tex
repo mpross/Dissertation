@@ -46,7 +46,7 @@ If this was the case with the instrument constructed with a view to avoid sensit
 
 \subsection{Linearized General Relativity}
 
-In early twentieth century, Einstein and others formulated the theory of General Relativity, which supplanted the static space-time in which all prior physics was formulated, with a deformable space-time which yielded a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
+In early twentieth century, the theory of General Relativity supplanted the static space-time, in which all prior physics was formulated, with a deformable space-time yielding a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
 \begin{equation}
 R_{\mu \nu}-\frac{1}{2}R\ g_{\mu \nu}+\Lambda g_{\mu \nu}= \frac{8\pi G}{c^4} T_{\mu \nu}
 \end{equation}
@@ -67,17 +67,37 @@ For a complete derivation see Reference \cite{GWBook}. Vacuum solutions propagat
 h_{ij}(t,x)=\begin{pmatrix} h_+ & h_\times & 0 \\ h_\times & -h_+ & 0 \\ 0 & 0 & 0\end{pmatrix} \\cos\big(\omega t - \kappa z)
 \end{equation}
 
-where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' polarizations\footnote{A massless graviton is assumed here. A massive graviton would yield five polarizations instead of two. Current graviton mass constraints are $m_g< 7.7\times 10^{-23} eV/c^2$ \cite{some}}, $\omega$ is the angular frequency of oscillation, and $\kappa$ is the wavenumber. Here $i$ and $j$ run from 1 to 3 and correspond to the the three spacial coordinates. The time components are suppressed as the $h_{0\nu}$ components are zero due the coordinate choice and $h_{00}$ is zero outside the source. 
+where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' polarizations\footnote{A massless graviton is assumed here. A massive graviton would yield five polarizations instead of two. Current graviton mass constraints are $m_g\leq 4.7\times 10^{-23} eV/c^2$ \cite{graviton}}, $\omega$ is the angular frequency of oscillation, and $\kappa$ is the wavenumber. Here $i$ and $j$ run from 1 to 3 and correspond to the the three spacial coordinates. The time components are suppressed as the $h_{0\nu}$ components are zero due the coordinate choice and $h_{00}$ is zero outside the source. 
 
-\textbf{expand}
+Under the long wavelength limit, a source of gravitational waves can be decomposed into a sum of momenta of the stress-energy tensor:
+
+\begin{equation}
+h_{ij}(t,x)=\frac{1}{r}\frac{4 G}{c^4} \Lambda_{ij,kl} \bigg( S^{kl} +\frac{1}{c} n_m \dot{S}^{kl,m} +\frac{1}{2c^2} n_m n_p \ddot{S}^{kl,mp}+...\bigg)_\text{ret} \label{gwExp}
+\end{equation}
+
+where $\Lambda_{ij,kl}$ is the projection from the source frame to transverse-traceless coordinates and the momenta are defined as:
+
+\begin{align}
+S^{ij}(t)&=\int T^{ij}(t,\mathbf{x}) d^3x\\
+S^{ij,k}(t)&=\int T^{ij}(t,\mathbf{x}) x^k d^3x\\
+S^{ij,kl}(t)&=\int T^{ij}(t,\mathbf{x}) x^k x^l d^3x
+\end{align}
+
+with the subscript ``ret'' denoting the evaluation at retarded time. The leading term of Equation \ref{gwExp} can be expressed in terms of the mass quadruple moment of the source, $Q_{ij}$, as:
+
+\begin{equation}
+h_{ij}(t,x)=\frac{1}{r}\frac{2 G}{c^4} \ddot{Q}_{ij}(t-r/c)
+\end{equation}
+
+Thus the emission of gravitational waves is primarily driven by time varying quadrople moments. Varying higher order moments will also emit gravitational waves but are subdominant in most natural systems.
 
 \subsection{Compact Binary Coalescence}\label{CBC}
 
-As of writing, the only systems that have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects is of importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} astrophysical objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor} and GW170817\cite{GW170817}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC}.
+As of writing, the only systems that have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects is of importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} astrophysical objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor}, GW170817\cite{GW170817}, and GW190425\cite{GW190425}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC}.
 
-Such a system can be approximated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. This approximation is only valid during the inspiral phase of the merger when the distance between the two objects is much larger than the size of the objects. For a complete simulation of the gravitational wave emission during a merger, one must numerically evaluate the evolution of the metric around the objects. \cite{}
+Such a system can be approximated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. This approximation is only valid during the inspiral phase of the merger when the distance between the two objects is much larger than the size of the objects. For a complete simulation of the gravitational wave emission during a merger, one must numerically evaluate the evolution of the space-time around the objects. \cite{NGR}
 
-The gravitational waves emitted by such a system can be shown to be:
+The gravitational waves emitted under the point mass approximation can be shown to follow:
 \begin{align}
 h_+(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \frac{1+\cos^2\theta}{2} \ \cos(\omega t + \phi)\\
 h_\times(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \cos\theta\ \sin(\omega t + \phi)
@@ -95,23 +115,23 @@ This process produces a characteristic ``chirp'' signal which begins as low freq
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{GW170817.pdf}
-\caption{Spectrogram of the strain caused by a binary neutron star merger as seen at the LIGO Hanford Observatory, LIGO Livingston Observatory, and the Virgo Observatory. \cite{GW170817} A clear chirp signal can be seen starting at $\sim$ 40 Hz which rising in both frequency and amplitude. The origin of the time axis is when the neutron stars merge. The differing amount of signal in the three detectors is due to the alignment of their respective antennae patterns with the source location.}
+\caption[Spectrogram of the strain caused by a binary neutron star merger]{Spectrogram of the strain caused by a binary neutron star merger as seen at the LIGO Hanford Observatory, LIGO Livingston Observatory, and the Virgo Observatory. \cite{GW170817} A clear chirp signal can be seen starting at $\sim$ 40 Hz which rising in both frequency and amplitude. The origin of the time axis is when the neutron stars merge. The differing amount of signal in the three detectors is due to the alignment of their respective antennae patterns with the source location.}
 \label{GW170817}
 \end{center}
 \end{figure}
  
- Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars and supernova to cosmic strings and density perturbations in the early universe \textbf{cite}. With the measurement of gravitational waves, humankind has technologically expanded our senses to include the faint vibrations of space-time. This ability has allowed the study of new types of astronomical systems and may one day allow further insight into the beginning of the universe and the nature of gravity.
+ Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars \cite{contGW} and supernova \cite{SN} to cosmic strings \cite{strings} and density perturbations in the early universe \cite{inflation}. With the measurement of gravitational waves, humankind has technologically expanded our senses to include the faint vibrations of space-time. This ability has allowed the study of new types of astronomical systems and may one day allow further insight into the beginning of the universe and the nature of gravity.
 
 \section{LIGO}
 
 \subsection{Sensitivity}
 
-The Laser Interferometric Gravitational wave Observatory (LIGO) \textbf{cite} is a pair of 4 km long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana (LLO). Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
+The Laser Interferometric Gravitational wave Observatory (LIGO) \cite{aLIGO} is a pair of 4 km long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana (LLO). Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
 
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{LIGO_Schematic.pdf}
-\caption{Optical layout of the LIGO interferometers \cite{LIGOSens}.\textbf{check copyrights}}
+\caption[Optical layout of the LIGO interferometers]{Optical layout of the LIGO interferometers \cite{LIGOSens}.\textbf{check copyrights}}
 \label{LIGO_Schematic}
 \end{center}
 \end{figure}
@@ -125,12 +145,12 @@ h&=\frac{1}{2} \big( h_{xx}-h_{yy} \big)=\frac{1}{2}h_+\ \big( 1+\cos^2\theta \b
 \end{align}
 where $h_{xx}$ and $h_{yy}$ are the strain along the x and y arm respectively, $\theta$ and $\phi$ are the polar and azimuthal angles of the direction of propogation, and $h$ is the differential strain as measured by the observatory. Here the polarizations are defined in the source frame.
 
-The complex series of optics allows the observatory to measure differential strains down to \textbf{$10^{-23}$ at 40 Hz}.  Noise curves for the observatories are shown in Figure \ref{LIGO_Strain} where one can see that the sensitive band of the observatory runs from \textbf{30 Hz up to 16 kHz}. At low frequencies the noise is dominated by residual control noise while at high it is dominated by noise caused by quantum fluctuations.  \cite{Squeeze}
+The series of optics allows the observatory to measure differential strains down to $7\times10^{-24}$ at 200 Hz.  Noise curves for the observatories are shown in Figure \ref{LIGO_Strain} where one can see that the sensitive band of the observatory runs from 20 Hz up to 7 kHz. At low frequencies the noise is dominated by residual control noise, discussed in Section \ref{ASC}, while at high it is dominated by noise caused by quantum fluctuations.  \cite{Squeeze}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.55\textwidth]{StrainCurve.pdf}
-\caption{Strain sensitivity of the LIGO and Virgo Observatories. \textbf{replace with O3 sensitivity}}
+\caption[Strain sensitivity of the LIGO and Virgo Observatories]{Strain sensitivity of the LIGO and Virgo Observatories. \textbf{replace with O3 sensitivity}}
 \label{LIGO_Strain}
 \end{center}
 \end{figure}
@@ -138,9 +158,9 @@ The complex series of optics allows the observatory to measure differential stra
 
 \subsection{Events}
 
-With the current sensitivity the primary systems of interest are compact binaries, discussed in Section \ref{CBC}, which merge within the band of interest. A equal mass \textbf{$200\ M_\odot$} binary black hole system would merger at \textbf{11 Hz} while a \textbf{$1.4\ M_\odot$} binary neutron star system mergers at \textbf{1.5 kHz} yet emits appreciably while sweeping through the LIGO band.
+With the current sensitivity the primary systems of interest are compact binaries, discussed in Section \ref{CBC}, which merge within the band of interest. A equal mass $50\ M_\odot$ binary black hole system would merger at $\sim$ 22 Hz while a $1.4\ M_\odot$ binary neutron star system mergers at $\sim$ 800 Hz yet emits appreciably while sweeping through the LIGO band.
 
-During the first and second observing runs of LIGO, ten binary black hole systems and one binary neutron star merger were detected with high significance. \cite{GWTC} The black holes ranged from \textbf{$7\ M_\odot$ to $120\ M_\odot$} and merged at distances from \textbf{100 Mpc to 2 Gpc}. The neutron star binary was composed of a \textbf{$1.2\ M_\odot$ and a $1.4\ M_\odot$} at \textbf{1 Mpc}. These systems are tabulated in Table \ref{gwTable}. \textbf{mention new BNS}
+During the first and second observing runs of LIGO, ten binary black hole systems and one binary neutron star merger were detected with high significance. \cite{GWTC} The black hole binaries ranged in total mass from from $18.6\ M_\odot$ to $84.4\ M_\odot$ and merged at distances from 320 Mpc to 2.8 Gpc. The neutron star binary was composed of a $1.27\ M_\odot$ and a $1.46\ M_\odot$ at 40 Mpc. These systems are tabulated in Table \ref{gwTable}.
 
 \begin{center}
 \begin{tabular}{| c | c | c | c | c | c |}
@@ -170,13 +190,16 @@ GW170818 & $35.4^{+7.5}_{-4.7}$ & $26.7^{+4.3}_{-5.2}$ & $59.4^{+4.9}_{-4.8}$ & 
 \hline
 GW170823 & $39.5^{+11.2}_{-6.7}$ & $29.0^{+6.7}_{-7.8}$ & $65.4^{+10.1}_{-7.4}$ & $1940^{+970}_{-900}$ & $0.35^{+0.15}_{-0.15}$\\
 \hline
+\hline
+GW190425 & $1.60-1.87$ & $1.46-1.69$ & $3.4^{+0.3}_{-0.1}$ & $159^{+69}_{-71}$ & $0.03^{+0.01}_{-0.02}$\\
+\hline
 \end{tabular}
 \label{gwTable}
 \end{center}
 
 The ongoing third observing run has had \textbf{\#} significant candidates: \textbf{\#} binary black holes, \textbf{\#} binary neutron stars, and \textbf{\#} black hole neutron star systems. Although these candidates have not been verified to be true gravitational wave events, they show a significant increase in rate of detection due to both the decreased noise and increased duty cycle achieved for the third observing run.
 
-Observation of these events has led to further understanding of a variety of phenomena. Including the nature of the neutron star composition \cite{}, the source of heavy elements \cite{}, and black hole populations \cite{}. Additionally, they have allowed a model independent measurement of Hubble's constant \cite{} and have set restrictive limits on alternative theories of gravity \cite{}.
+Observation of these events has led to further understanding of a variety of phenomena. Including the nature of the neutron star composition \cite{NSEoS}, the source of heavy elements \cite{heavyElements}, and black hole populations \cite{GWTC}. Additionally, they have allowed a model independent measurement of Hubble's constant \cite{hubble1, hubble2} and have set restrictive limits on alternative theories of gravity \cite{speedGW}.
 
 \section{Seismic Isolation}\label{seisIso}
 
@@ -189,7 +212,7 @@ The ambient seismic wave-field is continuously excited across a wide frequency r
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.75\textwidth]{windComp.pdf}
-\caption{Ground motion spectra recorded at the X end station of the Hanford Observatory. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity. \textbf{remove high wind}}
+\caption[Ground motion spectrum]{Ground motion spectrum recorded at the X end station of the Hanford Observatory. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity. \textbf{remove high wind}}
 \label{wind}
 \end{center}
 \end{figure}
@@ -199,7 +222,7 @@ The LIGO observatories solve this issue by employing a multi-stage seismic isola
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.75\textwidth]{seismicIso.jpg}
-\caption{Schematic of the LIGO seismic isolation system. \cite{ligoSeis}}
+\caption[Schematic of the LIGO seismic isolation system]{Schematic of the LIGO seismic isolation system. \cite{ligoSeis}}
 \label{wind}
 \end{center}
 \end{figure}
@@ -213,7 +236,7 @@ This is done in all six degrees of freedom by having three independent seismomet
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.85\textwidth]{seismicSensNoise.pdf}
-\caption{}
+\caption[Sensor noise for the seismic isolation system]{}
 \label{seisNoise}
 \end{center}
 \end{figure}
@@ -263,7 +286,7 @@ With this additional contribution, it becomes immediately clear that, for a give
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{windComp.pdf}
-\caption{Ground motion spectra recorded at the X-End Station of the Hanford Observatory during low and high winds. Below 100 mHz, wind driven tilts become dominate during high winds. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity.}
+\caption[Ground motion spectra during low and high winds]{Ground motion spectra recorded at the X-End Station of the Hanford Observatory during low and high winds. Below 100 mHz, wind driven tilts become dominate during high winds. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity.}
 \label{wind}
 \end{center}
 \end{figure}
@@ -293,14 +316,14 @@ Current installations have yielded an $\alpha\sim 0.9$. This is then a low-tilt 
 
 \begin{figure}
 \begin{center} \includegraphics[width=0.75\textwidth]{BRSIso.png}
-\caption{CAD rendering of the BRS with the vacuum and optical readout systems omitted. The beam with its two brass end masses can be seen along with its attached mirrors and support structure. }
+\caption[CAD rendering of the BRS]{CAD rendering of the BRS with the vacuum and optical readout systems omitted. The beam with its two brass end masses can be seen along with its attached mirrors and support structure. }
 \end{center}
 \end{figure} 
 \begin{figure}
 \begin{center} 
 \includegraphics[width=\textwidth]{BRSFront.png}
 \end{center}
-\caption{Side view of a CAD rendering of the BRS. At center, one of the copper colored flexures can be seen. The other is mounted on the opposite side.}
+\caption[Side view of a CAD rendering of the BRS]{Side view of a CAD rendering of the BRS. At center, one of the copper colored flexures can be seen. The other is mounted on the opposite side.}
 \label{BRSImage}
 \end{figure}
 
@@ -337,7 +360,7 @@ Where $\omega_0=\sqrt{k/I}$ is the resonant frequency, $\omega_g=\sqrt{M g \delt
 \begin{figure}[!h]
 \begin{center}
  \includegraphics[width=0.85\textwidth]{cBRS_TransferFunction.pdf}
-\caption{Measurements of the transfer function from platform tilt to measured tilt for the cBRS along with fits to Equation \ref{theta_s}. After each measurement mass was added or removed from the top of the proof mass in order to shift the vertical position of its center of mass.}
+\caption[Transfer function from platform tilt to measured tilt for the cBRS]{Measurements of the transfer function from platform tilt to measured tilt for the cBRS along with fits to Equation \ref{theta_s}. After each measurement mass was added or removed from the top of the proof mass in order to shift the vertical position of its center of mass.}
 \label{TransferFunction}
 \end{center}
 \end{figure}
@@ -355,7 +378,7 @@ It was found that flexures thinner than 10 $\mu$m could be achieved. However, th
 \begin{figure}[!h]
 \begin{center}
  \includegraphics[width=0.75\textwidth]{Flexure.pdf}
-\caption{Image of a flexure used to suspend the beam balance with detail showing microscope image of the flexure point.}
+\caption[Image of a BRS flexure]{Image of a flexure used to suspend the beam balance with detail showing microscope image of the flexure point.}
 \label{flexure}
 \end{center}
 \end{figure}
@@ -364,7 +387,7 @@ It was found that flexures thinner than 10 $\mu$m could be achieved. However, th
 \begin{center} 
 \includegraphics[width=\textwidth]{BRSFrontDetail.png}
 \end{center}
-\caption{Close up view of the center of the CAD rendering of the BRS. One of the copper colored flexures can be seen at center along with its clamps. The two gray block at the top are mirrors for optical sensing, one fixed to the support the other attached to the beam.} \label{BRSFrontD}
+\caption[Close up view of the center of the CAD rendering of the BRS]{Close up view of the center of the CAD rendering of the BRS. One of the copper colored flexures can be seen at center along with its clamps. The two gray block at the top are mirrors for optical sensing, one fixed to the support the other attached to the beam.} \label{BRSFrontD}
 \end{figure}
 
 \subsection{Vacuum System}
@@ -374,7 +397,7 @@ To decrease the effects of air currents and gas damping, each BRS is placed into
 \begin{figure}[!h]
 \begin{center}
  \includegraphics[width=\textwidth]{BRSPic.jpg}
-\caption{Picture of the BRS installed at LLO End-Y before the installation of the thermal insulation.}
+\caption[Picture of an installed BRS]{Picture of the BRS installed at LLO End-Y before the installation of the thermal insulation.}
 \label{BRSPic}
 \end{center}
 \end{figure}
@@ -392,7 +415,7 @@ An autocollimator adds a lens located one focal length from light source and the
 \begin{figure}%
 \begin{center}
  \includegraphics[width=0.75\textwidth]{Autocollimator.pdf}
-\caption{Schematic of a multi-slit autocollimator used for as the angular readout for the BRSs.}
+\caption[Schematic of a multi-slit autocollimator]{Schematic of a multi-slit autocollimator used for as the angular readout for the BRSs.}
 \label{ACFig}
 \end{center}
 \end{figure}
@@ -431,7 +454,7 @@ An increase in sensitivity can be made by employing a multi-slit autocollimator 
 \begin{figure}[!h]
 \begin{center}
  \includegraphics[width=\textwidth]{BRS_ImgAnalysis.pdf}
-\caption{Simulation of the BRS image analysis algorithm. The top pane shows a simulated frame of the fringes as seen by the CCD, the middle panes show the cross correlation and fit from the two patterns, and the bottom shows the output of the algorithm for each pattern and the difference of the two. For this simulation the main pattern was modulated at 10 mHz while the reference was at 1 mHz.}
+\caption[Simulation of the BRS image analysis algorithm]{Simulation of the BRS image analysis algorithm. The top pane shows a simulated frame of the fringes as seen by the CCD, the middle panes show the cross correlation and fit from the two patterns, and the bottom shows the output of the algorithm for each pattern and the difference of the two. For this simulation the main pattern was modulated at 10 mHz while the reference was at 1 mHz.}
 \label{ImgAnalysis}
 \end{center}
 \end{figure}
@@ -461,7 +484,7 @@ Although the exact physical mechanism is unknown at this juncture, it has been o
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.75\textwidth]{BRSNoiseModel.pdf}
-\caption{Noise budge for the Beam Rotation Sensors where the blue curve shows the performance at a quiet time, in red is a model of the readout noise, yellow shows an estimate of the low-frequency noise, purple shows the sum of these, and cyan and green show upper limits of the thermal and damping noise.}
+\caption[Noise budge for the Beam Rotation Sensors]{Noise budge for the Beam Rotation Sensors where the blue curve shows the performance at a quiet time, in red is a model of the readout noise, yellow shows an estimate of the low-frequency noise, purple shows the sum of these, and cyan and green show upper limits of the thermal and damping noise.}
 \label{noise}
 \end{center}
 \end{figure}
@@ -486,7 +509,7 @@ Since this noise source enters as a torque on the beam-balance, it is filtered b
 \begin{figure}%
 \begin{center}
 \includegraphics[width=\textwidth]{HSubtractionETMX.pdf}
-\caption{Representative amplitude spectral density showing the tilt subtraction during windy conditions achieved at End-X of LHO where blue is the BRS signal multiplied by $g/\omega$, read is the raw seismometer signal, and yellow is the tilt corrected signal. Similar perform has been achieved by all of the deployed BRSs.}
+\caption[Representative amplitude spectral density showing the tilt subtraction during windy conditions]{Representative amplitude spectral density showing the tilt subtraction during windy conditions achieved at End-X of LHO where blue is the BRS signal multiplied by $g/\omega$, read is the raw seismometer signal, and yellow is the tilt corrected signal. Similar perform has been achieved by all of the deployed BRSs.}
 \label{sub}
 \end{center}
 \end{figure}
@@ -496,7 +519,7 @@ The tilt subtraction performance achieved with these devices can be seen in Figu
 \begin{figure}%
 \begin{center}
 \includegraphics[width=\textwidth]{TiltCorrTime.pdf}
-\caption{Time series showing the tilt subtraction at End-X of LHO where blue is the BRS signal multiplied by $g/\omega$, read is the raw seismometer signal, and yellow is the tilt corrected signal. As can be seen, the tilt subtraction removes a collection of transients, likely due to the gusts of wind.}
+\caption[Time series showing tilt subtraction ]{Time series showing the tilt subtraction at End-X of LHO where blue is the BRS signal multiplied by $g/\omega$, read is the raw seismometer signal, and yellow is the tilt corrected signal. As can be seen, the tilt subtraction removes a collection of transients, likely due to the gusts of wind.}
 \label{subTime}
 \end{center}
 \end{figure}
@@ -533,7 +556,7 @@ Comparison of this model to data is shown in Figure \ref{tiltModel} which shows 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{TiltModel.pdf}
-\caption{Observed and modeled tilt vs wind speed for LHO End-X. The solid lines are the measured ground tilt while the dashed are the model. At low wind speeds, the BRS noise and the microseism become dominate at high frequencies.}
+\caption[Observed and modeled tilt vs wind speed]{Observed and modeled tilt vs wind speed for LHO End-X. The solid lines are the measured ground tilt while the dashed are the model. At low wind speeds, the BRS noise and the microseism become dominate at high frequencies.}
 \label{tiltModel}
 \end{center}
 \end{figure}
@@ -545,7 +568,7 @@ The figure of merit which most readily displays the improvements in duty cycle d
 \begin{figure}%
 \begin{center}
 \includegraphics[width=\textwidth]{LHO_WindVsLockEvents.pdf}
-\caption{Duty cycle improvements for the LIGO Hanford Observatory along with distribution of observed events vs. wind speed.. \textbf{Add label on right axis}}
+\caption[Duty cycle improvements for the LIGO Hanford Observatory]{Duty cycle improvements for the LIGO Hanford Observatory along with distribution of observed events vs. wind speed.. \textbf{Add label on right axis}}
 \label{LHO_events}
 \end{center}
 \end{figure}
@@ -557,7 +580,7 @@ Also shown in Figure \ref{LHO_events} is the fraction of the GW events or candid
 \begin{figure}%
 \begin{center}
 \includegraphics[width=\textwidth]{LLO_WindVsLockEvents.pdf}
-\caption{Duty cycle improvements for the LIGO Livingston Observatory along with distribution of observed events vs. wind speed. \textbf{Add label on right axis}}
+\caption[Duty cycle improvements for the LIGO Livingston Observatory]{Duty cycle improvements for the LIGO Livingston Observatory along with distribution of observed events vs. wind speed. \textbf{Add label on right axis}}
 \label{LLO_events}
 \end{center}
 \end{figure}
@@ -577,7 +600,7 @@ To operate the LIGO interferometers in their optimal configuration, the relative
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.75\textwidth]{cBRS_ASC_Without.pdf}
-\caption{A model of the performance of the current angular sensing and control system. This model optimizes the unity gain frequency of the ASC controls to maximize performance above $\sim$10 Hz while maintaining the low frequency rms at 1 nrad/$\sqrt{\text{Hz}}$.}
+\caption[Model of the performance of the current angular sensing and control system]{A model of the performance of the current angular sensing and control system. This model optimizes the unity gain frequency of the ASC controls to maximize performance above $\sim$10 Hz while maintaining the low frequency rms at 1 nrad/$\sqrt{\text{Hz}}$.}
 \label{ascWithout}
 \end{center}
 \end{figure}
@@ -587,7 +610,7 @@ With the current system, at $\sim$0.2 Hz the rotational seismic isolation is lim
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.75\textwidth]{sensorNoise.pdf}
-\caption{Theoretical noise curves for the cBRS, blue, and seismometer pair located 1-m apart.}
+\caption[Theoretical noise curves for the cBRS and seismometer pair]{Theoretical noise curves for the cBRS, blue, and seismometer pair located 1-m apart.}
 \label{sensNoise}
 \end{center}
 \end{figure}
@@ -607,7 +630,7 @@ This design yields a resonant frequency of $\sim$20 mHz which limits the use of 
 \begin{center}
 \includegraphics[width=0.75\textwidth]{cBRSIso.png}
 \end{center}
-\caption{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.}
+\caption[CAD rendering of the cBRS]{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.}
 \label{cBRS1}
 \end{figure}
 
@@ -616,7 +639,7 @@ This design yields a resonant frequency of $\sim$20 mHz which limits the use of 
 \begin{center}
  \includegraphics[width=\textwidth]{cBRSFront.png}
  
-\caption{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.\textbf{label}}
+\caption[Side view of the CAD rendering of the cBRS]{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.\textbf{label}}
 \label{cBRS2}
 \end{center}
 \end{figure}
@@ -627,7 +650,7 @@ This design yields a resonant frequency of $\sim$20 mHz which limits the use of 
 \begin{center}
 \includegraphics[width=0.75\textwidth]{cBRSKMount.png}
 \end{center}
-\caption{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.}
+\caption[CAD rendering of the cBRS kinematic mount]{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.}
 \end{figure}
 
 \subsection{Interferometric Readout}
@@ -643,7 +666,7 @@ where $R$ is the reflectance, $F$ is the finesse, $x$ is the length of the cavit
 \begin{center}
 \includegraphics[width=\textwidth]{cBRSOptics.pdf}
 \end{center}
-\caption{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.}
+\caption[Diagram of the cBRS fiber interferometer read-head]{Diagram of the cBRS fiber interferometer read-head.}
 \label{cBRSOpt}
 \end{figure}
 
@@ -651,7 +674,7 @@ where $R$ is the reflectance, $F$ is the finesse, $x$ is the length of the cavit
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_OpticalLayout.pdf}
 \end{center}
-\caption{}
+\caption[Layout of the cBRS readout optics]{Layout of the cBRS readout optics.}
 \label{cBRSOptLay}
 \end{figure}
 
@@ -700,7 +723,7 @@ The two readouts are calibrated independently to take into account differing pie
 \begin{figure}[!h]
 \begin{center}
  \includegraphics[width=0.75\textwidth]{cBRS_Fringes.pdf}
-\caption{Interference pattern of a cBRS fiber interferometer vs cavity length. The gray region is where the device is operated in normal conditions. Within this region the reflectance is approximately linear verse displacement.}
+\caption[Interference pattern of a cBRS fiber interferometer vs cavity length]{Interference pattern of a cBRS fiber interferometer vs cavity length. The gray region is where the device is operated in normal conditions. Within this region the reflectance is approximately linear verse displacement.}
 \label{cBRS_fringes}
 \end{center}
 \end{figure}
@@ -736,7 +759,7 @@ While for the BRS the horizontal center of mass (COM) was designed to be tuned b
 \begin{center}
 \includegraphics[width=0.5\textwidth]{cBRSMassAdjuster.png}
 \end{center}
-\caption{}\label{massAdjust}
+\caption[CAD rendering of the cBRS mass adjuster]{CAD rendering of the cBRS mass adjuster}\label{massAdjust}
 \end{figure}
 
 
@@ -748,7 +771,7 @@ To test whether this design was capable of moving enough mass accurately, a temp
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_massAdjust.pdf}
 \end{center}
-\caption{Demonstration of the effect of actuating the remote mass adjuster. The DC angle was measured by taking the mean of period long chunks of shadow sensor data while the mass adjuster was shifted to a collection of positions.}\label{massAdjustPlot}
+\caption[Demonstration of the effect of actuating the remote mass adjuster]{Demonstration of the effect of actuating the remote mass adjuster. The DC angle was measured by taking the mean of period long chunks of shadow sensor data while the mass adjuster was shifted to a collection of positions.}\label{massAdjustPlot}
 \end{figure}
 
 \subsection{Controls}
@@ -760,7 +783,7 @@ Similar to the BRS controls, the cBRS can be rung up do to environmental transie
 \begin{figure}
 \begin{center}
  \includegraphics[width=\textwidth]{cBRS_Noise.pdf}
-\caption{}
+\caption[cBRS noise spectra]{cBRS noise spectra}
 \label{cBRS_noise}
 \end{center}
 \end{figure}
@@ -775,7 +798,7 @@ As described in Section \ref{seisIso}, each stage and degree of freedom of the s
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_Noise.pdf}
-\caption{Noise models for the cBRS, a collection of seismometers: L4C, GS13, T240, and two types of CPS: Fine, used between Stage 1 and Stage 2, and course, used between Stage 0 and Stage 1. Each sensors is in its native units, seismometers and CPS in meters and cBRS in radian. Note that a pair of translational sensors located 1~m apart has roughly the same noise levels in both units.}
+\caption[Noise models for the cBRS, a collection of seismometers, and two types of CPS]{Noise models for the cBRS, a collection of seismometers: L4C, GS13, T240, and two types of CPS: Fine, used between Stage 1 and Stage 2, and course, used between Stage 0 and Stage 1. Each sensors is in its native units, seismometers and CPS in meters and cBRS in radian. Note that a pair of translational sensors located 1~m apart has roughly the same noise levels in both units.}
 \label{sensNoise}
 \end{center}
 \end{figure}
@@ -791,7 +814,7 @@ Throughout this model second-order binomial filters are used as the blend filter
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_ST2RX.pdf}
-\caption{Projected rotational performance of Stage 2 of the ISI along with the contributions from the inertial and position sensor. Also shown is the input ground tilt model which represents the observed tilt during windy times and the rotational performance of the Stage 1.}
+\caption[Projected rotational performance of Stage 2 of the ISI]{Projected rotational performance of Stage 2 of the ISI along with the contributions from the inertial and position sensor. Also shown is the input ground tilt model which represents the observed tilt during windy times and the rotational performance of the Stage 1.}
 \label{cBRS2R}
 \end{center}
 \end{figure}
@@ -808,7 +831,7 @@ With Stage 2 inertially isolated in the rotation degree of freedom above $\sim$ 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_ST1RX.pdf}
-\caption{Projected rotational performance of Stage 1 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
+\caption[Projected rotational performance of Stage 1 of the ISI]{Projected rotational performance of Stage 1 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground tilt model, blue, which represents the observed tilt during windy times.}
 \label{cBRS1R}
 \end{center}
 \end{figure}
@@ -826,7 +849,7 @@ The performance of the Stage 1 translational isolation with this choice can be s
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_ST1X.pdf}
-\caption{Projected translational performance of Stage 1 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
+\caption[Projected translational performance of Stage 1 of the ISI]{Projected translational performance of Stage 1 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
 \label{cBRS1X}
 \end{center}
 \end{figure}
@@ -838,7 +861,7 @@ The Stage 2 translational loops were tuned in a similar manner as Stage 1: requi
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_ST2X.pdf}
-\caption{Projected translational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
+\caption[Projected translational performance of Stage 2 of the ISI] {Projected translational performance of Stage 2 of the ISI with, yellow, and without, red, the cBRS. Also shown is the input ground motion model, blue, which represents the observed tilt during windy times. The control loops here can be tuned to decrease motion at $\sim$ 100 mHz, the microseism frequencies, by increasing motion at $\sim$ 10 mHz and vice versa.}
 \label{cBRS2X}
 \end{center}
 \end{figure}
@@ -852,7 +875,7 @@ To show the improvements relative to the past isolation configurations, the perf
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_CompRX.pdf}
-\caption{Comparison of the rotational isolation performance of Stage 2 during O2 and the projected performance with the inclusion of the cBRS. During O2, the rotational performance of the two stages was identical since they were locked together using the position sensors.}
+\caption[Comparison of the rotational isolation performance of Stage 2 during O2 and the projected performance with the inclusion of the cBRS]{Comparison of the rotational isolation performance of Stage 2 during O2 and the projected performance with the inclusion of the cBRS. During O2, the rotational performance of the two stages was identical since they were locked together using the position sensors.}
 \label{cBRSCompR}
 \end{center}
 \end{figure}
@@ -863,7 +886,7 @@ A comparison of the rotational degree is shown in Figure \ref{cBRSCompR}. During
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_CompX.pdf}
-\caption{Comparison of the translational isolation performance during O2 and the projected performance with the inclusion of the cBRS.}
+\caption[Comparison of the translational isolation performance during O2 and the projected performance with the inclusion of the cBRS]{Comparison of the translational isolation performance during O2 and the projected performance with the inclusion of the cBRS.}
 \label{cBRSCompX}
 \end{center}
 \end{figure}
@@ -877,7 +900,7 @@ Although in reality the control loop for each isolation platform will have to be
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.75\textwidth]{cBRS_ASC_With.pdf}
-\caption{Projected performance of the angular sensing and control system with the seismic performance described in Section \ref{IsoScheme}.}
+\caption[Projected performance of the angular sensing and control system]{Projected performance of the angular sensing and control system with the seismic performance described in Section \ref{IsoScheme}.}
 \label{ascWith}
 \end{center}
 \end{figure}
@@ -891,7 +914,7 @@ The performance of the ASC system was modeled for both the seismic performance w
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.75\textwidth]{cBRS_ASC_LowF.pdf}
-\caption{Projected performance of the angular sensing and control system with the seismic performance described in Section \ref{IsoScheme}.}
+\caption[Comparison of the ASC performance with and without the cBRS]{Comparison of the ASC performance with and without the cBRS}
 \label{ascComp}
 \end{center}
 \end{figure}
@@ -903,7 +926,7 @@ This decrease in residual motion above $\sim$5 Hz would directly decrease noise 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.75\textwidth]{cBRS_ASC.pdf}
-\caption{Projected low frequency strain noise with and without the cBRS. The blue line is the current sensitivity of LLO, the orange is the aLIGO design sensitivity, green is the modeled noise contribution of the current ASC system, and red is the improved ASC noise contribution with the seismic isolation described in Section \ref{IsoScheme}. }
+\caption[Projected low frequency strain noise with and without the cBRS]{Projected low frequency strain noise with and without the cBRS. The blue line is the current sensitivity of LLO, the orange is the aLIGO design sensitivity, green is the modeled noise contribution of the current ASC system, and red is the improved ASC noise contribution with the seismic isolation described in Section \ref{IsoScheme}. }
 \label{ascStrain}
 \end{center}
 \end{figure}
@@ -936,7 +959,7 @@ These components can be seen in Figure \ref{Earthquake} which shows the seismic 
 \begin{figure}%
 \begin{center}
 \includegraphics[width=\textwidth]{PNGTimeSeries.pdf}
-\caption{Observations of the seismic waves emanated from a M7.9 earthquake in Papua New Guinea as seen by instruments installed at the End-Y Station of LHO. \cite{tiltSeismology} Both the Z velocity and Y displacement were measured by a broadband three-component seismometer while the rotation was measured by a BRS described in Chapter \ref{BRS_chap}. }
+\caption[Observations of the seismic waves by instruments installed at the End-Y Station of LHO]{Observations of the seismic waves emanated from a M7.9 earthquake in Papua New Guinea as seen by instruments installed at the End-Y Station of LHO. \cite{tiltSeismology} Both the Z velocity and Y displacement were measured by a broadband three-component seismometer while the rotation was measured by a BRS described in Chapter \ref{BRS_chap}. }
 \label{Earthquake}
 \end{center}
 \end{figure}
@@ -975,7 +998,7 @@ Between April, 2016 and January, 2017, six earthquakes were measured during envi
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{Vel.pdf}
-\caption{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO, blue, and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis. \cite{tiltSeismology}}
+\caption[Single station Rayleigh wave phase velocity measurements]{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO, blue, and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis. \cite{tiltSeismology}}
 \label{Phase_Hanford}
 \end{center}
 \end{figure}
@@ -1029,7 +1052,7 @@ During LIGO's second observing run (O2), a prototype cBRS, described in Chapter 
 \begin{center}
 \includegraphics[width=\textwidth]{NNArray.pdf}
 \end{center}
-\caption{The location of the cBRS , marked by the green $\times$, during O2 alongside the array of seismometers, marked by the black $\times$s, overlaid on a schematic of the LHO corner station vacuum chambers.}
+\caption[The location of the cBRS during O2 alongside the array of seismometers]{The location of the cBRS , marked by the green $\times$, during O2 alongside the array of seismometers, marked by the black $\times$s, overlaid on a schematic of the LHO corner station vacuum chambers.}
 \label{NNArray}
 \end{figure}
 
@@ -1043,7 +1066,7 @@ These observations have shown that an array of 30 vertical seismometers can be e
 \begin{center}
 \includegraphics[width=0.75\textwidth]{NNSubtraction.pdf}
 \end{center}
-\caption{Projected Newtonian noise subtraction with the array of seismometers using the cBRS as a proxy for the noise that would be seen by a future observatory.}
+\caption[Projected Newtonian noise subtraction with the array of seismometers]{Projected Newtonian noise subtraction with the array of seismometers using the cBRS as a proxy for the noise that would be seen by a future observatory.}
 \label{NNSub}
 \end{figure}
 
@@ -1053,7 +1076,7 @@ The second goal of this array was to investigate the coupling between ground til
 \begin{center}
 \includegraphics[width=0.75\textwidth]{NNCoupling.pdf}
 \end{center}
-\caption{Transfer function between the cBRS and the strain output of the interferometer alongside various non-gravitational coupling mechanisms and a model for the Newtonian noise caused by an isotropic, homogeneous Rayleigh wave-field.}
+\caption[Transfer function between the cBRS and the strain output of the interferometer]{Transfer function between the cBRS and the strain output of the interferometer alongside various non-gravitational coupling mechanisms and a model for the Newtonian noise caused by an isotropic, homogeneous Rayleigh wave-field.}
 \label{NNCoupling}
 \end{figure}
 
