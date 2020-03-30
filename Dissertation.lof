@@ -2,25 +2,26 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Spectrogram of the strain caused by a binary neutron star merger}}{6}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Optical layout of the LIGO interferometers}}{7}%
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Strain sensitivity of the LIGO and Virgo Observatories}}{8}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Ground motion spectrum}}{11}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Example ambient ground motion spectrum}}{11}%
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Schematic of the LIGO seismic isolation system}}{12}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Sensor noise for the seismic isolation system}}{13}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Performance of the ISI}}{15}%
 \addvspace {5\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ground motion spectra during low and high winds}}{18}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces CAD rendering of the BRS}}{20}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Side view of a CAD rendering of the BRS}}{20}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Transfer function from platform tilt to measured tilt for the cBRS}}{23}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Transfer function from platform tilt to measured tilt for the cBRS}}{22}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Image of a BRS flexure}}{24}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Close up view of the center of the CAD rendering of the BRS}}{25}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Picture of an installed BRS}}{26}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic of a multi-slit autocollimator}}{28}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic of a multi-slit autocollimator}}{27}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Simulation of the BRS image analysis algorithm}}{29}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Noise budge for the Beam Rotation Sensors}}{32}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Representative amplitude spectral density showing the tilt subtraction during windy conditions}}{34}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Time series showing tilt subtraction }}{35}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Observed and modeled tilt vs wind speed}}{37}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Duty cycle improvements for the LIGO Hanford Observatory}}{38}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Duty cycle improvements for the LIGO Livingston Observatory}}{40}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Representative amplitude spectral density showing the tilt subtraction during windy conditions}}{33}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Time series showing tilt subtraction }}{34}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Observed and modeled tilt vs wind speed}}{36}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Duty cycle improvements for the LIGO Hanford Observatory}}{37}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Duty cycle improvements for the LIGO Livingston Observatory}}{39}%
 \addvspace {5\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Model of the performance of the current angular sensing and control system}}{41}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Theoretical noise curves for the cBRS and seismometer pair}}{42}%

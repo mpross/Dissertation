@@ -4,46 +4,45 @@ The top-level auxiliary file: Dissertation.aux
 The style file: plain.bst
 Database file #1: Dissertation.bib
 Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "thermal"
-You've used 48 entries,
+You've used 50 entries,
             2118 wiz_defined-function locations,
-            817 strings with 21468 characters,
-and the built_in function-call counts, 32763 in all, are:
-= -- 2610
-> -- 3577
+            829 strings with 21668 characters,
+and the built_in function-call counts, 33408 in all, are:
+= -- 2679
+> -- 3597
 < -- 1
-+ -- 1430
-- -- 1376
-* -- 3434
-:= -- 6045
-add.period$ -- 146
-call.type$ -- 48
-change.case$ -- 815
++ -- 1438
+- -- 1382
+* -- 3483
+:= -- 6151
+add.period$ -- 152
+call.type$ -- 50
+change.case$ -- 824
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 524
-empty$ -- 1165
-format.name$ -- 1376
-if$ -- 5913
+cite$ -- 50
+duplicate$ -- 546
+empty$ -- 1220
+format.name$ -- 1382
+if$ -- 6045
 int.to.chr$ -- 0
-int.to.str$ -- 48
-missing$ -- 49
-newline$ -- 244
-num.names$ -- 96
-pop$ -- 743
+int.to.str$ -- 50
+missing$ -- 51
+newline$ -- 254
+num.names$ -- 100
+pop$ -- 748
 preamble$ -- 1
-purify$ -- 768
+purify$ -- 775
 quote$ -- 0
-skip$ -- 366
+skip$ -- 381
 stack$ -- 0
-substring$ -- 978
-swap$ -- 50
+substring$ -- 1044
+swap$ -- 52
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 190
+type$ -- 198
 warning$ -- 0
-while$ -- 146
-width$ -- 50
-write$ -- 525
-(There were 2 warnings)
+while$ -- 154
+width$ -- 52
+write$ -- 547
+(There was 1 warning)

@@ -271,6 +271,12 @@ F.~Matichard et~al.
   instrumentation and performance.
 \newblock {\em Classical and Quantum Gravity}, 32(18):185003, 2015.
 
+\bibitem{tiltFree}
+Fabrice Matichard and Matthew Evans.
+\newblock Tilt-free low-noise seismometry.
+\newblock {\em Bulletin of the seismological society of America},
+  105(2A):497--510, 2015.
+
 \bibitem{meier}
 T.~Meier, K.~Dietrich, B.~St{\"o}ckhert, and H.P. Harjes.
 \newblock One-dimensional models of shear wave velocity for the eastern
@@ -300,6 +306,11 @@ M.~P. Ross, K.~Venkateswara, C.~A. Hagedorn, J.~H. Gundlach, J.~S. Kissel,
 Peter~R. Saulson.
 \newblock Terrestrial gravitational noise on a gravitational wave antenna.
 \newblock {\em Phys. Rev. D}, 30:732--736, Aug 1984.
+
+\bibitem{thermal}
+Peter~R. Saulson.
+\newblock Thermal noise in mechanical experiments.
+\newblock {\em Phys. Rev. D}, 42:2437--2445, Oct 1990.
 
 \bibitem{Squeeze}
 M.~Tse, Haocun Yu, N.~Kijbunchoo, A.~Fernandez-Galiana, P.~Dupej, L.~Barsotti,

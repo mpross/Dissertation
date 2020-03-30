@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.2.2}Events}{8}%
 \contentsline {section}{\numberline {1.3}Seismic Isolation}{10}%
 \contentsline {subsection}{\numberline {1.3.1}LIGO Scheme}{10}%
-\contentsline {subsection}{\numberline {1.3.2}Internal Seismic Isolation}{10}%
+\contentsline {subsection}{\numberline {1.3.2}Internal Seismic Isolation}{11}%
 \contentsline {subsection}{\numberline {1.3.3}Sensor Correction}{14}%
 \contentsline {chapter}{\numberline {\@textofChapter \ 2:}1-m Scale Ground Rotation Sensors}{16}%
 \contentsline {section}{\numberline {2.1}Ground Tilt}{16}%
@@ -16,14 +16,14 @@
 \contentsline {subsection}{\numberline {2.1.2}Sensor Correction with Tilt Subtraction}{17}%
 \contentsline {section}{\numberline {2.2}Beam Rotation Sensors}{19}%
 \contentsline {subsection}{\numberline {2.2.1}Mechanical System}{19}%
-\contentsline {subsection}{\numberline {2.2.2}Flexures}{22}%
-\contentsline {subsection}{\numberline {2.2.3}Vacuum System}{24}%
-\contentsline {subsection}{\numberline {2.2.4}Multi-Slit Autocollimator Readout}{25}%
+\contentsline {subsection}{\numberline {2.2.2}Flexures}{23}%
+\contentsline {subsection}{\numberline {2.2.3}Vacuum System}{23}%
+\contentsline {subsection}{\numberline {2.2.4}Multi-Slit Autocollimator Readout}{24}%
 \contentsline {subsection}{\numberline {2.2.5}Controls}{30}%
 \contentsline {subsection}{\numberline {2.2.6}Noise Performance}{31}%
-\contentsline {section}{\numberline {2.3}Results}{33}%
-\contentsline {subsection}{\numberline {2.3.1}Hanford Installation}{33}%
-\contentsline {subsection}{\numberline {2.3.2}Livingston Installation}{33}%
+\contentsline {section}{\numberline {2.3}Results}{32}%
+\contentsline {subsection}{\numberline {2.3.1}Hanford Installation}{32}%
+\contentsline {subsection}{\numberline {2.3.2}Livingston Installation}{34}%
 \contentsline {subsection}{\numberline {2.3.3}Ground Tilt Model}{35}%
 \contentsline {subsection}{\numberline {2.3.4}Duty Cycle Improvements}{36}%
 \contentsline {chapter}{\numberline {\@textofChapter \ 3:}30-cm Scale On-Board Rotation Sensors}{41}%
