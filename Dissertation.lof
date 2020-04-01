@@ -19,9 +19,10 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Noise budge for the Beam Rotation Sensors}}{32}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Representative amplitude spectral density showing the tilt subtraction during windy conditions}}{33}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Time series showing tilt subtraction }}{34}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Observed and modeled tilt vs wind speed}}{36}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Duty cycle improvements for the LIGO Hanford Observatory}}{37}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Duty cycle improvements for the LIGO Livingston Observatory}}{39}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Differential platform motion }}{35}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Observed and modeled tilt vs wind speed}}{37}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Duty cycle improvements for the LIGO Hanford Observatory}}{39}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Duty cycle improvements for the LIGO Livingston Observatory}}{40}%
 \addvspace {5\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Model of the performance of the current angular sensing and control system}}{41}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Theoretical noise curves for the cBRS and seismometer pair}}{42}%

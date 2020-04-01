@@ -21,11 +21,11 @@
 \contentsline {subsection}{\numberline {2.2.4}Multi-Slit Autocollimator Readout}{24}%
 \contentsline {subsection}{\numberline {2.2.5}Controls}{30}%
 \contentsline {subsection}{\numberline {2.2.6}Noise Performance}{31}%
-\contentsline {section}{\numberline {2.3}Results}{32}%
-\contentsline {subsection}{\numberline {2.3.1}Hanford Installation}{32}%
-\contentsline {subsection}{\numberline {2.3.2}Livingston Installation}{34}%
-\contentsline {subsection}{\numberline {2.3.3}Ground Tilt Model}{35}%
-\contentsline {subsection}{\numberline {2.3.4}Duty Cycle Improvements}{36}%
+\contentsline {section}{\numberline {2.3}Results}{33}%
+\contentsline {subsection}{\numberline {2.3.1}Hanford Installation}{33}%
+\contentsline {subsection}{\numberline {2.3.2}Livingston Installation}{35}%
+\contentsline {subsection}{\numberline {2.3.3}Ground Tilt Model}{36}%
+\contentsline {subsection}{\numberline {2.3.4}Duty Cycle Improvements}{38}%
 \contentsline {chapter}{\numberline {\@textofChapter \ 3:}30-cm Scale On-Board Rotation Sensors}{41}%
 \contentsline {section}{\numberline {3.1}Angular Controls}{41}%
 \contentsline {section}{\numberline {3.2}Compact Beam Rotation Sensor}{43}%
