@@ -582,30 +582,39 @@ The figure of merit which most readily displays the improvements in duty cycle d
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{LHO_WindVsLockEvents.pdf}
-\caption[Duty cycle improvements for the LIGO Hanford Observatory]{Duty cycle improvements for the LIGO Hanford Observatory along with distribution of observed events vs. wind speed.. \textbf{Add label on right axis}}
+\caption[Duty cycle improvements for the LIGO Hanford Observatory]{Duty cycle improvements for the LIGO Hanford Observatory along with distribution of observed events vs. wind speed. }
 \label{LHO_events}
 \end{center}
 \end{figure}
 
 For Hanford, the benefit of the tilt subtraction scheme can clearly be seen between O1 and O2 curves. During O1 the locked probability fell monotonically with wind speed, while for O2 the probability stayed relatively constant up to 15 m/s above which it fell steadily. For O3a, Hanford saw a clear decrease in performance at high wind speeds yet still out performed the O1 scheme. This loss of performance is likely due to the Y-arm beam being displaced away from the center of the test masses to avoid point absorbers on the Input-Y test mass.This is known to increase coupling between the angular motion of the test mass and the length measured by the interferometer. This then increases the drive needed to keep the interferometer locked and thus increases the susceptibility of the system to increased seismic motion. 
 
+If one allows for a fudge factor to be applied to the O2 duty cycle in order to match the low wind speed performance of O1 and O3a, then this duty cycle equates to an observing time increase of 40.3 days per year between O1 and O2 and a decrease of 5.8 days/year between O2 and O3a.
+
 Also shown in Figure \ref{LHO_events} is the fraction of the GW events or candidates detected during O1, O2, and O3a at a given wind speed. This shows that a collection of GW events have been observed whose detection probability is directly increased due to the increase duty cycle at higher wind speeds. Namely, GW170104 was measured at $\sim$11 m/s which had an increase in duty cycle of $\sim$20 \% between O1 and O2. Additionally, a number of O3a candidates have been detected above $\sim$5 m/s at which the probability of being locked is increased by $\sim$20 \%.
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{LLO_WindVsLockEvents.pdf}
-\caption[Duty cycle improvements for the LIGO Livingston Observatory]{Duty cycle improvements for the LIGO Livingston Observatory along with distribution of observed events vs. wind speed. \textbf{Add label on right axis}}
+\caption[Duty cycle improvements for the LIGO Livingston Observatory]{Duty cycle improvements for the LIGO Livingston Observatory along with distribution of observed events vs. wind speed.}
 \label{LLO_events}
 \end{center}
 \end{figure}
 
 At Livingston, the improvements at increased wind speeds is less dramatic as can be seen in Figure \ref{LLO_events}. Although between O1 and O2 tilt subtraction was not implemented, a increase in duty cycle was achieved by implementing a single seismometer for sensor correction on all of the corner station platforms. This decreased the differential mode motion at higher wind speeds and thus made the interferometer lock more robust. An additional increase in performance can be seen between O2 and O3a due to the deployment of tilt subtraction. However, the probability of being locked still dropped monotonically with wind speed, similar to the O1 performance of Hanford.
 
-Despite this, there is a collection of O3a candidates detected between \textbf{3-6 m/s} which are more probable with the increased robustness against wind speed.
+Despite this, there is a collection of O3a candidates detected between 3-6 m/s which are more probable with the increased robustness against wind speed. Additionally, this performance equates to an observing time increase of 6.7 days per year between O1 and O2 and 53.2 days/year between O2 and O3a.
 
-\textbf{talk about mean?}\\
-\textbf{maybe plot of mean or expectation vs observing run}\\
-\textbf{observing day equivalent}
+An additional metric that quantifies the improved robustness of the interferometer is the expectation value of wind speed during gravitational wave events which is shown in Figure \ref{WindExp}. In the limit that the 
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=\textwidth]{WindExpect.pdf}
+\caption[Expectation value of wind speed for GW events]{}
+\label{WindExp}
+\end{center}
+\end{figure}
+
 
 \chapter{30-cm Scale On-Board Rotation Sensors}\label{cBRS_chap}
 \section{Angular Controls}\label{ASC}
