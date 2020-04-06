@@ -86,6 +86,11 @@ Jordyn~C. Babikoff and Colleen~A. Dalton.
 \newblock Long-period rayleigh wave phase velocity tomography using usarray.
 \newblock {\em Geochemistry, Geophysics, Geosystems}, 20(4):1990--2006, 2019.
 
+\bibitem{ASC}
+L~Barsotti, M~Evans, and P~Fritschel.
+\newblock Alignment sensing and control in advanced {LIGO}.
+\newblock {\em Classical and Quantum Gravity}, 27(8):084026, apr 2010.
+
 \bibitem{Belfi2012}
 Jacopo Belfi, Nicol{\`o} Beverini, Giorgio Carelli, Angela Di~Virgilio, Enrico
   Maccioni, Gilberto Saccorotti, Fabio Stefani, and Alexander Velikoseltsev.
@@ -120,7 +125,7 @@ Thibault Damour and Alexander Vilenkin.
   stochastic background, and observational windows.
 \newblock {\em Phys. Rev. D}, 71:063510, Mar 2005.
 
-\bibitem{ASC}
+\bibitem{ASCpast}
 Katherine~L Dooley, Lisa Barsotti, Rana~X Adhikari, Matthew Evans, Tobin~T
   Fricke, Peter Fritschel, Valera Frolov, Keita Kawabe, and Nicol{\'a}s
   Smith-Lefebvre.

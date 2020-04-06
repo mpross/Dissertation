@@ -30,19 +30,19 @@
 \contentsline {section}{\numberline {3.1}Angular Controls}{42}%
 \contentsline {section}{\numberline {3.2}Compact Beam Rotation Sensor}{44}%
 \contentsline {subsection}{\numberline {3.2.1}Mechanical System}{44}%
-\contentsline {subsection}{\numberline {3.2.2}Kinematic Mount}{44}%
-\contentsline {subsection}{\numberline {3.2.3}Interferometric Readout}{44}%
+\contentsline {subsection}{\numberline {3.2.2}Kinematic Mount}{45}%
+\contentsline {subsection}{\numberline {3.2.3}Interferometric Readout}{46}%
 \contentsline {subsection}{\numberline {3.2.4}Calibration}{50}%
-\contentsline {subsection}{\numberline {3.2.5}Mass Adjustment}{50}%
-\contentsline {subsection}{\numberline {3.2.6}Controls}{52}%
-\contentsline {subsection}{\numberline {3.2.7}Noise Performance}{53}%
-\contentsline {section}{\numberline {3.3}Projected Improvements}{55}%
-\contentsline {subsection}{\numberline {3.3.1}Isolation Scheme}{55}%
-\contentsline {subsubsection}{Stage 2 Rotational}{55}%
-\contentsline {subsubsection}{Stage 1 Rotational}{57}%
-\contentsline {subsubsection}{Stage 1 Translational}{59}%
-\contentsline {subsubsection}{Stage 2 Translational}{59}%
-\contentsline {subsubsection}{Comparison with past performance}{61}%
+\contentsline {subsection}{\numberline {3.2.5}Mass Adjustment}{51}%
+\contentsline {subsection}{\numberline {3.2.6}Controls}{54}%
+\contentsline {subsection}{\numberline {3.2.7}Noise Performance}{54}%
+\contentsline {section}{\numberline {3.3}Projected Improvements}{54}%
+\contentsline {subsection}{\numberline {3.3.1}Isolation Scheme}{54}%
+\contentsline {subsubsection}{Stage 2 Rotational}{56}%
+\contentsline {subsubsection}{Stage 1 Rotational}{58}%
+\contentsline {subsubsection}{Stage 1 Translational}{58}%
+\contentsline {subsubsection}{Stage 2 Translational}{60}%
+\contentsline {subsubsection}{Comparison with past performance}{62}%
 \contentsline {subsection}{\numberline {3.3.2}Angular Control Performance}{64}%
 \contentsline {chapter}{\numberline {\@textofChapter \ 4:}Applications}{68}%
 \contentsline {section}{\numberline {4.1}Geophysics}{68}%
