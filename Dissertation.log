@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.17)  6 APR 2020 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.17)  7 APR 2020 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -573,11 +573,11 @@ Package pdftex.def Info: cBRSIso.png  used on input line 655.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<cBRSFront.png, id=1418, 993.7125pt x 669.2503pt>
-File: cBRSFront.png Graphic file (type png)
-<use cBRSFront.png>
-Package pdftex.def Info: cBRSFront.png  used on input line 664.
-(pdftex.def)             Requested size: 470.295pt x 316.74326pt.
+<cBRSFrontLabeled.pdf, id=1418, 794.97pt x 614.295pt>
+File: cBRSFrontLabeled.pdf Graphic file (type pdf)
+<use cBRSFrontLabeled.pdf>
+Package pdftex.def Info: cBRSFrontLabeled.pdf  used on input line 664.
+(pdftex.def)             Requested size: 470.295pt x 363.4151pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -591,242 +591,223 @@ Package pdftex.def Info: cBRSKMount.png  used on input line 679.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[46 <./cBRSFront.PNG (PNG copy)>]
-<cBRSOptics.pdf, id=1430, 796.67719pt x 597.50786pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46 <./cBRSFrontLabeled.pdf>] [47 <./cBRSKMount.PNG (PNG copy)>]
+<cBRSOptics.pdf, id=1441, 796.67719pt x 597.50786pt>
 File: cBRSOptics.pdf Graphic file (type pdf)
 <use cBRSOptics.pdf>
 Package pdftex.def Info: cBRSOptics.pdf  used on input line 695.
 (pdftex.def)             Requested size: 470.295pt x 352.72716pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<cBRS_OpticalLayout.pdf, id=1431, 796.67719pt x 597.50786pt>
+<cBRS_OpticalLayout.pdf, id=1442, 796.67719pt x 597.50786pt>
 File: cBRS_OpticalLayout.pdf Graphic file (type pdf)
 <use cBRS_OpticalLayout.pdf>
 Package pdftex.def Info: cBRS_OpticalLayout.pdf  used on input line 703.
 (pdftex.def)             Requested size: 470.295pt x 352.72716pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[47 <./cBRSKMount.PNG (PNG copy)>] [48 <./cBRSOptics.pdf>]
-Underfull \vbox (badness 3417) has occurred while \output is active []
+[48 <./cBRSOptics.pdf>]
+Overfull \vbox (59.70697pt too high) has occurred while \output is active []
 
- [49 <./cBRS_OpticalLayout.pdf>]
-<cBRS_Fringes.pdf, id=1480, 495.8525pt x 359.3425pt>
+
+[49 <./cBRS_OpticalLayout.pdf>] [50]
+<cBRS_Fringes.pdf, id=1491, 495.8525pt x 359.3425pt>
 File: cBRS_Fringes.pdf Graphic file (type pdf)
 <use cBRS_Fringes.pdf>
-Package pdftex.def Info: cBRS_Fringes.pdf  used on input line 740.
+Package pdftex.def Info: cBRS_Fringes.pdf  used on input line 754.
 (pdftex.def)             Requested size: 352.72124pt x 255.61746pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[50]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [51 <./cBRS_Fringes.pdf>]
-<cBRSMassAdjuster.png, id=1502, 1006.51031pt x 669.2503pt>
-File: cBRSMassAdjuster.png Graphic file (type png)
-<use cBRSMassAdjuster.png>
-Package pdftex.def Info: cBRSMassAdjuster.png  used on input line 775.
-(pdftex.def)             Requested size: 235.14749pt x 156.35477pt.
- [52 <./cBRSMassAdjuster.PNG (PNG copy)>]
-<cBRS_massAdjust.pdf, id=1507, 829.0975pt x 630.355pt>
+<cBRSMassAdjusterLabeled.pdf, id=1492, 794.97pt x 614.295pt>
+File: cBRSMassAdjusterLabeled.pdf Graphic file (type pdf)
+<use cBRSMassAdjusterLabeled.pdf>
+Package pdftex.def Info: cBRSMassAdjusterLabeled.pdf  used on input line 781.
+(pdftex.def)             Requested size: 399.75362pt x 308.90894pt.
+ [51 <./cBRS_Fringes.pdf>] [52 <./cBRSMassAdjusterLabeled.pdf>]
+<cBRS_massAdjust.pdf, id=1523, 829.0975pt x 630.355pt>
 File: cBRS_massAdjust.pdf Graphic file (type pdf)
 <use cBRS_massAdjust.pdf>
-Package pdftex.def Info: cBRS_massAdjust.pdf  used on input line 787.
+Package pdftex.def Info: cBRS_massAdjust.pdf  used on input line 797.
 (pdftex.def)             Requested size: 470.295pt x 357.55553pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [53 <./cBRS_massAdjust.pdf>]
-<cBRS_Noise.pdf, id=1533, 726.715pt x 500.87125pt>
+<cBRS_Noise.pdf, id=1550, 726.715pt x 500.87125pt>
 File: cBRS_Noise.pdf Graphic file (type pdf)
 <use cBRS_Noise.pdf>
-Package pdftex.def Info: cBRS_Noise.pdf  used on input line 800.
+Package pdftex.def Info: cBRS_Noise.pdf  used on input line 815.
 (pdftex.def)             Requested size: 470.295pt x 324.14854pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<cBRS_Model_Noise.pdf, id=1534, 752.8125pt x 526.96875pt>
-File: cBRS_Model_Noise.pdf Graphic file (type pdf)
-<use cBRS_Model_Noise.pdf>
-Package pdftex.def Info: cBRS_Model_Noise.pdf  used on input line 817.
-(pdftex.def)             Requested size: 470.295pt x 329.21796pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[54]
-<cBRS_Model_ST2RX.pdf, id=1538, 752.8125pt x 526.96875pt>
-File: cBRS_Model_ST2RX.pdf Graphic file (type pdf)
-<use cBRS_Model_ST2RX.pdf>
-Package pdftex.def Info: cBRS_Model_ST2RX.pdf  used on input line 833.
-(pdftex.def)             Requested size: 470.295pt x 329.21796pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+Underfull \vbox (badness 2368) has occurred while \output is active []
 
  [55 <./cBRS_Noise.pdf>]
+<cBRS_Model_Noise.pdf, id=1662, 752.8125pt x 526.96875pt>
+File: cBRS_Model_Noise.pdf Graphic file (type pdf)
+<use cBRS_Model_Noise.pdf>
+Package pdftex.def Info: cBRS_Model_Noise.pdf  used on input line 831.
+(pdftex.def)             Requested size: 470.295pt x 329.21796pt.
+ [56 <./cBRS_Model_Noise.pdf>]
+<cBRS_Model_ST2RX.pdf, id=1798, 752.8125pt x 526.96875pt>
+File: cBRS_Model_ST2RX.pdf Graphic file (type pdf)
+<use cBRS_Model_ST2RX.pdf>
+Package pdftex.def Info: cBRS_Model_ST2RX.pdf  used on input line 855.
+(pdftex.def)             Requested size: 470.295pt x 329.21796pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 1412) has occurred while \output is active []
-
- [56 <./cBRS_Model_Noise.pdf>]
-Underfull \vbox (badness 3977) has occurred while \output is active []
-
- [57 <./cBRS_Model_ST2RX.pdf>]
-<cBRS_Model_ST1RX.pdf, id=1900, 752.8125pt x 526.96875pt>
+[57] [58 <./cBRS_Model_ST2RX.pdf>]
+<cBRS_Model_ST1RX.pdf, id=1920, 752.8125pt x 526.96875pt>
 File: cBRS_Model_ST1RX.pdf Graphic file (type pdf)
 <use cBRS_Model_ST1RX.pdf>
-Package pdftex.def Info: cBRS_Model_ST1RX.pdf  used on input line 850.
+Package pdftex.def Info: cBRS_Model_ST1RX.pdf  used on input line 867.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[58]
-<cBRS_Model_ST1X.pdf, id=1905, 752.8125pt x 526.96875pt>
+ [59 <./cBRS_Model_ST1RX.pdf>] [60]
+<cBRS_Model_ST1X.pdf, id=2041, 752.8125pt x 526.96875pt>
 File: cBRS_Model_ST1X.pdf Graphic file (type pdf)
 <use cBRS_Model_ST1X.pdf>
-Package pdftex.def Info: cBRS_Model_ST1X.pdf  used on input line 868.
+Package pdftex.def Info: cBRS_Model_ST1X.pdf  used on input line 899.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
- [59 <./cBRS_Model_ST1RX.pdf>]
-<cBRS_Model_ST2X.pdf, id=2023, 752.8125pt x 526.96875pt>
+<cBRS_Model_ST2X.pdf, id=2042, 752.8125pt x 526.96875pt>
 File: cBRS_Model_ST2X.pdf Graphic file (type pdf)
 <use cBRS_Model_ST2X.pdf>
-Package pdftex.def Info: cBRS_Model_ST2X.pdf  used on input line 880.
+Package pdftex.def Info: cBRS_Model_ST2X.pdf  used on input line 909.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
- [60 <./cBRS_Model_ST1X.pdf>]
-Underfull \vbox (badness 2073) has occurred while \output is active []
 
- [61 <./cBRS_Model_ST2X.pdf>]
-<cBRS_Model_CompRX.pdf, id=2238, 752.8125pt x 526.96875pt>
+Underfull \vbox (badness 1484) has occurred while \output is active []
+
+ [61 <./cBRS_Model_ST1X.pdf>] [62 <./cBRS_Model_ST2X.pdf>]
+<cBRS_Model_CompRX.pdf, id=2257, 752.8125pt x 526.96875pt>
 File: cBRS_Model_CompRX.pdf Graphic file (type pdf)
 <use cBRS_Model_CompRX.pdf>
-Package pdftex.def Info: cBRS_Model_CompRX.pdf  used on input line 894.
+Package pdftex.def Info: cBRS_Model_CompRX.pdf  used on input line 932.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
 
-Underfull \vbox (badness 6825) has occurred while \output is active []
 
- [62 <./cBRS_Model_CompRX.pdf>]
-<cBRS_Model_CompX.pdf, id=2328, 752.8125pt x 526.96875pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<cBRS_Model_CompX.pdf, id=2258, 752.8125pt x 526.96875pt>
 File: cBRS_Model_CompX.pdf Graphic file (type pdf)
 <use cBRS_Model_CompX.pdf>
-Package pdftex.def Info: cBRS_Model_CompX.pdf  used on input line 905.
+Package pdftex.def Info: cBRS_Model_CompX.pdf  used on input line 943.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [63 <./cBRS_Model_CompX.pdf>]
-<cBRS_ASC_With.pdf, id=2455, 650.43pt x 505.89pt>
+[63] [64 <./cBRS_Model_CompRX.pdf>]
+<cBRS_ASC_With.pdf, id=2352, 650.43pt x 505.89pt>
 File: cBRS_ASC_With.pdf Graphic file (type pdf)
 <use cBRS_ASC_With.pdf>
-Package pdftex.def Info: cBRS_ASC_With.pdf  used on input line 919.
+Package pdftex.def Info: cBRS_ASC_With.pdf  used on input line 957.
 (pdftex.def)             Requested size: 352.72124pt x 274.34213pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[64]
-<cBRS_ASC_LowF.pdf, id=2460, 650.43pt x 505.89pt>
+[65 <./cBRS_Model_CompX.pdf>]
+Underfull \vbox (badness 1337) has occurred while \output is active []
+
+ [66 <./cBRS_ASC_With.pdf>]
+<cBRS_ASC_LowF.pdf, id=2533, 650.43pt x 505.89pt>
 File: cBRS_ASC_LowF.pdf Graphic file (type pdf)
 <use cBRS_ASC_LowF.pdf>
-Package pdftex.def Info: cBRS_ASC_LowF.pdf  used on input line 933.
+Package pdftex.def Info: cBRS_ASC_LowF.pdf  used on input line 971.
 (pdftex.def)             Requested size: 352.72124pt x 274.34213pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[65 <./cBRS_ASC_With.pdf>]
-<cBRS_ASC.pdf, id=2515, 650.43pt x 505.89pt>
+ [67 <./cBRS_ASC_LowF.pdf>]
+<cBRS_ASC.pdf, id=2580, 650.43pt x 505.89pt>
 File: cBRS_ASC.pdf Graphic file (type pdf)
 <use cBRS_ASC.pdf>
-Package pdftex.def Info: cBRS_ASC.pdf  used on input line 945.
+Package pdftex.def Info: cBRS_ASC.pdf  used on input line 983.
 (pdftex.def)             Requested size: 352.72124pt x 274.34213pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[66 <./cBRS_ASC_LowF.pdf>] [67 <./cBRS_ASC.pdf>]
+ [68 <./cBRS_ASC.pdf>]
 <<4>>
 
 Underfull \vbox (badness 4954) has occurred while \output is active []
 
- [68
+ [69
 
 ]
-<PNGTimeSeries.pdf, id=2614, 872.25874pt x 533.995pt>
+<PNGTimeSeries.pdf, id=2633, 872.25874pt x 533.995pt>
 File: PNGTimeSeries.pdf Graphic file (type pdf)
 <use PNGTimeSeries.pdf>
-Package pdftex.def Info: PNGTimeSeries.pdf  used on input line 978.
+Package pdftex.def Info: PNGTimeSeries.pdf  used on input line 1016.
 (pdftex.def)             Requested size: 470.295pt x 287.91301pt.
 
-[69] [70 <./PNGTimeSeries.pdf>]
+[70] [71 <./PNGTimeSeries.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71]
-<Vel.pdf, id=2690, 578.16pt x 505.89pt>
+ [72]
+<Vel.pdf, id=2709, 578.16pt x 505.89pt>
 File: Vel.pdf Graphic file (type pdf)
 <use Vel.pdf>
-Package pdftex.def Info: Vel.pdf  used on input line 1017.
+Package pdftex.def Info: Vel.pdf  used on input line 1055.
 (pdftex.def)             Requested size: 352.72124pt x 308.63103pt.
 
-[72] [73 <./Vel.pdf>]
+[73] [74 <./Vel.pdf>]
 Underfull \vbox (badness 5548) has occurred while \output is active []
 
- [74]
-[75]
-<NNArray.pdf, id=2735, 722.7pt x 722.7pt>
+ [75]
+[76]
+<NNArray.pdf, id=2755, 722.7pt x 722.7pt>
 File: NNArray.pdf Graphic file (type pdf)
 <use NNArray.pdf>
-Package pdftex.def Info: NNArray.pdf  used on input line 1070.
+Package pdftex.def Info: NNArray.pdf  used on input line 1108.
 (pdftex.def)             Requested size: 470.295pt x 470.3008pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[76]
+[77]
 
-LaTeX Warning: Text page 77 contains only floats.
+LaTeX Warning: Text page 78 contains only floats.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77 <./NNArray.pdf>]
-<NNSubtraction.pdf, id=2764, 722.7pt x 433.62pt>
+ [78 <./NNArray.pdf>]
+<NNSubtraction.pdf, id=2783, 722.7pt x 433.62pt>
 File: NNSubtraction.pdf Graphic file (type pdf)
 <use NNSubtraction.pdf>
-Package pdftex.def Info: NNSubtraction.pdf  used on input line 1084.
+Package pdftex.def Info: NNSubtraction.pdf  used on input line 1122.
 (pdftex.def)             Requested size: 352.72124pt x 211.63536pt.
-<NNCoupling.pdf, id=2765, 578.16pt x 433.62pt>
+<NNCoupling.pdf, id=2784, 578.16pt x 433.62pt>
 File: NNCoupling.pdf Graphic file (type pdf)
 <use NNCoupling.pdf>
-Package pdftex.def Info: NNCoupling.pdf  used on input line 1094.
+Package pdftex.def Info: NNCoupling.pdf  used on input line 1132.
 (pdftex.def)             Requested size: 352.72124pt x 264.5409pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[78 <./NNSubtraction.pdf>] (./Dissertation.bbl [79 <./NNCoupling.pdf>] [80
+[79 <./NNSubtraction.pdf>] (./Dissertation.bbl [80 <./NNCoupling.pdf>] [81
 
 ]
-[81] [82] [83] [84] [85] [86]
-Underfull \vbox (badness 2951) has occurred while \output is active []
+[82] [83] [84] [85] [86] [87]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87])
-[88] (./Dissertation.aux)
+ [88])
+[89] (./Dissertation.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5005 strings out of 482862
- 73278 string characters out of 5958884
- 304082 words of memory out of 5000000
- 20173 multiletter control sequences out of 15000+600000
+ 5012 strings out of 482862
+ 73544 string characters out of 5958884
+ 304127 words of memory out of 5000000
+ 20180 multiletter control sequences out of 15000+600000
  544730 words of font info for 70 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 50i,12n,48p,1116b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,12n,48p,1116b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/michael/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.6
 00pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr
@@ -845,10 +826,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Dissertation.pdf (97 pages, 8464102 bytes).
+Output written on Dissertation.pdf (98 pages, 8526631 bytes).
 PDF statistics:
- 2982 PDF objects out of 2984 (max. 8388607)
- 2468 compressed objects within 25 object streams
+ 3001 PDF objects out of 3580 (max. 8388607)
+ 2480 compressed objects within 25 object streams
  0 named destinations out of 1000 (max. 500000)
  251 words of extra memory for PDF output out of 10000 (max. 10000000)
 

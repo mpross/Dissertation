@@ -589,7 +589,7 @@ The figure of merit which most readily displays the improvements in duty cycle d
 
 For Hanford, the benefit of the tilt subtraction scheme can clearly be seen between O1 and O2 curves. During O1 the locked probability fell monotonically with wind speed, while for O2 the probability stayed relatively constant up to 15 m/s above which it fell steadily. For O3a, Hanford saw a clear decrease in performance at high wind speeds yet still out performed the O1 scheme. This loss of performance is likely due to the Y-arm beam being displaced away from the center of the test masses to avoid point absorbers on the Input-Y test mass.This is known to increase coupling between the angular motion of the test mass and the length measured by the interferometer. This then increases the drive needed to keep the interferometer locked and thus increases the susceptibility of the system to increased seismic motion. 
 
-If one allows for a fudge factor to be applied to the O2 duty cycle in order to match the low wind speed performance of O1 and O3a, then this duty cycle equates to an observing time increase of 40.3 days per year between O1 and O2 and a decrease of 5.8 days/year between O2 and O3a.
+If one allows for a fudge factor to be applied to the O2 duty cycle in order to match the low wind speed performance of O1 and O3a, then this duty cycle equates to an observing time increase of 13.1 days per year between O1 and O2 and a decrease of 2.9 days/year between O2 and O3a.
 
 Also shown in Figure \ref{LHO_events} is the fraction of the GW events or candidates detected during O1, O2, and O3a at a given wind speed. This shows that a collection of GW events have been observed whose detection probability is directly increased due to the increase duty cycle at higher wind speeds. Namely, GW170104 was measured at $\sim$11 m/s which had an increase in duty cycle of $\sim$20 \% between O1 and O2. Additionally, a number of O3a candidates have been detected above $\sim$5 m/s at which the probability of being locked is increased by $\sim$20 \%.
 
@@ -603,7 +603,7 @@ Also shown in Figure \ref{LHO_events} is the fraction of the GW events or candid
 
 At Livingston, the improvements at increased wind speeds is less dramatic as can be seen in Figure \ref{LLO_events}. Although between O1 and O2 tilt subtraction was not implemented, a increase in duty cycle was achieved by implementing a single seismometer for sensor correction on all of the corner station platforms. This decreased the differential mode motion at higher wind speeds and thus made the interferometer lock more robust. An additional increase in performance can be seen between O2 and O3a due to the deployment of tilt subtraction. However, the probability of being locked still dropped monotonically with wind speed, similar to the O1 performance of Hanford.
 
-Despite this, there is a collection of O3a candidates detected between 3-6 m/s which are more probable with the increased robustness against wind speed. Additionally, this performance equates to an observing time increase of 6.7 days per year between O1 and O2 and 53.2 days/year between O2 and O3a.
+Despite this, there is a collection of O3a candidates detected between 3-6 m/s which are more probable with the increased robustness against wind speed. Additionally, this performance equates to an observing time increase of 13.9 days per year between O1 and O2 and 6.9 days/year between O2 and O3a.
 
 An additional metric that quantifies the improved robustness of the interferometer is the expectation value of wind speed during gravitational wave events which is shown in Figure \ref{WindExp}. In the limit that the detection likelihood is independent of wind speed, one would expect that the expectation value of the wind speed during events would match that of the entire run. As can be seen in Figure \ref{WindExp}, with the installation of the BRSs each site approaches this limit. 
 
@@ -661,9 +661,9 @@ This design yields a resonant frequency of $\sim$20 mHz which limits the use of 
 
 \begin{figure}[!h]
 \begin{center}
- \includegraphics[width=\textwidth]{cBRSFront.png}
+ \includegraphics[width=\textwidth]{cBRSFrontLabeled.pdf}
  
-\caption[Side view of the CAD rendering of the cBRS]{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.\textbf{label}}
+\caption[Side view of the CAD rendering of the cBRS]{CAD rendering of the compact BRS (cBRS) showing the cross with its copper end masses which is hung from the flexures from the surrounding support structure. Additionally, the translation stages which hold the fiber interferometer readouts can be seen on either end of the support below the two horizontal end masses.}
 \label{cBRS2}
 \end{center}
 \end{figure}
@@ -708,7 +708,25 @@ where $R$ is the reflectance, $F$ is the finesse, $x$ is the length of the cavit
 
 To linearize this readout, the optical fiber tip and collimating lens are placed on a translation stage that is driven by a piezo stack. The intensity of the reflected light is then fed back to the piezos using a PID loop to hold the cavity length fixed. This allows the system to be seperated into two linear readouts, the interferometer output for small ranges above the UGF of the loop and the control loop output for large motions below the UGF. The output of the device is then the sum of these two channels.
 
-\textbf{list optical and piezo parameters: focus, piezo, piezo driver, reflectance of BS}
+\begin{center}
+\begin{tabular}{| c | c |}
+\hline
+Parameter & Value\\
+\hline \hline
+Laser & QPhotonics QDFBLD-1300-10\\
+Wavelength & 1310 nm\\
+Fiber beamsplitter & Thorlabs TWQ1300HA\\
+Circulator & Thorlabs CIR1310-APC\\
+Fiber-tip beamsplitter & Thorlabs SMF28ER 50/50 FC/PC\\
+Collimating focus & 2.75 mm\\
+Photodiode & Thorlabs PDA10CS InGaAs\\
+Piezo & Tokin AE0505D16F\\
+Piezo Max Range & 17.4 $\mu$m at 150 V\\
+Piezo Driver & PDu150 150 V\\
+\hline
+\end{tabular}
+\label{cBRSTable}
+\end{center}
 
 Although in theory the angle of the beam can be measured with a single interferometer, two readouts are deployed, one at the end of each arm, in order to allow for suppression of common mode noise. The signal seen in each readout is described by:
 
@@ -727,10 +745,6 @@ As the angle of the beam appears with opposite phase in the two readout, the dif
 \Sigma \theta&=(x_1+x_2)/L+ (x_1+x_2)\delta_\lambda/\lambda^2+2n_c+n_1+n_2 \label{sumEq}
 \end{align}
 
-\textbf{include plot of loop shape}
-
-\textbf{mention PID tuning}
-
 \subsection{Calibration}
 
 The two readouts are calibrated independently to take into account differing piezo calibration and amplifier gains. The calibration is done by driving the piezo linearly through its entire range while the beam is locked. During this drive the interference pattern wraps through multiple fringes as the cavity length is decreased. The minima of these fringes is known to be separated by $\lambda/2$ which allows for the calibration from the voltage across the piezo to displacement. The region around the 50\% reflectance point, which is the operating point of the interferometer, is then fit to a linear function of displacement to yield a calibration from reflectance to displacement.  
@@ -743,7 +757,7 @@ The two readouts are calibrated independently to take into account differing pie
 \end{center}
 \end{figure}
 
-This calibration scheme requires independent determination of the wavelength of the laser which is specified by the manufacturer to be 1310 nm \textbf{$\pm$ 10\%}. Additionally, this assumes that the pattern seen at the photodiode is the interference due to the Fabry-Perot cavity formed by the beam splitter coating and the mirror on the beam. This was verified by comparing the refelctance measurements to the theory as can be seen in Figure \ref{cBRS_fringes}.
+This calibration scheme requires independent determination of the wavelength of the laser which is specified by the manufacturer to be 1310 nm$\pm$ 0.01 nm. Additionally, this assumes that the pattern seen at the photodiode is the interference due to the Fabry-Perot cavity formed by the beam splitter coating and the mirror on the beam. This was verified by comparing the refelctance measurements to the theory as can be seen in Figure \ref{cBRS_fringes}.
 
 %\begin{center}
 %\begin{tabular}{| c | c |}
@@ -762,6 +776,14 @@ This calibration scheme requires independent determination of the wavelength of 
 
 \subsection{Mass Adjustment}
 
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=0.85\textwidth]{cBRSMassAdjusterLabeled.pdf}
+\end{center}
+\caption[CAD rendering of the cBRS mass adjuster]{CAD rendering of the cBRS mass adjuster}\label{massAdjust}
+\end{figure}
+
+
 Through a variety of mechanisms, both the BRSs and the cBRS can undergo long term drifts of the equilibrium position that can drive the beam-balance past the dynamic range of the readout. To counteract this, a mass on the balance can be moved or added to shift the center of mass as follows:
 \begin{align}
 \Delta \theta=\frac{g}{\kappa} m r
@@ -772,22 +794,15 @@ While for the BRS the horizontal center of mass (COM) was designed to be tuned b
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=0.5\textwidth]{cBRSMassAdjuster.png}
+\includegraphics[width=\textwidth]{cBRS_massAdjust.pdf}
 \end{center}
-\caption[CAD rendering of the cBRS mass adjuster]{CAD rendering of the cBRS mass adjuster}\label{massAdjust}
+\caption[Demonstration of the effect of actuating the remote mass adjuster]{Demonstration of the effect of actuating the remote mass adjuster. The DC angle was measured by taking the mean of period long chunks of shadow sensor data while the mass adjuster was shifted to a collection of positions.}\label{massAdjustPlot}
 \end{figure}
 
 
 In order to avoid mechanically shorting the beam balance with wires, the motor which turns this screw is held on an independent support. The couplers between the motor and the screw are intentially oversized to allow for decoupling via back rotations. A small shim of beryllium copper is held tightly against the opposite end of the screw to provide spring loading which hold the screws center of mass in place but allow for rotation.
 
 To test whether this design was capable of moving enough mass accurately, a temporary uncalibrated shadow sensor was set up to measure the motion of the cBRS. The actuation of the mass adjuster can be seen in Figure \ref{massAdjustPlot} which shows the average of period long cuts of the cBRS's resonant motion. In this prototype there is clear hysteresis due to nonuniform friction along the length of the adjuster. However, this was found to not affect the ability to center the cBRS. 
-
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width=\textwidth]{cBRS_massAdjust.pdf}
-\end{center}
-\caption[Demonstration of the effect of actuating the remote mass adjuster]{Demonstration of the effect of actuating the remote mass adjuster. The DC angle was measured by taking the mean of period long chunks of shadow sensor data while the mass adjuster was shifted to a collection of positions.}\label{massAdjustPlot}
-\end{figure}
 
 \subsection{Controls}
 
@@ -805,7 +820,6 @@ Similar to the BRS, the cBRS can be rung up do to environmental transients which
 
 The noise performance of the current cBRS prototype, shown in Figure \ref{cBRS_noise} is not as well modeled as the BRS, Section \ref{BRSNoise}, and does not meet the design sensitivity of the instrument. The design sensitivity is determined by extrapolating the high frequency readout noise of 50 prad/$\sqrt{f}$ down to low frequency and inverting the response described by Equation \ref{theta_s}.
 
-\textbf{Compare with BRS}
 
 \section{Projected Improvements}
 \subsection{Isolation Scheme} \label{IsoScheme}
@@ -822,11 +836,19 @@ As described in Section \ref{seisIso}, each stage and degree of freedom of the s
 
 This model assumes both infinite control authority and no dynamics of the isolation platforms. Additionally, purely theoretical models are used for the input motion and the sensor noises. Although a model which accounts for all six degrees of freedom is required to accurately predict the isolation performance, this simplified model is instructive for comparisons of the performance with and without the cBRS. Similar models \cite{windproofing} have been found to match measurements to within a factor of $\sim$2-3.
 
-Throughout this model second-order binomial filters are used as the blend filters. In addition, for each stage the inertial sensor noise is taken to be the minimum of the collection of inertial sensors. Realistically these sensors also require detailed blending but the details of this blending is negligible below $\sim$ 0.5 Hz. Figure \ref{sensNoise} shows the noise curves for each sensor used in this model.
+Throughout this model second-order binomial filters are used as the blend filters. In addition, for each stage the inertial sensor noise is taken to be the minimum of the collection of inertial sensors. Realistically these sensors also require precise blending but the details of this blending is negligible below $\sim$ 0.5 Hz. Figure \ref{sensNoise} shows the noise curves for each sensor used in this model.
 
 
 \subsubsection{Stage 2 Rotational}
 
+
+In order to achieve the lowest suspension point motion, we choose to model a cBRS on the second stage of the isolation. Logistically, this is also the location which currently has enough space to install a device. Due to the rising low frequency noise in the cBRS, tuning where to place the blend frequency becomes a balance of increasing motion at low frequencies and decreasing motion at high and visa versa. The blend frequency was chosen to give a low frequency RMS motion of $\sim$ 10 nrad$/\sqrt{\text{Hz}}$ which matches the performance without the cBRS, see Figure~\ref{cBRSCompR}. This criteria called for a blend frequency of 12 mHz. The residual tilt for Stage 2 can be approximated by:
+
+\begin{equation}
+\theta_2(f)\approx \tilde{F}_{LP2}\ \big(\theta_1(f)+\tilde{n}_\text{CPS-F}(f)\big)+\tilde{F}_{HP2}\ \text{min}\big[\tilde{n}_\text{cBRS}(f),\ \tilde{n}_\text{GS13}(f)\big]
+\end{equation}
+
+where $\theta_1$ is the tilt of Stage 1, $\tilde{F}_{LP2}$ and $\tilde{F}_{HP2}$ are respectively the Stage 2 rotational low and high-pass blend filters, $\tilde{n}_\text{CPS-F}$, $\tilde{n}_\text{cBRS}$, and $\tilde{n}_\text{GS13}$ are the rotational sensor noise for the Fine CPS, cBRS, and GS13, respectively. The performance with this loop can be seen in Figure \ref{cBRS2R}. Above $\sim$ 500 mHz, the performance is dominated by the GS13 noise and from 80 mHz to 500 mHz it is dominated by cBRS noise. Below 80 mHz, the position sensor contributions become dominate which makes the Stage 2 motion almost equivalent to the Stage 1 motion. The only deviation from Stage 1 motion is near the blend frequency, 12 mHz, where gain peaking added a factor of~$\sim$~3. 
 
 \begin{figure}[!h]
 \begin{center}
@@ -836,14 +858,9 @@ Throughout this model second-order binomial filters are used as the blend filter
 \end{center}
 \end{figure}
 
-In order to achieve the lowest suspension point motion, we choose to model a cBRS on the second stage of the isolation. Logistically, this is also the location which currently has enough space to install a device. Due to the rising low frequency noise in the cBRS, tuning where to place the blend frequency becomes a balance of increasing motion at low frequencies and decreasing motion at high and visa versa. The blend frequency was chosen to give a low frequency RMS motion of $\sim$ 10 nrad$/\sqrt{\text{Hz}}$ which matches the performance without the cBRS, see Figure~\ref{cBRSCompR}. This criteria called for a blend frequency of 12 mHz.
-
-The performance with this loop can be seen in Figure \ref{cBRS2R}. Above $\sim$ 500 mHz, the performance is dominated by the GS13 noise and from 80 mHz to 500 mHz it is dominated by cBRS noise. Below 80 mHz, the position sensor contributions become dominate which makes the Stage 2 motion almost equivalent to the Stage 1 motion. The only deviation from Stage 1 motion is near the blend frequency, 12 mHz, where gain peaking added a factor of $\sim$ 3. 
-
-
 \subsubsection{Stage 1 Rotational}
 
-With Stage 2 inertially isolated in the rotation degree of freedom above $\sim$ 80 mHz, Stage 1 can achieve superior performance if its control is a combination of the position sensor between the Stage 1 and Stage 2, fine CPS, at high frequencies, and the position sensor between Stage 1 and Stage 0, course CPS, as low. This is effectively using the Stage 2 platform as an inertial proof mass with the fine CPS as a readout. The past scheme was to use a seismometer pair as an inertial rotation sensor for high frequencies and the course CPS at low. 
+With Stage 2 inertially isolated in the rotation degree of freedom above $\sim$ 80 mHz, Stage 1 can achieve superior performance if its control is a combination of the position sensor between the Stage 1 and Stage 2, fine CPS, at high frequencies, and the position sensor between Stage 1 and Stage 0, course CPS, as low. This is effectively using the Stage 2 platform as an inertial proof mass with the fine CPS as a readout. The past scheme was to use a seismometer pair as an inertial rotation sensor for high frequencies and the course CPS at low. Applying the same criteria as Stage 2 of requiring low frequency RMS motion of $\sim$ 10 nrad$/\sqrt{\text{Hz}}$ yields a blend frequency of 3 mHz around which the motion is amplified by a factor of~$\sim$~3 because of gain peaking. 
 
 \begin{figure}[!h]
 \begin{center}
@@ -853,13 +870,27 @@ With Stage 2 inertially isolated in the rotation degree of freedom above $\sim$ 
 \end{center}
 \end{figure}
 
-Applying the same criteria as Stage 2 of requiring low frequency RMS motion of $\sim$ 10 nrad$/\sqrt{\text{Hz}}$ yields a blend frequency of 3 mHz around which the motion is amplified by a factor of $\sim$ 3 because of gain peaking. The performance of this design can be seen in Figure~\ref{cBRS1R} Below 1 mHz, it is expected the platform motion follows the ground. However, this is omitted as both the ground rotation and sensor noise are not well constrained at low frequency. Above $\sim$30 mHz, the residual is dominated by the combination of the sensor noises from the fine CPS, from 30 mHz to 350 mHz, and the T240 pair, above 350 mHz.
+The residual tilt for Stage 1 can be approximated by:
+
+\begin{equation}
+\theta_1(f)\approx \tilde{F}_{LP1}\ \big(\theta_g(f)+\tilde{n}_\text{CPS-C}(f)\big)+\tilde{F}_{HP1}\ \text{min}\big[(\tilde{n}_\text{cBRS}(f)+\tilde{n}_\text{CPS-F}(f)),\ \tilde{n}_\text{T240}(f)\big]
+\end{equation}
+
+where $\theta_g$ is the ground tilt, $\tilde{F}_{LP1}$ and $\tilde{F}_{HP1}$ are respectively the Stage 1 rotational low and high-pass blend filters, $\tilde{n}_\text{CPS-C}$, $\tilde{n}_\text{CPS-F}$, $\tilde{n}_\text{cBRS}$, and $\tilde{n}_\text{T240}$ are the rotational sensor noise for the Course CPS, Fine CPS, cBRS, and T240, respectively.
+
+The performance of this design can be seen in Figure~\ref{cBRS1R} Below 1 mHz, it is expected the platform motion follows the ground. However, this is omitted as both the ground rotation and sensor noise are not well constrained at low frequency. Above $\sim$30 mHz, the residual is dominated by the combination of the sensor noises from the fine CPS, from 30 mHz to 350 mHz, and the T240 pair, above 350 mHz.
 
 A subtly that arises from using both the fine and course CPS as the control for Stage 1 is that if the Stage 2 blend frequency is placed below the Stage 1 frequency then in between these two frequencies both stages are using the fine CPS as their control. Since the fine CPS measures the motion between the two stages, this effectively makes both stages uncontrolled as they are not referenced to any independent frame. In our model this is avoided by placing the Stage 1 blend frequency a decade lower than the Stage 2 blend.
 
 \subsubsection{Stage 1 Translational}
 
-Once the rotational degrees of freedom are controlled, the translational loops can begin to be tuned. The primary dependence of the traslational performance on the rotational performance comes from tilt contamination of seismometers, described in Section \ref{tiltCon}. As with the rotational control loop design, the choice of blend frequency is a trade off between increasing low frequency motion and decreasing high. We choose to require low frequency RMS performance of $<$ 100 nm/s$/\sqrt{\text{Hz}}$. This requirement is more stringent than the current performance of the seismic isolation \textbf{CHECK}. A blend frequency of 15 mHz was found to exceed this requirement.
+Once the rotational degrees of freedom are controlled, the translational loops can begin to be tuned. The primary dependence of the traslational performance on the rotational performance comes from tilt contamination of seismometers, described in Section \ref{tiltCon}. As with the rotational control loop design, the choice of blend frequency is a trade off between increasing low frequency motion and decreasing high. We choose to require low frequency RMS performance of $<$ 100 nm/s$/\sqrt{\text{Hz}}$. This requirement is approximately the performance of the current seismic isolation system. A blend frequency of 15 mHz was found to exceed this requirement. The residual motion for Stage 1 can be approximated by:
+
+\begin{equation}
+x_1(f)\approx F_{LP1}\ \big(x_g(f)+n_\text{CPS-C}(f)\big)+F_{HP1}\ \big( g/\omega^2\ \theta_1(f) +n_\text{T240}(f) \big)
+\end{equation}
+
+where $x_g$ is the ground motion, $F_{LP1}$ and $F_{HP1}$ are respectively the Stage 1 translational low and high-pass blend filters, and $n_\text{CPS-C}$ and $n_\text{T240}$ are the translational sensor noise for the Course CPS and T240, respectively.
 
 The performance of the Stage 1 translational isolation with this choice can be seen in Figure \ref{cBRS1X}. Above 500 mHz, the performance is limited by the T240 noise. Between 25-500 mHz, residual ground motion dominates and between 1-25 mHz residual tilt coupled through tilt contamination of the seismometers is the primary contribution. 
 
@@ -873,8 +904,6 @@ The performance of the Stage 1 translational isolation with this choice can be s
 
 \subsubsection{Stage 2 Translational}
 
-The Stage 2 translational loops were tuned in a similar manner as Stage 1: requiring that the RMS motion at 1 mHz to be $<$ 100 nm/s$/\sqrt{\text{Hz}}$. This yielded  a blend frequency of 45 mHz. As can be seen in Figure \ref{cBRS2X}, this effectively flattens the residual spectrum between $\sim$ 5-60 mHz to an amplitude of 2-3 $\times 10^{-7}$ m/s$/\sqrt{\text{Hz}}$ while decreasing the microseism at 150 mHz by a factor of $\sim$ 100.
-
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_ST2X.pdf}
@@ -882,8 +911,17 @@ The Stage 2 translational loops were tuned in a similar manner as Stage 1: requi
 \label{cBRS2X}
 \end{center}
 \end{figure}
+The Stage 2 translational loops were tuned in a similar manner as Stage 1: requiring that the RMS motion at 1 mHz to be $<$ 100 nm/s$/\sqrt{\text{Hz}}$. This yielded  a blend frequency of 45 mHz. The residual motion for Stage 2 can be approximated by:
 
-Of particular interest for future upgrades to the seismic isolation, the limiting term of the Stage 2 translational performance in these models is the noise due to the on-platform inertial sensors whereas previous performance was dominated by the tilt contamination term. \cite{windproofing} This points to the need of lower noise inertial sensors for future systems. This is an active area of research with many promising candidate sensors \cite{}. 
+\begin{equation}
+x_2(f)\approx F_{LP2}\ \big(x_1(f)+n_\text{CPS-F}(f)\big)+F_{HP2}\ \big( g/\omega^2\ \theta_2(f) +n_\text{GS13}(f) \big)
+\end{equation}
+
+where $F_{LP2}$ and $F_{HP2}$ are respectively the Stage 2 translational low and high-pass blend filters, and $n_\text{CPS-F}$ and $n_\text{GS13}$ are the translational sensor noise for the Fine CPS and GS13, respectively.
+
+As can be seen in Figure \ref{cBRS2X}, this effectively flattens the residual spectrum between $\sim$ 5-60 mHz to an amplitude of 2-3 $\times 10^{-7}$ m/s$/\sqrt{\text{Hz}}$ while decreasing the microseism at 150 mHz by a factor of $\sim$ 100.
+
+Of particular interest for future upgrades to the seismic isolation, the limiting term of the Stage 2 translational performance in these models is the noise due to the on-platform inertial sensors whereas previous performance was dominated by the tilt contamination term. \cite{windproofing} This points to the need of lower noise inertial sensors for future systems. This is an active area of research with many promising candidate sensors \cite{Mow_Lowry_2019, Cooper_2018}. 
 
 \subsubsection{Comparison with past performance}
 
@@ -897,7 +935,7 @@ To show the improvements relative to the past isolation configurations, the perf
 \end{center}
 \end{figure}
 
-A comparison of the rotational degree is shown in Figure \ref{cBRSCompR}. During O2, Stage 2 was locked to Stage 1 in the rotational degree of freedom using the position sensors across the entire band of interest. Thus the performance of the two stages was identical. With the addition of the cBRS the residual tilt is decreased by a factor of $\sim$ 50 and $\sim$ 100 respectively for Stage 1 and Stage 2 between 50-250 mHz. Between 1-10 mHz the residual tilt is increased by a factor of $\sim$ 3. Below 1 mHz it is expected that the two schemes have identical performance. However, the ground tilt is not well modeled due to the lack of sub-mHz rotation sensors so this is omitted from this model.
+A comparison of the rotational degree is shown in Figure \ref{cBRSCompR}. During O2, Stage 2 was locked to Stage 1 in the rotational degree of freedom using the position sensors across the entire band of interest. Thus the performance of the two stages was identical. With the addition of the cBRS the residual tilt is decreased by a factor of $\sim$50 and $\sim$100 respectively for Stage 1 and Stage 2 between 50-250 mHz. Between 1-10 mHz the residual tilt is increased by a factor of $\sim$ 3. Below 1 mHz it is expected that the two schemes have identical performance. However, the ground tilt is not well modeled due to the lack of sub-mHz rotation sensors so this is omitted from this model.
 
 
 \begin{figure}[!h]
@@ -922,9 +960,9 @@ Although in reality the control loop for each isolation platform will have to be
 \end{center}
 \end{figure}
 
-As mentioned in Section \ref{ASC}, the most immediate effect of the increased performance of the seismic isolation with a cBRS is the ability to retune the angular sensing and control (ASC) loops. In order to estimate the possible ASC performance for a given seismic performance, a simplified model was constructed which takes the motion of the suspension point as an input, optimizes a theoretical control loop, and outputs the expected residual angular motion of the test mass. The control loop is optimized to give the best performance at high frequencies while maintaining a low frequency rms residual of 1 nrad/$\sqrt{\text{Hz}}$.
+As mentioned in Section \ref{ASC}, the most immediate effect of the increased performance of the seismic isolation with the inclusion of a cBRS is the ability to retune the angular sensing and control (ASC) loops. In order to estimate the possible ASC performance for a given seismic performance, a simplified model was constructed which takes the motion of the suspension point as an input, optimizes a theoretical control loop, and outputs the expected residual angular motion of the test mass. The control loop is optimized to give the best performance at high frequencies while maintaining a low frequency RMS residual of 1 nrad/$\sqrt{\text{Hz}}$.
 
-This model uses a handful of approximations that do not neccessarily hold in reality. First off, this is only modeling the performance of a single test mass yet to predict the effect on the differential strain output all four test masses would need to be modeled. Additionally, it ignores the effects of radiation pressure which become important at higher laser powers. \cite{} However, it is believed that the seismic isolation performance at low frequencies is the limiting factor in the current observatories and thus is captured by this model. 
+This model uses a handful of approximations that do not neccessarily hold in reality. First off, this is only modeling the performance of a single test mass yet to predict the effect on the differential strain, all four test masses would need to be modeled. Additionally, it ignores the effects of radiation pressure which become important at high laser powers. \cite{ASC} However, it is believed that the seismic isolation performance at low frequencies is the limiting factor in the current observatories and thus is captured by this model. 
 
 The performance of the ASC system was modeled for both the seismic performance with, Figure \ref{ascWith}, and without, Figure \ref{ascWithout}, the cBRS installed. In both situations, the high frequency performance is limited by sensor noise which leaks into the gravitational wave band. The primary retuning that can be made with the inclusion of the cBRS is to decreasing the ASC UGF from 5.23 Hz to 2.93 Hz. Above this the residual falls off as 1/$f^5$.
 
