@@ -1,51 +1,20 @@
 \begin{thebibliography}{10}
 
-\bibitem{aLIGO}
-J.~Aasi et~al.
-\newblock Advanced {LIGO}.
-\newblock {\em Classical and Quantum Gravity}, 32(7):074001, mar 2015.
+\bibitem{einsteinGR}
+Albert Einstein.
+\newblock The foundation of the general theory of relativity.
+\newblock {\em Annalen Phys.}, 354:769--822, 1916.
 
-\bibitem{ligo2}
-J~Aasi et~al.
-\newblock Advanced ligo.
-\newblock {\em Classical and Quantum Gravity}, 32(7):074001, 2015.
+\bibitem{GWBook}
+Michele Maggiore.
+\newblock {\em Gravitational waves: Volume 1: Theory and experiments},
+  volume~1.
+\newblock Oxford university press, 2008.
 
 \bibitem{GW150914}
 B.~P. Abbott et~al.
 \newblock Observation of gravitational waves from a binary black hole merger.
 \newblock {\em Phys. Rev. Lett.}, 116:061102, Feb 2016.
-
-\bibitem{speedGW}
-B.~P. Abbott et~al.
-\newblock Gravitational waves and gamma-rays from a binary neutron star merger:
-  {GW}170817 and {GRB} 170817a.
-\newblock {\em The Astrophysical Journal}, 848(2):L13, oct 2017.
-
-\bibitem{GW170817}
-B.~P. Abbott et~al.
-\newblock Gw170817: Observation of gravitational waves from a binary neutron
-  star inspiral.
-\newblock {\em Phys. Rev. Lett.}, 119:161101, Oct 2017.
-
-\bibitem{contGW}
-B.~P. Abbott et~al.
-\newblock All-sky search for continuous gravitational waves from isolated
-  neutron stars using advanced ligo o2 data.
-\newblock {\em Phys. Rev. D}, 100:024004, Jul 2019.
-
-\bibitem{GWTC}
-B.~P. Abbott et~al.
-\newblock Gwtc-1: A gravitational-wave transient catalog of compact binary
-  mergers observed by ligo and virgo during the first and second observing
-  runs.
-\newblock {\em Phys. Rev. X}, 9:031040, Sep 2019.
-
-\bibitem{hubble2}
-BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
-  RX~Adhikari, VB~Adya, C~Affeldt, et~al.
-\newblock A gravitational-wave measurement of the hubble constant following the
-  second observing run of advanced ligo and virgo.
-\newblock {\em arXiv preprint arXiv:1908.06060}, 2019.
 
 \bibitem{graviton}
 BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
@@ -54,12 +23,47 @@ BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
   the ligo-virgo catalog gwtc-1.
 \newblock {\em arXiv preprint arXiv:1903.04467}, 2019.
 
+\bibitem{GW190412}
+The LIGO~Scientific Collaboration and the Virgo~Collaboration.
+\newblock Gw190412: Observation of a binary-black-hole coalescence with
+  asymmetric masses, 2020.
+
+\bibitem{hulseTaylor}
+J.~M. Weisberg and Y.~Huang.
+\newblock {RELATIVISTIC} {MEASUREMENTS} {FROM} {TIMING} {THE} {BINARY} {PULSAR}
+  {PSR} b1913+16.
+\newblock {\em The Astrophysical Journal}, 829(1):55, sep 2016.
+
+\bibitem{GW170817}
+B.~P. Abbott et~al.
+\newblock Gw170817: Observation of gravitational waves from a binary neutron
+  star inspiral.
+\newblock {\em Phys. Rev. Lett.}, 119:161101, Oct 2017.
+
 \bibitem{GW190425}
 BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
   RX~Adhikari, VB~Adya, C~Affeldt, et~al.
 \newblock Gw190425: Observation of a compact binary coalescence with total mass
   $\sim 3.4 m_ \odot$.
 \newblock {\em arXiv preprint arXiv:2001.01761}, 2020.
+
+\bibitem{GWTC}
+B.~P. Abbott et~al.
+\newblock Gwtc-1: A gravitational-wave transient catalog of compact binary
+  mergers observed by ligo and virgo during the first and second observing
+  runs.
+\newblock {\em Phys. Rev. X}, 9:031040, Sep 2019.
+
+\bibitem{NGR}
+Bernd Br{\"u}gmann.
+\newblock Fundamentals of numerical relativity for gravitational wave sources.
+\newblock {\em Science}, 361(6400):366--371, 2018.
+
+\bibitem{contGW}
+B.~P. Abbott et~al.
+\newblock All-sky search for continuous gravitational waves from isolated
+  neutron stars using advanced ligo o2 data.
+\newblock {\em Phys. Rev. D}, 100:024004, Jul 2019.
 
 \bibitem{SN}
 BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
@@ -69,76 +73,11 @@ BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
   advanced ligo and advanced virgo.
 \newblock {\em arXiv preprint arXiv:1908.03584}, 2019.
 
-\bibitem{NSEoS}
-BP~Abbott, R~Abbott, TD~Abbott, F~Acernese, K~Ackley, C~Adams, T~Adams,
-  P~Addesso, RX~Adhikari, VB~Adya, et~al.
-\newblock Gw170817: Measurements of neutron star radii and equation of state.
-\newblock {\em Physical review letters}, 121(16):161101, 2018.
-
-\bibitem{MSA}
-T~B~Arp, C~A~Hagedorn, Stephan Schlamminger, and J~H~Gundlach.
-\newblock A reference-beam autocollimator with nanoradian sensitivity from mhz
-  to khz and dynamic range of 10(7.).
-\newblock {\em The Review of scientific instruments}, 84:095007, 09 2013.
-
-\bibitem{tomography}
-Jordyn~C. Babikoff and Colleen~A. Dalton.
-\newblock Long-period rayleigh wave phase velocity tomography using usarray.
-\newblock {\em Geochemistry, Geophysics, Geosystems}, 20(4):1990--2006, 2019.
-
-\bibitem{ASC}
-L~Barsotti, M~Evans, and P~Fritschel.
-\newblock Alignment sensing and control in advanced {LIGO}.
-\newblock {\em Classical and Quantum Gravity}, 27(8):084026, apr 2010.
-
-\bibitem{Belfi2012}
-Jacopo Belfi, Nicol{\`o} Beverini, Giorgio Carelli, Angela Di~Virgilio, Enrico
-  Maccioni, Gilberto Saccorotti, Fabio Stefani, and Alexander Velikoseltsev.
-\newblock Horizontal rotation signals detected by ``g-pisa'' ring laser for the
-  mw = 9.0, march 2011, japan earthquake.
-\newblock {\em Journal of Seismology}, 16(4):767--776, 2012.
-
-\bibitem{NGR}
-Bernd Br{\"u}gmann.
-\newblock Fundamentals of numerical relativity for gravitational wave sources.
-\newblock {\em Science}, 361(6400):366--371, 2018.
-
-\bibitem{hubble1}
-LIGO~Scientific Collaboration, Virgo Collaboration, 1M2H Collaboration, Dark
-  Energy Camera GW-EM Collaboration, DES Collaboration, DLT40 Collaboration,
-  Las Cumbres~Observatory Collaboration, VINROUGE Collaboration, MASTER
-  Collaboration, et~al.
-\newblock A gravitational-wave standard siren measurement of the hubble
-  constant.
-\newblock {\em Nature}, 551(7678):85--88, 2017.
-
-\bibitem{Cooper_2018}
-S~J Cooper, C~J Collins, A~C Green, D~Hoyland, C~C Speake, A~Freise, and C~M
-  Mow-Lowry.
-\newblock A compact, large-range interferometer for precision measurement and
-  inertial sensing.
-\newblock {\em Classical and Quantum Gravity}, 35(9):095007, mar 2018.
-
-\bibitem{NN}
-M.~W. Coughlin, J.~Harms, J.~Driggers, D.~J. McManus, N.~Mukund, M.~P. Ross,
-  B.~J.~J. Slagmolen, and K.~Venkateswara.
-\newblock Implications of dedicated seismometer measurements on newtonian-noise
-  cancellation for advanced ligo.
-\newblock {\em Phys. Rev. Lett.}, 121:221104, Nov 2018.
-
 \bibitem{strings}
 Thibault Damour and Alexander Vilenkin.
 \newblock Gravitational radiation from cosmic (super)strings: Bursts,
   stochastic background, and observational windows.
 \newblock {\em Phys. Rev. D}, 71:063510, Mar 2005.
-
-\bibitem{ASCpast}
-Katherine~L Dooley, Lisa Barsotti, Rana~X Adhikari, Matthew Evans, Tobin~T
-  Fricke, Peter Fritschel, Valera Frolov, Keita Kawabe, and Nicol{\'a}s
-  Smith-Lefebvre.
-\newblock Angular control of optical cavities in a radiation-pressure-dominated
-  regime: the enhanced ligo case.
-\newblock {\em JOSA A}, 30(12):2618--2626, 2013.
 
 \bibitem{inflation}
 Richard Easther and Eugene~A Lim.
@@ -146,85 +85,10 @@ Richard Easther and Eugene~A Lim.
 \newblock {\em Journal of Cosmology and Astroparticle Physics},
   2006(04):010--010, apr 2006.
 
-\bibitem{einstein}
-A.~Einstein and N.~Rosen.
-\newblock On gravitational wav es.
-\newblock {\em Journal of the Franklin Institute}, 223(1):43 -- 54, 1937.
-
-\bibitem{ring}
-Simonelli et. al.
-\newblock First deep underground observation of rotational signals from an
-  earthquake at teleseismic distance using a large ring laser gyroscope.
-\newblock {\em arXiv}, 2016.
-
-\bibitem{terrestrial}
-Jan Harms.
-\newblock Terrestrial gravity fluctuations.
-\newblock {\em Living reviews in relativity}, 18(1):3, 2015.
-
-\bibitem{NN2}
-Jan Harms, Edgard Bonilla, Michael Coughlin, Jenne Driggers, Sheila Dwyer,
-  David McManus, Michael Ross, Bram Slagmolen, and Krishna Venkateswara.
-\newblock Observation of a potential future sensitivity limitation from ground
-  motion at ligo hanford.
-\newblock {\em arXiv preprint arXiv:2001.10889}, 2020.
-
-\bibitem{Harms_2016}
-Jan Harms and Krishna Venkateswara.
-\newblock Newtonian-noise cancellation in large-scale interferometric {GW}
-  detectors using seismic tiltmeters.
-\newblock {\em Classical and Quantum Gravity}, 33(23):234001, oct 2016.
-
-\bibitem{haskell}
-Norman~A Haskell.
-\newblock The dispersion of surface waves on multilayered media.
-\newblock {\em Bulletin of the Seismological Society of America}, 43(1):17--34,
-  1953.
-
-\bibitem{lantz}
-Brian Lantz, R~Schofield, B.~O`Reilly, D.~E. Clark, and D~DeBra.
-\newblock Review: Requirements for a ground rotation sensor to improve advanced
-  ligo.
-\newblock {\em Bulletin of the Seismological Society of America},
-  99(2B):980--989, 2009.
-
-\bibitem{Lee01052009}
-W.~H.~K Lee, M.~Celebi, M.~I. Todorovska, and H.~Igel.
-\newblock Introduction to the special issue on rotational seismology and
-  engineering applications.
-\newblock {\em Bulletin of the Seismological Society of America},
-  99(2B):945--957, 2009.
-
-\bibitem{Legendre2015}
-C{\'e}dric~P. Legendre, Li~Zhao, Win-Gee Huang, and Bor-Shouh Huang.
-\newblock Anisotropic rayleigh-wave phase velocities beneath northern vietnam.
-\newblock {\em Earth, Planets and Space}, 67(1):28, 2015.
-
-\bibitem{GRL:GRL28234}
-Chin-Jen Lin, Han-Pang Huang, Nguyen~Dinh Pham, Chun-Chi Liu, Wu-Cheng Chi, and
-  William H.~K. Lee.
-\newblock Rotational motions for teleseismic surface waves.
-\newblock {\em Geophysical Research Letters}, 38(15):n/a--n/a, 2011.
-\newblock L15301.
-
-\bibitem{lin}
-Fan-Chi Lin, Morgan~P. Moschetti, and Michael~H. Ritzwoller.
-\newblock Surface wave tomography of the western united states from ambient
-  seismic noise: Rayleigh and love wave phase velocity maps.
-\newblock {\em Geophysical Journal International}, 173(1):281, 2008.
-
-\bibitem{GWBook}
-Michele Maggiore.
-\newblock {\em Gravitational waves: Volume 1: Theory and experiments},
-  volume~1.
-\newblock Oxford university press, 2008.
-
-\bibitem{seismic}
-Stefano Maran\'o and Donat F{\"a}h.
-\newblock Processing of translational and rotational motions of surface waves:
-  Performance analysis and applications to single sensor and to array
-  measurements.
-\newblock {\em Geophysical Journal International}, 196:317--339, 2014.
+\bibitem{aLIGO}
+J.~Aasi et~al.
+\newblock Advanced {LIGO}.
+\newblock {\em Classical and Quantum Gravity}, 32(7):074001, mar 2015.
 
 \bibitem{LIGOSens}
 D.~V. Martynov, E.~D. Hall, B.~P. Abbott, R.~Abbott, T.~D. Abbott, C.~Adams,
@@ -277,58 +141,6 @@ D.~V. Martynov, E.~D. Hall, B.~P. Abbott, R.~Abbott, T.~D. Abbott, C.~Adams,
   gravitational wave astronomy.
 \newblock {\em Phys. Rev. D}, 93:112004, Jun 2016.
 
-\bibitem{ligoSeis}
-F.~Matichard et~al.
-\newblock Seismic isolation of advanced ligo: Review of strategy,
-  instrumentation and performance.
-\newblock {\em Classical and Quantum Gravity}, 32(18):185003, 2015.
-
-\bibitem{tiltFree}
-Fabrice Matichard and Matthew Evans.
-\newblock Tilt-free low-noise seismometry.
-\newblock {\em Bulletin of the seismological society of America},
-  105(2A):497--510, 2015.
-
-\bibitem{meier}
-T.~Meier, K.~Dietrich, B.~St{\"o}ckhert, and H.P. Harjes.
-\newblock One-dimensional models of shear wave velocity for the eastern
-  mediterranean obtained from the inversion of rayleigh wave phase velocities
-  and tectonic implications.
-\newblock {\em Geophysical Journal International}, 156(1):45--58, 1 2004.
-
-\bibitem{Mow_Lowry_2019}
-C~M Mow-Lowry and D~Martynov.
-\newblock A 6d interferometric inertial isolation system.
-\newblock {\em Classical and Quantum Gravity}, 36(24):245006, nov 2019.
-
-\bibitem{GRL:GRL13842}
-A.~Pancha, T.~H. Webb, G.~E. Stedman, D.~P. McLeod, and K.~U. Schreiber.
-\newblock Ring laser detection of rotations from teleseismic waves.
-\newblock {\em Geophysical Research Letters}, 27(21):3553--3556, 2000.
-
-\bibitem{se-7-1467-2016}
-M.~Reinwald, M.~Bernauer, H.~Igel, and S.~Donner.
-\newblock Improved finite-source inversion through joint measurements of
-  rotational and translational ground motions: a numerical study.
-\newblock {\em Solid Earth}, 7(5):1467--1477, 2016.
-
-\bibitem{tiltSeismology}
-M.~P. Ross, K.~Venkateswara, C.~A. Hagedorn, J.~H. Gundlach, J.~S. Kissel,
-  J.~Warner, H.~Radkins, T.~J. Shaffer, M.~W. Coughlin, and P.~Bodin.
-\newblock {Low‐Frequency Tilt Seismology with a Precision Ground‐Rotation
-  Sensor}.
-\newblock {\em Seismological Research Letters}, 89(1):67--76, 11 2017.
-
-\bibitem{Saulson}
-Peter~R. Saulson.
-\newblock Terrestrial gravitational noise on a gravitational wave antenna.
-\newblock {\em Phys. Rev. D}, 30:732--736, Aug 1984.
-
-\bibitem{thermal}
-Peter~R. Saulson.
-\newblock Thermal noise in mechanical experiments.
-\newblock {\em Phys. Rev. D}, 42:2437--2445, Oct 1990.
-
 \bibitem{Squeeze}
 M.~Tse, Haocun Yu, N.~Kijbunchoo, A.~Fernandez-Galiana, P.~Dupej, L.~Barsotti,
   C.~D. Blair, D.~D. Brown, S.~E. Dwyer, A.~Effler, M.~Evans, P.~Fritschel,
@@ -370,20 +182,55 @@ M.~Tse, Haocun Yu, N.~Kijbunchoo, A.~Fernandez-Galiana, P.~Dupej, L.~Barsotti,
   gravitational-wave astronomy.
 \newblock {\em Phys. Rev. Lett.}, 123:231107, Dec 2019.
 
-\bibitem{venk2016}
-Krishna Venkateswara, Charles~A. Hagedorn, Jens~H. Gundlach, Jeffery Kissel,
-  Jim Warner, Hugh Radkins, Thomas Shaffer, Brian Lantz, Richard Mittleman,
-  Fabrice Matichard, and Robert Schofield.
-\newblock Subtracting tilt from a horizontal seismometer using a ground
-  rotation sensor.
-\newblock {\em Bulletin of the Seismological Society of America},
-  107(2):709--717, 2017.
+\bibitem{O3events}
+Ligo-virgo cumulative event/candidate rate plot o1-o3.
 
-\bibitem{venk2014}
-Krishna Venkateswara, Charles~A. Hagedorn, Matthew~D. Turner, Trevor Arp, and
-  Jens~H. Gundlach.
-\newblock A high-precision mechanical absolute-rotation sensor.
-\newblock {\em Review of Scientific Instruments}, 85(1), 2014.
+\bibitem{NSEoS}
+BP~Abbott, R~Abbott, TD~Abbott, F~Acernese, K~Ackley, C~Adams, T~Adams,
+  P~Addesso, RX~Adhikari, VB~Adya, et~al.
+\newblock Gw170817: Measurements of neutron star radii and equation of state.
+\newblock {\em Physical review letters}, 121(16):161101, 2018.
+
+\bibitem{heavyElements}
+Darach Watson, Camilla~J Hansen, Jonatan Selsing, Andreas Koch, Daniele~B
+  Malesani, Anja~C Andersen, Johan~PU Fynbo, Almudena Arcones, Andreas
+  Bauswein, Stefano Covino, et~al.
+\newblock Identification of strontium in the merger of two neutron stars.
+\newblock {\em Nature}, 574(7779):497--500, 2019.
+
+\bibitem{hubble1}
+LIGO~Scientific Collaboration, Virgo Collaboration, 1M2H Collaboration, Dark
+  Energy Camera GW-EM Collaboration, DES Collaboration, DLT40 Collaboration,
+  Las Cumbres~Observatory Collaboration, VINROUGE Collaboration, MASTER
+  Collaboration, et~al.
+\newblock A gravitational-wave standard siren measurement of the hubble
+  constant.
+\newblock {\em Nature}, 551(7678):85--88, 2017.
+
+\bibitem{hubble2}
+BP~Abbott, R~Abbott, TD~Abbott, S~Abraham, F~Acernese, K~Ackley, C~Adams,
+  RX~Adhikari, VB~Adya, C~Affeldt, et~al.
+\newblock A gravitational-wave measurement of the hubble constant following the
+  second observing run of advanced ligo and virgo.
+\newblock {\em arXiv preprint arXiv:1908.06060}, 2019.
+
+\bibitem{speedGW}
+B.~P. Abbott et~al.
+\newblock Gravitational waves and gamma-rays from a binary neutron star merger:
+  {GW}170817 and {GRB} 170817a.
+\newblock {\em The Astrophysical Journal}, 848(2):L13, oct 2017.
+
+\bibitem{ligoSeis}
+F.~Matichard et~al.
+\newblock Seismic isolation of advanced ligo: Review of strategy,
+  instrumentation and performance.
+\newblock {\em Classical and Quantum Gravity}, 32(18):185003, 2015.
+
+\bibitem{tiltFree}
+Fabrice Matichard and Matthew Evans.
+\newblock Tilt-free low-noise seismometry.
+\newblock {\em Bulletin of the seismological society of America},
+  105(2A):497--510, 2015.
 
 \bibitem{windproofing}
 Krishna Venkateswara, Michael~P Ross, Jim Warner, Conor Mow-Lowry, Brian Lantz,
@@ -393,18 +240,184 @@ Krishna Venkateswara, Michael~P Ross, Jim Warner, Conor Mow-Lowry, Brian Lantz,
   tilt by using rotation sensors in active seismic isolation.
 \newblock {\em arXiv preprint arXiv:2003.06447}, 2020.
 
-\bibitem{heavyElements}
-Darach Watson, Camilla~J Hansen, Jonatan Selsing, Andreas Koch, Daniele~B
-  Malesani, Anja~C Andersen, Johan~PU Fynbo, Almudena Arcones, Andreas
-  Bauswein, Stefano Covino, et~al.
-\newblock Identification of strontium in the merger of two neutron stars.
-\newblock {\em Nature}, 574(7779):497--500, 2019.
+\bibitem{venk2014}
+Krishna Venkateswara, Charles~A. Hagedorn, Matthew~D. Turner, Trevor Arp, and
+  Jens~H. Gundlach.
+\newblock A high-precision mechanical absolute-rotation sensor.
+\newblock {\em Review of Scientific Instruments}, 85(1), 2014.
 
-\bibitem{hulseTaylor}
-J.~M. Weisberg and Y.~Huang.
-\newblock {RELATIVISTIC} {MEASUREMENTS} {FROM} {TIMING} {THE} {BINARY} {PULSAR}
-  {PSR} b1913+16.
-\newblock {\em The Astrophysical Journal}, 829(1):55, sep 2016.
+\bibitem{MSA}
+T~B~Arp, C~A~Hagedorn, Stephan Schlamminger, and J~H~Gundlach.
+\newblock A reference-beam autocollimator with nanoradian sensitivity from mhz
+  to khz and dynamic range of 10(7.).
+\newblock {\em The Review of scientific instruments}, 84:095007, 09 2013.
+
+\bibitem{thermal}
+Peter~R. Saulson.
+\newblock Thermal noise in mechanical experiments.
+\newblock {\em Phys. Rev. D}, 42:2437--2445, Oct 1990.
+
+\bibitem{ASC}
+L~Barsotti, M~Evans, and P~Fritschel.
+\newblock Alignment sensing and control in advanced {LIGO}.
+\newblock {\em Classical and Quantum Gravity}, 27(8):084026, apr 2010.
+
+\bibitem{Mow_Lowry_2019}
+C~M Mow-Lowry and D~Martynov.
+\newblock A 6d interferometric inertial isolation system.
+\newblock {\em Classical and Quantum Gravity}, 36(24):245006, nov 2019.
+
+\bibitem{Cooper_2018}
+S~J Cooper, C~J Collins, A~C Green, D~Hoyland, C~C Speake, A~Freise, and C~M
+  Mow-Lowry.
+\newblock A compact, large-range interferometer for precision measurement and
+  inertial sensing.
+\newblock {\em Classical and Quantum Gravity}, 35(9):095007, mar 2018.
+
+\bibitem{ring}
+Simonelli et. al.
+\newblock First deep underground observation of rotational signals from an
+  earthquake at teleseismic distance using a large ring laser gyroscope.
+\newblock {\em arXiv}, 2016.
+
+\bibitem{seismic}
+Stefano Maran\'o and Donat F{\"a}h.
+\newblock Processing of translational and rotational motions of surface waves:
+  Performance analysis and applications to single sensor and to array
+  measurements.
+\newblock {\em Geophysical Journal International}, 196:317--339, 2014.
+
+\bibitem{tiltSeismology}
+M.~P. Ross, K.~Venkateswara, C.~A. Hagedorn, J.~H. Gundlach, J.~S. Kissel,
+  J.~Warner, H.~Radkins, T.~J. Shaffer, M.~W. Coughlin, and P.~Bodin.
+\newblock {Low‐Frequency Tilt Seismology with a Precision Ground‐Rotation
+  Sensor}.
+\newblock {\em Seismological Research Letters}, 89(1):67--76, 11 2017.
+
+\bibitem{tomography}
+Jordyn~C. Babikoff and Colleen~A. Dalton.
+\newblock Long-period rayleigh wave phase velocity tomography using usarray.
+\newblock {\em Geochemistry, Geophysics, Geosystems}, 20(4):1990--2006, 2019.
+
+\bibitem{Saulson}
+Peter~R. Saulson.
+\newblock Terrestrial gravitational noise on a gravitational wave antenna.
+\newblock {\em Phys. Rev. D}, 30:732--736, Aug 1984.
+
+\bibitem{terrestrial}
+Jan Harms.
+\newblock Terrestrial gravity fluctuations.
+\newblock {\em Living reviews in relativity}, 18(1):3, 2015.
+
+\bibitem{NN2}
+Jan Harms, Edgard Bonilla, Michael Coughlin, Jenne Driggers, Sheila Dwyer,
+  David McManus, Michael Ross, Bram Slagmolen, and Krishna Venkateswara.
+\newblock Observation of a potential future sensitivity limitation from ground
+  motion at ligo hanford.
+\newblock {\em arXiv preprint arXiv:2001.10889}, 2020.
+
+\bibitem{Harms_2016}
+Jan Harms and Krishna Venkateswara.
+\newblock Newtonian-noise cancellation in large-scale interferometric {GW}
+  detectors using seismic tiltmeters.
+\newblock {\em Classical and Quantum Gravity}, 33(23):234001, oct 2016.
+
+\bibitem{NN}
+M.~W. Coughlin, J.~Harms, J.~Driggers, D.~J. McManus, N.~Mukund, M.~P. Ross,
+  B.~J.~J. Slagmolen, and K.~Venkateswara.
+\newblock Implications of dedicated seismometer measurements on newtonian-noise
+  cancellation for advanced ligo.
+\newblock {\em Phys. Rev. Lett.}, 121:221104, Nov 2018.
+
+\bibitem{ASCpast}
+Katherine~L Dooley, Lisa Barsotti, Rana~X Adhikari, Matthew Evans, Tobin~T
+  Fricke, Peter Fritschel, Valera Frolov, Keita Kawabe, and Nicol{\'a}s
+  Smith-Lefebvre.
+\newblock Angular control of optical cavities in a radiation-pressure-dominated
+  regime: the enhanced ligo case.
+\newblock {\em JOSA A}, 30(12):2618--2626, 2013.
+
+\bibitem{Lee01052009}
+W.~H.~K Lee, M.~Celebi, M.~I. Todorovska, and H.~Igel.
+\newblock Introduction to the special issue on rotational seismology and
+  engineering applications.
+\newblock {\em Bulletin of the Seismological Society of America},
+  99(2B):945--957, 2009.
+
+\bibitem{GRL:GRL28234}
+Chin-Jen Lin, Han-Pang Huang, Nguyen~Dinh Pham, Chun-Chi Liu, Wu-Cheng Chi, and
+  William H.~K. Lee.
+\newblock Rotational motions for teleseismic surface waves.
+\newblock {\em Geophysical Research Letters}, 38(15):n/a--n/a, 2011.
+\newblock L15301.
+
+\bibitem{se-7-1467-2016}
+M.~Reinwald, M.~Bernauer, H.~Igel, and S.~Donner.
+\newblock Improved finite-source inversion through joint measurements of
+  rotational and translational ground motions: a numerical study.
+\newblock {\em Solid Earth}, 7(5):1467--1477, 2016.
+
+\bibitem{GRL:GRL13842}
+A.~Pancha, T.~H. Webb, G.~E. Stedman, D.~P. McLeod, and K.~U. Schreiber.
+\newblock Ring laser detection of rotations from teleseismic waves.
+\newblock {\em Geophysical Research Letters}, 27(21):3553--3556, 2000.
+
+\bibitem{Belfi2012}
+Jacopo Belfi, Nicol{\`o} Beverini, Giorgio Carelli, Angela Di~Virgilio, Enrico
+  Maccioni, Gilberto Saccorotti, Fabio Stefani, and Alexander Velikoseltsev.
+\newblock Horizontal rotation signals detected by ``g-pisa'' ring laser for the
+  mw = 9.0, march 2011, japan earthquake.
+\newblock {\em Journal of Seismology}, 16(4):767--776, 2012.
+
+\bibitem{venk2016}
+Krishna Venkateswara, Charles~A. Hagedorn, Jens~H. Gundlach, Jeffery Kissel,
+  Jim Warner, Hugh Radkins, Thomas Shaffer, Brian Lantz, Richard Mittleman,
+  Fabrice Matichard, and Robert Schofield.
+\newblock Subtracting tilt from a horizontal seismometer using a ground
+  rotation sensor.
+\newblock {\em Bulletin of the Seismological Society of America},
+  107(2):709--717, 2017.
+
+\bibitem{lantz}
+Brian Lantz, R~Schofield, B.~O`Reilly, D.~E. Clark, and D~DeBra.
+\newblock Review: Requirements for a ground rotation sensor to improve advanced
+  ligo.
+\newblock {\em Bulletin of the Seismological Society of America},
+  99(2B):980--989, 2009.
+
+\bibitem{haskell}
+Norman~A Haskell.
+\newblock The dispersion of surface waves on multilayered media.
+\newblock {\em Bulletin of the Seismological Society of America}, 43(1):17--34,
+  1953.
+
+\bibitem{lin}
+Fan-Chi Lin, Morgan~P. Moschetti, and Michael~H. Ritzwoller.
+\newblock Surface wave tomography of the western united states from ambient
+  seismic noise: Rayleigh and love wave phase velocity maps.
+\newblock {\em Geophysical Journal International}, 173(1):281, 2008.
+
+\bibitem{ligo2}
+J~Aasi et~al.
+\newblock Advanced ligo.
+\newblock {\em Classical and Quantum Gravity}, 32(7):074001, 2015.
+
+\bibitem{meier}
+T.~Meier, K.~Dietrich, B.~St{\"o}ckhert, and H.P. Harjes.
+\newblock One-dimensional models of shear wave velocity for the eastern
+  mediterranean obtained from the inversion of rayleigh wave phase velocities
+  and tectonic implications.
+\newblock {\em Geophysical Journal International}, 156(1):45--58, 1 2004.
+
+\bibitem{Legendre2015}
+C{\'e}dric~P. Legendre, Li~Zhao, Win-Gee Huang, and Bor-Shouh Huang.
+\newblock Anisotropic rayleigh-wave phase velocities beneath northern vietnam.
+\newblock {\em Earth, Planets and Space}, 67(1):28, 2015.
+
+\bibitem{einsteinGW}
+A.~Einstein and N.~Rosen.
+\newblock On gravitational waves.
+\newblock {\em Journal of the Franklin Institute}, 223(1):43 -- 54, 1937.
 
 \bibitem{Weiss}
 Rainer Weiss.

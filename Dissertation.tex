@@ -29,7 +29,13 @@
 \titlepage  
 
 \setcounter{page}{-1}
-\abstract{}
+\abstract{The LIGO observatories are comprised of 4-km long dual recycled Fabry-Perot Michelson interferometers. Each observatory deploys a multi-stage seismic isolation system to isolate from terrestrial seismic motion. These systems use seismometers to measure motion at a broad band of frequencies. 
+
+Seismometers are inherently susceptible to contamination due to tilts. These dominate the seismometer readings at low frequency limiting the performance of LIGO's seismic isolation. We developed low-frequency inertial rotation sensors to subtract this tilt-contamination from ground seismometers. These sensors were deployed at both LIGO observatories which allowed for operation at high wind speeds.
+
+In addition, a compact rotation sensor was developed with the capability of being deployed on the LIGO seismic isolation platforms. A prototype was built and tested. A theoretical control model was designed to exploit this novel sensor. This model showed a significant decrease in control noise leakage into the gravitational wave band. 
+
+These sensors have found application in a number of auxiliary fields. The ground rotation sensors have allowed for novel seismological studies while the compact rotation sensor has been applied to study of Newtonian noise.}
 
 \tableofcontents
 \listoffigures
@@ -46,13 +52,13 @@ If this was the case with the instrument constructed with a view to avoid sensit
 
 \subsection{Linearized General Relativity}
 
-In early twentieth century, the theory of General Relativity supplanted the static space-time, in which all prior physics was formulated, with a deformable space-time yielding a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric \cite{einstein}. The deformation of this metric follows the Einstein equation:
+In the early twentieth century, the theory of General Relativity supplanted the static space-time, in which all prior physics was formulated, with a deformable space-time yielding a geometric explanation for gravity. This space-time is described by a unitless tensor field, $g_{\mu \nu}$, called the metric. The deformation of this metric follows the Einstein equation \cite{einsteinGR}:
 \begin{equation}
 R_{\mu \nu}-\frac{1}{2}R\ g_{\mu \nu}+\Lambda g_{\mu \nu}= \frac{8\pi G}{c^4} T_{\mu \nu}
 \end{equation}
 where $R_{\mu \nu}$ is the Riemann tensor, $R$ is the Ricci scalar, $\Lambda$ is the cosmological constant, $G$ is the gravitational constant, $c$ is the speed of light, and $T_{\mu \nu}$ is the stress energy tensor.
 
-If one focuses on a locally flat region of space which is much smaller than the scale of the universe, then the cosmological constant term is negligible and the metric can be approximated via \cite{GWBook}:
+If one focuses on a locally-flat region of space which is much smaller than the scale of the universe, then the cosmological constant term is negligible and the metric can be approximated via \cite{GWBook}:
 \begin{equation}
 g_{\mu \nu}(\vec x,t)\approx\eta_{\mu \nu}(\vec x,t)+h_{\mu \nu}(\vec x,t)
 \end{equation}
@@ -67,9 +73,9 @@ For a complete derivation see Reference \cite{GWBook}. Vacuum solutions propagat
 h_{ij}(t,x)=\begin{pmatrix} h_+ & h_\times & 0 \\ h_\times & -h_+ & 0 \\ 0 & 0 & 0\end{pmatrix} \\cos\big(\omega t - \kappa z)
 \end{equation}
 
-where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' polarizations\footnote{A massless graviton is assumed here. A massive graviton would yield five polarizations instead of two. Current graviton mass constraints are $m_g\leq 4.7\times 10^{-23} eV/c^2$ \cite{graviton}}, $\omega$ is the angular frequency of oscillation, and $\kappa$ is the wavenumber. Here $i$ and $j$ run from 1 to 3 and correspond to the the three spacial coordinates. The time components are suppressed as the $h_{0\nu}$ components are zero due the coordinate choice and $h_{00}$ is zero outside the source. 
+where $h_+$ and $h_\times$ are the amplitudes in the ``plus'' and ``cross'' polarizations\footnote{A massless graviton is assumed. A massive graviton would yield five polarizations instead of two. Current graviton mass constraints are $m_g\leq 4.7\times 10^{-23} eV/c^2$ \cite{graviton}}, $\omega$ is the angular frequency of oscillation, and $\kappa$ is the wavenumber. Here $i$ and $j$ run from 1 to 3 and correspond to the the three spatial coordinates. The time components are suppressed as the $h_{0\nu}$ components are zero due the coordinate choice and $h_{00}$ is zero outside the source. 
 
-Under the long wavelength limit, a source of gravitational waves can be decomposed into a sum of momenta of the stress-energy tensor:
+In the long wavelength limit, a source of gravitational waves can be decomposed into a sum of momenta of the stress-energy tensor:
 
 \begin{equation}
 h_{ij}(t,x)=\frac{1}{r}\frac{4 G}{c^4} \Lambda_{ij,kl} \bigg( S^{kl} +\frac{1}{c} n_m \dot{S}^{kl,m} +\frac{1}{2c^2} n_m n_p \ddot{S}^{kl,mp}+...\bigg)_\text{ret} \label{gwExp}
@@ -83,50 +89,50 @@ S^{ij,k}(t)&=\int T^{ij}(t,\mathbf{x}) x^k d^3x\\
 S^{ij,kl}(t)&=\int T^{ij}(t,\mathbf{x}) x^k x^l d^3x
 \end{align}
 
-with the subscript ``ret'' denoting the evaluation at retarded time. The leading term of Equation \ref{gwExp} can be expressed in terms of the mass quadruple moment of the source, $Q_{ij}$, as:
+with the subscript ``ret'' denoting the evaluation at retarded time. The leading term of Equation \ref{gwExp} can be expressed in terms of the mass quadrupole moment of the source, $Q_{ij}$, as:
 
 \begin{equation}
 h_{ij}(t,x)=\frac{1}{r}\frac{2 G}{c^4} \ddot{Q}_{ij}(t-r/c)
 \end{equation}
 
-Thus the emission of gravitational waves is primarily driven by time varying quadrople moments. Varying higher order moments will also emit gravitational waves but are subdominant in most natural systems.
+Thus the emission of gravitational waves is primarily driven by time varying quadrople moments. Varying higher order moments will also emit gravitational waves but are subdominant in most natural systems. \footnote{GW190412 \cite{GW190412}, a high mass-ratio binary system, is the only observation to contain contributions from higher moments.}
 
 \subsection{Compact Binary Coalescence}\label{CBC}
 
-As of writing, the only systems that have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects is of importance only to satisfy a point mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} astrophysical objects orbiting a common center of mass, so called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor}, GW170817\cite{GW170817}, and GW190425\cite{GW190425}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC}.
+As of writing, the only systems that have been observed to emit gravitational waves are composed of two compact\footnote{The compactness of the objects is of importance only to satisfy a point-mass approximation and to allow observation in current instruments. Non-compact objects such as white and brown dwarfs will emit gravitational waves in their inspiral phase but merge due to Roche lobe overflow long before entering the frequency band accessible today.} astrophysical objects orbiting a common center of mass, so-called compact binaries. These objects could be neutron stars, as with the Hulse-Taylor binary pulsar\cite{hulseTaylor}, GW170817\cite{GW170817}, and GW190425\cite{GW190425}, or black holes like GW150914\cite{GW150914} and most events in the GWTC-1\cite{GWTC}.
 
-Such a system can be approximated as two point masses, $m_{1,2}$ in a Keplerian orbit which decays due to the emission of gravitational waves. This approximation is only valid during the inspiral phase of the merger when the distance between the two objects is much larger than the size of the objects. For a complete simulation of the gravitational wave emission during a merger, one must numerically evaluate the evolution of the space-time around the objects. \cite{NGR}
+Such a system can be approximated as two point masses, $m_{1,2}$, in a Keplerian orbit which decays due to the emission of gravitational waves. This approximation is only valid during the inspiral phase of the merger when the distance between the two objects is much larger than the size of the objects. For a complete simulation of the gravitational wave emission during a merger, one must numerically compute the evolution of the space-time around the objects. \cite{NGR}
 
-The gravitational waves emitted under the point mass approximation can be shown to follow:
+The gravitational waves emitted under the point-mass approximation follow:
 \begin{align}
 h_+(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \frac{1+\cos^2\theta}{2} \ \cos(\omega t + \phi)\\
 h_\times(t)&=\frac{4}{r}\bigg(\frac{GM}{c^2}\bigg)^{5/3} \bigg( \frac{\pi f}{c} \bigg)^{2/3} \cos\theta\ \sin(\omega t + \phi)
 \end{align}
 
-where $M=(m_1 m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the chirp mass, $r$ is the distance from the observer to the center of mass of the source, $\theta$ is the viewing angle with respect to the axis of the orbital plane, $f=\omega/2\pi$ is the frequency of oscillation, and $\phi$ is the initial phase of the system.
+where $M=(m_1 m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the ``chirp mass'', $r$ is the distance from the observer to the center of mass of the source, $\theta$ is the viewing angle with respect to the axis of the orbital plane, $f=\omega/2\pi$ is the frequency of oscillation, and $\phi$ is the initial phase of the system.
 
-The emission of gravitational waves carry energy away from the system and thus the orbit must decay. As the radius of the orbit decreases the frequency of oscillation must grow due to Kepler's law. This then causes the amplitude of the emitted gravitational waves to grow and the orbit to decay quicker. The frequency change during this run away process can be shown to be:
+The emission of gravitational waves carry energy away from the system and thus the orbit must decay. As the radius of the orbit decreases, the frequency of oscillation must grow due to Kepler's law. This then causes the amplitude of the emitted gravitational waves to grow and decay of the orbit to quicken. The frequency change during this runaway process can be shown to be:
 \begin{equation}
 \dot{f}=\frac{96}{5}\pi^{8/3}\bigg(\frac{G M}{c^3}\bigg)^{5/3} f^{11/3}
 \end{equation}
 
-This process produces a characteristic ``chirp'' signal which begins as low frequency and low amplitude then grows in amplitude while shifting to higher frequency. The signal culminates in a final sharp increase in both frequency and amplitude before the objects merger. This can be seen in Figure \ref{GW170817} which shows a spectrogram of the observed strain at the LIGO observatories of the binary neutron star merger GW170817.
+This process produces a characteristic ``chirp'' signal which begins at low frequency and low amplitude then grows in amplitude while shifting to higher frequency. The signal culminates in a final sharp increase in both frequency and amplitude before the objects merge. This can be seen in Figure \ref{GW170817} which shows a spectrogram of the observed strain at the LIGO observatories of the binary neutron star merger GW170817.
  
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{GW170817.pdf}
-\caption[Spectrogram of the strain caused by a binary neutron star merger]{Spectrogram of the strain caused by a binary neutron star merger as seen at the LIGO Hanford Observatory, LIGO Livingston Observatory, and the Virgo Observatory. \cite{GW170817} A clear chirp signal can be seen starting at $\sim$40 Hz which rising in both frequency and amplitude. The origin of the time axis is when the neutron stars merge. The differing amount of signal in the three detectors is due to the alignment of their respective antennae patterns with the source location.}
+\caption[Spectrogram of the strain caused by a binary neutron star merger]{Spectrogram of the strain caused by a binary neutron star merger as seen at the LIGO Hanford Observatory, LIGO Livingston Observatory, and the Virgo Observatory. \cite{GW170817} A clear chirp signal can be seen starting at $\sim$40 Hz which rises in both frequency and amplitude. The origin of the time axis is the time at which the neutron stars merge. The differing amount of signal in the three detectors is due to the alignment of their respective antenna-patterns with the source location.}
 \label{GW170817}
 \end{center}
 \end{figure}
  
- Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars \cite{contGW} and supernova \cite{SN} to cosmic strings \cite{strings} and density perturbations in the early universe \cite{inflation}. With the measurement of gravitational waves, humankind has technologically expanded our senses to include the faint vibrations of space-time. This ability has allowed the study of new types of astronomical systems and may one day allow further insight into the beginning of the universe and the nature of gravity.
+ Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars \cite{contGW} and supernovae \cite{SN} to cosmic strings \cite{strings} and density perturbations in the early universe \cite{inflation}. With the measurement of gravitational waves, humankind has technologically expanded our senses to include the faint vibrations of space-time. This ability has allowed the study of new types of astronomical systems and may one day allow further insight into the beginning of the universe and the nature of gravity.
 
 \section{LIGO}
 
 \subsection{Sensitivity}
 
-The Laser Interferometric Gravitational wave Observatory (LIGO) \cite{aLIGO} is a pair of 4 km long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana (LLO). Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
+The Laser Interferometric Gravitational wave Observatory (LIGO) \cite{aLIGO} is a pair of 4-km-long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana (LLO). Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
 
 \begin{figure}%
 \begin{center}
@@ -143,7 +149,7 @@ h_{yy}&=h_+\ \big( \cos^2\theta\ \sin^2\phi-\cos^2\phi \big)-2\ h_\times\ \cos \
 \nonumber \\
 h&=\frac{1}{2} \big( h_{xx}-h_{yy} \big)=\frac{1}{2}h_+\ \big( 1+\cos^2\theta \big)+ h_\times\ \cos \theta\ \sin 2 \phi 
 \end{align}
-where $h_{xx}$ and $h_{yy}$ are the strain along the x and y arm respectively, $\theta$ and $\phi$ are the polar and azimuthal angles of the direction of propogation, and $h$ is the differential strain as measured by the observatory. Here the polarizations are defined in the source frame.
+where $h_{xx}$ and $h_{yy}$ are the strains along the x and y arms respectively, $\theta$ and $\phi$ are the polar and azimuthal angles of the direction of propogation, and $h$ is the differential strain as measured by the observatory. Here the polarizations are defined in the source frame.
 
 The series of optics allows the observatory to measure differential strains down to $7\times10^{-24}$ at 200 Hz.  Noise curves for the observatories are shown in Figure \ref{LIGO_Strain} where one can see that the sensitive band of the observatory runs from 20 Hz up to 7 kHz. At low frequencies the noise is dominated by residual control noise, discussed in Section \ref{ASC}, while at high it is dominated by noise caused by quantum fluctuations.  \cite{Squeeze}
 
@@ -158,9 +164,9 @@ The series of optics allows the observatory to measure differential strains down
 
 \subsection{Events}
 
-With the current sensitivity the primary systems of interest are compact binaries, discussed in Section \ref{CBC}, which merge within the band of interest. A equal mass $50\ M_\odot$ binary black hole system would merger at $\sim$22 Hz while a $1.4\ M_\odot$ binary neutron star system mergers at $\sim$800 Hz yet emits appreciably while sweeping through the LIGO band.
+With LIGO's current sensitivity, the primary systems of interest are compact binaries, discussed in Section \ref{CBC}, which merge within the band of interest. A equal mass $50\ M_\odot$ binary black hole system would merge at $\sim$22 Hz while a $1.4\ M_\odot$ binary neutron star system merges at $\sim$800 Hz yet emits appreciably while sweeping through the LIGO band.
 
-During the first and second observing runs of LIGO, ten binary black hole systems and one binary neutron star merger were detected with high significance. \cite{GWTC} The black hole binaries ranged in total mass from from $18.6\ M_\odot$ to $84.4\ M_\odot$ and merged at distances from 320 Mpc to 2.8 Gpc. The neutron star binary was composed of a $1.27\ M_\odot$ and a $1.46\ M_\odot$ at 40 Mpc. These systems are tabulated in Table \ref{gwTable}.
+During the first and second observing runs of LIGO, ten binary black hole systems and one binary neutron star merger were detected with high significance. \cite{GWTC} The black hole binaries ranged in total mass from $18.6\ M_\odot$ to $84.4\ M_\odot$ and merged at distances from 320 Mpc to 2.8~Gpc. The neutron star binary had component-masses of $1.27\ M_\odot$ and $1.46\ M_\odot$ and merged at 40 Mpc. These systems are tabulated in Table \ref{gwTable}.
 
 \begin{center}
 \begin{tabular}{| c | c | c | c | c | c |}
@@ -191,33 +197,35 @@ GW170818 & $35.4^{+7.5}_{-4.7}$ & $26.7^{+4.3}_{-5.2}$ & $59.4^{+4.9}_{-4.8}$ & 
 GW170823 & $39.5^{+11.2}_{-6.7}$ & $29.0^{+6.7}_{-7.8}$ & $65.4^{+10.1}_{-7.4}$ & $1940^{+970}_{-900}$ & $0.35^{+0.15}_{-0.15}$\\
 \hline
 \hline
+GW190412 & $29.7^{+5.0}_{-5.3}$ & $8.4^{+1.7}_{-1.0}$ & $37.0^{+4.1}_{-3.9}$ & $730^{+140}_{-170}$ & $0.15^{+0.03}_{-0.03}$\\
+\hline
 GW190425 & $1.60-1.87$ & $1.46-1.69$ & $3.4^{+0.3}_{-0.1}$ & $159^{+69}_{-71}$ & $0.03^{+0.01}_{-0.02}$\\
 \hline
 \end{tabular}
 \label{gwTable}
 \end{center}
 
-The ongoing third observing run has had \textbf{\#} significant candidates: \textbf{\#} binary black holes, \textbf{\#} binary neutron stars, and \textbf{\#} black hole neutron star systems. Although these candidates have not been verified to be true gravitational wave events, they show a significant increase in rate of detection due to both the decreased noise and increased duty cycle achieved for the third observing run.
+The recently completed third observing run has had 56 significant candidates \cite{O3events}. Although these candidates have not been verified to be true gravitational wave events, they show a significant increase in rate of detection due to both the decreased noise and increased duty cycle achieved for the third observing run. Two of these candidates have been confirmed to be true gravitational wave events: GW190412 \cite{GW190412} a binary black hole merger with asymmetric component-masses and GW190425 \cite{GW190425} a binary merger with total mass of $\sim$~3.4~$M_\odot$
 
-Observation of these events has led to further understanding of a variety of phenomena. Including the nature of the neutron star composition \cite{NSEoS}, the source of heavy elements \cite{heavyElements}, and black hole populations \cite{GWTC}. Additionally, they have allowed a model independent measurement of Hubble's constant \cite{hubble1, hubble2} and have set restrictive limits on alternative theories of gravity \cite{speedGW}.
+Observation of gravitational waves has led to further understanding of a variety of phenomena including the nature of the neutron star composition \cite{NSEoS}, the source of heavy elements \cite{heavyElements}, and black hole populations \cite{GWTC}. Additionally, they have allowed a model independent measurement of Hubble's constant \cite{hubble1, hubble2} and have set restrictive constraints on alternative theories of gravity \cite{speedGW}.
 
 \section{Seismic Isolation}\label{seisIso}
 
-\subsection{LIGO Scheme}
+\subsection{LIGO Isolation Scheme}
 
-To operate interferometric observatories that are sensitive to the strains of space-time, one must isolate the instrument from all other sources of differential displacement. As the observatories are located on the surface of the earth, the dominate source of such noise is due to ambient seismic motion. 
+To operate interferometric observatories that are sensitive to the strains of space-time, one must isolate the instrument from all other sources of differential displacement. As the observatories are located on the surface of the earth, the dominant source of such noise is ambient seismic motion. 
 
-The ambient seismic wave-field, shown in Figure \ref{groundSpec}, is continuously excited across a wide frequency range. Between 50 mHz to 1 Hz the ambient spectrum is dominated by the ``microseism'' which is an always-present feature that is sourced by the earth's oceans. Above 1 Hz, the dominate source of seismic motion at the observatories is due to local instrumentation. Yet even in locations without anthropogenic sources, the ground moves at these frequencies. Without isolation, this motion would dominate any measurements with the interferometer and, more practically, would disrupt any attempt of operating the interferometer at its ideal alignment. This ideal alignment is referred to as having the interferometer ``locked''.
+The ambient seismic wave-field, measurements of which are shown in Figure \ref{groundSpec}, is continuously excited across a wide frequency range. Between 50 mHz and 1 Hz the ambient spectrum is dominated by the ``microseism'', an always-present feature sourced by the Earth's oceans. Above 1 Hz, the dominant source of seismic motion at the observatories is due to local activity. Yet even in locations without anthropogenic sources, the ground moves at these frequencies. Without isolation, this motion would dominate any measurements with the interferometer and, more practically, would disrupt any attempt to operate the interferometer at its ideal alignment. This ideal alignment is referred to as having the interferometer ``locked''.
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.85\textwidth]{GroundSpectrum.pdf}
-\caption[Example ambient ground motion spectrum]{Example ambient horizontal ground motion spectrum recorded at the End-X station of the LIGO Hanford Observatory. From 40 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity. Below 40 mHz, the instrument is dominated by tilt contamination described in Section \ref{tiltCon}}
+\caption[Example ambient ground motion spectrum]{Example ambient horizontal ground motion spectrum recorded at the End-X station of the LIGO Hanford Observatory. From 40 mHz to 1 Hz the spectrum is dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local anthropogenic activity. Below 40 mHz, the instrument is dominated by tilt contamination described in Section \ref{tiltCon}}
 \label{groundSpec}
 \end{center}
 \end{figure}
 
-The LIGO observatories solve this issue by employing a multi-stage seismic isolation system formed of both passive and active stages. \cite{ligoSeis} First from the ground is the Hydraulic External Pre-Isolation (HEPI) system which is formed by four hydraulic actuators. This provides a factor of $\sim$100 isolation at high frequencies and allows for correction of tidal effects. Suspended from this is the Internal Seismic Isolation (ISI) system\footnote{LIGO employs two versions of the ISI: the HAM-ISI for the auxiliary optics and the BSC-ISI for the core optics. Here ISI refers to the BSC-ISI as rotation sensors have only been deployed on BSC-ISIs.}, described in Section \ref{ISI}. This is a dual-stage six-degree active isolation and is the primary broad-band isolation. From the second stage of the ISI is hung a quadruple pendulum, at the bottom of which is a test mass. This provide high frequency passive isolation decreasing the motion of the test mass by $1/f^8$, where $f$ is the frequency of the motion.
+The LIGO observatories solve this issue by employing a multi-stage seismic isolation system formed of both passive and active stages. \cite{ligoSeis} First from the ground is the Hydraulic External Pre-Isolation (HEPI) system which is formed by four hydraulic actuators. This provides a factor of $\sim$100 isolation at high frequencies and allows for correction of tidal effects. Suspended from this is the Internal Seismic Isolation (ISI) system\footnote{LIGO employs two versions of the ISI: the HAM-ISI for the auxiliary optics and the BSC-ISI for the core optics. Here ISI refers to the BSC-ISI as rotation sensors have only been deployed on BSC-ISIs.}, described in Section \ref{ISI}. This is a dual-stage six-degree active isolation system and is the primary broad-band isolation. From the second stage of the ISI is hung a quadruple pendulum, at the bottom of which is a test mass. This provides high frequency passive isolation that attenuates the motion of the test mass by $1/f^8$, where $f$ is the frequency of the motion.
 
 \begin{figure}[!h]
 \begin{center}
@@ -229,19 +237,19 @@ The LIGO observatories solve this issue by employing a multi-stage seismic isola
 
 \subsection{Internal Seismic Isolation}\label{ISI}
 
-The ISI is comprised of two similar stages each suspended from steel blade springs and wires, the first (Stage 1) from HEPI (Stage 0) and the second (Stage 2) from the first. Each stage is controlled by a set of six magnetic actuators whose signal is comprised of a collection of sensors. The motion of the table is sensed with a series seismometers which are sensitive to motion with respect to an inertial frame. On the first stage, two separate models of seismometers are combined to utilized the instrument with the lowest noise in a given frequency band. Above 0.5 Hz, Sarcelles L4Cs are used while below this Trillium T240s are implemented. These two sensors are ``blended'' together by sending the T240 through a low pass filter and the L4C through a high pass. The filtered signals are then added together to form a low-noise broad-brand inertial sensor combination. The second stage utilizes Geotech GS13s as its inertial sensors.
+The ISI is comprised of two similar stages each suspended from steel blade springs and wires. The first (Stage 1) is suspended from HEPI (Stage 0) and the second (Stage 2) from the first. Each stage is controlled by a set of six magnetic actuators whose feedback signal is comprised of a collection of sensors. The motion of the table is sensed with a series of seismometers which are sensitive to motion with respect to an inertial frame. On the first stage, two separate models of seismometers are combined to obtain the lowest noise in a given frequency band. Sarcelles L4Cs are used above 0.5 Hz, while below this Trillium T240s are employed. These two sensors are ``blended'' together by sending the T240 through a low pass filter and the L4C through a high pass. The filtered signals are added together to form a low-noise broad-brand inertial sensor combination. The second-stage utilizes Geotech GS13s as its inertial sensors.
 
-The inertial motion of the platform is sensed in all six degrees of freedom by having three independent seismometers of each type located 1 meter apart. The three translational signals are comprised of the average of the corresponding seismometer signals, while the three rotational degrees are sensed by the difference of the motion divided by the separation.
+The inertial motion of the platform is sensed in all six degrees of freedom using three independent seismometers of each type located 1-meter apart. The three translational signals are composed from the average of the corresponding seismometer signals, while the three rotational degrees are sensed using the difference of the motion divided by the separation.
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.85\textwidth]{seismicSensNoise.pdf}
-\caption[Sensor noise for the seismic isolation system]{}
+\caption[Sensor noise for the seismic isolation system]{Sensor noise for the collection of sensors used on the ISI.}
 \label{seisNoise}
 \end{center}
 \end{figure}
 
-Due to the increase in T240 noise below 500 mHz, a set of Capacitive Position Sensors (CPS) are deployed which sense the relative motion between either the Stage 0 and the first ISI stage or the two stages of the ISI. This is then used as the control signal at low frequencies yielding a control for Stage 1 that follows:
+Due to the increased T240 noise below 500 mHz, a set of Capacitive Position Sensors (CPS) are deployed to detect the relative motion between either Stage 0 and the first ISI stage or the two stages of the ISI. This is then used as the control signal at low frequencies yielding a control for Stage 1 that follows:
 
 \begin{equation}
 x_\text{cont}=F_{LP}\ (x_\text{p}-x_\text{g})_\text{,CPS}+F_{BP}\ x_\text{p, T240}+F_{HP}\ x_\text{p, GS13}
@@ -252,21 +260,21 @@ where $x_\text{cont}$ is the control signal, $x_\text{p,i}$ is the platform moti
 x_p(f)\approx F_{LP}\ \big(x_g(f)+n_\text{CPS}(f)\big)+F_{BP}\ n_\text{T240}(f)+F_{HP}\ n_\text{GS13}(f)
 \end{equation}
 
-where $n_{i}(f)$ is the sensor noise spectrum for the relevant sensor. This approximation ignores tilt to horizontal coupling which is address in Sections \ref{tilt}.
+where $n_{i}(f)$ is the sensor noise spectrum for the relevant sensor. This approximation ignores tilt-to-horizontal coupling which is addressed in Section \ref{tilt}.
 
 \subsection{Sensor Correction}\label{SensCor}
 
-The isolation can be improved further with the addition of a three-axis seismometer, in this case a Struckheisen STS-2, placed on the floor of the observatory. This measures the ground motion and can be used to do ``sensor correction''. Sensor correction is the procedure of subtracting the ground contribution of the CPS signal to recover the low frequency platform motion. The CPS signal in this case becomes:
+The isolation can be further improved with the addition of a three-axis seismometer, in this case a Struckheisen STS-2, placed on the floor of the observatory. This measures the ground motion and can be used to do ``sensor correction''. Sensor correction is the procedure of subtracting the ground contribution of the CPS signal to recover the low frequency platform motion. The CPS signal in this case becomes:
 \begin{equation}
 x_{CPS}=F_{LP}\ (x_p-x_g)+F_{SC}\ x_g
 \end{equation}
 
-where $F_{SC}$ is the ``sensor correction'' filter which has a pass-band which over laps the CPS low pass filter. This can be rearranged to give:
+where $F_{SC}$ is the ``sensor correction'' filter which has a pass-band that overlaps the CPS low pass filter. This can be rearranged to give:
 \begin{equation}
 x_{CPS}=\tilde F_{LP}\ (x_p-x_g)+\tilde F_{HP}\ x_p
 \end{equation}
 
-where the tildes denote the relevant combination of $F_{LP}$ and $F_{SC}$ which yield effective low and high pass filters. This scheme allows for isolation down to 100 mHz and decreases the bleed-through of the  ground motion due to the CPS low-pass filter's finite roll-off. Below 10 mHz, both the ground and platform seismometers become dominated by tilt contamination which is addressed in the following Section \ref{tilt}. The performance of the seismic isolation system can be seen in Figure \ref{ISIPerf}.
+where the tildes denote the relevant combination of $F_{LP}$ and $F_{SC}$ that yield effective low-pass and high-pass filters. This scheme allows for isolation down to 100 mHz and decreases the bleed-through of the  ground motion due to the CPS low-pass filter's finite roll-off. Below 10 mHz, both the ground and platform seismometers are dominated by tilt contamination which is addressed in Section \ref{tilt}. The performance of the seismic isolation system can be seen in Figure \ref{ISIPerf}.
 
 \begin{figure}[!h]
 \begin{center}
@@ -276,34 +284,34 @@ where the tildes denote the relevant combination of $F_{LP}$ and $F_{SC}$ which 
 \end{center}
 \end{figure}
 
-\chapter{1-m Scale Ground Rotation Sensors} \label{BRS_chap}
+\chapter{1-meter Scale Ground Rotation Sensors} \label{BRS_chap}
 \section{Ground Tilt}\label{tilt}
 \subsection{Tilt Contamination}\label{tiltCon}
-\quad At their core, seismometers are low frequency spring-mass system which measure the difference in motion between the casing and the device's proof mass. Above the resonant frequency of the spring-mass system, this allows for accurate measurements of the motion, in reference to an inertial frame, of any object that the casing is rigidly connected to, be it the ground or a suspended table. Over the past century this technology has produced devices that are sensitive to $\sim$0.1 nm/s down to $\sim$10 mHz. However, these systems are fundamentally susceptible to any stray forces acting on the proof mass.
+\quad At their core, seismometers are low frequency spring-mass systems that measure the difference in motion between the casing and the device's proof mass. Above the resonant frequency of the spring-mass system, this difference measures the motion of the casing with respect to an inertial frame. Over the past century this technology has produced devices that are sensitive to $\sim$0.1 nm/s down to $\sim$10 mHz. However, these systems are intrinsically susceptible to any stray forces that act on the proof mass.
 
-Of interest here is the contamination due to the rotation of the device within a external gravitational field, namely the field caused by the earth. The rotation with respect to a fixed gravitational force will be referred to as tilt.\footnote{Although a subtle difference, the distinction would be of great consequence if the local gravitational field was varying rapidly. In that case the sensors described in Sections \ref{BRSSec} and \ref{cBRSSec} would be of little use as they are rotational sensors not tilt sensors.} From the proof mass's frame, a tilt is equivalent to a rotation of the gravitational force. This yields a horizontal acceleration of the proof mass of:
+Of interest here is the contamination due to the rotation of the device within a external gravitational field, namely the field caused by the Earth. The rotation with respect to a fixed gravitational force will be referred to as ``tilt''.\footnote{Although a subtle difference, the distinction would be of great consequence if the local gravitational field were to vary rapidly. In that case the sensors described in Sections \ref{BRSSec} and \ref{cBRSSec} would be of little use as the sense inertial rotations not tilts with respect to gravity.} From the proof mass's frame, a tilt is equivalent to a rotation of the gravitational force. This yields a horizontal acceleration of:
 \[ a=g \sin(\theta)\]
-where $g$ is the gravitational acceleration on the surface of the earth and $\theta$ is the angle that the device is rotated. This acceleration adds a second term to the seismometer's output shown below for small angles and in the Fourier domain:
+where $g$ is the gravitational acceleration on the surface of the earth and $\theta$ is the angle by which the device is tilted. This acceleration adds a second term to the seismometer's output shown below for small angles and in the Fourier domain:
 \[\tilde{x}_{seis}(\omega)=\tilde{x}_{trans}(\omega)+\frac{g}{\omega^2}\tilde{\theta}(\omega)\]
-where $\tilde{x}_{seis}$ is the seismometer's output in displacement units, $\tilde{x}_{trans}$ is the translational motion of the device, and $\omega$ is the frequency. 
+where $\tilde{x}_{seis}$ is the seismometer's output in displacement units, $\tilde{x}_{trans}$ is the translational motion of the device, and $\omega$ is the angular frequency. 
 
-With this additional contribution, it becomes immediately clear that, for a given amplitude of tilt, the contamination term contributes more at lower frequencies and readily dominates the translational signal. In the context of the ground seismometers at the observatory, the tilt signal swamps the translational component below $\sim$100 mHz. Above which the seismometer signal is dominate by the ever-present oceanic microseism. This can be seen in Figure \ref{wind} which shows an amplitude spectral density of a ground seismometer at LHO during both low and high wind conditions.
+With this additional contribution, it is clear that, for a given amplitude of tilt, the contamination term contributes more at lower frequencies and can readily dominate the translational signal. In the context of the ground seismometers at the observatory, the tilt signal exceeds the translational component below $\sim$100 mHz. Above this frequency, the seismometer signal is dominated by the ever-present oceanic microseism. This can be seen in Figure \ref{wind} which shows the translation amplitude spectral density measured by a ground seismometer at LHO during both low and high wind conditions.
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.85\textwidth]{windComp2.pdf}
-\caption[Ground motion spectra during low and high winds]{Ground motion spectra recorded at the X-End Station of the Hanford Observatory during low and high winds. Below 100 mHz, wind driven tilts become dominate during high winds. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local athropogenic activity.}
+\caption[Ground motion spectra during low and high winds]{Ground motion spectra recorded at the X-End Station of the Hanford Observatory during low and high winds. Below 100 mHz, wind driven tilts become dominant during high winds. From 100 mHz to 1 Hz the spectra are dominated by the oceanic microseism while above 1 Hz the seismic motion is sourced by local anthropogenic activity.}
 \label{wind}
 \end{center}
 \end{figure}
 
-The dominate driver of ground tilts at the observatories is wind acting on the walls of the building. Although one would naiively assume that the wind would rigidly rotate the building, it was found that the true mechanism is differential pressure acts on the walls of the building which deforms the building's concrete slab. This increases the noise seen by the ground seimometer which limited the performance of the seismic isolation during high winds. The primary consequence of this excess is that the observatory could not remain locked during high wind speeds. Additionally, due to the nonlinear deformation of the floor, tilts experienced in one location can not be simply extrapolated from the tilts measured at a different location.
+The dominant driver of ground tilts at the observatories is wind acting on the walls of the building. Although one might naively assume that the wind would rigidly rotate the building, the true mechanism is deformation of the concrete slab caused by differential pressure on the walls of the building. This increases the noise seen by the ground seimometer during high winds. The primary consequence of this excess is that the interferometer could not remain locked during high wind speeds. Additionally, due to nonlinear deformation of the floor, tilts measured in one location can not be simply extrapolated from the tilts measured at a different location.
 
 \subsection{Sensor Correction with Tilt Subtraction}
 
-\quad There are a few different scheme to combat such a contamination. The most straight forward is to decrease the effect of wind by designing buildings which interact with the wind less or by installing wind blocks such as wind fences or earth burms. Both of these options require significant construction and, for the case of LIGO, tilt contamination was not known to be a problem when the observatories were designed. Another option is to build seismometers that are suspended in such a way that they do not experience tilts. This is an active area of research and may one day yield tilt-free seismometers. \cite{tiltFree}
+\quad Several different scheme, in principle, can combat such a contamination. The most straight-forward is to decrease the effect of wind by designing buildings that interact with the wind less or by installing wind blocks such as wind fences or earthen berms. Both of these options require significant construction and, for the case of LIGO, tilt contamination was not addressed in the observatories construction. Another option is to build seismometers that are suspended in such a way that they do not experience tilts. This is an active area of research and may one day yield tilt-free seismometers. \cite{tiltFree}
 
-The scheme that will be explored here is to measure the tilt with an independent rotation sensor described in Section \ref{BRSSec} and subtract the wind-driven contribution. This would then yield a channel of the following form:
+The approach that will be explored here is to measure the tilt with an independent inertial rotation sensor, described in Section \ref{BRSSec}, and subtract the wind-driven contribution. This would then yield a corrected channel with the following form:
 \begin{align}
 \tilde{x}_{seis}(\omega)=\tilde{x}_{trans}(\omega)+&\frac{g}{\omega^2}\tilde{\theta}(\omega)\\
 -&\frac{g}{\omega^2}\tilde{\theta}_{meas}(\omega)
@@ -313,7 +321,7 @@ where $\tilde{\theta}_{meas}$ is the tilt seen by the rotation sensor. Given a s
 
 \[\tilde{x}_{seis}(\omega)=\tilde{x}_{trans}(\omega)+\frac{g}{\omega^2}(1-\alpha)\tilde{\theta}(\omega)\]
 
-Current installations have yielded an $\alpha\sim 0.9$. This is then a low-tilt ground motion measurement which can be used within the seismic isolation system. As this decreases noise primarily at low frequencies, the feedback filters deployed within the isolation system can be tuned to cross over at lower frequency away from the mircoseism. At the cross over frequency, the filters have both large gain and phase changes which decrease performance. Moving this cross-over away from the microseism decreases the effect of these properties and allows for isolation to lower frequencies. For more details see Reference \cite{windproofing}.
+Current installations have yielded an $\alpha\sim 0.9$. This yields a ground motion measurement with low tilt contamination which can be used within the seismic isolation system. As this correction decreases noise primarily at low frequencies, the feedback filters deployed within the isolation system can be tuned to cross over at a lower frequency away from the microseism. At the cross-over frequency, the filters have large gain and phase changes that degrade performance. Placing this cross-over below the microseism frequencies decreases the effects of this ``gain peaking'' and allows for isolation at lower frequencies. For more details see Reference \cite{windproofing}.
 
 \section{Beam Rotation Sensors} \label{BRSSec}
 \subsection{Mechanical System}
@@ -986,7 +994,7 @@ This decrease in residual motion above $\sim$5 Hz would directly decrease noise 
 \end{center}
 \end{figure}
 
-\chapter{Applications}
+\chapter{Auxiliary Applications}
 \quad With every novel sensor comes novel science. Thus the development of these highly sensitive rotation sensors have opened up a handful of novel scientific avenues, tangential to seismic isolation, that have been explored.
 
 \section{Geophysics}
@@ -1141,7 +1149,7 @@ These first observations pointed to the possibility that the current observatori
 
 \printendnotes
 \nocite{*}   
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{Dissertation}
 \end{document}
 

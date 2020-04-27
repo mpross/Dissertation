@@ -1,48 +1,49 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Dissertation.aux
-The style file: plain.bst
+The style file: unsrt.bst
 Database file #1: Dissertation.bib
-Warning--I didn't find a database entry for ""
-You've used 53 entries,
-            2118 wiz_defined-function locations,
-            848 strings with 22099 characters,
-and the built_in function-call counts, 34537 in all, are:
-= -- 2781
-> -- 3666
+Warning--entry type for "O3events" isn't style-file defined
+--line 333 of file Dissertation.bib
+You've used 56 entries,
+            1791 wiz_defined-function locations,
+            813 strings with 21975 characters,
+and the built_in function-call counts, 19326 in all, are:
+= -- 1043
+> -- 2220
 < -- 1
-+ -- 1467
-- -- 1406
-* -- 3587
-:= -- 6346
-add.period$ -- 161
-call.type$ -- 53
-change.case$ -- 845
++ -- 762
+- -- 706
+* -- 2039
+:= -- 3661
+add.period$ -- 167
+call.type$ -- 56
+change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 53
-duplicate$ -- 579
-empty$ -- 1298
-format.name$ -- 1406
-if$ -- 6267
+cite$ -- 56
+duplicate$ -- 492
+empty$ -- 1198
+format.name$ -- 706
+if$ -- 3733
 int.to.chr$ -- 0
-int.to.str$ -- 53
-missing$ -- 54
-newline$ -- 269
-num.names$ -- 106
-pop$ -- 763
+int.to.str$ -- 56
+missing$ -- 55
+newline$ -- 281
+num.names$ -- 55
+pop$ -- 90
 preamble$ -- 1
-purify$ -- 793
+purify$ -- 0
 quote$ -- 0
-skip$ -- 403
+skip$ -- 191
 stack$ -- 0
-substring$ -- 1115
-swap$ -- 55
+substring$ -- 867
+swap$ -- 58
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 210
+type$ -- 0
 warning$ -- 0
-while$ -- 163
-width$ -- 55
-write$ -- 580
+while$ -- 114
+width$ -- 58
+write$ -- 604
 (There was 1 warning)
