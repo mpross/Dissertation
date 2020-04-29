@@ -29,7 +29,7 @@
 \titlepage  
 
 \setcounter{page}{-1}
-\abstract{The LIGO observatories are comprised of 4-km long dual recycled Fabry-Perot Michelson interferometers. Each observatory deploys a multi-stage seismic isolation system to isolate from terrestrial seismic motion. These systems use seismometers to measure motion at a broad band of frequencies. 
+\abstract{\quad The LIGO observatories are comprised of 4-km long dual recycled Fabry-Perot Michelson interferometers. Each observatory deploys a multi-stage seismic isolation system to isolate from terrestrial seismic motion. These systems use seismometers to measure motion at a broad band of frequencies. 
 
 Seismometers are inherently susceptible to contamination due to tilts. These dominate the seismometer readings at low frequency limiting the performance of LIGO's seismic isolation. We developed low-frequency inertial rotation sensors to subtract this tilt-contamination from ground seismometers. These sensors were deployed at both LIGO observatories which allowed for operation at high wind speeds.
 
@@ -42,7 +42,8 @@ These sensors have found application in a number of auxiliary fields. The ground
 
 \dedication{\begin{center}To Grace\end{center} }\
 
-\acknowledgments{The author wishes .}
+\acknowledgments{The author wishes .
+This research has made use of data, software and/or web tools obtained from the Gravitational Wave Open Science Center (https://www.gw-openscience.org), a service of LIGO Laboratory, the LIGO Scientific Collaboration and the Virgo Collaboration. LIGO is funded by the U.S. National Science Foundation. Virgo is funded by the French Centre National de Recherche Scientifique (CNRS), the Italian Istituto Nazionale della Fisica Nucleare (INFN) and the Dutch Nikhef, with contributions by Polish and Hungarian institutes.}
 \textpages
 \epigraph{The first observation showed ... that owing to the extreme sensitiveness of the instrument to vibrations, the work could not be carried on during the day. The experiment was next tried at night. ... so extraordinarily sensitive was the instrument that the stamping of the pavement, about 100 meters from the observatory, made the fringes disappear entirely!
 
@@ -127,22 +128,22 @@ This process produces a characteristic ``chirp'' signal which begins at low freq
 \end{figure}
  
  Although binary systems are the topic of choice here, many other systems should theoretically emit gravitational waves. These can range from asymmetric spinning stars \cite{contGW} and supernovae \cite{SN} to cosmic strings \cite{strings} and density perturbations in the early universe \cite{inflation}. With the measurement of gravitational waves, humankind has technologically expanded our senses to include the faint vibrations of space-time. This ability has allowed the study of new types of astronomical systems and may one day allow further insight into the beginning of the universe and the nature of gravity.
-
+\pagebreak
 \section{LIGO}
 
 \subsection{Sensitivity}
 
 The Laser Interferometric Gravitational wave Observatory (LIGO) \cite{aLIGO} is a pair of 4-km-long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana (LLO). Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
-
-\begin{figure}%
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.75\textwidth]{LIGO_Schematic.pdf}
-\caption[Optical layout of the LIGO interferometers]{Optical layout of the LIGO interferometers \cite{LIGOSens}.\textbf{check copyrights}}
+\caption[Optical layout of the LIGO interferometers]{Optical layout of the LIGO interferometers. Reprinted figure with permission from \cite{LIGOSens}. Copyright 2016 by the American Physical Society.}
 \label{LIGO_Schematic}
 \end{center}
 \end{figure}
 
-As a gravitational wave passes the observatory, the arms experience strains that follow \cite{GWBook}:
+\pagebreak
+As a gravitational wave passes the observatory, the arms experience strains that follow~\cite{GWBook}:
 \begin{align}
 h_{xx}&=h_+\ \big( \cos^2\theta\ \cos^2\phi-\sin^2\phi \big)+2\ h_\times\ \cos \theta\ \sin \phi \cos \phi \\
 h_{yy}&=h_+\ \big( \cos^2\theta\ \sin^2\phi-\cos^2\phi \big)-2\ h_\times\ \cos \theta\ \sin \phi \cos \phi \\
@@ -153,10 +154,10 @@ where $h_{xx}$ and $h_{yy}$ are the strains along the x and y arms respectively,
 
 The series of optics allows the observatory to measure differential strains down to $7\times10^{-24}$ at 200 Hz.  Noise curves for the observatories are shown in Figure \ref{LIGO_Strain} where one can see that the sensitive band of the observatory runs from 20 Hz up to 7 kHz. At low frequencies the noise is dominated by residual control noise, discussed in Section \ref{ASC}, while at high it is dominated by noise caused by quantum fluctuations.  \cite{Squeeze}
 
-\begin{figure}
+\begin{figure}[!h]
 \begin{center}
-\includegraphics[width=0.55\textwidth]{StrainCurve.pdf}
-\caption[Strain sensitivity of the LIGO and Virgo Observatories]{Strain sensitivity of the LIGO and Virgo Observatories. \textbf{replace with O3 sensitivity}}
+\includegraphics[width=\textwidth]{LIGOSens.png}
+\caption[Strain sensitivity of the LIGO and Virgo Observatories]{Strain sensitivity of the LIGO Observatories during the third observing run. Also shown are the sensitivities of the Virgo and GEO600 observatories. \cite{LIGOopen}}
 \label{LIGO_Strain}
 \end{center}
 \end{figure}
@@ -229,8 +230,8 @@ The LIGO observatories solve this issue by employing a multi-stage seismic isola
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=0.75\textwidth]{seismicIso.jpg}
-\caption[Schematic of the LIGO seismic isolation system]{Schematic of the LIGO seismic isolation system. \cite{ligoSeis}}
+\includegraphics[width=\textwidth]{seismicIso.pdf}
+\caption[Schematic of the LIGO seismic isolation system]{Schematic of the LIGO seismic isolation system. \cite{ligoSeis} On the left is a cartoon showing the three stages of isolation while on the right is a CAD rendering of the seismic isolation system and vacuum chamber.}
 \label{wind}
 \end{center}
 \end{figure}
@@ -244,7 +245,7 @@ The inertial motion of the platform is sensed in all six degrees of freedom usin
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.85\textwidth]{seismicSensNoise.pdf}
-\caption[Sensor noise for the seismic isolation system]{Sensor noise for the collection of sensors used on the ISI.}
+\caption[Sensor noise for the seismic isolation system]{Sensor noise for the collection of sensors used on the ISI. The L4C, GS13, and T240 are seismometers while the Coarse CPS and Fine CPS are position sensors. The isolation system blends the relevant sensors together to achieve the lowest possible noise.}
 \label{seisNoise}
 \end{center}
 \end{figure}
@@ -278,8 +279,8 @@ where the tildes denote the relevant combination of $F_{LP}$ and $F_{SC}$ that y
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=0.85\textwidth]{ISIPerf.pdf}
-\caption[Performance of the ISI]{Performance of the ISI as measured by the GS13 installed on Stage 2.}
+\includegraphics[width=\textwidth]{ISIPerf.pdf}
+\caption[Performance of the ISI]{Performance of the ISI as measured by the GS13 installed on Stage 2. A factor of $\sim$1000 reduction in motion is achieved above 1 Hz. Below which sensor noise and residual ground motion limit the performance.}
 \label{ISIPerf}
 \end{center}
 \end{figure}
@@ -326,7 +327,7 @@ Current installations have yielded an $\alpha\sim 0.9$. This yields a ground mot
 \section{Beam Rotation Sensors} \label{BRSSec}
 \subsection{Mechanical System}
 
-\quad A Beam Rotation Sensor (BRS) is a beam-balance based inertial rotation sensor comprised of a 1-m long beam hung from two 10-15 $\mu$m thick beryllium-copper flexures, described in Section \ref{flex}. Figure \ref{BRSImage} shows a CAD model of the beam-balance. 
+\quad A Beam Rotation Sensor (BRS) is a beam-balance based inertial rotation sensor comprised of a 1-m long aluminum beam suspended by two 10-15 $\mu$m-thick beryllium-copper flexures. Details of the flexure design can be found in Section \ref{flex}. The beam has a 1.7-kg brass mass attached to each end. This increases the moment of inertia to $I=0.51\text{ kg m}^2$. Figure \ref{BRSImage} shows a CAD model of the beam-balance. 
 
 \begin{figure}
 \begin{center} \includegraphics[width=0.75\textwidth]{BRSIso.png}
@@ -335,32 +336,32 @@ Current installations have yielded an $\alpha\sim 0.9$. This yields a ground mot
 \end{figure} 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=\textwidth]{BRSFront.png}
+\includegraphics[width=0.95\textwidth]{BRSFrontLabeled.pdf}
 \end{center}
-\caption[Side view of a CAD rendering of the BRS]{Side view of a CAD rendering of the BRS. At center, one of the copper colored flexures can be seen. The other is mounted on the opposite side.}
+\caption[Side view of a CAD rendering of the BRS]{Side view of a CAD rendering of the BRS. At center, one of the small copper-colored flexures can be seen. The other is mounted on the opposite side.}
 \label{BRSImage}
 \end{figure}
 
 
-This design makes the beam stiff in all degrees of freedom other than rotation around the horizontal axis which intersects the two pivot-points. This forms a system consisting of two elementary subsystems: a rotational spring-mass system formed by the stiffness of the flexures, and a simple pendulum due to the offset of the pivot point and the center of mass. This is then described by the following equation of motion: \cite{venk2014}
+The balance is stiff in all degrees of freedom except rotation about the horizontal axis that intersects the two pivot-points. The BRS can be describes as a system consisting of two elementary subsystems: a rotational spring-mass system formed by the torsional stiffness of the flexures, and a simple gravitational pendulum due to the offset between the pivot point and the beam's center of mass. IT is then described by the following equation of motion: \cite{venk2014}
 
 \begin{equation}
 I \ddot{\theta}+ \gamma \dot{\theta}+\kappa (1+ \frac{i}{Q})(\theta-\theta_p)+M g \delta \theta +M \delta \ddot{x_p}=\tau_{ex} \label{eom}
 \end{equation}
 
-where $\theta$ and $\theta_p$ are, respectively, the angle of beam and the platform with respect to gravitational vertical, $\tau_{ex}$ is the sum of all exterior torques, $I$ is the moment of inertia, $Q$ is the intrinsic quality factor, $\gamma$ is the velocity damping factor, $\kappa$ is the spring constant of the flexures, $M$ is the mass of the balance, $g$ is the gravitational acceleration, $\delta$ is the vertical distance from the center of mass and the pivot point, and $x_p$ is the translation of the platform. Equation \ref{eom} can be rearranged to yield:
+where $\theta$ and $\theta_p$ are, respectively, the angles of the beam and the platform with respect to gravitational vertical, $\tau_{ex}$ is the sum of all exterior torques, $I$ is the beam's moment of inertia, $Q$ is the intrinsic quality factor, $\gamma$ is the velocity damping factor, $\kappa$ is the spring constant of the flexures, $M$ is the mass of the balance, $g$ is the gravitational acceleration, $\delta$ is the vertical distance from the center of mass and the pivot point, and $x_p$ is the translation of the platform. Equation \ref{eom} can be rearranged to yield:
 
 \begin{equation}
 \tilde{\theta} = -\frac{\tilde{\tau}_{ex}+\omega^2 M \delta \tilde{x}_p+\kappa (1+i/Q) \tilde{\theta}_p}{I\omega^2-i \gamma \omega -i \kappa /Q-\kappa -Mg\delta}
 \end{equation}
 
-where $\omega$ is the frequency of motion and tildes denote spectral amplitudes. For the BRSs, the quantity of interest is not the angle of the beam but the difference in angle between the beam and the platform. Thus the angle that is recorded by the readout follows:
+where $\omega$ is the angular frequency of motion and tildes denote spectral amplitudes. For the BRS, the measured quantity is not the angle of the beam but the difference in angle between the beam and the platform. Thus the angle recorded by the readout, $\theta_a$, follows:
 
 \begin{align}
 \tilde{\theta}_a &=\tilde{\theta}-\tilde{\theta}_p\\
-&= -\frac{\tilde{\tau}_{ex}+\omega^2 M \delta \tilde{x}_p+\kappa (I\omega^2-i\gamma \omega -Mg\delta) \tilde{\theta}_p}{I\omega^2-i \gamma \omega -i \kappa /Q-\kappa -Mg\delta}
+&= -\frac{\tilde{\tau}_{ex}+\omega^2 M \delta \tilde{x}_p- (I\omega^2-i\gamma \omega -Mg\delta) \tilde{\theta}_p}{I\omega^2-i \gamma \omega -i \kappa /Q-\kappa -Mg\delta}
 \end{align}
-where $\tilde{\theta}_a$ is the recorded angle. This equation can be broken up into three distinct terms: the angular motion due to external torques, $\theta_\tau$, due to translational coupling, $\theta_x$, and due to rotation of the platform, $\theta_s$.
+This equation can be broken into three distinct terms: the angular motion due to external torques, $\theta_\tau$, due to translational coupling, $\theta_x$, and due to rotation of the platform, $\theta_s$.
 \begin{align}
 &\tilde{\theta}_a =\tilde{\theta}_\tau+\tilde{\theta}_x+\tilde{\theta}_{s} \label{theta_A} \\ 
 &\tilde{\theta}_\tau= -\frac{\tilde{\tau}_{ex}}{I}\frac{1}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\\
@@ -368,26 +369,26 @@ where $\tilde{\theta}_a$ is the recorded angle. This equation can be broken up i
 &\tilde{\theta}_{s}= -\tilde{\theta}_p\frac{\omega^2-i\omega_0 \omega/q-\omega_g^2}{\omega^2-i (\omega_0 \omega/q+\omega_0^2/Q)-(\omega_0^2+\omega_g^2)}\label{theta_s}
 \end{align}
 
-Where $\omega_0=\sqrt{k/I}$ is the resonant frequency, $\omega_g=\sqrt{M g \delta/I}$, and $q$ is the quality factor due to velocity damping. These equations illuminate the fact that the beam has a resonance at $\omega=\sqrt{\omega_0^2+\omega_g^2}$ and $\tilde{\theta}_s$ has a zero at $\omega=\omega_g$. 
+Where $\omega_0=\sqrt{k/I}$ is the resonant frequency, $\omega_g=\sqrt{M g \delta/I}$, and $q$ is the quality factor due to velocity damping. These equations show that the beam has a resonance at $\omega=\sqrt{\omega_0^2+\omega_g^2}$ and $\tilde{\theta}_s$ has a minimum at $\omega=\omega_g$. 
 
 
 \begin{figure}[!h]
 \begin{center}
  \includegraphics[width=0.85\textwidth]{cBRS_TransferFunction.pdf}
-\caption[Transfer function from platform tilt to measured tilt for the cBRS]{Measurements of the transfer function from platform tilt to measured tilt for the cBRS along with fits to Equation \ref{theta_s}. After each measurement mass was added or removed from the top of the proof mass in order to shift the vertical position of its center of mass.}
+\caption[Transfer function from platform tilt to measured tilt for the cBRS]{Measurements of the transfer function from platform tilt to measured tilt for the compact-BRS, described in Chapter \ref{cBRS_chap}, along with fits to Equation \ref{theta_s}. After each measurement mass was added or removed from the top of the proof mass in order to shift the vertical position of its center of mass.}
 \label{TransferFunction}
 \end{center}
 \end{figure}
 
-To allow for high fidelity rotation sensing, the translational coupling must be negliable at the frequencies of interest. To achieve this, $\delta$ must be tuned close to zero. This is achieved firstly through the design of the beam's suspension which places the center of mass close to the pivot point. Fine adjustments are them made by adding mass to the beam above or below the pivot. These adjustments are guided by measurements of the zero in the $\tilde{\theta}_s$ transfer function, Equation \ref{theta_s}, at $\omega=\omega_g$. Figure \ref{TransferFunction} shows this for the cBRS, described in Chapter \ref{cBRS_chap}. Differing amounts of tuning were achieved for each deployed device described Section \ref{results} due to scheduling constraints. The lowest translation coupling was achieved at the LHO End-Y BRS which had a $\delta<0.5\ \mu$m yielding a translational coupling of less than $10^{-6}$ rad/m.
+To obtain high fidelity rotation sensing, the translational coupling must be negligible. To achieve this, the magnitude of $\delta$ must be minimized. This is achieved through the design of the beam's suspension which places the center of mass close to the pivot point. Fine adjustments are then made by adding mass to the beam above or below the pivot. These adjustments are guided by measurements of the $\tilde{\theta}_s$ transfer function, Equation \ref{theta_s}. Figure \ref{TransferFunction} shows this for the compact-BRS, described in Chapter \ref{cBRS_chap}. The amount of tuning that was achieved differed for each device deployed at the observatories due to scheduling constraints. The lowest translation coupling was achieved at the LHO End-Y BRS which had $\delta<0.5\ \mu$m yielding a translational coupling of $<10^{-6}$ rad/m.
 
 \subsection{Flexures}\label{flex}
 
-The flexures which suspend the proof mass are cut out of $1/4''\times1/4''\times7/8''$ blocks of beryllium-copper by wire electrical discharge machining to yield the shape shown in Figure \ref{flex}. Circular cuts were used to achieve a well defined pivot point. The opening gaps on either side were restricted to act as mechanical stops for ease of handling and transportation.
+The flexures that suspend the proof mass are cut from $1/4''\times1/4''\times7/8''$ blocks of beryllium-copper by wire electrical-discharge machining to yield the shape shown in Figure \ref{flex}. Circular cuts were used to achieve a well-defined pivot point. The opening gaps on either side were restricted to act as mechanical stops for ease of handling and transportation.
 
-Due to machining variability in the width of flexure, batches of flexures were assayed via a microscope to determine the width of each flexure and to identify flexures that were damaged during machining and transportation. Pairs of flexures with similar widths were installed together, one on either side of the beam. Each flexure has one half clamped to the support and the other attached to the beam, as shown in Figure \ref{BRSFrontD}. This provides a suspension which is still in all degrees of freedom except for rotations about the axis intersecting the two pivot points. 
+Due to machining variation in the width of flexure, batches of flexures were assayed via a microscope to determine the width of each flexure and to identify flexures that were damaged during machining and transportation. Pairs of flexures with similar widths were installed together, one on each side of the beam. Each flexure has one half clamped to the support and the other attached to the beam, as shown in Figure \ref{BRSFrontD}. This provides a suspension which is stiff in all degrees of freedom except rotation about the axis intersecting the two pivot points. 
 
-The stiffness of the flexure increases with thickness. Thus in order to decrease the resonant frequency of the beam balance, the flexure width is minimized. This is limited practically by the motion of the machining wire to yield flexures with widths of 10-15 $\mu$m. It was found that flexures thinner than 10 $\mu$m could be achieved. However, the finished pieces contained irregular holes laterally through the flexure. These flexures would have lower breaking strength and would increase the loss if installed on in a BRS. 
+The stiffness of the flexure increases with thickness. The flexure width was minimized to decrease the resonant frequency of the beam balance. This was limited practically by the motion of the machining wire to yield flexures with widths of 10-15 $\mu$m. Although, flexures thinner than 10 $\mu$m could be achieved, the finished pieces contained irregular holes laterally through the flexure. These flexures would have lower breaking-strength and would degrade the performance if installed in a BRS. 
 
 \begin{figure}[!h]
 \begin{center}
@@ -399,50 +400,50 @@ The stiffness of the flexure increases with thickness. Thus in order to decrease
 
 \begin{figure}[!h]
 \begin{center} 
-\includegraphics[width=\textwidth]{BRSFrontDetail.png}
+\includegraphics[width=\textwidth]{BRSFrontDetailLabeled.pdf}
 \end{center}
-\caption[Close up view of the center of the CAD rendering of the BRS]{Close up view of the center of the CAD rendering of the BRS. One of the copper colored flexures can be seen at center along with its clamps. The two gray block at the top are mirrors for optical sensing, one fixed to the support the other attached to the beam.} \label{BRSFrontD}
+\caption[Close up view of the center of the CAD rendering of the BRS]{Close-up view of the center of the CAD rendering of the BRS. One of the copper colored flexures can be seen at center along with its clamps. The two gray blocks at the top are mirrors for optical sensing, one fixed to the support the other attached to the beam.} \label{BRSFrontD}
 \end{figure}
 
 \subsection{Vacuum System}
 
-To decrease the effects of air currents and gas damping, each BRS is placed into its own vacuum chamber which emulates the outline of the device, as shown in Figure \ref{BRSPic}. This chamber is initially evacuated to $\sim \mu$Torr pressures using a roughing pump and turbo. After which the vacuum is maintain via a 10 l/s ion pump further decreasing the pressure to $\sim$0.1~$\mu$Torr.
+To decrease the effects of air currents and gas damping, each BRS is placed into its own vacuum chamber that emulates the outline of the device, shown in Figure \ref{BRSPic}. This chamber is initially evacuated to $\sim \mu$Torr pressures using a roughing pump and turbomolecular pump. After which, the vacuum is maintained by a 10 l/s ion pump which further decreased the pressure to $\sim$0.1~$\mu$Torr.
 
 \begin{figure}[!h]
 \begin{center}
  \includegraphics[width=\textwidth]{BRSPic.jpg}
-\caption[Picture of an installed BRS]{Picture of the BRS installed at LLO End-Y before the installation of the thermal insulation.}
+\caption[Picture of an installed BRS]{Picture of the BRS installed at LIGO Livingston Observatory End-Y before the installation of the thermal insulation.}
 \label{BRSPic}
 \end{center}
 \end{figure}
 
 \subsection{Multi-Slit Autocollimator Readout}
 
-The angular readout is achieved by a multi-slit autocollimator \cite{MSA} which can be thought of as an improved optical lever.
+The angular deflection is measured by a multi-slit autocollimator \cite{MSA} that can be viewed as an improved optical lever.
 
-Optical levers are simple optical angular readouts which exploit the law of reflection to measure angular deflections of a mirror by observing the displacement of a reflected beam. The angle of the mirror is described as:
+Optical levers are simple optical angular readouts that exploit the law of reflection to measure angular deflections of a mirror by observing the displacement of a reflected beam of light. The angle of the mirror is described as:
 \begin{equation}
 \theta_{s}=\frac{x_{\text{reflected}}}{2d}
 \end{equation}
 where $\theta_\text{mirror}$ is the angle of the mirror, $x_\text{reflected}$ is the displacement of the reflected beam, and $d$ is the distance between the optical system and the mirror. This allows one to increase the precious of the angular measurements arbitrarily by increasing $d$. However, with this comes the disadvantage that the effective gain of the sensor depends on $d$ which may not be well known and may vary in time.
 
-An autocollimator adds a lens located one focal length from light source and the screen. This effectively replace the distance dependence with the focal length of the lens which allows the system to be only sensitive, to first order, to the angular motion of the mirror.
+An autocollimator \cite{MSA} adds a lens located one focal-length from both the light source and the detector. This effectively replaces the distance dependence with the focal length of the lens. Thus the system is sensitive only, to first order, to the angular motion of the mirror.
 
 \begin{figure}%
 \begin{center}
- \includegraphics[width=\textwidth]{Autocollimator.pdf}
-\caption[Schematic of a multi-slit autocollimator]{Schematic of a multi-slit autocollimator used for as the angular readout for the BRSs.}
+ \includegraphics[width=\textwidth]{Autocollimator2.pdf}
+\caption[Schematic of a multi-slit autocollimator]{Schematic of a multi-slit autocollimator used as the angular readout of the BRSs. The light enters through the fiber coupler, is collimated by the condensing lens, and images the slit array. This image is then partially reflected by the beam-splitter, focused onto the main mirror by the collimating lens, and returns through the collimating lens to be imaged on the CCD. A second pattern is made by the partial reflection off the reference mirror and is also imaged on the CCD.}
 \label{ACFig}
 \end{center}
 \end{figure}
 
-To improve upon this further, a partially reflective mirror can be placed in between the optical system and the main mirror to act as a reference and allows for the subtraction of any motion of the optical system with respect to the main mirror. This yield an angular readout described by:
+To improve this system further, a partially-reflective mirror can be placed in between the autocollimator and the main mirror to act as a reference. This allows for the subtraction of any perceived motion that is not due to motion of the main mirror. The angular readout is then described by:
 \begin{equation}
 \theta_{s}=\frac{x_{\text{main}}-x_{\text{reference}}}{2f}
 \label{ACEq}
 \end{equation}
 
-where $f$ is the focal length of the lens and $x_\text{reference}$ is the beam spot from the reference mirror.
+where $f$ is the focal length of the lens and $x_\text{reference}$ is the location of the beam-spot from the reference mirror.
 
 \begin{center}
 \begin{tabular}{| c | c |}
@@ -451,7 +452,7 @@ Parameter & Value\\
 \hline \hline
 CCD & Balser Racer raL4096-24 gm\\
 Pixel Number & 4096\\
-Pixel Size & 7 $\mu$m $\times$  $\mu$m\\
+Pixel Size & 7 $\mu$m $\times$ 7 $\mu$m\\
 Pixel Depth & 12 bits\\
 Light Source & Fiber coupled LED\\
 Wavelength & 455 nm\\
@@ -464,58 +465,58 @@ Slit size & $\sim$0.127 mm\\
 \label{ACTable}
 \end{center}
 
-An increase in sensitivity can be made by employing a multi-slit autocollimator \cite{MSA}, shown in Figure \ref{ACFig}. This consists of an autocollimator with the light source replaced by a illuminated photomask of a number of thin slits. The pattern is then reflected off a set of reference and main mirrors and imaged by a line CCD camera. These images are then analyzed to measure the distance between them thus yielding a measurement of angle. For the BRSs, this image analysis is achieved using bespoke software written in C\# which can be found at www.github.com/mpross/BRSReadout
+High angular sensitivity was achieved by employing a multi-slit autocollimator \cite{MSA}, shown in Figure \ref{ACFig}. This consists of an autocollimator with the light source replaced by a illuminated photomask of a number of thin slits. The pattern is then reflected off a set of reference and main mirrors and imaged by a line CCD camera. These images are then analyzed to measure the distance between them to yield a measurement of angle. For the BRSs, this image analysis is achieved using bespoke software.\cite{BRSReadout}
 
 
 \begin{figure}[!h]
 \begin{center}
  \includegraphics[width=\textwidth]{BRS_ImgAnalysis.pdf}
-\caption[Simulation of the BRS image analysis algorithm]{Simulation of the BRS image analysis algorithm. The top pane shows a simulated frame of the fringes as seen by the CCD, the middle panes show the cross correlation and fit from the two patterns, and the bottom shows the output of the algorithm for each pattern and the difference of the two. For this simulation the main pattern was modulated at 10 mHz while the reference was at 1 mHz.}
+\caption[Simulation of the BRS image analysis algorithm]{Simulation of the BRS image-analysis algorithm. The top pane shows a simulated frame of the fringes as seen by the CCD, the middle panes show the cross-correlation and fit from the two patterns, and the bottom shows the output of the algorithm for each pattern and the difference of the two. For this simulation the main pattern was modulated at both 1 mHz and 10 mHz while the reference was at 1 mHz.}
 \label{ImgAnalysis}
 \end{center}
 \end{figure}
 
-To extract the distance between the patterns, the image goes through a series of steps which take it from a vector of pixel intensities to a single angular output. When the software begins, the first frame that is captured is saved. All future frames are split into two, with one part representing the reference mirror and the other the main mirror. The cross correlation is then taken between each part and its matching section of the first frame. This gives a curve who's maximum is located at the pixel number corresponding to separation between the pattern in the current frame and the first frame, which can be seen in Figure \ref{ImgAnalysis}. The points of this curve that are near the maximum are then fit to a Gaussian which allows for the extraction of the location of the peak with sub-pixel resolution. This is done for each pattern separately after which the difference between the reference pattern location and the main pattern location is taken. The difference is then proportional to the change in angle between the casing and the beam following Equation \ref{ACEq}.
+To extract the distance between the patterns, the image goes through a series of steps to convert from a vector of pixel intensities to a single angular output. When the software begins, the first frame is saved. All future frames are split into two, with one part representing the reference mirror and the other the main mirror. A cross-correlation is then taken between each part and its matching section of the first frame. This gives a curve with a maximum located at the pixel number corresponding to the separation between the pattern in the current frame and the first frame, which can be seen in Figure \ref{ImgAnalysis}. The points of this curve nearest to the maximum are then fit to a Gaussian which gives the location of the peak with sub-pixel resolution. This is done for each pattern separately after which the difference between the reference pattern location and the main pattern location is taken. The difference is then proportional to the change in angle between reference mirror and main mirror following Equation \ref{ACEq}.
 
-Compared to previous image analysis algorithms \cite{MSA}, this algorithm is computationally efficient while also being less susceptible to variations in the pattern image due to dust particulate, incorrect focusing, or beam clipping. A sensitivity of $\sim$0.3 nrad$/\sqrt{\text{Hz}}$ was achieved with this autocollimator design and image analysis algorithm.
+Compared to previous image analysis algorithms \cite{MSA}, this algorithm is computationally efficient while also being less susceptible to variations in the pattern image due to dust particulate, incorrect focusing, or beam clipping. A sensitivity of $\sim$0.3 nrad$/\sqrt{\text{Hz}}$ at 0.1 Hz was achieved with this autocollimator design and image analysis algorithm.
 
 \subsection{Controls}
 
-\quad As the BRSs are installed in active lab spaces, anthropogenic actively and environmental disturbances regularly apply torques on the beam-balance, either through mechanical or gravitational coupling. These can then cause the motion at the resonant frequency to rise to undesirable amplitudes. As the beam motion increases so does the noise and the effects of non-linearities of the readout. Additionally, some disturbances can be large enough to cause the amplitude to exceed the dynamic range of the autocollimator readout system.
+\quad As the BRSs are installed in active lab spaces, anthropogenic activity and environmental disturbances apply torques to the beam-balance through mechanical and gravitational coupling. These torques can then cause the motion at the resonant frequency to rise to undesirable amplitudes. As the beam motion increases so does the noise and the effects of non-linearities of the readout. In addition, some disturbances can cause the amplitude to exceed the dynamic range of the autocollimator readout system.
 
-The alleviate this issue, capacitor plates are installed underneath each end of the beam-balance to act as actuators. The force between the two capacitor plates follows: 
+The alleviate this issue, we installed capacitor plates underneath each end of the beam-balance to act as actuators. Neglecting edge effects, the force between the two parallel capacitor plates is: 
 \begin{equation}
 F=\frac{\epsilon A V^2}{2d^2} \label{cap}
 \end{equation}
-where $\epsilon$ is the permittivity of the material between the plates, $A$ is the area of the plate, $V$ is the voltage applied to the plates, and $d$ is the distance between the plates. The plate under the beam is connected to a DAC while the beam is grounded which allows for a controlled actuation torque to be applied to the beam. 
+where $\epsilon$ is the permittivity of the volume between the plates, $A$ is the area of the plate, $V$ is the voltage applied to the plates, and $d$ is the distance between the plates. The plates under the beam are connected to a digital-to-analog converter while the beam is electrically grounded so that a controlled actuation torque can be applied to the beam. 
 
-The control scheme that was adopted was one in which the feedback signal that is sent to the capacitors is the angular velocity of the beam band-passed between 2 mHz and 20 mHz to include only motion at frequencies near the resonance. The feedback is additionally applied with low gain so that the feedback only adds loss to the system as compared to locking the system in a strong feedback loop where all of the motion is absorbed into the control system. This is then implemented with two gain stages, a ``low amplitude'' stage, which is always on and yields a Q of 10-15, and a ``high amplitude'' stage, which is triggered if the amplitude rises above a threshold that is set based on the behavior of the given device and gives a Q of 5-10.
+The feedback signal sent to the capacitors was the angular velocity of the beam, band-passed between 2 mHz and 20 mHz to include only motion at frequencies near the resonance. The feedback is applied with low gain to only increase the loss of the system as compared to strong feedback where all of the motion is absorbed into the controls. This arrangement is implemented with two gain levels, a ``low amplitude'' level, which is always on and yields a $Q$ of 10-15, and a ``high amplitude'' level, which is triggered if the amplitude rises above a threshold that is set based on the properties of the given device and gives a $Q$ of 5-10.
 
 \subsection{Noise Performance}\label{BRSNoise}
 
-In addition to the 0.3 nrad/$\sqrt{\text{Hz}}$ white noise of the autocollimator readout, these devices suffer from various mechanical noise sources, namely noise due to temperature variations and due to the thermal motion of the flexures.
+In addition to the 0.3 nrad/$\sqrt{\text{Hz}}$ frequency-independent noise of the autocollimator readout, the BRSs have a collection of mechanical noise sources, especially temperature variations and thermal motion of the flexures.
 
-Although the exact physical mechanism is unknown at this juncture, it has been observed that variations in the exterior temperature cause shifts in the balance's equilibrium position. Furthermore, temperature gradients across the instrument emanating from unbalanced heat sources and air currents have been seen to cause time varying noise. To alleviate this issue the instrument's vacuum chamber and optics are wrapped in multiple alternating layers of packing foam and aluminum foil. The entire apparatus is then placed inside a large double walled insulation box to further decrease any temperature variations. This decreases these effects yet it is believed to still limit the performance below 20 mHz.
+Although the exact physical mechanism is unknown, it has been observed that variations in the exterior temperature cause shifts in the instrument's equilibrium position. Furthermore, temperature gradients across the instrument emanating from unbalanced heat sources and air currents have been seen to cause time-varying noise. To alleviate this issue, the instrument's vacuum chamber and optics are wrapped in multiple alternating layers of packing foam and aluminum foil. The entire apparatus is placed inside a large double walled insulation box to further decrease any temperature variation. These improvements decrease these effects yet temperature noise is believed to limit the performance below 20 mHz.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.85\textwidth]{BRSNoiseModel.pdf}
-\caption[Noise budge for the Beam Rotation Sensors]{Noise budge for the Beam Rotation Sensors where the blue curve shows the performance at a quiet time, in red is a model of the readout noise, yellow shows an estimate of the low-frequency noise, purple shows the sum of these, and cyan and green show upper limits of the thermal and damping noise.}
+\caption[Noise budge for the Beam Rotation Sensors]{Noise budget for the Beam Rotation Sensors where the blue curve shows the performance at a quiet time, in red is a model of the readout noise, yellow shows an estimate of the low-frequency noise, purple shows the sum of these, and cyan and green show upper limits of the thermal and damping noise. The low-f noise is thought to be due to residual temperature variations.}
 \label{noise}
 \end{center}
 \end{figure}
 
-More fundamental is the noise due to the thermal vibrations of the flexure. At non-zero temperature, a portion of the thermal energy of the flexures excites mechanical motion. This causes a fundamental stochastic noise floor that follows \cite{thermal}:
+More fundamental is the noise due to thermal excitations of the flexure. At non-zero temperature, a portion of the thermal energy of the flexures excites mechanical motion. This causes a fundamental stochastic noise floor that follows \cite{thermal}:
 
 \begin{equation}
 \tilde\theta_T(\omega)=\sqrt{\frac{4 k_B T \omega_0^2}{I \omega Q\big((\omega^2-\omega_0^2)^2+\omega_0^4/Q^2\big)}}
 \end{equation}
 
-To limit the influence on the performance of the device, the resonant frequency of the spring-mass system is pushed to the lowest frequency that is mechanically feasible. This is the fundamental noise of the instrument and thus is independent of readout and environmental effects.
+To limit the influence on the performance of the device, the resonant frequency of the spring-mass system is pushed to the lowest feasible frequency. This is the fundamental noise of the instrument, independent of readout and environmental effects.
 
- One further noise source comes from voltage noise on the capacitive actuators. The force follows Equation \ref{cap} and can be shown to be sub dominate. Assuming a voltage noise on the capacitors of 0.1 V/$\sqrt{\text{Hz}}$, which is larger than expected with the installed electronics, the corresponding torque noise is $4.3 \times 10^{-13}$ N/$\sqrt{\text{Hz}}$. This then leads to an angle noise that is $\sim$100 times less than the measured noise.
+ One further noise source comes from voltage noise on the capacitive actuators. The force follows Equation \ref{cap}. Assuming a voltage noise on the capacitors of 0.1 V/$\sqrt{\text{Hz}}$, larger than expected with the installed electronics, the corresponding torque noise is $4.3 \times 10^{-13}$ N/$\sqrt{\text{Hz}}$. This then leads to an angle noise that is $\sim$100 times below the measured noise.
 
- The noise budget for a BRS is shown in Figure \ref{noise} which shows that the device is readout dominated above $\sim$20 mHz and below is dominated by unknown noise thought to be sourced by temperature variations. Respectively at 150 mHz, 3 Hz, and 6 Hz the rotational microseism, torsion mode of the beam-balance, and motion due to nearby instrumentation can be seen above the predicted noise sources.
+ The noise budget for the LHO End-X BRS is shown in Figure \ref{noise}. It shows that the device is readout dominated above $\sim$20 mHz and below is dominated by unknown noise thought to be sourced by temperature variations. The peaks at 150 mHz, 3 Hz, and 6 Hz arise from the rotational microseism, torsion mode of the beam-balance, and motion due to nearby instrumentation, respectively.
 
 \section{Results}\label{results}
 \subsection{Hanford Installation} \label{BRS_Hanford}
@@ -528,10 +529,10 @@ To limit the influence on the performance of the device, the resonant frequency 
 \end{center}
 \end{figure}
 
-\quad Between LIGO's first (O1) and second (O2) observing runs, two BRSs were installed at the LIGO Hanford Observatory (LHO), one at each end station correcting the translations along their respective arm.\footnote{Motion orthogonal to the interferometer arms couples only indirectly through pathways such as defects of the test masses and mechanical cross couplings. Thus this coupling is significantly suppressed compared to motion along the arms.} Although one would expect that the corner station seismometers would also need to be corrected, a location was found within the corner station building which exhibited low tilt.\footnote{This low tilt location is due to its distance from the walls of the building.} As such no BRS was necessary to achieve low tilt contamination.
+\quad A BRS was installed at each of the end stations of the LIGO Hanford Observatory (LHO) between the first (O1) and second (O2) observing runs. Each device was used to correct the translation along the respective arm of the interferometer.\footnote{Motion orthogonal to the interferometer arms couples only indirectly through pathways such as defects of the test masses and mechanical cross couplings. Thus this coupling is significantly suppressed compared to motion along the arms.} Although one would expect that the corner station seismometers would also need to be corrected, a location was found within the corner station building which exhibited low tilt.\footnote{This location had low tilt because of it's distance from the walls of the building.} As such no BRS was necessary to achieve low tilt contamination.
 
 
-The tilt subtraction performance achieved with these devices can be seen in Figure \ref{sub} where it is evident that the system achieves tilt subtraction from around 6 mHz to 50 mHz. Above 50 mHz the seismometer signal is dominated by the oceanic microseism and the tilt contribution is negligible. Below 6 mHz, the BRS signal becomes overwhelmed by instrumental noise. This performance can also be seen in Figure \ref{subTime} which shows a example time series of the tilt subtraction where suppression of a handful of transient, likely due to wind gusts, can be seen.
+The tilt subtraction performance achieved with these devices can be seen in Figure \ref{sub} where it is evident that the system achieves tilt subtraction from around 6 mHz to 50 mHz. Above 50 mHz the seismometer signal is dominated by the oceanic microseism and the tilt contribution is negligible. Below 6 mHz, the BRS signal becomes overwhelmed by instrumental noise. This performance can also be seen in Figure \ref{subTime} which shows a example time series of the tilt subtraction where suppression of a handful of transients, likely due to wind gusts, can be seen.
 
 \begin{figure}[!h]
 \begin{center}
@@ -541,19 +542,19 @@ The tilt subtraction performance achieved with these devices can be seen in Figu
 \end{center}
 \end{figure}
 
-This tilt subtracted channel was then used as the ground signal for the isolation's sensor correction, described in Section \ref{SensCor} instead of the raw seismometer. The primary effect of the interferometer of the use of this channel is a decrease in the differential motion between pairs of platforms which form the arms of the interfrometer. This is shown in Figure \ref{armMotion} where it is evident that the differential motion was decreased by a factor of $\sim$3-4 between 20-100 mHz. This decrease in differential motion increases the ability to lock the interferometer by decreasing the demand on the downstream control systems.
+This tilt-subtracted channel, rather than the raw seismometer, was then used as the ground signal for the isolation system's sensor correction, described in Section \ref{SensCor}. The primary effect on the interferometer of using this channel is a decrease in the differential motion between pairs of platforms which form the arms of the interfrometer. Figure \ref{armMotion} shows that the differential motion was decreased by a factor of $\sim$3-4 between 20-100 mHz. This increases the ability to lock the interferometer by decreasing the demand on the downstream control systems.
 
-\begin{figure}%
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.85\textwidth]{BRSArmMotion.pdf}
-\caption[Differential platform motion ]{Differential platform motion for the Y-Arm of LHO with and without the BRSs installed. }
+\caption[Differential platform motion ]{Differential platform motion as measure by the capacitive position sensors (CPS) for the Y-Arm of LHO with and without the BRSs installed. Below $\sim$30 mHz, the CPS reading is driven to zero by the control system.}
 \label{armMotion}
 \end{center}
 \end{figure}
 
 \subsection{Livingston Installation}
 
-\quad After the success of the Hanford BRS installation, four devices were installed at the LIGO Livingston Observatory (LLO) between the second and third (O3) observing runs. Due to differences in the size and shape of the corner station building at LLO, a low tilt location was not found. Thus two BRSs were installed located near the two input test masses along with one at each end station correcting the seismometer signal oriented along their respective arms. 
+\quad After the success of the Hanford BRS installation, four devices were installed at the LIGO Livingston Observatory (LLO) between the second and third (O3) observing runs. Due to differences in the size and shape of the corner station building at LLO, a low tilt location was not found. Therefore BRSs were installed near the input test masses along with one at each end station. Each device corrected the seismometer readings along the corresponding interferometer arm. 
 
 All four devices achieved comparable tilt-subtraction as the Hanford installation and were implemented in a similar fashion. 
 

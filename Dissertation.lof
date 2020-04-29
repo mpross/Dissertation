@@ -1,54 +1,54 @@
 \addvspace {5\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Spectrogram of the strain caused by a binary neutron star merger}}{6}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Optical layout of the LIGO interferometers}}{7}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Strain sensitivity of the LIGO and Virgo Observatories}}{8}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Strain sensitivity of the LIGO and Virgo Observatories}}{9}%
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Example ambient ground motion spectrum}}{11}%
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Schematic of the LIGO seismic isolation system}}{12}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Sensor noise for the seismic isolation system}}{13}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Performance of the ISI}}{15}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Sensor noise for the seismic isolation system}}{14}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Performance of the ISI}}{16}%
 \addvspace {5\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Ground motion spectra during low and high winds}}{17}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces CAD rendering of the BRS}}{20}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Side view of a CAD rendering of the BRS}}{20}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Transfer function from platform tilt to measured tilt for the cBRS}}{22}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Image of a BRS flexure}}{24}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Close up view of the center of the CAD rendering of the BRS}}{25}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Picture of an installed BRS}}{26}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic of a multi-slit autocollimator}}{27}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Simulation of the BRS image analysis algorithm}}{29}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Ground motion spectra during low and high winds}}{18}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces CAD rendering of the BRS}}{21}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Side view of a CAD rendering of the BRS}}{21}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Transfer function from platform tilt to measured tilt for the cBRS}}{23}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Image of a BRS flexure}}{25}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Close up view of the center of the CAD rendering of the BRS}}{26}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Picture of an installed BRS}}{27}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic of a multi-slit autocollimator}}{28}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Simulation of the BRS image analysis algorithm}}{30}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Noise budge for the Beam Rotation Sensors}}{32}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Representative amplitude spectral density showing the tilt subtraction during windy conditions}}{33}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Time series showing tilt subtraction }}{34}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Differential platform motion }}{35}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Observed and modeled tilt vs wind speed}}{37}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Representative amplitude spectral density showing the tilt subtraction during windy conditions}}{34}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Time series showing tilt subtraction }}{35}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Differential platform motion }}{36}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Observed and modeled tilt vs wind speed}}{38}%
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Duty cycle improvements for the LIGO Hanford Observatory}}{39}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Duty cycle improvements for the LIGO Livingston Observatory}}{40}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Expectation value of wind speed during GW events}}{41}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Duty cycle improvements for the LIGO Livingston Observatory}}{41}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Expectation value of wind speed during GW events}}{42}%
 \addvspace {5\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Model of the performance of the current angular sensing and control system}}{42}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Theoretical noise curves for the cBRS and seismometer pair}}{43}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces CAD rendering of the cBRS}}{45}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Side view of the CAD rendering of the cBRS}}{46}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces CAD rendering of the cBRS kinematic mount}}{47}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagram of the cBRS fiber interferometer read-head}}{48}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Layout of the cBRS readout optics}}{49}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Interference pattern of a cBRS fiber interferometer vs cavity length}}{51}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces CAD rendering of the cBRS mass adjuster}}{52}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Demonstration of the effect of actuating the remote mass adjuster}}{53}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Prototype cBRS noise performance}}{55}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Noise models for the cBRS, a collection of seismometers, and two types of CPS}}{56}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Projected rotational performance of Stage 2 of the ISI}}{58}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Projected rotational performance of Stage 1 of the ISI}}{59}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Projected translational performance of Stage 1 of the ISI}}{61}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Projected translational performance of Stage 2 of the ISI}}{62}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Comparison of the rotational isolation performance of Stage 2 during O2 and the projected performance with the inclusion of the cBRS}}{64}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Comparison of the translational isolation performance during O2 and the projected performance with the inclusion of the cBRS}}{65}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Projected performance of the angular sensing and control system}}{66}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Comparison of the ASC performance with and without the cBRS}}{67}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Projected low frequency strain noise with and without the cBRS}}{68}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Model of the performance of the current angular sensing and control system}}{43}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Theoretical noise curves for the cBRS and seismometer pair}}{44}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces CAD rendering of the cBRS}}{46}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Side view of the CAD rendering of the cBRS}}{47}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces CAD rendering of the cBRS kinematic mount}}{48}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagram of the cBRS fiber interferometer read-head}}{49}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Layout of the cBRS readout optics}}{50}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Interference pattern of a cBRS fiber interferometer vs cavity length}}{52}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces CAD rendering of the cBRS mass adjuster}}{53}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Demonstration of the effect of actuating the remote mass adjuster}}{54}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Prototype cBRS noise performance}}{56}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Noise models for the cBRS, a collection of seismometers, and two types of CPS}}{57}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Projected rotational performance of Stage 2 of the ISI}}{59}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Projected rotational performance of Stage 1 of the ISI}}{60}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Projected translational performance of Stage 1 of the ISI}}{62}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Projected translational performance of Stage 2 of the ISI}}{63}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Comparison of the rotational isolation performance of Stage 2 during O2 and the projected performance with the inclusion of the cBRS}}{65}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Comparison of the translational isolation performance during O2 and the projected performance with the inclusion of the cBRS}}{66}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Projected performance of the angular sensing and control system}}{67}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Comparison of the ASC performance with and without the cBRS}}{68}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Projected low frequency strain noise with and without the cBRS}}{69}%
 \addvspace {5\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Observations of the seismic waves by instruments installed at the End-Y Station of LHO}}{71}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Single station Rayleigh wave phase velocity measurements}}{74}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The location of the cBRS during O2 alongside the array of seismometers}}{78}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Projected Newtonian noise subtraction with the array of seismometers}}{79}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Transfer function between the cBRS and the strain output of the interferometer}}{80}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Observations of the seismic waves by instruments installed at the End-Y Station of LHO}}{72}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Single station Rayleigh wave phase velocity measurements}}{75}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The location of the cBRS during O2 alongside the array of seismometers}}{79}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Projected Newtonian noise subtraction with the array of seismometers}}{80}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Transfer function between the cBRS and the strain output of the interferometer}}{81}%

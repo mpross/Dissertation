@@ -182,8 +182,14 @@ M.~Tse, Haocun Yu, N.~Kijbunchoo, A.~Fernandez-Galiana, P.~Dupej, L.~Barsotti,
   gravitational-wave astronomy.
 \newblock {\em Phys. Rev. Lett.}, 123:231107, Dec 2019.
 
+\bibitem{LIGOopen}
+The LIGO~Scientific Collaboration, the Virgo~Collaboration, R.~Abbott, et~al.
+\newblock Open data from the first and second observing runs of advanced ligo
+  and advanced virgo, 2019.
+
 \bibitem{O3events}
-Ligo-virgo cumulative event/candidate rate plot o1-o3.
+Ligo-virgo cumulative event/candidate rate plot o1-o3:
+  https://dcc.ligo.org/ligo-g1901322/public.
 
 \bibitem{NSEoS}
 BP~Abbott, R~Abbott, TD~Abbott, F~Acernese, K~Ackley, C~Adams, T~Adams,
@@ -223,7 +229,8 @@ B.~P. Abbott et~al.
 \bibitem{ligoSeis}
 F.~Matichard et~al.
 \newblock Seismic isolation of advanced ligo: Review of strategy,
-  instrumentation and performance.
+  instrumentation and performance {© IOP Publishing. Reproduced with
+  permission. All rights reserved}.
 \newblock {\em Classical and Quantum Gravity}, 32(18):185003, 2015.
 
 \bibitem{tiltFree}
@@ -251,6 +258,9 @@ T~B~Arp, C~A~Hagedorn, Stephan Schlamminger, and J~H~Gundlach.
 \newblock A reference-beam autocollimator with nanoradian sensitivity from mhz
   to khz and dynamic range of 10(7.).
 \newblock {\em The Review of scientific instruments}, 84:095007, 09 2013.
+
+\bibitem{BRSReadout}
+www.github.com/mpross/brsreadout.
 
 \bibitem{thermal}
 Peter~R. Saulson.

@@ -4,46 +4,46 @@ The top-level auxiliary file: Dissertation.aux
 The style file: unsrt.bst
 Database file #1: Dissertation.bib
 Warning--entry type for "O3events" isn't style-file defined
---line 333 of file Dissertation.bib
-You've used 56 entries,
+--line 347 of file Dissertation.bib
+You've used 58 entries,
             1791 wiz_defined-function locations,
-            813 strings with 21975 characters,
-and the built_in function-call counts, 19326 in all, are:
-= -- 1043
-> -- 2220
+            820 strings with 22328 characters,
+and the built_in function-call counts, 19576 in all, are:
+= -- 1057
+> -- 2235
 < -- 1
-+ -- 762
-- -- 706
-* -- 2039
-:= -- 3661
-add.period$ -- 167
-call.type$ -- 56
-change.case$ -- 55
++ -- 768
+- -- 710
+* -- 2046
+:= -- 3693
+add.period$ -- 170
+call.type$ -- 58
+change.case$ -- 57
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 492
-empty$ -- 1198
-format.name$ -- 706
-if$ -- 3733
+cite$ -- 58
+duplicate$ -- 502
+empty$ -- 1234
+format.name$ -- 710
+if$ -- 3793
 int.to.chr$ -- 0
-int.to.str$ -- 56
+int.to.str$ -- 58
 missing$ -- 55
-newline$ -- 281
-num.names$ -- 55
-pop$ -- 90
+newline$ -- 288
+num.names$ -- 56
+pop$ -- 103
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 191
+skip$ -- 203
 stack$ -- 0
 substring$ -- 867
-swap$ -- 58
+swap$ -- 60
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 114
-width$ -- 58
-write$ -- 604
+while$ -- 115
+width$ -- 60
+write$ -- 617
 (There was 1 warning)
