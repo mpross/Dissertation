@@ -32,18 +32,18 @@
 \contentsline {subsection}{\numberline {3.2.1}Mechanical System}{45}%
 \contentsline {subsection}{\numberline {3.2.2}Kinematic Mount}{46}%
 \contentsline {subsection}{\numberline {3.2.3}Interferometric Readout}{48}%
-\contentsline {subsection}{\numberline {3.2.4}Calibration}{51}%
+\contentsline {subsection}{\numberline {3.2.4}Calibration}{52}%
 \contentsline {subsection}{\numberline {3.2.5}Mass Adjustment}{53}%
-\contentsline {subsection}{\numberline {3.2.6}Controls}{55}%
+\contentsline {subsection}{\numberline {3.2.6}Controls}{54}%
 \contentsline {subsection}{\numberline {3.2.7}Noise Performance}{55}%
 \contentsline {section}{\numberline {3.3}Projected Improvements}{56}%
 \contentsline {subsection}{\numberline {3.3.1}Isolation Scheme}{56}%
 \contentsline {subsubsection}{Stage 2 Rotational}{58}%
 \contentsline {subsubsection}{Stage 1 Rotational}{59}%
 \contentsline {subsubsection}{Stage 1 Translational}{61}%
-\contentsline {subsubsection}{Stage 2 Translational}{63}%
-\contentsline {subsubsection}{Comparison with past performance}{64}%
-\contentsline {subsection}{\numberline {3.3.2}Angular Control Performance}{66}%
+\contentsline {subsubsection}{Stage 2 Translational}{62}%
+\contentsline {subsubsection}{Comparison with past performance}{63}%
+\contentsline {subsection}{\numberline {3.3.2}Angular Control Performance}{67}%
 \contentsline {chapter}{\numberline {\@textofChapter \ 4:}Auxiliary Applications}{70}%
 \contentsline {section}{\numberline {4.1}Geophysics}{70}%
 \contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{70}%

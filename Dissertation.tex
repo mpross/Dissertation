@@ -43,6 +43,7 @@ These sensors have found application in a number of auxiliary fields. The ground
 \dedication{\begin{center}To Grace\end{center} }\
 
 \acknowledgments{The author wishes .
+
 This research has made use of data, software and/or web tools obtained from the Gravitational Wave Open Science Center (https://www.gw-openscience.org), a service of LIGO Laboratory, the LIGO Scientific Collaboration and the Virgo Collaboration. LIGO is funded by the U.S. National Science Foundation. Virgo is funded by the French Centre National de Recherche Scientifique (CNRS), the Italian Istituto Nazionale della Fisica Nucleare (INFN) and the Dutch Nikhef, with contributions by Polish and Hungarian institutes.}
 \textpages
 \epigraph{The first observation showed ... that owing to the extreme sensitiveness of the instrument to vibrations, the work could not be carried on during the day. The experiment was next tried at night. ... so extraordinarily sensitive was the instrument that the stamping of the pavement, about 100 meters from the observatory, made the fringes disappear entirely!
@@ -629,7 +630,7 @@ An additional metric that quantifies the improved robustness of the interferomet
 \section{Angular Controls}\label{ASC}
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=0.75\textwidth]{cBRS_ASC_Without.pdf}
+\includegraphics[width=\textwidth]{cBRS_ASC_Without.pdf}
 \caption[Model of the performance of the current angular sensing and control system]{A model of the performance of the current angular sensing and control system. This model optimizes the unity gain frequency of the ASC loop to maximize performance above $\sim$10 Hz while maintaining the low frequency rms at 1 nrad/$\sqrt{\text{Hz}}$.}
 \label{ascWithout}
 \end{center}
@@ -717,6 +718,16 @@ where $R$ is the reflectance, $F$ is the finesse, $x$ is the length of the cavit
 
 To linearize this readout, the optical fiber tip and collimating lens are placed on a translation stage that is driven by a piezo stack. The intensity of the reflected light is then fed back to the piezos using a PID loop to hold the cavity length fixed. This allows the system to be seperated into two linear readouts, the interferometer output for small ranges above the UGF of the loop and the control loop output for large motions below the UGF. The output of the device is then the sum of these two channels.
 
+
+Although in theory the angle of the beam can be measured with a single interferometer, two readouts are deployed, one at the end of each arm, in order to allow for suppression of common mode noise. The signal seen in each readout is described by:
+
+\begin{align}
+\theta_1&=\theta_s+x_1/L+x_1 \delta_\lambda/\lambda^2+n_c+n_1 \label{th1} \\
+\theta_2&=-\theta_s+x_2/L+x_2 \delta_\lambda/\lambda^2 + n_c+n_2 \label{th2}
+\end{align}
+
+Where $\theta_{1,2}$ are the angle equivalent signal seen in readout 1 and 2, $\theta_{s}$ is the sensed angle, $x_{1,2}$ are the length of the respective cavities, $L$ is the arm length of the beam, $\delta_\lambda$ is the change in wavelength of the laser, $\lambda$ is the wavelength of the laser, $n_c$ is the sum of all unmodeled common noises, and $n_{1,2}$ are the unmodeled noises that appear in one readout and not the other.
+
 \begin{center}
 \begin{tabular}{| c | c |}
 \hline
@@ -736,15 +747,6 @@ Piezo Driver & PDu150 150 V\\
 \end{tabular}
 \label{cBRSTable}
 \end{center}
-
-Although in theory the angle of the beam can be measured with a single interferometer, two readouts are deployed, one at the end of each arm, in order to allow for suppression of common mode noise. The signal seen in each readout is described by:
-
-\begin{align}
-\theta_1&=\theta_s+x_1/L+x_1 \delta_\lambda/\lambda^2+n_c+n_1 \label{th1} \\
-\theta_2&=-\theta_s+x_2/L+x_2 \delta_\lambda/\lambda^2 + n_c+n_2 \label{th2}
-\end{align}
-
-Where $\theta_{1,2}$ are the angle equivalent signal seen in readout 1 and 2, $\theta_{s}$ is the sensed angle, $x_{1,2}$ are the length of the respective cavities, $L$ is the arm length of the beam, $\delta_\lambda$ is the change in wavelength of the laser, $\lambda$ is the wavelength of the laser, $n_c$ is the sum of all unmodeled common noises, and $n_{1,2}$ are the unmodeled noises that appear in one readout and not the other.
 
 As the angle of the beam appears with opposite phase in the two readout, the difference between the two, Equation \ref{diffEq}, contains the angle while suppressing common noise. Most notable of these common noise sources is frequency noise of the laser. This couples to the angle only through the mismatch in the average cavity lengths which are matched to within 1 mm. On the other hand, the sum of the two channels, Equation \ref{sumEq}, contains no contribution from the angle but is instead comprised of only noise sources and thus allows for an in-situ estimate of the sum of noises.
 
@@ -963,7 +965,7 @@ Although in reality the control loop for each isolation platform will have to be
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=0.75\textwidth]{cBRS_ASC_With.pdf}
+\includegraphics[width=\textwidth]{cBRS_ASC_With.pdf}
 \caption[Projected performance of the angular sensing and control system]{Projected performance of the angular sensing and control system with the seismic performance described in Section \ref{IsoScheme}.}
 \label{ascWith}
 \end{center}
@@ -977,7 +979,7 @@ The performance of the ASC system was modeled for both the seismic performance w
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=0.75\textwidth]{cBRS_ASC_LowF.pdf}
+\includegraphics[width=\textwidth]{cBRS_ASC_LowF.pdf}
 \caption[Comparison of the ASC performance with and without the cBRS]{Comparison of the ASC performance with and without the cBRS}
 \label{ascComp}
 \end{center}
@@ -989,7 +991,7 @@ This decrease in residual motion above $\sim$5 Hz would directly decrease noise 
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=0.75\textwidth]{cBRS_ASC.pdf}
+\includegraphics[width=\textwidth]{cBRS_ASC.pdf}
 \caption[Projected low frequency strain noise with and without the cBRS]{Projected low frequency strain noise with and without the cBRS. The blue line is the current sensitivity of LLO, the orange is the aLIGO design sensitivity, green is the modeled noise contribution of the current ASC system, and red is the improved ASC noise contribution with the seismic isolation described in Section \ref{IsoScheme}. }
 \label{ascStrain}
 \end{center}
