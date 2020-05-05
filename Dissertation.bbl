@@ -272,6 +272,11 @@ L~Barsotti, M~Evans, and P~Fritschel.
 \newblock Alignment sensing and control in advanced {LIGO}.
 \newblock {\em Classical and Quantum Gravity}, 27(8):084026, apr 2010.
 
+\bibitem{ascModel}
+Hang Yu, Denis Martynov, L.~McCuller, D.~Brown, and A.~Freise.
+\newblock High-power alignment sensing and control.
+\newblock {\em DCC-G1800718}.
+
 \bibitem{Mow_Lowry_2019}
 C~M Mow-Lowry and D~Martynov.
 \newblock A 6d interferometric inertial isolation system.
