@@ -36,19 +36,19 @@
 \contentsline {subsection}{\numberline {3.2.5}Mass Adjustment}{53}%
 \contentsline {subsection}{\numberline {3.2.6}Controls}{56}%
 \contentsline {subsection}{\numberline {3.2.7}Noise Performance}{56}%
-\contentsline {section}{\numberline {3.3}Projected Improvements}{56}%
-\contentsline {subsection}{\numberline {3.3.1}Isolation Scheme}{56}%
-\contentsline {subsubsection}{Stage 2 Rotational}{59}%
-\contentsline {subsubsection}{Stage 1 Rotational}{59}%
+\contentsline {section}{\numberline {3.3}Projected Improvements}{58}%
+\contentsline {subsection}{\numberline {3.3.1}Isolation Scheme}{58}%
+\contentsline {subsubsection}{Stage 2 Rotational}{58}%
+\contentsline {subsubsection}{Stage 1 Rotational}{61}%
 \contentsline {subsubsection}{Stage 1 Translational}{62}%
 \contentsline {subsubsection}{Stage 2 Translational}{63}%
 \contentsline {subsubsection}{Comparison with past performance}{65}%
-\contentsline {subsection}{\numberline {3.3.2}Angular Control Performance}{67}%
-\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Auxiliary Applications}{71}%
-\contentsline {section}{\numberline {4.1}Geophysics}{71}%
-\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{71}%
-\contentsline {subsection}{\numberline {4.1.2}Wave-Field Parameter Extraction}{74}%
-\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{75}%
-\contentsline {section}{\numberline {4.2}Newtonian Noise}{77}%
-\contentsline {subsection}{\numberline {4.2.1}Theory}{77}%
-\contentsline {subsection}{\numberline {4.2.2}Observations}{79}%
+\contentsline {subsection}{\numberline {3.3.2}Angular Control Performance}{68}%
+\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Auxiliary Applications}{72}%
+\contentsline {section}{\numberline {4.1}Geophysics}{72}%
+\contentsline {subsection}{\numberline {4.1.1}Rayleigh Wave Theory}{72}%
+\contentsline {subsection}{\numberline {4.1.2}Wave-Field Parameter Extraction}{75}%
+\contentsline {subsection}{\numberline {4.1.3}Single Station Dispersion Measurements}{76}%
+\contentsline {section}{\numberline {4.2}Newtonian Noise}{78}%
+\contentsline {subsection}{\numberline {4.2.1}Theory}{78}%
+\contentsline {subsection}{\numberline {4.2.2}Observations}{80}%
