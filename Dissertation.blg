@@ -4,38 +4,37 @@ The top-level auxiliary file: Dissertation.aux
 The style file: unsrt.bst
 Database file #1: Dissertation.bib
 Warning--entry type for "O3events" isn't style-file defined
---line 357 of file Dissertation.bib
-Warning--empty year in ascModel
+--line 361 of file Dissertation.bib
 You've used 59 entries,
             1791 wiz_defined-function locations,
-            825 strings with 22470 characters,
-and the built_in function-call counts, 19763 in all, are:
-= -- 1068
-> -- 2252
+            824 strings with 22374 characters,
+and the built_in function-call counts, 19696 in all, are:
+= -- 1065
+> -- 2239
 < -- 1
-+ -- 774
-- -- 715
-* -- 2060
-:= -- 3728
-add.period$ -- 173
++ -- 770
+- -- 711
+* -- 2049
+:= -- 3710
+add.period$ -- 172
 call.type$ -- 59
 change.case$ -- 58
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 510
-empty$ -- 1248
-format.name$ -- 715
-if$ -- 3830
+cite$ -- 59
+duplicate$ -- 507
+empty$ -- 1252
+format.name$ -- 711
+if$ -- 3821
 int.to.chr$ -- 0
 int.to.str$ -- 59
-missing$ -- 56
-newline$ -- 293
+missing$ -- 55
+newline$ -- 292
 num.names$ -- 57
-pop$ -- 107
+pop$ -- 110
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 206
+skip$ -- 207
 stack$ -- 0
 substring$ -- 867
 swap$ -- 61
@@ -43,8 +42,8 @@ text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
+warning$ -- 0
 while$ -- 116
 width$ -- 61
-write$ -- 626
-(There were 2 warnings)
+write$ -- 625
+(There was 1 warning)
