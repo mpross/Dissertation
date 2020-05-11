@@ -1,49 +1,49 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Dissertation.aux
 The style file: unsrt.bst
 Database file #1: Dissertation.bib
 Warning--entry type for "O3events" isn't style-file defined
---line 361 of file Dissertation.bib
-You've used 59 entries,
+--line 399 of file Dissertation.bib
+You've used 58 entries,
             1791 wiz_defined-function locations,
-            824 strings with 22374 characters,
-and the built_in function-call counts, 19696 in all, are:
-= -- 1065
-> -- 2239
+            822 strings with 14451 characters,
+and the built_in function-call counts, 13081 in all, are:
+= -- 1049
+> -- 743
 < -- 1
-+ -- 770
-- -- 711
-* -- 2049
-:= -- 3710
-add.period$ -- 172
-call.type$ -- 59
-change.case$ -- 58
++ -- 271
+- -- 213
+* -- 1055
+:= -- 2194
+add.period$ -- 169
+call.type$ -- 58
+change.case$ -- 57
 chr.to.int$ -- 0
-cite$ -- 59
-duplicate$ -- 507
-empty$ -- 1252
-format.name$ -- 711
-if$ -- 3821
+cite$ -- 58
+duplicate$ -- 499
+empty$ -- 1236
+format.name$ -- 213
+if$ -- 2793
 int.to.chr$ -- 0
-int.to.str$ -- 59
-missing$ -- 55
-newline$ -- 292
-num.names$ -- 57
-pop$ -- 110
+int.to.str$ -- 58
+missing$ -- 54
+newline$ -- 287
+num.names$ -- 56
+pop$ -- 105
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 207
+skip$ -- 200
 stack$ -- 0
-substring$ -- 867
-swap$ -- 61
+substring$ -- 860
+swap$ -- 60
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 116
-width$ -- 61
-write$ -- 625
+while$ -- 114
+width$ -- 60
+write$ -- 616
 (There was 1 warning)

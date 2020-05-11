@@ -30,27 +30,27 @@
 \titlepage  
 
 \setcounter{page}{-1}
-\abstract{\quad The LIGO observatories are comprised of 4-km long dual recycled Fabry-Perot Michelson interferometers. Each observatory deploys a multi-stage seismic isolation system to isolate from terrestrial seismic motion. These systems use seismometers to measure motion at a broad band of frequencies. 
+\abstract{\quad The LIGO observatories are comprised of 4-km long dual-recycled Fabry-Perot Michelson interferometers. Each observatory deploys a multi-stage seismic isolation system to isolate from terrestrial seismic motion. These systems use seismometers to measure motion at a wide range of frequencies. 
 
-Seismometers are inherently susceptible to contamination due to tilts. These dominate the seismometer readings at low frequency limiting the performance of LIGO's seismic isolation. We developed low-frequency inertial rotation sensors to subtract this tilt-contamination from ground seismometers. These sensors were deployed at both LIGO observatories which allowed for operation at high wind speeds.
+Seismometers are inherently susceptible to contamination due to tilts. This contamination dominates seismometer readings at low frequency which limits the performance of LIGO's seismic isolation. We developed low-frequency inertial rotation sensors to subtract this tilt-contamination from ground seismometers. These sensors were deployed at both LIGO observatories which allowed for observation during high wind speeds.
 
-In addition, a compact rotation sensor was developed with the capability of being deployed on the LIGO seismic isolation platforms. A prototype was built and tested. A theoretical control model was designed to exploit this novel sensor. This model showed a significant decrease in control noise leakage into the gravitational wave band. 
+In addition, a compact inertial rotation sensor was developed with the capability of being deployed on the LIGO seismic isolation platforms. A prototype was built and tested. A theoretical control model was designed to exploit this novel sensor. This model showed a significant decrease in control-noise leakage into the gravitational wave band. 
 
-These sensors have found application in a number of auxiliary fields. The ground rotation sensors have allowed for novel seismological studies while the compact rotation sensor has been applied to study of Newtonian noise.}
+These sensors have found application in a number of auxiliary fields. The ground rotation sensors have allowed for novel seismological studies while the compact rotation sensor has been applied to the study of Newtonian noise.}
 
 \tableofcontents
 \listoffigures
 
 \dedication{\begin{center}To my wife Grace\\without her love and support \\this work would not have been possible\end{center} }
 
-\acknowledgments{The list of people who influenced this research could fill volumes.\\
-I would like to thank:\\
-the entire E{\"o}t-Wash group for the many physical insights and guidance, especially Charlie Hagedorn for the countless conversations and guidance,\\
-Jim Warner, Hugh Radkins, Arnaud Pele, and Eyal Schwartz for caring for our temperamental devices,\\
-the LIGO seismic team for constructing and maintaining beautiful seismic isolation systems, especially Brian Lantz and Jeff Kissel for their insightful inputs and coordination,\\
-the entire LIGO scientific collaboration for its welcoming culture and intellectual prowess,\\
-the CENPA community for making tough work enjoyable,\\
-the CENPA machine shop for the amazing machining even when the schematics were subpar
+\acknowledgments{The list of people who influenced this research could fill volumes. I would particularly like to thank: the entire E{\"o}t-Wash group for the many physical insights and guidance, especially Charlie Hagedorn for the countless conversations and mentorship; Jim Warner, Hugh Radkins, Arnaud Pele, and Eyal Schwartz for caring for our temperamental devices; the LIGO seismic team for constructing and maintaining beautiful seismic isolation systems, especially Brian Lantz and Jeff Kissel for their insightful inputs and coordination;
+the entire LIGO scientific collaboration for its welcoming culture and intellectual prowess;
+the CENPA community for making tough work enjoyable;
+the CENPA machine shop for the precise machining even when our schematics were subpar;
+my mom, Sharon Powers, for instilling in me a reverence for Nature;
+the many professors and teachers that steered me towards studying physics, especially C.D. Hoyle, Erik Kramer, and Steve Hoffman;
+Pippin, Bjorn, Olive, and Toph for the companionship that only pets can give;
+and, again, my amazing wife, Grace Rotwein, for the love and support throughout this process even when I had to spend month away at the observatories.
 
 
 Much of the work presented here is open-source. The BRS image analysis software can be found here: \url{https://github.com/mpross/BRSReadout}. The BRS controls software can be found here: \url{https://github.com/mpross/BRS-Controls}. The CAD models of the BRS can be found here: \url{}. The CAD model of the autocollimator can be found here: \url{}.
@@ -150,7 +150,7 @@ This process produces a characteristic ``chirp'' signal which begins at low freq
 The Laser Interferometric Gravitational wave Observatory (LIGO)~\cite{aLIGO} is a pair of 4-km-long L-shaped interferometric gravitational wave detectors, one located in Hanford, Washington (LHO) and the other in Livingston, Louisiana (LLO). Each observatory is a dual-recycled Fabry-Perot Michelson interferometer which measures the differential strain between its two arms formed by pairs of partially reflective mirrors, also called test masses. 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=0.75\textwidth]{LIGO_Schematic.pdf}
+\includegraphics[width=0.9\textwidth]{LIGO_Layout.pdf}
 \caption[Optical layout of the LIGO interferometers]{Optical layout of the LIGO interferometers. Reprinted figure with permission from~\cite{LIGOSens}. Copyright 2016 by the American Physical Society.}
 \label{LIGO_Schematic}
 \end{center}
