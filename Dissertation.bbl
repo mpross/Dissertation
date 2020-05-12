@@ -17,6 +17,11 @@ Michele Maggiore.
 \newblock Observation of gravitational waves from a binary black hole merger.
 \newblock {\em Phys. Rev. Lett.}, 116:061102, Feb 2016.
 
+\bibitem{einsteinGW}
+A.~Einstein and N.~Rosen.
+\newblock On gravitational waves.
+\newblock {\em Journal of the Franklin Institute}, 223(1):43 -- 54, 1937.
+
 \bibitem{graviton}
 {The LIGO Scientific Collaboration and the Virgo Collaboration}, B.~P. Abbott,
   et~al.
@@ -100,17 +105,31 @@ D.~V. Martynov et~al.
   gravitational wave astronomy.
 \newblock {\em Phys. Rev. D}, 93:112004, Jun 2016.
 
+\bibitem{LIGOopen}
+{The LIGO Scientific Collaboration and the Virgo Collaboration}, R.~Abbott,
+  et~al.
+\newblock Open data from the first and second observing runs of advanced {LIGO}
+  and advanced {Virgo}, 2019.
+
+\bibitem{virgo}
+F~Acernese et~al.
+\newblock Advanced {Virgo}: a second-generation interferometric gravitational
+  wave detector.
+\newblock {\em Classical and Quantum Gravity}, 32(2):024001, Dec 2014.
+
+\bibitem{geo}
+C~Affeldt, K~Danzmann, K~L Dooley, H~Grote, M~Hewitson, S~Hild, J~Hough,
+  J~Leong, H~Lück, M~Prijatelj, S~Rowan, A~Rüdiger, R~Schilling, R~Schnabel,
+  E~Schreiber, B~Sorazu, K~A Strain, H~Vahlbruch, B~Willke, W~Winkler, and
+  H~Wittel.
+\newblock Advanced techniques in {GEO} 600.
+\newblock {\em Classical and Quantum Gravity}, 31(22):224002, Nov 2014.
+
 \bibitem{Squeeze}
 M.~Tse et~al.
 \newblock Quantum-enhanced advanced ligo detectors in the era of
   gravitational-wave astronomy.
 \newblock {\em Phys. Rev. Lett.}, 123:231107, Dec 2019.
-
-\bibitem{LIGOopen}
-{The LIGO Scientific Collaboration and the Virgo Collaboration}, R.~Abbott,
-  et~al.
-\newblock Open data from the first and second observing runs of advanced ligo
-  and advanced virgo, 2019.
 
 \bibitem{O3events}
 {LIGO-Virgo Cumulative Event/Candidate Rate Plot O1-O3:
@@ -151,6 +170,12 @@ LIGO~Scientific Collaboration, Virgo Collaboration, 1M2H Collaboration, Dark
 \newblock Gravitational waves and gamma-rays from a binary neutron star merger:
   {GW}170817 and {GRB}170817a.
 \newblock {\em The Astrophysical Journal}, 848(2):L13, Oct 2017.
+
+\bibitem{micro}
+Robert~K. Cessaro.
+\newblock {Sources of primary and secondary microseisms}.
+\newblock {\em Bulletin of the Seismological Society of America},
+  84(1):142--148, 02 1994.
 
 \bibitem{ligoSeis}
 F.~Matichard et~al.
@@ -348,11 +373,6 @@ T.~Meier, K.~Dietrich, B.~St{\"o}ckhert, and H.P. Harjes.
 C{\'e}dric~P. Legendre, Li~Zhao, Win-Gee Huang, and Bor-Shouh Huang.
 \newblock Anisotropic rayleigh-wave phase velocities beneath northern vietnam.
 \newblock {\em Earth, Planets and Space}, 67(1):28, 2015.
-
-\bibitem{einsteinGW}
-A.~Einstein and N.~Rosen.
-\newblock On gravitational waves.
-\newblock {\em Journal of the Franklin Institute}, 223(1):43 -- 54, 1937.
 
 \bibitem{Weiss}
 Rainer Weiss.
