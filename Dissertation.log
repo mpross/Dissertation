@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.5.7)  13 MAY 2020 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.5.7)  13 MAY 2020 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -903,7 +903,7 @@ Package pdftex.def Info: cBRS_ASC.pdf  used on input line 1028.
  [70 <./cBRS_ASC.pdf>] [71]
 <<4>>
 
-Underfull \vbox (badness 4954) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [72
 
@@ -1036,7 +1036,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Dissertation.pdf (102 pages, 8253347 bytes).
+Output written on Dissertation.pdf (102 pages, 8253207 bytes).
 PDF statistics:
  3585 PDF objects out of 4296 (max. 8388607)
  3259 compressed objects within 33 object streams
