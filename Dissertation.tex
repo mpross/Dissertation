@@ -288,9 +288,9 @@ x_{CPS}=F_{LP}\ (x_p-x_g)+F_{SC}\ x_g
 \end{equation}
 where $F_{SC}$ is the ``sensor correction'' filter which has a pass-band that overlaps the CPS low pass filter. This can be rearranged to give:
 \begin{equation}
-x_{CPS}=\tilde F_{LP}\ (x_p-x_g)+\tilde F_{HP}\ x_p
+x_{CPS}=\bar{ F}_{LP}\ (x_p-x_g)+\bar{F}_{HP}\ x_p
 \end{equation}
-where the tildes denote the relevant combination of $F_{LP}$ and $F_{SC}$ that yield effective low-pass and high-pass filters. This scheme allows for isolation down to 100~mHz and decreases the bleed-through of the  ground motion due to the CPS low-pass filter's finite roll-off. Below 10~mHz, both the ground and platform seismometers are dominated by tilt contamination which is addressed in Section \ref{tilt}. The performance of the seismic isolation system can be seen in Figure \ref{ISIPerf}.
+where the bars denote the relevant combination of $F_{LP}$ and $F_{SC}$ that yield effective low-pass and high-pass filters. This scheme allows for isolation down to 100~mHz and decreases the bleed-through of the  ground motion due to the CPS low-pass filter's finite roll-off. Below 10~mHz, both the ground and platform seismometers are dominated by tilt contamination which is addressed in Section \ref{tilt}. The performance of the seismic isolation system can be seen in Figure \ref{ISIPerf}.
 
 \begin{figure}[!h]
 \begin{center}
@@ -497,7 +497,7 @@ Compared to previous image analysis algorithms~\cite{MSA}, this algorithm is com
 
 \subsection{Controls}
 
-\quad As the BRSs are installed in active lab spaces, anthropogenic activity and environmental disturbances apply torques to the beam-balance through mechanical and gravitational coupling. These torques can then cause the motion at the resonant frequency to rise to undesirable amplitudes. As the beam motion increases so does the noise and the effects of non-linearities of the readout. In addition, some disturbances can cause the amplitude to exceed the dynamic range of the autocollimator readout system.
+\quad As the BRSs are installed in active lab spaces, anthropogenic activity and environmental disturbances apply torques to the beam-balance through mechanical and gravitational coupling. These torques can cause the motion at the resonant frequency to rise to undesirable amplitudes. As the beam motion increases so does the noise and the effects of non-linearities of the readout. In addition, some disturbances can cause the amplitude to exceed the dynamic range of the autocollimator readout system.
 
 The alleviate this issue, we installed capacitor plates underneath each end of the beam-balance to act as actuators. Neglecting edge effects, the force between the two parallel capacitor plates is: 
 \begin{equation}
@@ -505,13 +505,11 @@ F=\frac{\epsilon A V^2}{2d^2} \label{cap}
 \end{equation}
 where $\epsilon$ is the permittivity of the volume between the plates, $A$ is the area of the plate, $V$ is the voltage applied to the plates, and $d$ is the distance between the plates. The plates under the beam are connected to a digital-to-analog converter while the beam is electrically grounded so that a controlled actuation torque can be applied to the beam. 
 
-The feedback signal sent to the capacitors was the angular velocity of the beam, band-passed between 2~mHz and 20~mHz to include only motion at frequencies near the resonance. The feedback is applied with low gain to only increase the loss of the system as compared to strong feedback where all of the motion is absorbed into the controls. This arrangement is implemented with two gain levels, a ``low amplitude'' level, which is always on and yields a $Q$ of 10-15, and a ``high amplitude'' level, which is triggered if the amplitude rises above a threshold that is set based on the properties of the given device and gives a $Q$ of 5-10.
+The feedback signal sent to the capacitors was the angular velocity of the beam, band-passed between 2~mHz and 20~mHz to include only motion at frequencies near the resonance. The feedback is applied with low gain to only increase the loss of the system as compared to strong feedback where all of the motion is absorbed into the controls. This arrangement is implemented with two gain levels, a ``low amplitude'' level, which is always on and yields an observed quality factor\footnote{The observed quality factor was obtained by measuring the ring down of excited resonant motion. This quality factor is due to the combination of intrinsic and external losses.}, $Q_\text{obs}$, of 10-15, and a ``high amplitude'' level, which is triggered if the amplitude rises above a threshold that is set based on the properties of the given device and gives a $Q_\text{obs}$ of 5-10.
 
 \subsection{Noise Performance}\label{BRSNoise}
 
 In addition to the 0.3 nrad/$\sqrt{\text{Hz}}$ frequency-independent noise of the autocollimator readout, the BRSs have a collection of mechanical noise sources, especially temperature variations and thermal motion of the flexures.
-
-Although the exact physical mechanism is unknown, it has been observed that variations in the exterior temperature cause shifts in the instrument's equilibrium position. Furthermore, temperature gradients across the instrument emanating from unbalanced heat sources and air currents have been seen to cause time-varying noise. To alleviate this issue, the instrument's vacuum chamber and optics are wrapped in multiple alternating layers of packing foam and aluminum foil. The entire apparatus is placed inside a large double walled insulation box to further decrease any temperature variation. These improvements decrease these effects yet temperature noise is believed to limit the performance below 20~mHz.
 
 \begin{figure}
 \begin{center}
@@ -520,6 +518,9 @@ Although the exact physical mechanism is unknown, it has been observed that vari
 \label{noise}
 \end{center}
 \end{figure}
+
+Although the exact physical mechanism is unknown, it has been observed that variations in the exterior temperature cause shifts in the instrument's equilibrium position. Furthermore, temperature gradients across the instrument emanating from unbalanced heat sources and air currents can cause time-varying noise. To alleviate this issue, the instrument's vacuum chamber and optics are wrapped in multiple alternating layers of packing foam and aluminum foil. The entire apparatus is placed inside a large double walled insulation box to further decrease any temperature variation. These improvements decrease these effects yet temperature noise is believed to limit the performance below 20~mHz.
+
 
 More fundamental is the noise due to thermal excitations of the flexure. At non-zero temperature, a portion of the thermal energy of the flexures excites mechanical motion. This causes a fundamental stochastic noise floor that follows~\cite{thermal}:
 
@@ -544,7 +545,7 @@ To limit the influence on the performance of the device, the resonant frequency 
 \end{center}
 \end{figure}
 
-\quad A BRS was installed at each of the end stations of the LIGO Hanford Observatory (LHO) between the first (O1) and second (O2) observing runs. Each device was used to correct the translation along the respective arm of the interferometer.\footnote{Motion orthogonal to the interferometer arms couples only indirectly through pathways such as defects of the test masses and mechanical cross couplings. Thus this coupling is significantly suppressed compared to motion along the arms.} Although one would expect that the corner station seismometers would also need to be corrected, a location was found within the corner station building which exhibited low tilt.\footnote{This location had low tilt because of it's distance from the walls of the building.} As such no BRS was necessary to achieve low tilt contamination.
+\quad A BRS was installed at each of the end stations of the LIGO Hanford Observatory (LHO) between the first (O1) and second (O2) observing runs. Each device was used to correct the translation along the respective arm of the interferometer.\footnote{Motion orthogonal to the interferometer arms couples only indirectly through pathways such as defects of the test masses and mechanical cross couplings. Thus this coupling is significantly suppressed compared to motion along the arms.} Although one would expect that the corner station seismometers would also need to be corrected, a location was found within the corner station building which exhibited low tilt.\footnote{This location had low tilt because of its distance from the walls of the building.} As such no BRS was necessary to achieve low tilt contamination.
 
 
 The tilt subtraction performance achieved with these devices can be seen in Figure \ref{sub} where it is evident that the system achieves tilt subtraction from around 6~mHz to 50~mHz. Above 50~mHz the seismometer signal is dominated by the oceanic microseism and the tilt contribution is negligible. Below 6~mHz, the BRS signal becomes overwhelmed by instrumental noise. This performance can also be seen in Figure \ref{subTime} which shows a example time series of the tilt subtraction where suppression of a handful of transients, likely due to wind gusts, can be seen.
@@ -562,7 +563,7 @@ This tilt-subtracted channel, rather than the raw seismometer, was then used as 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.85\textwidth]{BRSArmMotion.pdf}
-\caption[Differential platform motion ]{Differential platform motion as measure by the capacitive position sensors (CPS) for the Y-Arm of LHO with and without the BRSs installed. Below $\sim$30~mHz, the CPS reading is driven to zero by the control system.}
+\caption[Differential platform motion ]{Differential platform motion as measured by the capacitive position sensors (CPS) for the Y-Arm of LHO with and without the BRSs installed. Below $\sim$30~mHz, the CPS reading is driven to zero by the control system.}
 \label{armMotion}
 \end{center}
 \end{figure}
@@ -578,7 +579,7 @@ All four devices achieved comparable tilt-subtraction as the Hanford installatio
 
 As mentioned in Section \ref{tiltCon}, the primary driver of ground tilts at the observatories is wind acting on the building's walls. This deforms the concrete floor in a non-trivial manner. Thus modeling the ground tilt spectrum for a given wind speed from first principals is intractable. However, with observations made by the installed BRSs, an empirical model can be readily constructed.
 
-To achieve this, hour long spectra of the LHO End-X BRS readings during O3a were sorted into a collection of bins corresponding to the average wind speed during that hour. Each bin was then averaged to yield a representative spectrum for each wind speed. These averages were fit to an empirically determined model, Equation \ref{TiltModelEq}, containing two terms: the first capturing the broad behavior of the spectrum and a second which enhances the high frequency motion at high wind speeds. The parameters of this were then fit vs wind speed to yield a tilt spectrum vs wind speed model. 
+To achieve this, hour long spectra of the LHO End-X BRS readings during O3a were sorted into a collection of bins corresponding to the average wind speed during that hour. Each bin was then averaged to yield a representative spectrum for each wind speed. These averages were fit to an empirically determined model, Equation \ref{TiltModelEq}, containing two terms: the first capturing the broad behavior of the spectrum and a second which enhances the high frequency motion at high wind speeds. The parameters of these terms were then fit vs wind speed to yield a tilt spectrum vs wind speed model. 
 
 \begin{figure}[!h]
 \begin{center}
@@ -611,7 +612,7 @@ The figure of merit which most clearly displays the improvements in duty cycle w
 \end{center}
 \end{figure}
 
-The benefit of the tilt subtraction scheme can clearly be seen for Hanford between O1 and O2. During O1 the locked probability fell monotonically with wind speed, while for O2 the probability stayed relatively constant up to 15 m/s, above which it fell steadily. For O3a, Hanford saw a clear decrease in performance at high wind speeds yet still out performed the O1 scheme. This performance loss is likely due to the interferometer's Y-arm beam-spot being displaced away from the center of the test masses to avoid point absorbers on the Input-Y test mass.Displacements of the beam-spot are known to increase coupling between the angular motion of the test mass and the length measured by the interferometer. This extra coupling increases the actuation needed to keep the interferometer locked, and thus increases the susceptibility of the system to seismic motion. 
+The benefit of the tilt subtraction scheme can clearly be seen for Hanford between O1 and O2. During O1 the locked probability fell monotonically with wind speed, while for O2 the probability stayed relatively constant up to 15 m/s, above which it fell steadily. For O3a, Hanford saw a clear decrease in performance at high wind speeds yet still out performed the O1 scheme. This performance loss is likely due to the interferometer's Y-arm beam-spot being displaced away from the center of the test masses to avoid point absorbers on the Input-Y test mass. Displacements of the beam-spot are known to increase coupling between the angular motion of the test mass and the length measured by the interferometer. This extra coupling increases the actuation needed to keep the interferometer locked, and thus increases the susceptibility of the system to seismic motion. 
 
 The decreased duty cycle of O2 at low wind speed is due to effects unrelated to seismic isolation or wind. If one applies a fudge factor to the O2 duty cycle in order to match the low wind speed performance of O1 and O3a, then this duty cycle equates to an observing time increase of 13.1 days per year between O1 and O2 and a decrease of 2.9 days/year between O2 and O3a.
 
@@ -623,7 +624,7 @@ The decreased duty cycle of O2 at low wind speed is due to effects unrelated to 
 \end{center}
 \end{figure}
 
-Additionally, Figure \ref{LHO_events} shows the fraction of the GW events or candidates detected during O1, O2, and O3a as a function of wind speed demonstrating that a collection of GW events were observed whose detection probability enhanced by the increased duty cycle at higher wind speeds. Namely, GW170104 was measured at $\sim$11 m/s which had an increase in duty cycle of $\sim$20 \% between O1 and O2. Additionally, a number of O3a candidates have been detected above $\sim$5 m/s at which the probability of being locked is increased by $\sim$20 \%.
+Additionally, Figure \ref{LHO_events} shows the fraction of the GW events or candidates detected during O1, O2, and O3a as a function of wind speed demonstrating that a collection of GW events were observed whose detection probability was enhanced by the increased duty cycle at higher wind speeds. Namely, GW170104 was measured at $\sim$11 m/s which had an increase in duty cycle of $\sim$20 \% between O1 and O2. Additionally, a number of O3a candidates have been detected above $\sim$5 m/s at where the probability of being locked is increased by $\sim$20 \%.
 
 
 \begin{figure}[!h]
@@ -638,7 +639,7 @@ At Livingston, the improvements at increased wind speeds, Figure \ref{LLO_events
 
 Despite this, there is a collection of O3a candidates detected between 3-6 m/s which were between 10-15\% more probable with the increased robustness against wind speed. The enhanced duty cycle equates to an observing time increase of 13.9 days per year between O1 and O2 and 6.9 days/year between O2 and O3a for LLO.
 
-An additional metric that quantifies the improved robustness of the interferometer is the mean wind speed during gravitational wave events, shown in Figure \ref{WindExp}. In the limit that the detection likelihood is independent of wind speed, one would expect that the mean wind speed during events would match that of the entire run. Figure \ref{WindExp} shows that each site approaches this limit with the installation of the BRSs. 
+An additional metric that quantifies the improved robustness of the interferometer is the mean wind speed during gravitational wave events. In the limit that the detection likelihood is independent of wind speed, one would expect that the mean wind speed during events would match that of the entire run. Figure \ref{WindExp} shows that each site approaches this limit with the installation of the BRSs. 
 
 
 
@@ -652,7 +653,7 @@ The rotational performance of the current seismic isolation system is limited at
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_ASC_Without.pdf}
-\caption[Model of the performance of the current angular sensing and control system]{A model of the performance of the current angular sensing and control system. This model optimizes the unity gain frequency of the ASC loop to maximize performance above $\sim$10 Hz while maintaining the low frequency RMS at 1 nrad/$\sqrt{\text{Hz}}$.}
+\caption[Model of the performance of the current angular sensing and control system]{A model of the performance of the current angular sensing and control system. This model optimizes the unity gain frequency (UGF) of the ASC loop to maximize performance above $\sim$10 Hz while maintaining the low frequency RMS at 1 nrad/$\sqrt{\text{Hz}}$.}
 \label{ascWithout}
 \end{center}
 \end{figure}
@@ -667,7 +668,7 @@ A model of the current ASC system is shown in Figure 3.1. This model combines mo
 \end{center}
 \end{figure}
 
-The compact Beam Rotation Sensor (cBRS), described in the following, was designed to be an alternative angular sensor for the seismic isolation system with $\sim$100-1000 times lower noise than the current sensors. Design sensitivity of the cBRS and the current angular sensor, a pair of GS13 seismometers, are shown in Figure \ref{sensNoise}. With a lower noise rotational sensor, the seismic isolation performance can be significantly increased in both the rotational and translational degrees of freedom. The angular performance couples to the translational through tilt contamination described in Section \ref{tiltCon}. Details of expected performance enhancement follow in Section \ref{IsoScheme}. A decrease in residual angular motion would allow the ASC feedback to be retuned, specifically decreasing the unity gain frequency (UGF). This retuning is expected to decrease the ASC sensor noise leakage in the gravitational wave band.
+The compact Beam Rotation Sensor (cBRS), described in the following, was designed to be an alternative angular sensor for the seismic isolation system with $\sim$100-1000 times lower noise than the current sensors. Design sensitivity of the cBRS and the current angular sensor, a pair of GS13 seismometers, are shown in Figure \ref{sensNoise}. With a lower noise rotational sensor, the seismic isolation performance can be significantly increased in both the rotational and translational degrees of freedom. The angular performance couples to the translational through tilt contamination described in Section \ref{tiltCon}. Details of expected performance enhancement follow in Section \ref{IsoScheme}. A decrease in residual angular motion would allow the ASC feedback to be retuned, specifically decreasing the UGF. This retuning is expected to decrease the ASC sensor noise leakage in the gravitational wave band.
 
 Additional benefits are also expected to accompany the improved seismic isolation. These include decreased effects of scattered light and increased robustness against environmental effects. A priori modeling of these effects is intractable but will be studied in detail with future installations.
 
@@ -677,7 +678,7 @@ Additional benefits are also expected to accompany the improved seismic isolatio
 
 The compact Beam Rotation Sensor (cBRS), shown in Figure \ref{cBRS1}-\ref{cBRS2}, consists of a 30-cm long cross hung from 10-15 $\mu$m thick beryllium-copper flexure. It uses the same operating principle as the BRS: above the resonant frequency the balance acts as an inertial reference whose angle is measured with respect to the support. Thus Equations \ref{theta_A}-\ref{theta_s} also govern its mechanics. The cross shape of the balance decreases the sensitivity of the device to gradients in the local gravitational field while allowing for increased moment of inertia compared to a similarly sized beam. 
 
-This design yields a resonant frequency of $\sim$20~mHz which limits the use of the device with high fidelity to frequencies above this. This resonant frequency does not allow this device to be used for ground tilt subtraction since the relevant ground tilts happen below 40~mHz. 
+This design yields a moment of inertia of $I=0.085\text{ kg m}^2$ and a resonant frequency of $\sim$20~mHz which limits the use of the device with high fidelity to frequencies above this. This resonant frequency does not allow this device to be used for ground tilt subtraction since the relevant ground tilts happen below 40~mHz. 
 
 \begin{figure}[!h]
 \begin{center}
@@ -701,7 +702,7 @@ This design yields a resonant frequency of $\sim$20~mHz which limits the use of 
 
 The proof mass is suspended via a kinematic mount, shown in Figure \ref{kmount}, to allow for ease of installation. The mount consists of three titanium spheres which are attached to the proof mass's horizontal beam and three pairs of titanium cylinders attached to the seat. This seat is suspended by flexures, described in Section \ref{flex}. The spheres and cylinders are epoxied in place to form an equilateral triangle.
 
-This design allows clamping of the flexures, a delicate procedure, to be done with only the seat in place. After the seat is suspended the proof mass is lowered on to the seat by three lifting screws. The matching sets of spheres and cylinders define the proof mass's position relative to the flexures without over-constraining.
+This design allows clamping of the flexures, a delicate procedure, to be done with only the seat in place. After the seat is suspended the proof mass is lowered onto the seat by three lifting screws. The matching sets of spheres and cylinders define the proof mass's position relative to the flexures without over-constraining.
 
 \begin{figure}[!h]
 \begin{center}
@@ -726,8 +727,7 @@ As the cavity length changes the reflectence undergoes an interference pattern d
 \begin{align}
 R=\frac{F \sin^2(2\pi n x/\lambda)}{1+F \sin^2(2\pi n x/\lambda)}
 \end{align}
-
-where $R$ is the reflectance, $F$ is the finesse, $x$ is the length of the cavity, $n$ is the index of refraction of the cavity, and $\lambda$ is the wavelength.
+where $R$ is the reflectance, $F$ is the finesse of the cavity, $x$ is the length of the cavity, $n$ is the index of refraction within the cavity, and $\lambda$ is the wavelength.
 
 \begin{figure}[!h]
 \begin{center}
@@ -740,7 +740,10 @@ where $R$ is the reflectance, $F$ is the finesse, $x$ is the length of the cavit
 The optical fiber tip and collimating lens are placed on a translation stage that is driven by a piezo stack. The intensity of the reflected light measured by the photodiode is fed back to the piezos using a PID loop. This feedback holds the cavity at fixed length allowing the system to be seperated into two linear readouts: the measured reflectance of the cavity for small ranges above the UGF of the loop and the displacement of the piezos for large motions below the UGF. The output of the readout is then the sum of these two channels.
 
 
+\begin{table}
 \begin{center}
+\bgroup
+\def\arraystretch{1.5}
 \begin{tabular}{| c | c |}
 \hline
 Parameter & Value\\
@@ -757,8 +760,10 @@ Piezo Max Range & 17.4 $\mu$m at 150 V\\
 Piezo Driver & PDu150 150 V\\
 \hline
 \end{tabular}
-\label{cBRSTable}
+\caption{Parameters of the cBRS interferometric readout.}\label{cBRSTable}
+\egroup
 \end{center}
+\end{table}
 
 In theory the angle of the beam can be measured with a single interferometer. However, two readouts are deployed, one at each end of the proof mass, in order to suppress common mode noise. The signal seen in each readout is described by:
 
@@ -766,8 +771,7 @@ In theory the angle of the beam can be measured with a single interferometer. Ho
 \theta_1&=\theta_s+x_1/L+x_1 \delta_\lambda/\lambda^2+n_c+n_1 \label{th1} \\
 \theta_2&=-\theta_s+x_2/L+x_2 \delta_\lambda/\lambda^2 + n_c+n_2 \label{th2}
 \end{align}
-
-Where $\theta_{1,2}$ are the angle equivalent signal seen in readout 1 and 2, $\theta_{s}$ is the sensed angle, $x_{1,2}$ are the length of the respective cavities, $L$ is the arm length of the beam, $\delta_\lambda$ is the change in wavelength of the laser, $\lambda$ is the wavelength of the laser, $n_c$ is the sum of all unmodeled common noises, and $n_{1,2}$ represent any unmodeled noise that appears in one readout but not the other.
+where $\theta_{1,2}$ are the angle equivalent signal seen in readout 1 and 2, $\theta_{s}$ is the sensed angle, $x_{1,2}$ are the length of the respective cavities, $L$ is the arm length of the beam, $\delta_\lambda$ is the change in wavelength of the laser, $\lambda$ is the wavelength of the laser, $n_c$ is the sum of all unmodeled common noises, and $n_{1,2}$ represent any unmodeled noise that appears in one readout but not the other.
 
 Since the angle of the beam appears with opposite sign in the two readouts, the difference between the two, Equation \ref{diffEq}, contains the angle while suppressing common noise. The most notable source of common noise is frequency fluctuations of the laser. This couples to the angular readout through the mismatch in the average cavity lengths which are matched to within 1~mm. On the other hand, the sum of the two channels, Equation \ref{sumEq}, contains no contribution from the angle but is comprised of only noise sources. This channel allows for the in-situ estimate of the sum of noises.
 \begin{align}
@@ -782,7 +786,7 @@ The two readouts are calibrated independently to account for differences in piez
 
 \begin{figure}[!h]
 \begin{center}
- \includegraphics[width=0.75\textwidth]{cBRS_Fringes.pdf}
+ \includegraphics[width=0.75\textwidth]{cBRS_FringesEdit.pdf}
 \caption[Interference pattern of a cBRS fiber interferometer vs cavity length]{Interference pattern of a cBRS fiber interferometer vs cavity length. The gray region is where the device is operated in normal conditions. Within this region the reflectance is approximately linear verse displacement.}
 \label{cBRS_fringes}
 \end{center}
@@ -833,11 +837,11 @@ The motor which turns this screw is held on an independent support to avoid mech
 \caption[Demonstration of the effect of actuating the remote mass adjuster]{Demonstration of the effect of actuating the remote mass adjuster. The DC angle was measured by taking the mean of period long chunks of shadow sensor data while the mass adjuster was shifted to a collection of positions.}\label{massAdjustPlot}
 \end{figure}
 
-A temporary, uncalibrated shadow sensor was installed to measure the motion of the cBRS to test whether this design was capable of shifting the horizontal COM accurately. Figure \ref{massAdjustPlot} shows the average of period long cuts of the cBRS's resonant motion during the actuation of the mass adjuster. There is clear hysteresis due to nonuniform friction along the length of the adjuster. However, this did not affect the ability to center the cBRS. 
+A temporary, uncalibrated shadow sensor was installed which measured the motion of the cBRS to test whether this design was capable of shifting the horizontal COM accurately. Figure \ref{massAdjustPlot} shows the average of period long cuts of the cBRS's resonant motion during the actuation of the mass adjuster. There is clear hysteresis due to nonuniform friction along the length of the adjuster. However, this did not affect the ability to center the cBRS. 
 
 \subsection{Controls}
 
-The cBRS can be rung up by environmental transients that cause resonant motion in excess of the readout's dynamic range. These amplitudes are decreased by two capacitive actuators placed under the end masses of the beam. The angular-readout, band-passed around the resonant frequency, is fed back to these actuators with low gain. This feedback decreases the $Q$ of the beam-balance and can be toggled off when high $Q$ motion is desired. 
+The cBRS can be rung up by environmental transients that cause resonant motion in excess of the readout's dynamic range. These amplitudes are decreased by two capacitive actuators placed under the end masses of the beam. The angular-readout, band-passed around the resonant frequency, is fed back to these actuators with low gain. This feedback decreases the observed quality factor\footnote{The observed quality factor was obtained by measuring the ring down of excited resonant motion. This quality factor is due to the combination of intrinsic and external losses.}, $Q_\text{obs}$, of the beam-balance and can be toggled off when high $Q_\text{obs}$ motion is desired. 
 
 \subsection{Noise Performance}
 
@@ -868,7 +872,7 @@ As described in Section \ref{seisIso}, each stage and degree of freedom of the s
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_Noise.pdf}
-\caption[Noise models for the cBRS, a collection of seismometers, and two types of CPS]{Noise models for the cBRS, a collection of seismometers: L4C, GS13, T240, and two types of CPS: Fine, used between Stage 1 and Stage 2, and course, used between Stage 0 and Stage 1. Each sensors is in its native units, seismometers and CPS in meters and cBRS in radian. Note that a pair of translational sensors located 1~m apart has roughly the same noise levels in both units.}
+\caption[Noise models for the cBRS, a collection of seismometers, and two types of CPS]{Noise models for the cBRS, a collection of seismometers: L4C, GS13, T240, and two types of CPS: Fine, used between Stage 1 and Stage 2, and Course, used between Stage 0 and Stage 1. Each sensor is in its native units, seismometers and CPS in meters and cBRS in radian. Note that a pair of translational sensors located 1~m apart has roughly the same noise level in either meters or radians.}
 \label{sensNoise}
 \end{center}
 \end{figure}
@@ -881,18 +885,17 @@ Throughout this model second-order binomial filters are used as the blend filter
 \subsubsection{Stage 2 Rotational}
 
 
-We choose to model a cBRS on the second stage of the isolation in order to minimize the suspension point motion. Logistically, this location also currently has enough space to install a device. Due to the rising low frequency noise in the cBRS, placement of the blend frequency becomes a balance of increasing motion at low frequencies and decreasing motion at high, and visa versa. The blend frequency was chosen to give a low frequency RMS motion of $\sim$10 nrad$/\sqrt{\text{Hz}}$ which matches the performance without the cBRS, see Figure~\ref{cBRSCompR}. This criteria called for a blend frequency of 12~mHz. The residual tilt for Stage 2 can be approximated by:
+We choose to model a cBRS on the second stage of the isolation as this placement minimizes the suspension point motion. Logistically, this location also has enough space to install a device without modifying the current ISI platform. Due to the rising low frequency noise in the cBRS, placement of the blend frequency becomes a balance of increasing motion at low frequencies and decreasing motion at high, and visa versa. The blend frequency was chosen to give a low frequency RMS motion of $\sim$10 nrad$/\sqrt{\text{Hz}}$ which matches the performance without the cBRS, see Figure~\ref{cBRSCompR}. This criteria called for a blend frequency of 12~mHz. The residual tilt for Stage 2 can be approximated by:
 
 \begin{equation}
-\theta_2(f)\approx \tilde{F}_{LP2}\ \big(\theta_1(f)+\tilde{n}_\text{CPS-F}(f)\big)+\tilde{F}_{HP2}\ \text{min}\big[\tilde{n}_\text{cBRS}(f),\ \tilde{n}_\text{GS13}(f)\big]
+\tilde{\theta}_2(\omega)\approx \hat{F}_{LP2}\ \big(\tilde{\theta}_1(\omega)+\hat{n}_\text{CPS-F}(\omega)\big)+\hat{F}_{HP2}\ \text{min}\big[\hat{n}_\text{cBRS}(\omega),\ \hat{n}_\text{GS13}(\omega)\big]
 \end{equation}
-
-where $\theta_1$ is the tilt of Stage 1, $\tilde{F}_{LP2}$ and $\tilde{F}_{HP2}$ are respectively the Stage 2 rotational low and high-pass blend filters, $\tilde{n}_\text{CPS-F}$, $\tilde{n}_\text{cBRS}$, and $\tilde{n}_\text{GS13}$ are the rotational sensor noise for the Fine CPS, cBRS, and GS13, respectively. The performance with this loop can be seen in Figure \ref{cBRS2R}. Above $\sim$500~mHz, the performance is dominated by the GS13 noise and from 80~mHz to 500~mHz it is dominated by cBRS noise. Below 80~mHz, the position sensor contributions become dominant which makes the Stage 2 motion almost equal to the Stage 1 motion. The only deviation from Stage 1 motion is near the blend frequency, 12~mHz, where gain peaking added a factor of~$\sim$~3. 
+where $\tilde{\theta}_1$ is the tilt of Stage 1, $\hat{F}_{LP2}$ and $\hat{F}_{HP2}$ are respectively the Stage 2 rotational low-pass and high-pass blend filters, $\hat{n}_\text{CPS-F}$, $\hat{n}_\text{cBRS}$, and $\hat{n}_\text{GS13}$ are the rotational sensor noise for the Fine CPS, cBRS, and GS13, respectively. The performance with this loop can be seen in Figure \ref{cBRS2R}. Above $\sim$500~mHz, the performance is dominated by the GS13 noise and from 80~mHz to 500~mHz it is dominated by cBRS noise. Below 80~mHz, the position sensor contributions become dominant which makes the Stage 2 motion almost equal to the Stage 1 motion. The only deviation from Stage 1 motion is near the blend frequency, 12~mHz, where gain peaking added a factor of~$\sim$~3. 
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_Model_ST2RX.pdf}
-\caption[Projected rotational performance of Stage 2]{Projected rotational performance of Stage 2 along with contributions from residual Stage 1 tilt and sensor noises. Also shown is the input ground tilt model which represents the observed tilt during windy times and the rotational performance of the Stage~1.}
+\caption[Projected rotational performance of Stage 2]{Projected rotational performance of Stage 2 along with contributions from residual Stage 1 tilt and sensor noises. Also shown is the input ground tilt model which represents the observed tilt during windy times and the rotational performance of Stage~1.}
 \label{cBRS2R}
 \end{center}
 \end{figure}
@@ -912,18 +915,13 @@ With Stage 2 inertially isolated in the rotation degree of freedom above $\sim$8
 The residual tilt for Stage 1 can be approximated by:
 
 \begin{equation}
-\theta_1(f)\approx \tilde{F}_{LP1}\ \big(\theta_g(f)+\tilde{n}_\text{CPS-C}(f)\big)+\tilde{F}_{HP1}\ \text{min}\big[(\tilde{n}_\text{cBRS}(f)+\tilde{n}_\text{CPS-F}(f)),\ \tilde{n}_\text{T240}(f)\big]
+\tilde{\theta}_1(\omega)\approx \hat{F}_{LP1}\ \big(\tilde{\theta}_g(\omega)+\hat{n}_\text{CPS-C}(\omega)\big)+\hat{F}_{HP1}\ \text{min}\big[(\hat{n}_\text{cBRS}(\omega)+\hat{n}_\text{CPS-F}(\omega)),\ \hat{n}_\text{T240}(\omega)\big]
 \end{equation}
+where $\tilde{\theta}_g$ is the ground tilt, $\hat{F}_{LP1}$ and $\hat{F}_{HP1}$ are respectively the Stage 1 rotational low-pass and high-pass blend filters, $\hat{n}_\text{CPS-C}$, $\hat{n}_\text{CPS-F}$, $\hat{n}_\text{cBRS}$, and $\hat{n}_\text{T240}$ are the rotational sensor noise for the Course CPS, Fine CPS, cBRS, and T240, respectively.
 
-where $\theta_g$ is the ground tilt, $\tilde{F}_{LP1}$ and $\tilde{F}_{HP1}$ are respectively the Stage 1 rotational low and high-pass blend filters, $\tilde{n}_\text{CPS-C}$, $\tilde{n}_\text{CPS-F}$, $\tilde{n}_\text{cBRS}$, and $\tilde{n}_\text{T240}$ are the rotational sensor noise for the Course CPS, Fine CPS, cBRS, and T240, respectively.
-
-The performance of this design can be seen in Figure~\ref{cBRS1R}. Below 1~mHz, it is expected the platform motion follows the ground. However, this is omitted as both the ground rotation and sensor noise are not well constrained below 1~mHz. Above $\sim$30~mHz, the residual is dominated by the combination of the sensor noises from the Fine CPS, from 30~mHz to 350~mHz, and the T240 pair, above 350~mHz.
+The performance of this design can be seen in Figure~\ref{cBRS1R}. Below 1~mHz, it is expected that the platform motion follows the ground. However, this is omitted as both the ground rotation and sensor noise are not well constrained below 1~mHz. Above $\sim$30~mHz, the residual is dominated by the combination of the sensor noises from the Fine CPS, from 30~mHz to 350~mHz, and the T240 pair, above 350~mHz.
 
 A subtly arises from using both the Fine CPS and Course CPS as the control for Stage 1. If the Stage 2 blend frequency is placed below the Stage 1 blend frequency then in between these two frequencies both stages are using the Fine CPS as their control. Since the Fine CPS measures the motion between the two stages, this effectively makes both stages uncontrolled as they are not referenced to any independent frame. In our model this is avoided by placing the Stage 1 blend frequency a decade lower than the Stage 2 blend.
-
-\subsubsection{Stage 1 Translational}
-
-Once the rotational degrees of freedom are controlled, the translational loops can be tuned. The translational isolation is dependent on the rotational performance due to tilt contamination of the seismometers, described in Section \ref{tiltCon}. Again, the choice of blend frequency is a trade off between increasing low frequency motion and decreasing motion at high frequency. We choose to require low frequency RMS performance of $<$ 100 nm/s$/\sqrt{\text{Hz}}$. This requirement is approximately the performance of the current seismic isolation system. A blend frequency of 15~mHz was found to exceed this requirement. 
 
 
 \begin{figure}[!h]
@@ -934,18 +932,19 @@ Once the rotational degrees of freedom are controlled, the translational loops c
 \end{center}
 \end{figure}
 
+\subsubsection{Stage 1 Translational}
+
+Once the rotational degrees of freedom are controlled, the translational loops can be tuned. The translational isolation is dependent on the rotational performance due to tilt contamination of the seismometers, described in Section \ref{tiltCon}. Again, the choice of blend frequency is a trade off between increasing low frequency motion and decreasing motion at high frequency. We choose to require low frequency RMS performance of $<$ 100 nm/s$/\sqrt{\text{Hz}}$. This requirement is approximately the performance of the current seismic isolation system. A blend frequency of 15~mHz was found to exceed this requirement. 
+
+
 The residual motion for Stage 1 can be approximated by:
 
 \begin{equation}
-x_1(f)\approx F_{LP1}\ \big(x_g(f)+n_\text{CPS-C}(f)\big)+F_{HP1}\ \big( g/\omega^2\ \theta_1(f) +n_\text{T240}(f) \big)
+\tilde{x}_1(\omega)\approx F_{LP1}\ \big(\tilde{x}_g(\omega)+\tilde{n}_\text{CPS-C}(\omega)\big)+F_{HP1}\ \big( g/\omega^2\ \tilde{\theta}_1(\omega) +\tilde{n}_\text{T240}(\omega) \big)
 \end{equation}
-
-where $x_g$ is the ground motion, $F_{LP1}$ and $F_{HP1}$ are respectively the Stage 1 translational low and high-pass blend filters, and $n_\text{CPS-C}$ and $n_\text{T240}$ are the translational sensor noise for the Course CPS and T240, respectively.
+where $\tilde{x}_g$ is the ground motion, $F_{LP1}$ and $F_{HP1}$ are respectively the Stage 1 translational low and high-pass blend filters, and $\tilde{n}_\text{CPS-C}$ and $\tilde{n}_\text{T240}$ are the translational sensor noise for the Course CPS and T240, respectively.
 
 The performance of the Stage 1 translational isolation is shown in Figure~\ref{cBRS1X}. Above 500~mHz, the performance is limited by the T240 noise. Between 25-500~mHz, residual ground motion dominates and between 1-25~mHz residual tilt coupled is the primary contribution. 
-
-
-\subsubsection{Stage 2 Translational}
 
 \begin{figure}[!h]
 \begin{center}
@@ -954,13 +953,15 @@ The performance of the Stage 1 translational isolation is shown in Figure~\ref{c
 \label{cBRS2X}
 \end{center}
 \end{figure}
+
+\subsubsection{Stage 2 Translational}
+
 The Stage 2 translational loops were tuned in a similar manner as Stage 1: requiring that the RMS motion at 1~mHz to be $<$ 100 nm/s$/\sqrt{\text{Hz}}$. This yielded  a blend frequency of 45~mHz. The residual motion for Stage 2 can be approximated by:
 
 \begin{equation}
-x_2(f)\approx F_{LP2}\ \big(x_1(f)+n_\text{CPS-F}(f)\big)+F_{HP2}\ \big( g/\omega^2\ \theta_2(f) +n_\text{GS13}(f) \big)
+\tilde{x}_2(\omega)\approx F_{LP2}\ \big(\tilde{x}_1(\omega)+\tilde{n}_\text{CPS-F}(\omega)\big)+F_{HP2}\ \big( g/\omega^2\ \tilde{\theta}_2(\omega) +\tilde{n}_\text{GS13}(\omega) \big)
 \end{equation}
-
-where $F_{LP2}$ and $F_{HP2}$ are respectively the Stage 2 translational low-pass and high-pass blend filters, and $n_\text{CPS-F}$ and $n_\text{GS13}$ are the translational sensor noise for the Fine CPS and GS13, respectively.
+where $F_{LP2}$ and $F_{HP2}$ are respectively the Stage 2 translational low-pass and high-pass blend filters, and $\tilde{n}_\text{CPS-F}$ and $\tilde{n}_\text{GS13}$ are the translational sensor noise for the Fine CPS and GS13, respectively.
 
 The performance of this loop is shown in Figure \ref{cBRS2X}. This choice of blend frequency effectively flattens the residual spectrum between $\sim$5-60~mHz to an amplitude of 2-3 $\times 10^{-7}$ m/s$/\sqrt{\text{Hz}}$ while decreasing the microseism at 150~mHz by a factor of $\sim$100.
 
@@ -968,7 +969,7 @@ The limiting term of the Stage 2 translational performance in these models is th
 
 \subsubsection{Comparison with past performance}
 
-The performance of the past isolation system was modeled using the same techniques as described in Section \ref{IsoScheme} to compare with the proposed configuration. The filters used in the past model were those that were deployed for O2. These are expertly tuned to account for the true performance of the instruments and thus have complex shapes. However, they follow the same general shape as filters used in the proposed scheme.
+The performance of the past isolation system was modeled using the same techniques as described in Section \ref{IsoScheme} to compare with the proposed configuration. The filters used in the past model were those that were deployed for O2. These are expertly tuned to account for the true performance of the instruments and thus have complex shapes. However, they follow the same general outline as the filters used in the proposed scheme.
 
 \begin{figure}[!h]
 \begin{center}
@@ -998,7 +999,7 @@ Although in reality the control loop for each isolation platform will have to be
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_ASC_With.pdf}
-\caption[Projected performance of the angular sensing and control system]{A model of the performance of the angular sensing and control system retuned for the the seismic isolation performance with the cBRS. This model optimizes the unity gain frequency of the ASC loop to maximize performance above $\sim$10 Hz while maintaining the low frequency RMS at 1 nrad/$\sqrt{\text{Hz}}$.}
+\caption[Projected performance of the angular sensing and control system]{A model of the performance of the angular sensing and control system retuned for the the seismic isolation performance with the cBRS. This model optimizes the unity gain frequency (UGF) of the ASC loop to maximize performance above $\sim$10 Hz while maintaining the low frequency RMS at 1 nrad/$\sqrt{\text{Hz}}$.}
 \label{ascWith}
 \end{center}
 \end{figure}
@@ -1025,7 +1026,7 @@ A comparison of the modeled residual for a system with and without the cBRS is s
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{cBRS_ASC.pdf}
-\caption[Projected low frequency strain noise with and without the cBRS]{Projected low frequency strain noise with and without the cBRS. The blue line is the current sensitivity of LLO, the orange is the aLIGO design sensitivity, green is the modeled noise contribution of the current ASC system, and red is the improved ASC noise contribution with the seismic isolation described in Section \ref{IsoScheme}. }
+\caption[Projected low frequency strain noise with and without the cBRS]{Projected low frequency strain noise with and without the cBRS along with aLIGO design sensitivity. \cite{aLIGO} }
 \label{ascStrain}
 \end{center}
 \end{figure}
@@ -1040,7 +1041,7 @@ This decrease in residual motion above $\sim$5 Hz would directly decrease noise 
 Seismic waves have six components, three translations and three rotations. Seismology has long neglected the rotational components due the lack of sensitive rotation sensors. Recent developments, such as the advent of seismically relevant ring laser gyros~\cite{ring}, have begun to alleviated this issue. The rotation sensors described in Chapter \ref{BRS_chap} and \ref{cBRS_chap} join a small class of ground rotation sensors that are sensitive at low frequencies and have low translational coupling. These attributes combined allow for the application of these sensors to seismology.
 \subsection{Rayleigh Wave Theory}
 
-Seismic waves can be broken into two classes: body waves and surface waves. In regard to surface waves there are two polarization: Love waves and Rayleigh waves. The motion caused by a Love wave is constrained to the plane parallel with the surface of the medium while Rayleigh waves are constrained to a plane perpendicular the surface. 
+Seismic waves can be broken into two classes: body waves and surface waves. In regard to surface waves there are two polarization: Love waves and Rayleigh waves. The motion caused by a Love wave is constrained to the plane parallel with the surface of the medium while Rayleigh waves are constrained to a plane perpendicular to the surface. 
 
 The plane wave solution of a Rayleigh wave has six components ($u_x, u_y, u_z, \theta_x, \theta_y, \theta_z$) where $u_i$ designates the translational motion in the $i$th direction while $\theta_i$ is the rotation about the $i$th axis.
 These can be described as with the following~\cite{seismic}
@@ -1053,35 +1054,33 @@ u_z({\bf r} ,t)&=\alpha \cos(\zeta) \cos(\omega t-{\bf k}\cdot{\bf r}+\pi/2)\lab
 \theta_y({\bf r} ,t)&=-\frac{\partial u_z}{\partial x}=-\alpha \kappa \cos(\zeta) \cos(\phi) \cos(\omega t-{\bf k}\cdot{\bf r})\\
 \theta_z({\bf r} ,t)&=\frac{1}{2}\Big(\frac{\partial u_y}{\partial x}-\frac{\partial u_x}{\partial y}\Big)=0
 \end{align}
+where $\alpha$ is the amplitude, $\zeta$ is the ellipticity angle, $\phi$ is the angle of incidence in the horizontal plane, $\omega$ is the angular frequency, and $\bf{k}=\kappa (\cos(\phi),\sin(\phi),\text{0})$ is the wavevector.
 
-where $\alpha$ is the amplitude, $\zeta$ is the ellipticity angle, $\phi$ is the angle of incidence in the horizontal plane, $\omega$ is the frequency, and $\bf{k}=\kappa (\cos(\phi),\sin(\phi),\text{0})$ is the wavevector.
+These components can be seen in Figure \ref{Earthquake} which shows measurements of the seismic waves sourced by a M 7.9 earthquake in Papua New Guinea as seen by instruments installed at the End-Y station of the LIGO Hanford Observatory (LHO). The translations were measured by a broadband three-component seismometer while the rotation was sensed by a Beam Rotation Sensor (BRS), described in Chapter \ref{BRS_chap}. As one would expect from Equations \ref{ZEq} and \ref{TiltXEq}, the vertical velocity and the rotation differ only by a constant factor related to the phase velocity and the angle of incidence. Additionally, a large amplitude Love wave is apparent starting at $\sim$1200 seconds which neither the vertical seismometer or the BRS experiences due to the waves' lack of vertical component.
 
-These components can be seen in Figure \ref{Earthquake} which shows measurements of the seismic waves sourced by a M 7.9 earthquake in Papua New Guinea as seen by instruments installed at the End-Y station of the LIGO Hanford Observatory (LHO). The translations were measured by a broadband three-component seismometer while the rotation was sensed by a Beam Rotation Sensor (BRS), described in Chapter \ref{BRS_chap}. As one would expect from Eq. \ref{ZEq} and \ref{TiltXEq}, the vertical velocity and the rotation differ only by a constant factor related to the phase velocity and the angle of incidence. Additionally, a large amplitude Love wave is apparent starting at $\sim$1200 seconds which neither the vertical seismometer or the BRS experiences due to the waves' lack of vertical component.
-
-\begin{figure}%
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{PNGTimeSeries.pdf}
-\caption[Observations of the seismic waves by instruments installed at the End-Y Station of LHO]{Observations of the seismic waves emanated from a M7.9 earthquake in Papua New Guinea as seen by instruments installed at the End-Y Station of LHO.~\cite{tiltSeismology} Both the Z velocity and Y displacement were measured by a broadband three-component seismometer while the rotation was measured by a BRS described in Chapter \ref{BRS_chap}. }
+\caption[Observations of the seismic waves by instruments installed at the End-Y Station of LHO]{Observations of the seismic waves emanated from a M7.9 earthquake in Papua New Guinea as seen by instruments installed at the End-Y Station of LHO.~\cite{tiltSeismology} Both the Z-velocity and Y-displacement were measured by a broadband three-component seismometer while the rotation was measured by a BRS described in Chapter \ref{BRS_chap}. }
 \label{Earthquake}
 \end{center}
 \end{figure}
 
-From Equations \ref{XEq}-\ref{ZEq} it can be seen that with only a traditional 3-axis seismometer, it is impossible to measure all five parameters that define the wave-field. \footnote{With an array of vertical seismometer four parameters can be readily measured: frequency, angle of incidence, wavenumber, and amplitude.}Additionally, the horizontal components, $u_x\text{ and }u_y$ can contain contributions from co-propagating Love waves which further muddles ones ability to extract parameters. 
+From Equations \ref{XEq}-\ref{ZEq} it can be seen that with only a traditional 3-axis seismometer, it is impossible to measure all five parameters that define the wave-field.\footnote{With an array of vertical seismometer four parameters can be readily measured: frequency, angle of incidence, wavenumber, and amplitude.}Additionally, the horizontal components, $u_x\text{ and }u_y$ can contain contributions from co-propagating Love waves which further muddles ones ability to extract parameters. 
 
 
 \subsection{Wave-Field Parameter Extraction}
 
 With the combined measurements of the translational and rotational components at a single station, one can extract wavefield parameters that would otherwise be difficult to obtain, namely the phase velocity and angle of incidence. 
 
-Seismic wave phase velocities are common observables which not only allows for understanding of Rayleigh wave propogation but can be inverted to yield tomographical structure profiles of the interior of the earth.~\cite{tomography} The traditional method of extracting these is by exploiting the time of arrival of a wave as it passes through an array of many seismometers. The analysis can be constrained to only the vertical channel as this axis is insensitive to Love waves which could contaminate the measurements. However, this method requires many devices and effectively averages over the size of the array.
+Seismic wave phase velocities are common observables which not only allow for understanding of Rayleigh wave propagation but can be inverted to yield tomographical structure profiles of the interior of the earth.~\cite{tomography} The traditional method of extracting these is by exploiting the time of arrival of a wave as it passes through an array of many seismometers. The analysis can be constrained to only the vertical channel as this axis is insensitive to Love waves which could contaminate the measurements. However, this method requires many devices and effectively averages over the size of the array.
 
-Alternatively, with measurements of the rotational components, a point-like measurement of the phase velocity can be made with three devices, a 3-component seismometer and two horizontal rotation sensors. This can be shown in the following equations:
+Alternatively, with measurements of the rotational components a point-like measurement of the phase velocity can be made with three devices, a 3-component seismometer and two horizontal rotation sensors. This can be shown in the following equations:
 \begin{align} 
 v&\equiv\frac{\omega}{\kappa} = \frac{\dot{u_z}}{\theta_x}\sin(\phi) \label{vx} \\
 v&=\frac{\dot{u_z}}{\theta_y}\cos(\phi)\label{vy} \\
 v&=\frac{\dot{u_z}}{\sqrt{\theta_x^2+\theta_y^2}} \label{v}
 \end{align}
-
 where the dot represents the temporal derivative. Equations \ref{vx} and \ref{vy} can be utilized if a station has only one horizontal rotation sensor but requires independent determination of $\phi$, the angle of incidence. In contrast, Equation \ref{v} contains only information from a single station.
 
 In addition to the phase velocity, the angle of incidence can be determined with the following:
@@ -1089,23 +1088,23 @@ In addition to the phase velocity, the angle of incidence can be determined with
 \phi=\text{arctan}\bigg(\frac{\theta_x}{\theta_y}\bigg)
 \end{align}
 
-Although in theory this can be measured using a single seismometer, Love wave contamination of the horizontal translational channels distort most measurements. As the horizontal rotational channels are insensitive to Love waves, they allow the extraction of $\phi$ without such contamination.  
+Although in theory this can be measured using a single seismometer, Love wave contamination of the horizontal translational channels distort most measurements. As the horizontal rotational channels are insensitive to Love waves, they allow for the extraction of $\phi$ without such contamination.  
 
 \subsection{Single Station Dispersion Measurements}
 %\subsubsection{Hanford Measurements}
 As described in Section \ref{BRS_Hanford}, two BRSs were installed at LHO, one at each end station located 5.66 meters apart. The End-X BRS was found to have a $\delta=30\ \mu \text{m}$ leading to a translational coupling of $2 \times 10^{-4}$ rad/m while the End-Y BRS was found to have a coupling of $1 \times 10^{-6}$ rad/m with a $\delta<0.5\ \mu \text{m}$. This limited any seismology studies to only the End-Y BRS as the End-X BRS was contaminated with translational motion. 
 
-Between April, 2016 and January, 2017, six earthquakes were measured during environmentally quite times.~\cite{tiltSeismology} With application of Equation \ref{vx} the phase dispersion curve at the End-Y Station was measured with instruments installed at a single station. Corrections of the angle of incidence were determined by an array of seismometers installed at LHO and were verified via great circle calculations. Additionally, the phase velocity was estimated in a more traditional manor using the signal delay between the array of seismometer at LHO. The measured phase dispersion curve is shown in Figure \ref{Phase_Hanford} which shows agreement between the two methods. For more detail see Reference~\cite{tiltSeismology}
+Between April, 2016 and January, 2017, six earthquakes were measured during environmentally quite times.~\cite{tiltSeismology} With application of Equation \ref{vx} the phase dispersion curve at the End-Y Station was measured with instruments installed at a single station. Corrections of the angle of incidence were determined by an array of seismometers installed at LHO and were verified via great circle calculations. Additionally, the phase velocity was estimated in a more traditional manor using the signal delay between the array of seismometer at LHO. The measured phase dispersion curves are shown in Figure \ref{Phase_Hanford} which shows agreement between the two methods. For more detail see Reference~\cite{tiltSeismology}
  
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{Vel.pdf}
-\caption[Single station Rayleigh wave phase velocity measurements]{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO, blue, and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis.~\cite{tiltSeismology}}
+\caption[Single station Rayleigh wave phase velocity measurements]{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis.~\cite{tiltSeismology}}
 \label{Phase_Hanford}
 \end{center}
 \end{figure}
 
-These measurements display the utility of including rotation sensors in seismic instruments. If a seismic station was constructed with two orthogonally oriented horizontal rotation sensors and a vertical seismometer, the phase velocity could be measured independent of angle of incidence by utilizing Eq. \ref{v}. Neglecting the logistical difficulty, one could imagine constructing arrays of station with both translational and rotational sensors. This array would allow mapping of the phase dispersion curves, and thus tomography, with spatial resolution limited only by the size of the instruments. Such stations could also be installed within traditional arrays to yield independent point-like measurements to further constrain tomographic studies.
+These measurements display the utility of including rotation sensors in seismic instruments. If a seismic station was constructed with two orthogonally oriented horizontal rotation sensors and a vertical seismometer, the phase velocity could be measured independent of angle of incidence by utilizing Equation \ref{v}. Neglecting the logistical difficulty, one could imagine constructing arrays of station with both translational and rotational sensors. This array would allow mapping of the phase dispersion curves, and thus tomography, with spatial resolution limited only by the size of the instruments. Such stations could also be installed within traditional arrays to yield independent, point-like measurements to further constrain tomographic studies.
 
 %\subsubsection{Livingston Measurements}
 %
@@ -1120,23 +1119,22 @@ These measurements display the utility of including rotation sensors in seismic 
 \section{Newtonian Noise}
 \subsection{Theory}
 
-The gravitational coupling between the environment and an interferometer's test masses, so called Newtonian noise, is expected to limit the performance of terrestrial gravitational wave detectors in the near future~\cite{Saulson}. Sources of the gravitaitonal field variations can range from atmospheric density changes to vibrations of the laboratory structures~\cite{terrestrial}. This coupling is unique in the fact that it can not be shielded or trivially engineered away. One can move an observatory underground to decrease the strength of the atmospherically driven fluctuations and those caused by seismic surface waves. However, this process is both expensive and does not remove the sources which come from operating an instrument such as the vibrations of the vacuum structure or seismic motion sourced by laboratory equipment. 
+The gravitational coupling between the environment and an interferometer's test masses, so called Newtonian noise, is expected to limit the performance of terrestrial gravitational wave observatories in the near future~\cite{Saulson}. Sources of the gravitational field variations can range from atmospheric density changes to vibrations of the laboratory structures~\cite{terrestrial}. This coupling is unique in the fact that it can not be shielded or trivially engineered away. One can move an observatory underground to decrease the strength of the atmospherically driven fluctuations and those caused by seismic surface waves. However, this process is both expensive and does not remove the sources which come from operating an instrument such as the vibrations of the vacuum structure or seismic motion sourced by laboratory equipment. 
 
 For the current surface-level interferometric observatories, the seismic motion due to Rayleigh waves is thought to be the dominant contributor to the Newtonian noise and will be the limiting noise source between 8-20 Hz~\cite{NN2}. The motion due to a plane Rayleigh wave follows:
 
 \begin{equation}
 u_z({\bf r} ,t)=u_z \cos(\omega t-{\bf k}\cdot{\bf r}+\pi/2) \label{uz}
 \end{equation}
-
-where $u_z=\alpha \cos(\zeta)$, $\alpha$ is the amplitude, $\zeta$ is the ellipticity angle, $\phi$ is the angle of incidence in the horizontal plane, $\omega$ is the frequency, and $\bf{k}=\kappa (\cos(\phi),\sin(\phi),\text{0})$ is the wavevector. The corresponding test mass acceleration in the x-direction follows~\cite{Harms_2016}:
+where $u_z=\alpha \cos(\zeta)$, $\alpha$ is the amplitude, $\zeta$ is the ellipticity angle, $\phi$ is the angle of incidence in the horizontal plane, $\omega$ is the angular frequency, and $\bf{k}=\kappa (\cos(\phi),\sin(\phi),\text{0})$ is the wavevector. The corresponding test mass acceleration in the x-direction follows~\cite{Harms_2016}:
 \begin{equation}
 a_x({\bf r} ,t)=2 \pi u_z \gamma G \rho_0 e^{-h \kappa}  \cos(\phi) \cos(\omega t-{\bf k}\cdot{\bf r}) \label{a}
 \end{equation}
 where $G$ is the gravitational constant, $\rho_0$ is the density of the ground, $h$ is the height of the test mass from the ground, and $\gamma \approx 0.8$ is a factor which accounts for the counter-action of the change of density due to the seismic wave and the vertical motion of the ground.
 
-At first glance, these equations appear to suggest that one could predict the test mass acceleration for a given vertical seismometer signal. Such a prediction would allow for high quality subtraction of the Newtonian Noise from an observatory's data stream. However, true seismic wave-fields are not composed of stationary Rayleigh waves but instead are comprised of the sum of many desperate sources which may change their amplitude and phase in time. With this consideration, the phase difference between Eq. \ref{uz} and \ref{a} and the lack of angle of incidence dependence in Eq. \ref{uz} destroy the ability to use a single vertical seismometer as a reliable sensor for Newtonian noise subtraction.
+At first glance, these equations appear to suggest that one could predict the test mass acceleration for a given vertical seismometer signal. Such a prediction would allow for high quality subtraction of the Newtonian Noise from an observatory's data stream. However, true seismic wave-fields are not composed of stationary Rayleigh waves but instead are comprised of the sum of many desperate sources which may change their amplitude and phase in time. With this consideration, the phase difference between Equations \ref{uz} and \ref{a} and the lack of angle of incidence dependence in Equation \ref{uz} destroy the ability to use a single vertical seismometer as a reliable sensor for Newtonian noise subtraction.
 
-On the other hand, a horizontal seismometer described by Eq. \ref{XEq} is both in-phase with the Newtonian noise signal and has the same angular dependence. However, seismic wave-fields also include Love waves which have horizontal components but no vertical. This contaminates these channels and would decrease the correlation between the horizontal seismometer and the Newtonian noise. 
+On the other hand, a horizontal seismometer described by Equation \ref{XEq} is both in-phase with the Newtonian noise signal and has the same angular dependence. However, seismic wave-fields also include Love waves which have horizontal components but not vertical. This contaminates the horizontal channels and thus decreases the correlation between the horizontal seismometer and the Newtonian noise. 
 
 Finally, the tilt, being the rotation about the y-axis, due to a Rayleigh wave is described by the following:
 
@@ -1144,25 +1142,22 @@ Finally, the tilt, being the rotation about the y-axis, due to a Rayleigh wave i
 \theta_y({\bf r} ,t)=\frac{\partial u_z}{\partial x}=u_z \kappa \cos(\phi) \cos(\omega t-{\bf k}\cdot{\bf r})\label{tX}\\
 \end{equation}
 
-The tilt is thus both in-phase, has the same angular dependence, and does not include Love waves. The lack of Love waves can be seen in Figure \ref{Earthquake} when the horizontal seismometer experiences a large Love wave at around 1200 s while the rotation sensor sees no such signal. The tilt signal and the Newtonian noise are thus related by a handful of parameters which can be measured independently or determined empirically and are not expected to vary in time. This points to the conclusion that a tiltmeter is the ideal sensor for Newtonian noise subtraction
+The tilt is both in-phase, has the same angular dependence, and does not include Love waves. The lack of Love waves can be seen in Figure \ref{Earthquake} when the horizontal seismometer experiences a large Love wave at around 1200 s while the rotation sensor sees no such signal. The tilt signal and the Newtonian noise are thus related by a handful of parameters which can be measured independently or determined empirically and are not expected to vary in time. This points to the conclusion that a tiltmeter is the ideal sensor for Newtonian noise subtraction.
 
 \subsection{Observations}
 
-During LIGO's second observing run (O2), a prototype cBRS, described in Chapter \ref{cBRS_chap}, was installed at the corner station of the LIGO Hanford Observatory along side an array of vertical seismometers. The aim of this deployment was to investigate the Newtonian noise coupling and to test subtraction schemes. Ideally, one would place a rotation sensor directly below one of the test mass as the Newtonian noise acting on the mirror is dominated by the ground just beneath it. However, the cBRS was too large to be placed underneath the vacuum chamber which holds the test mass so it was placed just next to the vacuum chamber as can be seen in Figure \ref{NNArray}.
+During LIGO's second observing run (O2), a prototype cBRS, described in Chapter \ref{cBRS_chap}, was installed at the corner station of the LIGO Hanford Observatory along with an array of vertical seismometers. The aim of this deployment was to investigate the Newtonian noise coupling and to test subtraction schemes. Ideally, one would place a rotation sensor directly below one of the test masses as the Newtonian noise acting on the mirror is dominated by the ground just beneath it. However, the cBRS was too large to be placed underneath the vacuum chamber which holds the test mass so it was placed next to the vacuum chamber as can be seen in Figure \ref{NNArray}.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=\textwidth]{NNArray.pdf}
+\includegraphics[width=\textwidth]{NNArrayEdit.pdf}
 \end{center}
-\caption[The location of the cBRS during O2 alongside the array of seismometers]{The location of the cBRS , marked by the green $\times$, during O2 alongside the array of seismometers, marked by the black $\times$s, overlaid on a schematic of the LHO corner station vacuum chambers.}
+\caption[The location of the cBRS during O2 alongside the array of seismometers]{The location of the cBRS , marked by the blue $\times$, during O2 alongside the array of seismometers, marked by the black $\times$s, overlaid on a schematic of the LHO corner station vacuum chambers.}
 \label{NNArray}
 \end{figure}
 
-The first goal of this instrumentation deployment was to assess the ability to combine an array of vertical seismometers to significantly subtract Newtonian noise. Unfortunately, the observatory was not sensitive enough to observe Newtonian noise with high signal-to-noise. Thus the cBRS was used as a proxy for the signal that would be seen by a future observatory. In order to achieve the combination of the 30 seismometer signals which optimally approximates the cBRS signal, a Weiner filter was constructed using seismometers as the references and the cBRS as the target. 
+The first goal of this instrumentation deployment was to assess the ability to combine an array of vertical seismometers to significantly subtract Newtonian noise. Unfortunately, the observatory was not sensitive enough to observe Newtonian noise with high signal-to-noise. Thus the cBRS was used as a proxy for the signal that would be seen by a future observatory. A Weiner filter was constructed using seismometers as the references and the cBRS as the target. This combined the 30 seismometer signals to optimally approximate the cBRS signal.
 
-The results of this subtraction can be seen in Figure \ref{NNSub}~\cite{NN} which shows that a single seismometer can achieve a factor of $\sim$1.5 reduction while the combination of all 30 seismometers achieves a reduction of $\sim$10. This can be understood with Equations \ref{uz}-\ref{tX}. The signal from a single vertical seismometer will not have the angular dependence or phase as the tilt. However, the collection of seismometers can simulate the tilt by combining pairs of seismometers to act as effective rotation sensors.
-
-These observations have shown that an array of 30 vertical seismometers can be expected to yield Newtonian noise reduction for future observatories of at least an order of magnitude. Indeed, similar subtraction was achieved when only the best five seismometers were included as reference channels. This points to the possibility of smaller well placed arrays also achieving similar reduction.
 
 \begin{figure}[!h]
 \begin{center}
@@ -1172,7 +1167,12 @@ These observations have shown that an array of 30 vertical seismometers can be e
 \label{NNSub}
 \end{figure}
 
-The second goal of this array was to investigate the coupling between ground tilt and strain for the observatory during O2. This was achieved by calculating the transfer function between the cBRS output and strain using a month of data. The resultant transfer function is shown in Figure \ref{NNCoupling} where it is apparent coupling is observed across many frequencies with a single-to-noise of $\sim$10-30. The noise was estimated by recalculating the transfer function with the two data streams shifted relative to one another by 1000 s. 
+
+The results of this subtraction can be seen in Figure \ref{NNSub}~\cite{NN} which shows that a single seismometer can achieve a factor of $\sim$1.5 reduction while the combination of all 30 seismometers achieves a reduction of $\sim$10. This can be understood with Equations \ref{uz}-\ref{tX}. The signal from a single vertical seismometer will not have the same angular dependence or phase as the tilt. However, the collection of seismometers can simulate the tilt by combining pairs of seismometers to act as effective rotation sensors.
+
+These observations have shown that an array of 30 vertical seismometers can be expected to yield Newtonian noise reduction for future observatories of at least an order of magnitude. Indeed, similar subtraction was achieved when only the best five seismometers were included as reference channels.~\cite{NN} This points to the possibility of smaller well placed arrays also achieving similar reduction.
+
+The second goal of this array was to investigate the coupling between ground tilt and strain for the observatory during O2. This was achieved by calculating the transfer function between the cBRS output and strain using a month of data. The resultant transfer function is shown in Figure \ref{NNCoupling} where it is apparent coupling is observed across many frequencies with a single-to-noise of $\sim$10-30. The noise was estimated by recalculating the transfer function with the two data streams shifted relative to one another by 1000 seconds. 
 
 \begin{figure}[!h]
 \begin{center}
@@ -1182,7 +1182,7 @@ The second goal of this array was to investigate the coupling between ground til
 \label{NNCoupling}
 \end{figure}
 
-The nature of this coupling can not be known to be of gravitational nature a piori. Thus a collection of possible non-gravitational coupling mechanisms were investigated.~\cite{NN} Namely, seismic coupling through the seismic isolation system. This path follows from ground tilt to suspension point motion which propagates to the test mass. The transfer function from the ground tilt to suspension point motion can be readily measured using the sensors on the isolation platforms. This was then propagated to test mass motion using an analytical model of the suspension, Sus L, and a previously measured transfer function from suspension point to test mass, Sus L/P, which includes both the length and pitch couplings.
+This coupling can not be known to be of gravitational nature a piori. Thus a collection of possible non-gravitational coupling mechanisms were investigated.~\cite{NN} Namely, seismic coupling through the seismic isolation system. This path follows from ground tilt to suspension point motion which propagates to the test mass. The transfer function from the ground tilt to suspension point motion can be readily measured using the sensors on the isolation platforms. This was then propagated to test mass motion using an analytical model of the suspension, Sus L, and a previously measured transfer function from suspension point to test mass, Sus L/P, which includes both the length and pitch couplings.
 
 These first observations pointed to the possibility that the current observatories are already being affected by Newtonian noise. However, further modeling and investigation~\cite{NN2} found that the distinction between gravitational and non-gravitational coupling is still ambiguous. Deployment of future instruments, including a rotation sensor designed specifically to observe Newtonian noise, should disentangle these couplings and may allow for the first subtraction of Newtonian noise from strain output of the interferometer.
 
