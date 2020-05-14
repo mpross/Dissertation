@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.5.7)  13 MAY 2020 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.5.7)  14 MAY 2020 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -876,30 +876,33 @@ File: cBRS_Model_CompRX.pdf Graphic file (type pdf)
 <use cBRS_Model_CompRX.pdf>
 Package pdftex.def Info: cBRS_Model_CompRX.pdf  used on input line 976.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
- [65 <./cBRS_Model_ST2X.pdf>]
-<cBRS_Model_CompX.pdf, id=2756, 752.8125pt x 526.96875pt>
+ [65 <./cBRS_Model_ST2X.pdf>] [66 <./cBRS_Model_CompRX.pdf>]
+<cBRS_Model_CompX.pdf, id=2846, 752.8125pt x 526.96875pt>
 File: cBRS_Model_CompX.pdf Graphic file (type pdf)
 <use cBRS_Model_CompX.pdf>
 Package pdftex.def Info: cBRS_Model_CompX.pdf  used on input line 987.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
- [66 <./cBRS_Model_CompRX.pdf>] [67 <./cBRS_Model_CompX.pdf>]
-<cBRS_ASC_With.pdf, id=2975, 1011.78pt x 578.16pt>
+ [67 <./cBRS_Model_CompX.pdf>]
+<cBRS_ASC_With.pdf, id=2956, 1011.78pt x 578.16pt>
 File: cBRS_ASC_With.pdf Graphic file (type pdf)
 <use cBRS_ASC_With.pdf>
 Package pdftex.def Info: cBRS_ASC_With.pdf  used on input line 1001.
 (pdftex.def)             Requested size: 470.295pt x 268.74457pt.
  [68 <./cBRS_ASC_With.pdf>]
-<cBRS_ASC_LowF.pdf, id=2997, 1011.78pt x 578.16pt>
+<cBRS_ASC_LowF.pdf, id=2978, 1011.78pt x 578.16pt>
 File: cBRS_ASC_LowF.pdf Graphic file (type pdf)
 <use cBRS_ASC_LowF.pdf>
 Package pdftex.def Info: cBRS_ASC_LowF.pdf  used on input line 1012.
 (pdftex.def)             Requested size: 470.295pt x 268.74457pt.
  [69 <./cBRS_ASC_LowF.pdf>]
-<cBRS_ASC.pdf, id=3021, 1011.78pt x 578.16pt>
+<cBRS_ASC.pdf, id=3001, 1011.78pt x 578.16pt>
 File: cBRS_ASC.pdf Graphic file (type pdf)
 <use cBRS_ASC.pdf>
 Package pdftex.def Info: cBRS_ASC.pdf  used on input line 1028.
 (pdftex.def)             Requested size: 470.295pt x 268.74457pt.
+
+Underfull \vbox (badness 3919) has occurred while \output is active []
+
  [70 <./cBRS_ASC.pdf>] [71]
 <<4>>
 
@@ -908,7 +911,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [72
 
 ]
-<PNGTimeSeries.pdf, id=3062, 872.25874pt x 533.995pt>
+<PNGTimeSeries.pdf, id=3043, 872.25874pt x 533.995pt>
 File: PNGTimeSeries.pdf Graphic file (type pdf)
 <use PNGTimeSeries.pdf>
 Package pdftex.def Info: PNGTimeSeries.pdf  used on input line 1063.
@@ -918,13 +921,13 @@ Package pdftex.def Info: PNGTimeSeries.pdf  used on input line 1063.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [73] [74 <./PNGTimeSeries.pdf>] [75]
-<Vel.pdf, id=3172, 578.16pt x 505.89pt>
+<Vel.pdf, id=3153, 578.16pt x 505.89pt>
 File: Vel.pdf Graphic file (type pdf)
 <use Vel.pdf>
 Package pdftex.def Info: Vel.pdf  used on input line 1101.
 (pdftex.def)             Requested size: 352.72124pt x 308.63103pt.
  [76] [77 <./Vel.pdf>] [78]
-<NNArrayEdit.pdf, id=3236, 722.7pt x 722.7pt>
+<NNArrayEdit.pdf, id=3217, 722.7pt x 722.7pt>
 File: NNArrayEdit.pdf Graphic file (type pdf)
 <use NNArrayEdit.pdf>
 Package pdftex.def Info: NNArrayEdit.pdf  used on input line 1153.
@@ -941,13 +944,13 @@ LaTeX Warning: Text page 80 contains only floats.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [80 <./NNArrayEdit.pdf>]
-<NNSubtraction.pdf, id=3261, 722.7pt x 433.62pt>
+<NNSubtraction.pdf, id=3241, 722.7pt x 433.62pt>
 File: NNSubtraction.pdf Graphic file (type pdf)
 <use NNSubtraction.pdf>
 Package pdftex.def Info: NNSubtraction.pdf  used on input line 1164.
 (pdftex.def)             Requested size: 352.72124pt x 211.63536pt.
  [81 <./NNSubtraction.pdf>]
-<NNCoupling.pdf, id=3300, 578.16pt x 433.62pt>
+<NNCoupling.pdf, id=3281, 578.16pt x 433.62pt>
 File: NNCoupling.pdf Graphic file (type pdf)
 <use NNCoupling.pdf>
 Package pdftex.def Info: NNCoupling.pdf  used on input line 1179.
@@ -979,7 +982,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1193.
 Here is how much of TeX's memory you used:
  9385 strings out of 482479
  141457 string characters out of 5950543
- 400554 words of memory out of 5000000
+ 401554 words of memory out of 5000000
  24482 multiletter control sequences out of 15000+600000
  544899 words of font info for 71 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -1036,10 +1039,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Dissertation.pdf (102 pages, 8253207 bytes).
+Output written on Dissertation.pdf (102 pages, 8250250 bytes).
 PDF statistics:
- 3585 PDF objects out of 4296 (max. 8388607)
- 3259 compressed objects within 33 object streams
+ 3566 PDF objects out of 3580 (max. 8388607)
+ 3240 compressed objects within 33 object streams
  342 named destinations out of 1000 (max. 500000)
  651 words of extra memory for PDF output out of 10000 (max. 10000000)
 
