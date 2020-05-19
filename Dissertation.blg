@@ -1,6 +1,16 @@
 This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Dissertation.aux
+Case mismatch error between cite keys Windproofing and windproofing
+---line 160 of file Dissertation.aux
+ : \citation{Windproofing
+ :                       }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Windproofing and windproofing
+---line 161 of file Dissertation.aux
+ : \citation{Windproofing
+ :                       }
+I'm skipping whatever remains of this command
 The style file: unsrt.bst
 Database file #1: Dissertation.bib
 Warning--entry type for "O3events" isn't style-file defined
@@ -46,4 +56,4 @@ warning$ -- 0
 while$ -- 120
 width$ -- 63
 write$ -- 649
-(There was 1 warning)
+(There were 2 error messages)

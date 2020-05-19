@@ -32,9 +32,9 @@
 \setcounter{page}{-1}
 \abstract{\quad The LIGO observatories are comprised of 4-km long dual-recycled Fabry-Perot Michelson interferometers. Each observatory deploys a multi-stage seismic isolation system to isolate from terrestrial seismic motion. These systems use seismometers to measure motion at a wide range of frequencies. 
 
-Seismometers are inherently susceptible to contamination due to tilts. This contamination dominates seismometer readings at low frequency which limits the performance of LIGO's seismic isolation. We developed low-frequency inertial rotation sensors to subtract this tilt-contamination from ground seismometers. These sensors were deployed at both LIGO observatories which allowed for observation during high wind speeds.
+Seismometers are inherently susceptible to contamination due to tilts. This contamination dominates seismometer readings at low frequency which limits the performance of LIGO's seismic isolation. We developed low-frequency inertial rotation sensors to subtract this tilt-contamination from ground seismometers. These sensors were deployed at both LIGO observatories which allowed observatories to operate during high wind speeds.
 
-In addition, a compact inertial rotation sensor was developed with the capability of being deployed on the LIGO seismic isolation platforms. A prototype was built and tested. A theoretical control model was designed to exploit this novel sensor. This model showed a significant decrease in control-noise leakage into the gravitational wave band. 
+In addition, a compact inertial rotation sensor was developed with the capability of being deployed on the LIGO seismic isolation platforms. A prototype was built and tested. A theoretical control model was designed to exploit this novel sensor. This model predicts a significant decrease in control-noise leakage into the gravitational wave band. 
 
 These sensors have found application in a number of auxiliary fields. The ground rotation sensors have allowed for novel seismological studies while the compact rotation sensor has been applied to the study of Newtonian noise.}
 
@@ -43,14 +43,14 @@ These sensors have found application in a number of auxiliary fields. The ground
 \listoftables
 \dedication{\begin{center}To my wife Grace\\without her love and support \\this work would not have been possible\end{center} }
 
-\acknowledgments{The list of people who influenced this research could fill volumes. I would particularly like to thank: the entire E{\"o}t-Wash group for the many physical insights and guidance, especially Charlie Hagedorn for the countless conversations and mentorship; Jim Warner, Hugh Radkins, Arnaud Pele, and Eyal Schwartz for caring for our temperamental devices; the LIGO seismic team for constructing and maintaining beautiful seismic isolation systems, especially Brian Lantz and Jeff Kissel for their insightful inputs and coordination;
+\acknowledgments{The list of people who influenced this research could fill volumes. I would particularly like to thank: the entire E{\"o}t-Wash group for their many contributions, especially Charlie Hagedorn for the countless conversations and mentorship; Jim Warner, Hugh Radkins, Arnaud Pele, and Eyal Schwartz for caring for our temperamental devices; the LIGO seismic team for constructing and maintaining beautiful seismic isolation systems, especially Brian Lantz and Jeff Kissel for their insightful inputs and coordination;
 the entire LIGO scientific collaboration for its welcoming culture and intellectual prowess;
 the CENPA community for making tough work enjoyable;
 the CENPA machine shop for the precise machining even when our schematics were subpar;
 my mom, Sharon Powers, for instilling in me a reverence for Nature;
 the many professors and teachers that steered me towards studying physics, especially C.D. Hoyle, Erik Kramer, and Steve Hoffman;
 Pippin, Bjorn, Olive, and Toph for their constant distractions and companionship;
-and, again, my amazing wife, Grace Rotwein, for the love and support throughout my years of study including my extended travel to the deserts of Washington and the swamps of Louisiana.
+and, again, my amazing wife, Grace Rotwein, for the love and support throughout my years of study and travel including my extended trips to the deserts of Washington and the swamps of Louisiana.
 
 
 Much of the work presented here is open-source. The BRS image analysis software can be found here: \url{https://github.com/mpross/BRSReadout}. The BRS controls software can be found here: \url{https://github.com/mpross/BRS-Controls}. The CAD models of the BRS can be found here: \url{}. The CAD model of the autocollimator can be found here: \url{}.
@@ -153,7 +153,7 @@ The Laser Interferometric Gravitational wave Observatory (LIGO)~\cite{aLIGO} is 
 \end{center}
 \end{figure}
 
-Each test mass is housed in its own building (end station) while the rest of the optics are held in another building (corner station). The end stations are connected to the corner station by 4-km-long vacuum tubes to form the ``X-arm'' and ``Y-arm'' of the interferometer. This lends a convenient coordinate system, used throughout, with the x-axis running along one arm, the y-axis along the other, and the z-axis along local vertical. 
+Each test mass is housed in its own building (end station) while the rest of the optics are held in another building (corner station). The end stations are connected to the corner station by orthogonal 4-km-long vacuum tubes to form the ``X-arm'' and ``Y-arm'' of the interferometer. This lends a convenient coordinate system, used throughout, with the x-axis running along one arm, the y-axis along the other, and the z-axis along local vertical. 
 
 \begin{figure}[!h]
 \begin{center}
@@ -563,7 +563,7 @@ This tilt-subtracted channel, rather than the raw seismometer, was then used as 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.85\textwidth]{BRSArmMotion.pdf}
-\caption[Differential platform motion ]{Differential platform motion as measured by the capacitive position sensors (CPS) for the Y-Arm of LHO with and without the BRSs installed. Below $\sim$30~mHz, the CPS reading is driven to zero by the control system.}
+\caption[Differential platform motion ]{Differential platform motion as measured by the capacitive position sensors (CPS) for the Y-Arm of LHO with and without the BRSs installed. \cite{windproofing} Below $\sim$30~mHz, the CPS reading is driven to zero by the control system.}
 \label{armMotion}
 \end{center}
 \end{figure}
@@ -1152,7 +1152,7 @@ During LIGO's second observing run (O2), a prototype cBRS, described in Chapter 
 \begin{center}
 \includegraphics[width=\textwidth]{NNArrayEdit.pdf}
 \end{center}
-\caption[The location of the cBRS during O2 alongside the array of seismometers]{The location of the cBRS , marked by the blue $\times$, during O2 alongside the array of seismometers, marked by the black $\times$s, overlaid on a schematic of the LHO corner station vacuum chambers.}
+\caption[The location of the cBRS during O2 alongside the array of seismometers]{The location of the cBRS , marked by the blue $\times$, during O2 alongside the array of seismometers, marked by the black $\times$s, overlaid on a schematic of the LHO corner station vacuum chambers. \cite{NN}}
 \label{NNArray}
 \end{figure}
 
@@ -1163,7 +1163,7 @@ The first goal of this instrumentation deployment was to assess the ability to c
 \begin{center}
 \includegraphics[width=0.75\textwidth]{NNSubtraction.pdf}
 \end{center}
-\caption[Projected Newtonian noise subtraction with the array of seismometers]{Projected Newtonian noise subtraction with the array of seismometers using the cBRS as a proxy for the noise that would be seen by a future observatory.}
+\caption[Projected Newtonian noise subtraction with the array of seismometers]{Projected Newtonian noise subtraction with the array of seismometers using the cBRS as a proxy for the noise that would be seen by a future observatory. \cite{NN}}
 \label{NNSub}
 \end{figure}
 
@@ -1178,7 +1178,7 @@ The second goal of this array was to investigate the coupling between ground til
 \begin{center}
 \includegraphics[width=0.75\textwidth]{NNCoupling.pdf}
 \end{center}
-\caption[Transfer function between the cBRS and the strain output of the interferometer]{Transfer function between the cBRS and the strain output of the interferometer alongside various non-gravitational coupling mechanisms and a model for the Newtonian noise caused by an isotropic, homogeneous Rayleigh wave-field.}
+\caption[Transfer function between the cBRS and the strain output of the interferometer]{Transfer function between the cBRS and the strain output of the interferometer alongside various non-gravitational coupling mechanisms and a model for the Newtonian noise caused by an isotropic, homogeneous Rayleigh wave-field. \cite{NN}}
 \label{NNCoupling}
 \end{figure}
 
