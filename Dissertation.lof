@@ -5,21 +5,21 @@
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Example ambient ground motion spectrum}}{12}{figure.caption.10}%
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Schematic of the LIGO seismic isolation system}}{13}{figure.caption.11}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Sensor noise for the seismic isolation system}}{14}{figure.caption.12}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Performance of the ISI}}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Performance of the internal seismic isolation}}{16}{figure.caption.13}%
 \addvspace {5\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ground motion spectra during low and high winds}}{18}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces CAD rendering of the BRS}}{21}{figure.caption.15}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Side view of a CAD rendering of the BRS}}{22}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Transfer function from platform tilt to measured tilt for the cBRS}}{24}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Transfer function from platform tilt to measured tilt}}{24}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Image of a BRS flexure}}{25}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Close up view of the center of the CAD rendering of the BRS}}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Close up view of the center of the BRS}}{26}{figure.caption.19}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Picture of an installed BRS}}{27}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic of a multi-slit autocollimator}}{29}{figure.caption.21}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Simulation of the BRS image analysis algorithm}}{30}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Noise budge for the Beam Rotation Sensors}}{33}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Noise budget for the Beam Rotation Sensors}}{33}{figure.caption.24}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Representative amplitude spectral density showing the tilt subtraction during windy conditions}}{35}{figure.caption.25}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Time series showing tilt subtraction }}{36}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Differential platform motion }}{37}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Differential platform motion improvements}}{37}{figure.caption.27}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Observed and modeled tilt vs wind speed}}{38}{figure.caption.28}%
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Duty cycle improvements for the LIGO Hanford Observatory}}{40}{figure.caption.29}%
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Duty cycle improvements for the LIGO Livingston Observatory}}{41}{figure.caption.30}%
