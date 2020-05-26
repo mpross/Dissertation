@@ -10,6 +10,8 @@
 \usepackage{lineno}
 \usepackage{epigraph}
 \usepackage{natbib}
+\usepackage{pdfpages}
+\usepackage{appendix}
 
 \begin{document}
 
@@ -17,7 +19,7 @@
 \prelimpages
  
 \Title{Precision Mechanical Rotation Sensors for Terrestrial~Gravitational~Wave~Observatories}
-\Author{M. P. Ross}
+\Author{M.P. Ross}
 \Year{2020}
 \Program{Physics}
 
@@ -132,7 +134,7 @@ This process produces a characteristic ``chirp'' signal which begins at low freq
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{GW170817.pdf}
-\caption[Spectrogram of the strain caused by a binary neutron star merger]{Spectrogram of the strain caused by a binary neutron star merger as seen at the LIGO Hanford Observatory, LIGO Livingston Observatory, and the Virgo Observatory.~\cite{GW170817} A clear chirp signal can be seen starting at $\sim$40 Hz which rises in both frequency and amplitude. The origin of the time axis is the time at which the neutron stars merge. The differing amount of signal in the three detectors is due to the alignment of their respective antenna-patterns with the source location.}
+\caption[Spectrogram of the strain caused by a binary neutron star merger]{Spectrogram of the strain caused by a binary neutron star merger as seen at the LIGO Hanford Observatory, LIGO Livingston Observatory, and the Virgo Observatory. A clear chirp signal can be seen starting at $\sim$40 Hz which rises in both frequency and amplitude. The origin of the time axis is the time at which the neutron stars merge. The differing amount of signal in the three detectors is due to the alignment of their respective antenna-patterns with the source location. Reprinted from~\cite{GW170817}.}
 \label{GW170817}
 \end{center}
 \end{figure}
@@ -148,7 +150,7 @@ The Laser Interferometric Gravitational wave Observatory (LIGO)~\cite{aLIGO} is 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.9\textwidth]{LIGO_Layout.pdf}
-\caption[Optical layout of the LIGO interferometers]{Optical layout of the LIGO interferometers. Each test mass is housed in its own building (End Station) while the rest of the optics are held in another building (Corner Station). Reprinted figure with permission from~\cite{LIGOSens}. Copyright 2016 by the American Physical Society.}
+\caption[Optical layout of the LIGO interferometers]{Optical layout of the LIGO interferometers. Each test mass is housed in its own building (End Station) while the rest of the optics are held in another building (Corner Station). Adapted from~\cite{LIGOSens}. Copyright 2016 by the American Physical Society.}
 \label{LIGO_Schematic}
 \end{center}
 \end{figure}
@@ -158,7 +160,7 @@ Each test mass is housed in its own building (end station) while the rest of the
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=1.05\textwidth]{LIGOSens.png}
-\caption[Differential strain sensitivity of the LIGO and Virgo Observatories]{Differential strain sensitivity of the LIGO Observatories during the third observing run.~\cite{LIGOopen} Also shown are the sensitivities of the Virgo~\cite{virgo} and GEO600~\cite{geo} observatories.}
+\caption[Differential strain sensitivity of the LIGO and Virgo Observatories]{Differential strain sensitivity of the LIGO Observatories during the third observing run.~\cite{aLIGO} Also shown are the sensitivities of the Virgo~\cite{virgo} and GEO600~\cite{geo} observatories. Reprinted from~\cite{LIGOopen}.}
 \label{LIGO_Strain}
 \end{center}
 \end{figure}
@@ -250,7 +252,7 @@ The LIGO observatories solve this issue by employing a multi-stage seismic isola
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{seismicIso.pdf}
-\caption[Schematic of the LIGO seismic isolation system]{Schematic of the LIGO seismic isolation system.~\cite{ligoSeis} On the left is a cartoon showing the three stages of isolation while on the right is a CAD rendering of the seismic isolation system and vacuum chamber.}
+\caption[Schematic of the LIGO seismic isolation system]{Schematic of the LIGO seismic isolation system. On the left is a cartoon showing the three stages of isolation while on the right is a CAD rendering of the seismic isolation system and vacuum chamber. Adapted from~\cite{ligoSeis}.}
 \label{wind}
 \end{center}
 \end{figure}
@@ -563,7 +565,7 @@ This tilt-subtracted channel, rather than the raw seismometer, was then used as 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.85\textwidth]{BRSArmMotion.pdf}
-\caption[Differential platform motion ]{Differential platform motion as measured by the capacitive position sensors (CPS) for the Y-Arm of LHO with and without the BRSs installed. \cite{windproofing} Below $\sim$30~mHz, the CPS reading is driven to zero by the control system.}
+\caption[Differential platform motion ]{Differential platform motion as measured by the capacitive position sensors (CPS) for the Y-Arm of LHO with and without the BRSs installed. Below $\sim$30~mHz, the CPS reading is driven to zero by the control system. Adapted from~\cite{windproofing}.}
 \label{armMotion}
 \end{center}
 \end{figure}
@@ -1004,7 +1006,7 @@ Although in reality the control loop for each isolation platform will have to be
 \end{center}
 \end{figure}
 
-As mentioned in Section \ref{ASC}, the improved seismic isolation provided by the cBRS allows one to retune the angular sensing and control (ASC) loops. In order to estimate the possible ASC performance for a given seismic performance, a simplified model was constructed \cite{ascModel} which takes the motion of the suspension point as an input, optimizes a theoretical control loop, and outputs the expected residual angular motion of the test mass. The control loop is optimized to give the best performance at high frequencies while maintaining a low frequency RMS residual of 1 nrad/$\sqrt{\text{Hz}}$.
+As mentioned in Section \ref{ASC}, the improved seismic isolation provided by the cBRS allows one to retune the angular sensing and control (ASC) loops. In order to estimate the possible ASC performance for a given seismic performance, a simplified model was constructed\footnote{Model originally developed by Hang Yu. \cite{ascModel}} \cite{ascModel} which takes the motion of the suspension point as an input, optimizes a theoretical control loop, and outputs the expected residual angular motion of the test mass. The control loop is optimized to give the best performance at high frequencies while maintaining a low frequency RMS residual of 1 nrad/$\sqrt{\text{Hz}}$.
 
 
 \begin{figure}[!h]
@@ -1061,7 +1063,7 @@ These components can be seen in Figure \ref{Earthquake} which shows measurements
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=\textwidth]{PNGTimeSeries.pdf}
-\caption[Observations of the seismic waves by instruments installed at the End-Y Station of LHO]{Observations of the seismic waves emanated from a M7.9 earthquake in Papua New Guinea as seen by instruments installed at the End-Y Station of LHO.~\cite{tiltSeismology} Both the Z-velocity and Y-displacement were measured by a broadband three-axis seismometer while the rotation was measured by a BRS described in Chapter \ref{BRS_chap}. }
+\caption[Observations of the seismic waves by instruments installed at the End-Y Station of LHO]{Observations of the seismic waves emanated from a M7.9 earthquake in Papua New Guinea as seen by instruments installed at the End-Y Station of LHO. Both the Z-velocity and Y-displacement were measured by a broadband three-axis seismometer while the rotation was measured by a BRS described in Chapter \ref{BRS_chap}. Reprinted from~\cite{tiltSeismology}.}
 \label{Earthquake}
 \end{center}
 \end{figure}
@@ -1099,7 +1101,7 @@ Between April, 2016 and January, 2017, six earthquakes were measured during envi
 \begin{figure}%
 \begin{center}
 \includegraphics[width=0.75\textwidth]{Vel.pdf}
-\caption[Single station Rayleigh wave phase velocity measurements]{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis.~\cite{tiltSeismology}}
+\caption[Single station Rayleigh wave phase velocity measurements]{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis. Reprinted from~\cite{tiltSeismology}}
 \label{Phase_Hanford}
 \end{center}
 \end{figure}
@@ -1152,7 +1154,7 @@ During LIGO's second observing run (O2), a prototype cBRS, described in Chapter 
 \begin{center}
 \includegraphics[width=\textwidth]{NNArrayEdit.pdf}
 \end{center}
-\caption[The location of the cBRS during O2 alongside the array of seismometers]{The location of the cBRS , marked by the blue $\times$, during O2 alongside the array of seismometers, marked by the black $\times$s, overlaid on a schematic of the LHO corner station vacuum chambers. \cite{NN}}
+\caption[The location of the cBRS during O2 alongside the array of seismometers]{The location of the cBRS , marked by the blue $\times$, during O2 alongside the array of seismometers, marked by the black $\times$s, overlaid on a schematic of the LHO corner station vacuum chambers. Adapted from~\cite{NN}.}
 \label{NNArray}
 \end{figure}
 
@@ -1163,7 +1165,7 @@ The first goal of this instrumentation deployment was to assess the ability to c
 \begin{center}
 \includegraphics[width=0.75\textwidth]{NNSubtraction.pdf}
 \end{center}
-\caption[Projected Newtonian noise subtraction with the array of seismometers]{Projected Newtonian noise subtraction with the array of seismometers using the cBRS as a proxy for the noise that would be seen by a future observatory. \cite{NN}}
+\caption[Projected Newtonian noise subtraction with the array of seismometers]{Projected Newtonian noise subtraction with the array of seismometers using the cBRS as a proxy for the noise that would be seen by a future observatory. Reprinted from~\cite{NN}.}
 \label{NNSub}
 \end{figure}
 
@@ -1178,7 +1180,7 @@ The second goal of this array was to investigate the coupling between ground til
 \begin{center}
 \includegraphics[width=0.75\textwidth]{NNCoupling.pdf}
 \end{center}
-\caption[Transfer function between the cBRS and the strain output of the interferometer]{Transfer function between the cBRS and the strain output of the interferometer alongside various non-gravitational coupling mechanisms and a model for the Newtonian noise caused by an isotropic, homogeneous Rayleigh wave-field. \cite{NN}}
+\caption[Transfer function between the cBRS and the strain output of the interferometer]{Transfer function between the cBRS and the strain output of the interferometer alongside various non-gravitational coupling mechanisms and a model for the Newtonian noise caused by an isotropic, homogeneous Rayleigh wave-field. Reprinted from~\cite{NN}.}
 \label{NNCoupling}
 \end{figure}
 
@@ -1186,10 +1188,62 @@ This coupling can not be known to be of gravitational nature a piori. Thus a col
 
 These first observations pointed to the possibility that the current observatories are already being affected by Newtonian noise. However, further modeling and investigation~\cite{NN2} found that the distinction between gravitational and non-gravitational coupling is still ambiguous. Deployment of future instruments, including a rotation sensor designed specifically to observe Newtonian noise, should disentangle these couplings and may allow for the first subtraction of Newtonian noise from strain output of the interferometer.
 
+
 \printendnotes
 \nocite{*}   
 \bibliographystyle{unsrt}
 \bibliography{Dissertation}
+\raggedbottom
+
+\appendix
+\chapter{Final Exam Slides}
+\begin{center}
+\includegraphics[page=1,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=2,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=3,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=4,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=5,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=6,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=7,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=8,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=9,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=10,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=11,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=12,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=13,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=14,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=15,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=16,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=17,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=18,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=19,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=20,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=21,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=22,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=23,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=24,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=25,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=26,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=27,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=28,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=29,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=30,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=31,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=32,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=33,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=34,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=35,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=36,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=37,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=38,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=39,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=40,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=41,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=42,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=43,width=0.69\textwidth]{FinalExam.pdf}
+\includegraphics[page=44,width=0.69\textwidth]{FinalExam.pdf}
+\end{center}
+
 \end{document}
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.5.7)  19 MAY 2020 10:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.5.7)  26 MAY 2020 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -323,10 +323,68 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count282
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count283
+\calc@Bcount=\count284
+\calc@Adimen=\dimen164
+\calc@Bdimen=\dimen165
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count285
+\calc@Cskip=\skip66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen166
+\AM@pageheight=\dimen167
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box50
+\AM@global@opts=\toks22
+\AM@pagecnt=\count286
+\AM@toc@title=\toks23
+\c@AM@survey=\count287
+\AM@templatesizebox=\box51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count288
+\c@@ppsavesec=\count289
+\c@@ppsaveapp=\count290
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count283
-\l__pdf_internal_box=\box50
+\l__kernel_color_stack_int=\count291
+\l__pdf_internal_box=\box52
 )
 (./Dissertation.aux
 
@@ -338,35 +396,35 @@ LaTeX Warning: Label `sensNoise' multiply defined.
 )
 \openout1 = `Dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count284
-\scratchdimen=\dimen164
-\scratchbox=\box51
-\nofMPsegments=\count285
-\nofMParguments=\count286
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count287
-\MPscratchDim=\dimen165
-\MPnumerator=\count288
-\makeMPintoPDFobject=\count289
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count292
+\scratchdimen=\dimen168
+\scratchbox=\box53
+\nofMPsegments=\count293
+\nofMParguments=\count294
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count295
+\MPscratchDim=\dimen169
+\MPnumerator=\count296
+\makeMPintoPDFobject=\count297
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -376,8 +434,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box52
-Package hyperref Info: Link coloring OFF on input line 14.
+\AtBeginShipoutBox=\box54
+Package hyperref Info: Link coloring OFF on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -388,11 +446,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count290
+\c@section@level=\count298
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
 
 (./Dissertation.out) (./Dissertation.out)
 \@outlinefile=\write4
@@ -401,7 +459,15 @@ LaTeX Info: Redefining \nameref on input line 14.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
- [1
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [-1
 
@@ -409,7 +475,7 @@ Package caption Info: End \AtBeginDocument code.
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 ... applied to the study of Newtonian noise.}
+l.41 ... applied to the study of Newtonian noise.}
                                                    [0
 
 ] (./Dissertation.toc
@@ -426,7 +492,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 ...anford Installation}{33}{subsection.2.3.1}
+l.26 ...anford Installation}{34}{subsection.2.3.1}
                                                   % [1
 
 
@@ -470,278 +536,280 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-<GW170817.pdf, id=500, 379.4175pt x 542.025pt>
+<GW170817.pdf, id=505, 379.4175pt x 542.025pt>
 File: GW170817.pdf Graphic file (type pdf)
 <use GW170817.pdf>
-Package pdftex.def Info: GW170817.pdf  used on input line 134.
+Package pdftex.def Info: GW170817.pdf  used on input line 136.
 (pdftex.def)             Requested size: 376.23743pt x 537.49136pt.
 
 
-LaTeX Warning: Float too large for page by 54.52136pt on input line 138.
+LaTeX Warning: Float too large for page by 54.52136pt on input line 140.
 
 
 Underfull \vbox (badness 1019) has occurred while \output is active []
 
  [5]
 [6 <./GW170817.pdf>]
-<LIGO_Layout.pdf, id=579, 433.62pt x 361.35pt>
+<LIGO_Layout.pdf, id=584, 433.62pt x 361.35pt>
 File: LIGO_Layout.pdf Graphic file (type pdf)
 <use LIGO_Layout.pdf>
-Package pdftex.def Info: LIGO_Layout.pdf  used on input line 150.
+Package pdftex.def Info: LIGO_Layout.pdf  used on input line 152.
 (pdftex.def)             Requested size: 423.26262pt x 352.73663pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<LIGOSens.png, id=582, 867.24pt x 433.62pt>
+<LIGOSens.png, id=587, 867.24pt x 433.62pt>
 File: LIGOSens.png Graphic file (type png)
 <use LIGOSens.png>
-Package pdftex.def Info: LIGOSens.png  used on input line 160.
+Package pdftex.def Info: LIGOSens.png  used on input line 162.
 (pdftex.def)             Requested size: 493.81117pt x 246.90793pt.
 
-Overfull \hbox (23.51617pt too wide) in paragraph at lines 160--161
+Overfull \hbox (23.51617pt too wide) in paragraph at lines 162--163
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] [8 <./LIGO_Layout.pdf>]
-Underfull \vbox (badness 2573) has occurred while \output is active []
+[7]
+Underfull \vbox (badness 2762) has occurred while \output is active []
+
+ [8 <./LIGO_Layout.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <./LIGOSens.png>] [10]
-<GroundSpectrum.pdf, id=654, 711.65875pt x 507.8975pt>
+<GroundSpectrum.pdf, id=661, 711.65875pt x 507.8975pt>
 File: GroundSpectrum.pdf Graphic file (type pdf)
 <use GroundSpectrum.pdf>
-Package pdftex.def Info: GroundSpectrum.pdf  used on input line 242.
+Package pdftex.def Info: GroundSpectrum.pdf  used on input line 244.
 (pdftex.def)             Requested size: 399.75362pt x 285.2964pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [11]
-<seismicIso.pdf, id=672, 794.97pt x 505.89pt>
+<seismicIso.pdf, id=679, 794.97pt x 505.89pt>
 File: seismicIso.pdf Graphic file (type pdf)
 <use seismicIso.pdf>
-Package pdftex.def Info: seismicIso.pdf  used on input line 252.
+Package pdftex.def Info: seismicIso.pdf  used on input line 254.
 (pdftex.def)             Requested size: 470.295pt x 299.28302pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./GroundSpectrum.pdf>]
-Underfull \vbox (badness 5175) has occurred while \output is active []
 
- [13 <./seismicIso.pdf>]
-<seismicSensNoise.pdf, id=762, 515.9275pt x 387.4475pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./GroundSpectrum.pdf>] [13 <./seismicIso.pdf>]
+<seismicSensNoise.pdf, id=769, 515.9275pt x 387.4475pt>
 File: seismicSensNoise.pdf Graphic file (type pdf)
 <use seismicSensNoise.pdf>
-Package pdftex.def Info: seismicSensNoise.pdf  used on input line 266.
+Package pdftex.def Info: seismicSensNoise.pdf  used on input line 268.
 (pdftex.def)             Requested size: 399.75362pt x 300.2155pt.
  [14 <./seismicSensNoise.pdf>]
-<ISIPerf.pdf, id=905, 663.47874pt x 494.84875pt>
+Underfull \vbox (badness 4072) has occurred while \output is active []
+
+ [15]
+<ISIPerf.pdf, id=919, 663.47874pt x 494.84875pt>
 File: ISIPerf.pdf Graphic file (type pdf)
 <use ISIPerf.pdf>
-Package pdftex.def Info: ISIPerf.pdf  used on input line 297.
+Package pdftex.def Info: ISIPerf.pdf  used on input line 299.
 (pdftex.def)             Requested size: 470.295pt x 350.76367pt.
- [15] [16 <./ISIPerf.pdf>]
+
+[16 <./ISIPerf.pdf>]
 <<2>>
 [17
 
 ]
-<windComp2.pdf, id=1022, 711.65875pt x 507.8975pt>
+<windComp2.pdf, id=1029, 711.65875pt x 507.8975pt>
 File: windComp2.pdf Graphic file (type pdf)
 <use windComp2.pdf>
-Package pdftex.def Info: windComp2.pdf  used on input line 318.
+Package pdftex.def Info: windComp2.pdf  used on input line 320.
 (pdftex.def)             Requested size: 399.75362pt x 285.2964pt.
 
 Underfull \vbox (badness 4927) has occurred while \output is active []
 
  [18 <./windComp2.pdf>] [19]
-<BRSIso.png, id=1110, 572.89032pt x 408.77719pt>
+<BRSIso.png, id=1117, 572.89032pt x 408.77719pt>
 File: BRSIso.png Graphic file (type png)
 <use BRSIso.png>
-Package pdftex.def Info: BRSIso.png  used on input line 347.
+Package pdftex.def Info: BRSIso.png  used on input line 349.
 (pdftex.def)             Requested size: 352.72124pt x 251.68028pt.
-<BRSFrontLabeled.pdf, id=1111, 794.97pt x 361.35pt>
+<BRSFrontLabeled.pdf, id=1118, 794.97pt x 361.35pt>
 File: BRSFrontLabeled.pdf Graphic file (type pdf)
 <use BRSFrontLabeled.pdf>
-Package pdftex.def Info: BRSFrontLabeled.pdf  used on input line 353.
+Package pdftex.def Info: BRSFrontLabeled.pdf  used on input line 355.
 (pdftex.def)             Requested size: 446.77881pt x 203.08795pt.
- [20] [21 <./BRSIso.png> <./BRSFrontLabeled.pdf>]
-<cBRS_TransferFunction.pdf, id=1135, 541.02126pt x 443.6575pt>
+ [20] [21 <./BRSIso.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./BRSFrontLabeled.pdf>]
+<cBRS_TransferFunction.pdf, id=1150, 541.02126pt x 443.6575pt>
 File: cBRS_TransferFunction.pdf Graphic file (type pdf)
 <use cBRS_TransferFunction.pdf>
-Package pdftex.def Info: cBRS_TransferFunction.pdf  used on input line 388.
+Package pdftex.def Info: cBRS_TransferFunction.pdf  used on input line 390.
 (pdftex.def)             Requested size: 399.75362pt x 327.82076pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[23]
+Underfull \vbox (badness 5847) has occurred while \output is active []
 
-Underfull \vbox (badness 3713) has occurred while \output is active []
-
- [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23 <./cBRS_TransferFunction.pdf>]
-<Flexure.pdf, id=1222, 794.97pt x 614.295pt>
+ [24 <./cBRS_TransferFunction.pdf>]
+<Flexure.pdf, id=1234, 794.97pt x 614.295pt>
 File: Flexure.pdf Graphic file (type pdf)
 <use Flexure.pdf>
-Package pdftex.def Info: Flexure.pdf  used on input line 406.
+Package pdftex.def Info: Flexure.pdf  used on input line 408.
 (pdftex.def)             Requested size: 352.72124pt x 272.55899pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<BRSFrontDetailLabeled.pdf, id=1223, 614.295pt x 433.62pt>
+<BRSFrontDetailLabeled.pdf, id=1235, 614.295pt x 433.62pt>
 File: BRSFrontDetailLabeled.pdf Graphic file (type pdf)
 <use BRSFrontDetailLabeled.pdf>
-Package pdftex.def Info: BRSFrontDetailLabeled.pdf  used on input line 414.
+Package pdftex.def Info: BRSFrontDetailLabeled.pdf  used on input line 416.
 (pdftex.def)             Requested size: 470.295pt x 331.97626pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<BRSPic.jpg, id=1225, 1223.57124pt x 917.4275pt>
+<BRSPic.jpg, id=1237, 1223.57124pt x 917.4275pt>
 File: BRSPic.jpg Graphic file (type jpg)
 <use BRSPic.jpg>
-Package pdftex.def Info: BRSPic.jpg  used on input line 425.
+Package pdftex.def Info: BRSPic.jpg  used on input line 427.
 (pdftex.def)             Requested size: 470.295pt x 352.61574pt.
+[25 <./Flexure.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-[25 <./Flexure.pdf>]
-<Autocollimator2.pdf, id=1251, 597.6786pt x 686.565pt>
+[26 <./BRSFrontDetailLabeled.pdf>] [27 <./BRSPic.jpg>]
+<Autocollimator2.pdf, id=1277, 597.6786pt x 686.565pt>
 File: Autocollimator2.pdf Graphic file (type pdf)
 <use Autocollimator2.pdf>
-Package pdftex.def Info: Autocollimator2.pdf  used on input line 445.
+Package pdftex.def Info: Autocollimator2.pdf  used on input line 447.
 (pdftex.def)             Requested size: 470.295pt x 540.25375pt.
 
 
-LaTeX Warning: Float too large for page by 57.28375pt on input line 449.
+LaTeX Warning: Float too large for page by 57.28375pt on input line 451.
 
-[26 <./BRSFrontDetailLabeled.pdf>] [27 <./BRSPic.jpg>] [28 <./Autocollimator2.p
-df>]
-<BRS_ImgAnalysis.pdf, id=1287, 601.24625pt x 368.37625pt>
+[28] [29 <./Autocollimator2.pdf>]
+<BRS_ImgAnalysis.pdf, id=1299, 601.24625pt x 368.37625pt>
 File: BRS_ImgAnalysis.pdf Graphic file (type pdf)
 <use BRS_ImgAnalysis.pdf>
-Package pdftex.def Info: BRS_ImgAnalysis.pdf  used on input line 488.
+Package pdftex.def Info: BRS_ImgAnalysis.pdf  used on input line 490.
 (pdftex.def)             Requested size: 470.295pt x 288.15297pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 3724) has occurred while \output is active []
-
- [29]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [30 <./BRS_ImgAnalysis.pdf>] [31]
-<BRSNoiseModel.pdf, id=1309, 591.20876pt x 427.5975pt>
+<BRSNoiseModel.pdf, id=1316, 591.20876pt x 427.5975pt>
 File: BRSNoiseModel.pdf Graphic file (type pdf)
 <use BRSNoiseModel.pdf>
-Package pdftex.def Info: BRSNoiseModel.pdf  used on input line 516.
+Package pdftex.def Info: BRSNoiseModel.pdf  used on input line 518.
 (pdftex.def)             Requested size: 399.75362pt x 289.1313pt.
- [32 <./BRSNoiseModel.pdf>]
-<TiltCorrSpec.pdf, id=1414, 515.9275pt x 400.49625pt>
+ [32]
+[33 <./BRSNoiseModel.pdf>]
+<TiltCorrSpec.pdf, id=1426, 515.9275pt x 400.49625pt>
 File: TiltCorrSpec.pdf Graphic file (type pdf)
 <use TiltCorrSpec.pdf>
-Package pdftex.def Info: TiltCorrSpec.pdf  used on input line 542.
+Package pdftex.def Info: TiltCorrSpec.pdf  used on input line 544.
 (pdftex.def)             Requested size: 399.75362pt x 310.32639pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33] [34 <./TiltCorrSpec.pdf>]
-<TiltCorrTime.pdf, id=1490, 661.47125pt x 233.87375pt>
+[34]
+<TiltCorrTime.pdf, id=1439, 661.47125pt x 233.87375pt>
 File: TiltCorrTime.pdf Graphic file (type pdf)
 <use TiltCorrTime.pdf>
-Package pdftex.def Info: TiltCorrTime.pdf  used on input line 555.
+Package pdftex.def Info: TiltCorrTime.pdf  used on input line 557.
 (pdftex.def)             Requested size: 470.295pt x 166.27989pt.
-<BRSArmMotion.pdf, id=1493, 933.4875pt x 627.34375pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1490) has occurred while \output is active []
+
+ [35 <./TiltCorrSpec.pdf>]
+<BRSArmMotion.pdf, id=1505, 933.4875pt x 627.34375pt>
 File: BRSArmMotion.pdf Graphic file (type pdf)
 <use BRSArmMotion.pdf>
-Package pdftex.def Info: BRSArmMotion.pdf  used on input line 565.
+Package pdftex.def Info: BRSArmMotion.pdf  used on input line 567.
 (pdftex.def)             Requested size: 399.75362pt x 268.65172pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 6808) has occurred while \output is active []
-
- [35 <./TiltCorrTime.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36 <./BRSArmMotion.pdf>]
-<TiltModel.pdf, id=1521, 806.01125pt x 586.19pt>
+[36 <./TiltCorrTime.pdf>] [37 <./BRSArmMotion.pdf>]
+<TiltModel.pdf, id=1533, 806.01125pt x 586.19pt>
 File: TiltModel.pdf Graphic file (type pdf)
 <use TiltModel.pdf>
-Package pdftex.def Info: TiltModel.pdf  used on input line 586.
+Package pdftex.def Info: TiltModel.pdf  used on input line 588.
 (pdftex.def)             Requested size: 470.295pt x 342.02979pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38 <./TiltModel.pdf>]
+<LHO_WindVsLockEvents.pdf, id=1594, 762.85pt x 551.05875pt>
+File: LHO_WindVsLockEvents.pdf Graphic file (type pdf)
+<use LHO_WindVsLockEvents.pdf>
+Package pdftex.def Info: LHO_WindVsLockEvents.pdf  used on input line 611.
+(pdftex.def)             Requested size: 470.295pt x 339.72734pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[37]
-<LHO_WindVsLockEvents.pdf, id=1531, 762.85pt x 551.05875pt>
-File: LHO_WindVsLockEvents.pdf Graphic file (type pdf)
-<use LHO_WindVsLockEvents.pdf>
-Package pdftex.def Info: LHO_WindVsLockEvents.pdf  used on input line 609.
-(pdftex.def)             Requested size: 470.295pt x 339.72734pt.
- [38 <./TiltModel.pdf>] [39 <./LHO_WindVsLockEvents.pdf>]
-<LLO_WindVsLockEvents.pdf, id=1611, 761.84625pt x 550.055pt>
+[39]
+Underfull \vbox (badness 1264) has occurred while \output is active []
+
+ [40 <./LHO_WindVsLockEvents.pdf>]
+<LLO_WindVsLockEvents.pdf, id=1623, 761.84625pt x 550.055pt>
 File: LLO_WindVsLockEvents.pdf Graphic file (type pdf)
 <use LLO_WindVsLockEvents.pdf>
-Package pdftex.def Info: LLO_WindVsLockEvents.pdf  used on input line 621.
+Package pdftex.def Info: LLO_WindVsLockEvents.pdf  used on input line 623.
 (pdftex.def)             Requested size: 470.295pt x 339.55338pt.
-
-Underfull \vbox (badness 4036) has occurred while \output is active []
-
- [40 <./LLO_WindVsLockEvents.pdf>]
-<WindExpect.pdf, id=1637, 860.21375pt x 526.96875pt>
+<WindExpect.pdf, id=1625, 860.21375pt x 526.96875pt>
 File: WindExpect.pdf Graphic file (type pdf)
 <use WindExpect.pdf>
-Package pdftex.def Info: WindExpect.pdf  used on input line 632.
+Package pdftex.def Info: WindExpect.pdf  used on input line 634.
 (pdftex.def)             Requested size: 470.295pt x 288.1049pt.
- [41 <./WindExpect.pdf>] [42]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41 <./LLO_WindVsLockEvents.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42 <./WindExpect.pdf>] [43]
 <<3>>
-<cBRS_ASC_Without.pdf, id=1667, 1011.78pt x 578.16pt>
+<cBRS_ASC_Without.pdf, id=1679, 1011.78pt x 578.16pt>
 File: cBRS_ASC_Without.pdf Graphic file (type pdf)
 <use cBRS_ASC_Without.pdf>
-Package pdftex.def Info: cBRS_ASC_Without.pdf  used on input line 655.
+Package pdftex.def Info: cBRS_ASC_Without.pdf  used on input line 657.
 (pdftex.def)             Requested size: 470.295pt x 268.74457pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<sensorNoise.pdf, id=1669, 658.46pt x 471.7625pt>
+<sensorNoise.pdf, id=1681, 658.46pt x 471.7625pt>
 File: sensorNoise.pdf Graphic file (type pdf)
 <use sensorNoise.pdf>
-Package pdftex.def Info: sensorNoise.pdf  used on input line 665.
+Package pdftex.def Info: sensorNoise.pdf  used on input line 667.
 (pdftex.def)             Requested size: 399.75362pt x 286.41418pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43
+[44
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44 <./cBRS_ASC_Without.pdf>] [45 <./sensorNoise.pdf>]
-<cBRSIso.png, id=1846, 560.0925pt x 560.0925pt>
+ [45 <./cBRS_ASC_Without.pdf>] [46 <./sensorNoise.pdf>]
+<cBRSIso.png, id=1858, 560.0925pt x 560.0925pt>
 File: cBRSIso.png Graphic file (type png)
 <use cBRSIso.png>
-Package pdftex.def Info: cBRSIso.png  used on input line 685.
+Package pdftex.def Info: cBRSIso.png  used on input line 687.
 (pdftex.def)             Requested size: 352.72124pt x 352.73195pt.
-<cBRSFrontLabeled.pdf, id=1847, 794.97pt x 614.295pt>
+<cBRSFrontLabeled.pdf, id=1859, 794.97pt x 614.295pt>
 File: cBRSFrontLabeled.pdf Graphic file (type pdf)
 <use cBRSFrontLabeled.pdf>
-Package pdftex.def Info: cBRSFrontLabeled.pdf  used on input line 694.
+Package pdftex.def Info: cBRSFrontLabeled.pdf  used on input line 696.
 (pdftex.def)             Requested size: 470.295pt x 363.4151pt.
 
 
@@ -750,95 +818,95 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46 <./cBRSiso.PNG>]
+ [47 <./cBRSiso.PNG>]
 Underfull \vbox (badness 2503) has occurred while \output is active []
 
- [47 <./cBRSFrontLabeled.pdf>]
-<cBRSKMount.png, id=1868, 997.47656pt x 669.2503pt>
+ [48 <./cBRSFrontLabeled.pdf>]
+<cBRSKMount.png, id=1880, 997.47656pt x 669.2503pt>
 File: cBRSKMount.png Graphic file (type png)
 <use cBRSKMount.png>
-Package pdftex.def Info: cBRSKMount.png  used on input line 709.
+Package pdftex.def Info: cBRSKMount.png  used on input line 711.
 (pdftex.def)             Requested size: 352.72124pt x 236.65112pt.
-<cBRSOptics.pdf, id=1871, 796.67719pt x 597.50786pt>
+<cBRSOptics.pdf, id=1883, 796.67719pt x 597.50786pt>
 File: cBRSOptics.pdf Graphic file (type pdf)
 <use cBRSOptics.pdf>
-Package pdftex.def Info: cBRSOptics.pdf  used on input line 719.
+Package pdftex.def Info: cBRSOptics.pdf  used on input line 721.
 (pdftex.def)             Requested size: 470.295pt x 352.72716pt.
- [48 <./cBRSKMount.PNG (PNG copy)>]
+ [49 <./cBRSKMount.PNG (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49 <./cBRSOptics.pdf>]
-<cBRS_OpticalLayout.pdf, id=1896, 796.67719pt x 597.50786pt>
+ [50 <./cBRSOptics.pdf>]
+<cBRS_OpticalLayout.pdf, id=1909, 796.67719pt x 597.50786pt>
 File: cBRS_OpticalLayout.pdf Graphic file (type pdf)
 <use cBRS_OpticalLayout.pdf>
-Package pdftex.def Info: cBRS_OpticalLayout.pdf  used on input line 734.
+Package pdftex.def Info: cBRS_OpticalLayout.pdf  used on input line 736.
 (pdftex.def)             Requested size: 470.295pt x 352.72716pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50 <./cBRS_OpticalLayout.pdf>] [51]
-<cBRS_FringesEdit.pdf, id=1934, 495.84619pt x 359.32985pt>
+ [51 <./cBRS_OpticalLayout.pdf>] [52]
+<cBRS_FringesEdit.pdf, id=1946, 495.84619pt x 359.32985pt>
 File: cBRS_FringesEdit.pdf Graphic file (type pdf)
 <use cBRS_FringesEdit.pdf>
-Package pdftex.def Info: cBRS_FringesEdit.pdf  used on input line 789.
+Package pdftex.def Info: cBRS_FringesEdit.pdf  used on input line 791.
 (pdftex.def)             Requested size: 352.72124pt x 255.60846pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[52] [53 <./cBRS_FringesEdit.pdf>]
-<cBRSMassAdjusterLabeled.pdf, id=1963, 794.97pt x 614.295pt>
+[53] [54 <./cBRS_FringesEdit.pdf>]
+<cBRSMassAdjusterLabeled.pdf, id=1975, 794.97pt x 614.295pt>
 File: cBRSMassAdjusterLabeled.pdf Graphic file (type pdf)
 <use cBRSMassAdjusterLabeled.pdf>
-Package pdftex.def Info: cBRSMassAdjusterLabeled.pdf  used on input line 823.
+Package pdftex.def Info: cBRSMassAdjusterLabeled.pdf  used on input line 825.
 (pdftex.def)             Requested size: 399.75362pt x 308.90894pt.
- [54 <./cBRSMassAdjusterLabeled.pdf>]
-<cBRS_massAdjust.pdf, id=1977, 829.0975pt x 630.355pt>
+ [55 <./cBRSMassAdjusterLabeled.pdf>]
+<cBRS_massAdjust.pdf, id=1989, 829.0975pt x 630.355pt>
 File: cBRS_massAdjust.pdf Graphic file (type pdf)
 <use cBRS_massAdjust.pdf>
-Package pdftex.def Info: cBRS_massAdjust.pdf  used on input line 835.
+Package pdftex.def Info: cBRS_massAdjust.pdf  used on input line 837.
 (pdftex.def)             Requested size: 470.295pt x 357.55553pt.
 
-[55 <./cBRS_massAdjust.pdf>]
-<cBRS_Noise.pdf, id=2007, 726.715pt x 500.87125pt>
+[56 <./cBRS_massAdjust.pdf>]
+<cBRS_Noise.pdf, id=2020, 726.715pt x 500.87125pt>
 File: cBRS_Noise.pdf Graphic file (type pdf)
 <use cBRS_Noise.pdf>
-Package pdftex.def Info: cBRS_Noise.pdf  used on input line 850.
+Package pdftex.def Info: cBRS_Noise.pdf  used on input line 852.
 (pdftex.def)             Requested size: 470.295pt x 324.14854pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[56]
+[57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57 <./cBRS_Noise.pdf>]
-<cBRS_Model_Noise.pdf, id=2126, 752.8125pt x 526.96875pt>
+ [58 <./cBRS_Noise.pdf>]
+<cBRS_Model_Noise.pdf, id=2138, 752.8125pt x 526.96875pt>
 File: cBRS_Model_Noise.pdf Graphic file (type pdf)
 <use cBRS_Model_Noise.pdf>
-Package pdftex.def Info: cBRS_Model_Noise.pdf  used on input line 874.
+Package pdftex.def Info: cBRS_Model_Noise.pdf  used on input line 876.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[58]
+[59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59 <./cBRS_Model_Noise.pdf>]
-<cBRS_Model_ST2RX.pdf, id=2272, 752.8125pt x 526.96875pt>
+ [60 <./cBRS_Model_Noise.pdf>]
+<cBRS_Model_ST2RX.pdf, id=2284, 752.8125pt x 526.96875pt>
 File: cBRS_Model_ST2RX.pdf Graphic file (type pdf)
 <use cBRS_Model_ST2RX.pdf>
-Package pdftex.def Info: cBRS_Model_ST2RX.pdf  used on input line 897.
+Package pdftex.def Info: cBRS_Model_ST2RX.pdf  used on input line 899.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<cBRS_Model_ST1RX.pdf, id=2273, 752.8125pt x 526.96875pt>
+<cBRS_Model_ST1RX.pdf, id=2285, 752.8125pt x 526.96875pt>
 File: cBRS_Model_ST1RX.pdf Graphic file (type pdf)
 <use cBRS_Model_ST1RX.pdf>
-Package pdftex.def Info: cBRS_Model_ST1RX.pdf  used on input line 905.
+Package pdftex.def Info: cBRS_Model_ST1RX.pdf  used on input line 907.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -846,12 +914,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 4036) has occurred while \output is active []
 
- [60]
-[61 <./cBRS_Model_ST2RX.pdf>]
-<cBRS_Model_ST1X.pdf, id=2401, 752.8125pt x 526.96875pt>
+ [61]
+[62 <./cBRS_Model_ST2RX.pdf>]
+<cBRS_Model_ST1X.pdf, id=2414, 752.8125pt x 526.96875pt>
 File: cBRS_Model_ST1X.pdf Graphic file (type pdf)
 <use cBRS_Model_ST1X.pdf>
-Package pdftex.def Info: cBRS_Model_ST1X.pdf  used on input line 929.
+Package pdftex.def Info: cBRS_Model_ST1X.pdf  used on input line 931.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
 
 
@@ -860,135 +928,451 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62 <./cBRS_Model_ST1RX.pdf>] [63 <./cBRS_Model_ST1X.pdf>]
-<cBRS_Model_ST2X.pdf, id=2632, 752.8125pt x 526.96875pt>
+ [63 <./cBRS_Model_ST1RX.pdf>] [64 <./cBRS_Model_ST1X.pdf>]
+<cBRS_Model_ST2X.pdf, id=2644, 752.8125pt x 526.96875pt>
 File: cBRS_Model_ST2X.pdf Graphic file (type pdf)
 <use cBRS_Model_ST2X.pdf>
-Package pdftex.def Info: cBRS_Model_ST2X.pdf  used on input line 951.
+Package pdftex.def Info: cBRS_Model_ST2X.pdf  used on input line 953.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[64]
-<cBRS_Model_CompRX.pdf, id=2645, 752.8125pt x 526.96875pt>
+[65]
+<cBRS_Model_CompRX.pdf, id=2657, 752.8125pt x 526.96875pt>
 File: cBRS_Model_CompRX.pdf Graphic file (type pdf)
 <use cBRS_Model_CompRX.pdf>
-Package pdftex.def Info: cBRS_Model_CompRX.pdf  used on input line 976.
+Package pdftex.def Info: cBRS_Model_CompRX.pdf  used on input line 978.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
- [65 <./cBRS_Model_ST2X.pdf>] [66 <./cBRS_Model_CompRX.pdf>]
-<cBRS_Model_CompX.pdf, id=2848, 752.8125pt x 526.96875pt>
+ [66 <./cBRS_Model_ST2X.pdf>] [67 <./cBRS_Model_CompRX.pdf>]
+<cBRS_Model_CompX.pdf, id=2860, 752.8125pt x 526.96875pt>
 File: cBRS_Model_CompX.pdf Graphic file (type pdf)
 <use cBRS_Model_CompX.pdf>
-Package pdftex.def Info: cBRS_Model_CompX.pdf  used on input line 987.
+Package pdftex.def Info: cBRS_Model_CompX.pdf  used on input line 989.
 (pdftex.def)             Requested size: 470.295pt x 329.21796pt.
- [67 <./cBRS_Model_CompX.pdf>]
-<cBRS_ASC_With.pdf, id=2958, 1011.78pt x 578.16pt>
+ [68 <./cBRS_Model_CompX.pdf>]
+<cBRS_ASC_With.pdf, id=2971, 1011.78pt x 578.16pt>
 File: cBRS_ASC_With.pdf Graphic file (type pdf)
 <use cBRS_ASC_With.pdf>
-Package pdftex.def Info: cBRS_ASC_With.pdf  used on input line 1001.
+Package pdftex.def Info: cBRS_ASC_With.pdf  used on input line 1003.
 (pdftex.def)             Requested size: 470.295pt x 268.74457pt.
- [68 <./cBRS_ASC_With.pdf>]
-<cBRS_ASC_LowF.pdf, id=2980, 1011.78pt x 578.16pt>
+ [69 <./cBRS_ASC_With.pdf>]
+<cBRS_ASC_LowF.pdf, id=2994, 1011.78pt x 578.16pt>
 File: cBRS_ASC_LowF.pdf Graphic file (type pdf)
 <use cBRS_ASC_LowF.pdf>
-Package pdftex.def Info: cBRS_ASC_LowF.pdf  used on input line 1012.
+Package pdftex.def Info: cBRS_ASC_LowF.pdf  used on input line 1014.
 (pdftex.def)             Requested size: 470.295pt x 268.74457pt.
- [69 <./cBRS_ASC_LowF.pdf>]
-<cBRS_ASC.pdf, id=3003, 1011.78pt x 578.16pt>
+ [70 <./cBRS_ASC_LowF.pdf>]
+<cBRS_ASC.pdf, id=3018, 1011.78pt x 578.16pt>
 File: cBRS_ASC.pdf Graphic file (type pdf)
 <use cBRS_ASC.pdf>
-Package pdftex.def Info: cBRS_ASC.pdf  used on input line 1028.
+Package pdftex.def Info: cBRS_ASC.pdf  used on input line 1030.
 (pdftex.def)             Requested size: 470.295pt x 268.74457pt.
 
-Underfull \vbox (badness 3919) has occurred while \output is active []
 
- [70 <./cBRS_ASC.pdf>] [71]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[71] [72 <./cBRS_ASC.pdf>]
 <<4>>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72
+ [73
 
 ]
-<PNGTimeSeries.pdf, id=3045, 872.25874pt x 533.995pt>
+<PNGTimeSeries.pdf, id=3060, 872.25874pt x 533.995pt>
 File: PNGTimeSeries.pdf Graphic file (type pdf)
 <use PNGTimeSeries.pdf>
-Package pdftex.def Info: PNGTimeSeries.pdf  used on input line 1063.
+Package pdftex.def Info: PNGTimeSeries.pdf  used on input line 1065.
 (pdftex.def)             Requested size: 470.295pt x 287.91301pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[73] [74 <./PNGTimeSeries.pdf>] [75]
-<Vel.pdf, id=3155, 578.16pt x 505.89pt>
+[74] [75 <./PNGTimeSeries.pdf>] [76]
+<Vel.pdf, id=3170, 578.16pt x 505.89pt>
 File: Vel.pdf Graphic file (type pdf)
 <use Vel.pdf>
-Package pdftex.def Info: Vel.pdf  used on input line 1101.
+Package pdftex.def Info: Vel.pdf  used on input line 1103.
 (pdftex.def)             Requested size: 352.72124pt x 308.63103pt.
- [76] [77 <./Vel.pdf>] [78]
-<NNArrayEdit.pdf, id=3219, 722.7pt x 722.7pt>
+ [77] [78 <./Vel.pdf>] [79]
+<NNArrayEdit.pdf, id=3234, 722.7pt x 722.7pt>
 File: NNArrayEdit.pdf Graphic file (type pdf)
 <use NNArrayEdit.pdf>
-Package pdftex.def Info: NNArrayEdit.pdf  used on input line 1153.
+Package pdftex.def Info: NNArrayEdit.pdf  used on input line 1155.
 (pdftex.def)             Requested size: 470.295pt x 470.3008pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[79]
+[80]
 
-LaTeX Warning: Text page 80 contains only floats.
+LaTeX Warning: Text page 81 contains only floats.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80 <./NNArrayEdit.pdf>]
-<NNSubtraction.pdf, id=3247, 722.7pt x 433.62pt>
+ [81 <./NNArrayEdit.pdf>]
+<NNSubtraction.pdf, id=3262, 722.7pt x 433.62pt>
 File: NNSubtraction.pdf Graphic file (type pdf)
 <use NNSubtraction.pdf>
-Package pdftex.def Info: NNSubtraction.pdf  used on input line 1164.
+Package pdftex.def Info: NNSubtraction.pdf  used on input line 1166.
 (pdftex.def)             Requested size: 352.72124pt x 211.63536pt.
- [81 <./NNSubtraction.pdf>]
-<NNCoupling.pdf, id=3287, 578.16pt x 433.62pt>
+ [82 <./NNSubtraction.pdf>]
+<NNCoupling.pdf, id=3302, 578.16pt x 433.62pt>
 File: NNCoupling.pdf Graphic file (type pdf)
 <use NNCoupling.pdf>
-Package pdftex.def Info: NNCoupling.pdf  used on input line 1179.
+Package pdftex.def Info: NNCoupling.pdf  used on input line 1181.
 (pdftex.def)             Requested size: 352.72124pt x 264.5409pt.
- [82 <./NNCoupling.pdf>]
-(./Dissertation.bbl [83] [84
+ [83 <./NNCoupling.pdf>]
+(./Dissertation.bbl [84] [85
 
-] [85]
+] [86]
 Underfull \hbox (badness 10000) in paragraph at lines 135--137
 []\OT1/cmr/m/n/12 LIGO-Virgo Cu-mu-la-tive Event/Candidate Rate Plot O1-O3:
  []
 
-[86] [87] [88] [89] [90])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1193.
- [91]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1193.
+[87] [88] [89] [90] [91]) [92]
+<<A>>
+<FinalExam.pdf, id=3453, page=1, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 1>
+Package pdftex.def Info: FinalExam.pdf , page1 used on input line 1201.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3454, page=2, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 2>
+Package pdftex.def Info: FinalExam.pdf , page2 used on input line 1202.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3455, page=3, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 3>
+Package pdftex.def Info: FinalExam.pdf , page3 used on input line 1203.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3456, page=4, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 4>
+Package pdftex.def Info: FinalExam.pdf , page4 used on input line 1204.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3457, page=5, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 5>
+Package pdftex.def Info: FinalExam.pdf , page5 used on input line 1205.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3458, page=6, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 6>
+Package pdftex.def Info: FinalExam.pdf , page6 used on input line 1206.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3459, page=7, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 7>
+Package pdftex.def Info: FinalExam.pdf , page7 used on input line 1207.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3460, page=8, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 8>
+Package pdftex.def Info: FinalExam.pdf , page8 used on input line 1208.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3461, page=9, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 9>
+Package pdftex.def Info: FinalExam.pdf , page9 used on input line 1209.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3462, page=10, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 10>
+Package pdftex.def Info: FinalExam.pdf , page10 used on input line 1210.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3463, page=11, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 11>
+Package pdftex.def Info: FinalExam.pdf , page11 used on input line 1211.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3464, page=12, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 12>
+Package pdftex.def Info: FinalExam.pdf , page12 used on input line 1212.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3465, page=13, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 13>
+Package pdftex.def Info: FinalExam.pdf , page13 used on input line 1213.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3466, page=14, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 14>
+Package pdftex.def Info: FinalExam.pdf , page14 used on input line 1214.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3467, page=15, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 15>
+Package pdftex.def Info: FinalExam.pdf , page15 used on input line 1215.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3468, page=16, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 16>
+Package pdftex.def Info: FinalExam.pdf , page16 used on input line 1216.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3469, page=17, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 17>
+Package pdftex.def Info: FinalExam.pdf , page17 used on input line 1217.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3470, page=18, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 18>
+Package pdftex.def Info: FinalExam.pdf , page18 used on input line 1218.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3471, page=19, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 19>
+Package pdftex.def Info: FinalExam.pdf , page19 used on input line 1219.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3472, page=20, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 20>
+Package pdftex.def Info: FinalExam.pdf , page20 used on input line 1220.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3473, page=21, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 21>
+Package pdftex.def Info: FinalExam.pdf , page21 used on input line 1221.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3474, page=22, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 22>
+Package pdftex.def Info: FinalExam.pdf , page22 used on input line 1222.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3475, page=23, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 23>
+Package pdftex.def Info: FinalExam.pdf , page23 used on input line 1223.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3476, page=24, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 24>
+Package pdftex.def Info: FinalExam.pdf , page24 used on input line 1224.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3477, page=25, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 25>
+Package pdftex.def Info: FinalExam.pdf , page25 used on input line 1225.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3478, page=26, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 26>
+Package pdftex.def Info: FinalExam.pdf , page26 used on input line 1226.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3479, page=27, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 27>
+Package pdftex.def Info: FinalExam.pdf , page27 used on input line 1227.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3480, page=28, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 28>
+Package pdftex.def Info: FinalExam.pdf , page28 used on input line 1228.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3481, page=29, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 29>
+Package pdftex.def Info: FinalExam.pdf , page29 used on input line 1229.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3482, page=30, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 30>
+Package pdftex.def Info: FinalExam.pdf , page30 used on input line 1230.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3483, page=31, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 31>
+Package pdftex.def Info: FinalExam.pdf , page31 used on input line 1231.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3484, page=32, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 32>
+Package pdftex.def Info: FinalExam.pdf , page32 used on input line 1232.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3485, page=33, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 33>
+Package pdftex.def Info: FinalExam.pdf , page33 used on input line 1233.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3486, page=34, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 34>
+Package pdftex.def Info: FinalExam.pdf , page34 used on input line 1234.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3487, page=35, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 35>
+Package pdftex.def Info: FinalExam.pdf , page35 used on input line 1235.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3488, page=36, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 36>
+Package pdftex.def Info: FinalExam.pdf , page36 used on input line 1236.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3489, page=37, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 37>
+Package pdftex.def Info: FinalExam.pdf , page37 used on input line 1237.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3490, page=38, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 38>
+Package pdftex.def Info: FinalExam.pdf , page38 used on input line 1238.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3491, page=39, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 39>
+Package pdftex.def Info: FinalExam.pdf , page39 used on input line 1239.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3492, page=40, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 40>
+Package pdftex.def Info: FinalExam.pdf , page40 used on input line 1240.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3493, page=41, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 41>
+Package pdftex.def Info: FinalExam.pdf , page41 used on input line 1241.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3494, page=42, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 42>
+Package pdftex.def Info: FinalExam.pdf , page42 used on input line 1242.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3495, page=43, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 43>
+Package pdftex.def Info: FinalExam.pdf , page43 used on input line 1243.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+<FinalExam.pdf, id=3496, page=44, 722.7pt x 542.025pt>
+File: FinalExam.pdf Graphic file (type pdf)
+<use FinalExam.pdf, page 44>
+Package pdftex.def Info: FinalExam.pdf , page44 used on input line 1244.
+(pdftex.def)             Requested size: 324.50468pt x 243.37967pt.
+[93
+
+ <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [94 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [95 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [96 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [97 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [98 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [99 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [100 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [101 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [102 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [103 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [104 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [105 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [106 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [107 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [108 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [109 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [110 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [111 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [112 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [113 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1247.
+ [114 <./FinalExam.pdf> <./FinalExam.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./FinalExam.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1247.
  (./Dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1193.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1247.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1247.
 
 Package rerunfilecheck Info: File `Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: AB5CC8FCF1499977825255A7336D5D75;3432.
+(rerunfilecheck)             Checksum: D672115BBD9EFF2E3A726C2090623492;3486.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1193.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1247.
  ) 
 Here is how much of TeX's memory you used:
- 9385 strings out of 482479
- 141457 string characters out of 5950543
- 400554 words of memory out of 5000000
- 24482 multiletter control sequences out of 15000+600000
+ 10840 strings out of 482479
+ 164248 string characters out of 5950543
+ 427140 words of memory out of 5000000
+ 25876 multiletter control sequences out of 15000+600000
  544899 words of font info for 71 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 50i,12n,48p,1092b,660s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not ex
+ 50i,12n,48p,1092b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1038,11 +1422,12 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Dissertation.pdf (102 pages, 8250361 bytes).
+s/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public
+/tex-gyre/qhvr.pfb>
+Output written on Dissertation.pdf (125 pages, 65901253 bytes).
 PDF statistics:
- 3574 PDF objects out of 3580 (max. 8388607)
- 3244 compressed objects within 33 object streams
- 342 named destinations out of 1000 (max. 500000)
- 651 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4158 PDF objects out of 4296 (max. 8388607)
+ 3562 compressed objects within 36 object streams
+ 367 named destinations out of 1000 (max. 500000)
+ 879 words of extra memory for PDF output out of 10000 (max. 10000000)
 
