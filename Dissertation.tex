@@ -100,7 +100,6 @@ In the long wavelength limit, a source of gravitational waves (GW) can be decomp
 h_{ij}(\vec x,t)=\frac{1}{r}\frac{4 G}{c^4} \Lambda_{ij,kl} \bigg( S^{kl} +\frac{1}{c} n_m \dot{S}^{kl,m} +\frac{1}{2c^2} n_m n_p \ddot{S}^{kl,mp}+...\bigg)_\text{ret} \label{gwExp}
 \end{equation}
 where $\Lambda_{ij,kl}$ is the projection from the source frame to transverse-traceless coordinates and the momenta are defined as:
-
 \begin{align}
 S^{ij}(t)&=\int T^{ij}(t,\mathbf{x}) d^3x\\
 S^{ij,k}(t)&=\int T^{ij}(t,\mathbf{x}) x^k d^3x\\
@@ -133,6 +132,7 @@ The emission of gravitational waves carry energy away from the system and thus t
 \end{equation}
 
 This process produces a characteristic ``chirp'' signal which begins at low frequency and low amplitude then grows in amplitude while shifting to higher frequency. The signal culminates in a final sharp increase in both frequency and amplitude before the objects merge. This can be seen in Figure \ref{GW170817} which shows a spectrogram of the observed strain at the LIGO observatories of the binary neutron star merger GW170817~\cite{GW170817}.
+\raggedbottom
  
 \begin{figure}
 \begin{center}
@@ -355,7 +355,7 @@ Current installations have yielded an $\alpha\approx 0.9$. This yields a ground 
 \end{figure} 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=0.95\textwidth]{BRSFrontLabeled.pdf}
+\includegraphics[width=0.93\textwidth]{BRSFrontLabeled.pdf}
 \end{center}
 \caption[Side view of a CAD rendering of the BRS]{Side view of a CAD rendering of the BRS. At center, one of the small copper-colored flexures can be seen. The other is mounted on the opposite side.}
 \label{BRSImage}
@@ -1027,10 +1027,9 @@ The performance of the ASC system was modeled for the seismic performance with t
 
 Figure \ref{ascComp} compares the modeled residual for a system with and without the cBRS. As expected, adding the cBRS reduces the residual between $\sim$50-500~mHz due to the increased performance of the seismic isolation system. This allows a shift in the UGF to lower frequencies which reduces the residual above $\sim$5 Hz. 
 
-
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=\textwidth]{cBRS_ASC.pdf}
+\includegraphics[width=0.99\textwidth]{cBRS_ASC.pdf}
 \caption[Projected low frequency strain noise with and without the cBRS]{Projected low frequency strain noise with and without the cBRS along with aLIGO design sensitivity. \cite{aLIGO} }
 \label{ascStrain}
 \end{center}
@@ -1099,9 +1098,7 @@ Although in theory this can be measured using a single seismometer, Love wave co
 %\subsubsection{Hanford Measurements}
 As described in Section \ref{BRS_Hanford}, two BRSs were installed at LHO, one at each end station located 5.66 meters apart. The End-X BRS was found to have a $\delta=30\ \mu \text{m}$ leading to a translational coupling of $2 \times 10^{-4}$ rad/m while the End-Y BRS was found to have a coupling of $1 \times 10^{-6}$ rad/m with a $\delta<0.5\ \mu \text{m}$. This limited any seismology studies to only the End-Y BRS as the End-X BRS was contaminated with translational motion. 
 
-Between April, 2016 and January, 2017, six earthquakes were measured during environmentally quite times.~\cite{tiltSeismology} With application of Equation \ref{vx} the phase dispersion curve at the End-Y Station was measured with instruments installed at a single station. Corrections of the angle of incidence were determined by an array of seismometers installed at LHO and were verified via great circle calculations. Additionally, the phase velocity was estimated in a more traditional manor using the signal delay between the array of seismometer at LHO. The measured phase dispersion curves are shown in Figure \ref{Phase_Hanford} which shows agreement between the two methods. For more detail see Reference~\cite{tiltSeismology}
- 
-\begin{figure}%
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.75\textwidth]{Vel.pdf}
 \caption[Single station Rayleigh wave phase velocity measurements]{Rayleigh wave phase velocity measurements made by instruments located at the End-Y station of LHO and the same measurements achieved by the array of seismometers deployed at LHO. Each line represent the measurements achieved by different earthquakes. The angle of incidence of each wave was measured independent of the single station and used within the analysis. Reprinted from~\cite{tiltSeismology}}
@@ -1109,6 +1106,9 @@ Between April, 2016 and January, 2017, six earthquakes were measured during envi
 \end{center}
 \end{figure}
 
+
+Between April, 2016 and January, 2017, six earthquakes were measured during environmentally quite times.~\cite{tiltSeismology} With application of Equation \ref{vx} the phase dispersion curve at the End-Y Station was measured with instruments installed at a single station. Corrections of the angle of incidence were determined by an array of seismometers installed at LHO and were verified via great circle calculations. Additionally, the phase velocity was estimated in a more traditional manor using the signal delay between the array of seismometer at LHO. The measured phase dispersion curves are shown in Figure \ref{Phase_Hanford} which shows agreement between the two methods. For more detail see Reference~\cite{tiltSeismology}
+ 
 These measurements display the utility of including rotation sensors in seismic instruments. If a seismic station was constructed with two orthogonally oriented horizontal rotation sensors and a vertical seismometer, the phase velocity could be measured independent of angle of incidence by utilizing Equation \ref{v}. Neglecting the logistical difficulty, one could imagine constructing arrays of station with both translational and rotational sensors. This array would allow mapping of the phase dispersion curves, and thus tomography, with spatial resolution limited only by the size of the instruments. Such stations could also be installed within traditional arrays to yield independent, point-like measurements to further constrain tomographic studies.
 
 %\subsubsection{Livingston Measurements}
@@ -1198,54 +1198,54 @@ These first observations pointed to the possibility that the current observatori
 \bibliography{Dissertation}
 \raggedbottom
 
-\appendix
-\chapter{Final Exam Slides}
-\begin{center}
-\includegraphics[page=1,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=2,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=3,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=4,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=5,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=6,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=7,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=8,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=9,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=10,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=11,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=12,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=13,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=14,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=15,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=16,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=17,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=18,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=19,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=20,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=21,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=22,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=23,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=24,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=25,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=26,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=27,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=28,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=29,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=30,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=31,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=32,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=33,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=34,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=35,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=36,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=37,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=38,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=39,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=40,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=41,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=42,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=43,width=0.69\textwidth]{FinalExam.pdf}
-\includegraphics[page=44,width=0.69\textwidth]{FinalExam.pdf}
-\end{center}
+%\appendix
+%\chapter{Final Exam Slides}
+%\begin{center}
+%\includegraphics[page=1,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=2,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=3,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=4,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=5,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=6,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=7,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=8,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=9,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=10,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=11,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=12,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=13,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=14,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=15,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=16,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=17,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=18,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=19,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=20,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=21,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=22,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=23,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=24,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=25,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=26,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=27,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=28,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=29,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=30,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=31,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=32,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=33,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=34,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=35,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=36,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=37,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=38,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=39,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=40,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=41,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=42,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=43,width=0.69\textwidth]{FinalExam.pdf}
+%\includegraphics[page=44,width=0.69\textwidth]{FinalExam.pdf}
+%\end{center}
 
 \end{document}
 
